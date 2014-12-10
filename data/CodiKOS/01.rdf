@@ -5,5 +5,5 @@
     <skos:prefLabel xml:lang="de">Seitenlayout</skos:prefLabel>
     <skos:notation>01</skos:notation>
     <skos:broader rdf:resource="http://www.ecodicology.org/0"/>
-  </rdf:Description>
+  </rdf:Description> 
 </rdf:RDF>
