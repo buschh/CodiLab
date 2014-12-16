@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CodiKOS | eCodicology</title>
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../../HKIKoeln/SemToNotes/client/res/xrx.css" rel="stylesheet">
   <script type="text/javascript" src="../../HKIKoeln/SemToNotes/client/lib/jssaxparser/SAXException.js"></script>
   <script type="text/javascript" src="../../HKIKoeln/SemToNotes/client/lib/jssaxparser/AttributesImpl.js"></script>
   <script type="text/javascript" src="../../HKIKoeln/SemToNotes/client/lib/jssaxparser/LocatorImpls.js"></script>
@@ -23,10 +24,10 @@
       padding-bottom: 20px;
     }
   </style>
-<!--[if lt IE 9]>
-  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-<![endif]-->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
 </head>
 <body>
   <div style="display:none">
@@ -36,11 +37,14 @@
     <!-- instances -->
     <div id="iconcept" class="xrx-instance" data-src="./SKOS.test.rdf.txt"></div>
     <!-- binds -->
-    <div id="bconcept" class="xrx-bind" data-ref="xrx:instance('iconcept')//rdf:Description[@rdf:about='http://www.ecodicology.org/CodiKOS']"></div>
+    <div id="bconcept" class="xrx-bind" data-ref="xrx:instance('iconcept')//rdf:Description[@rdf:about='http://www.ecodicology.org/0']"></div>
     <div id="bprefLabelEn" class="xrx-bind" data-ref="xrx:bind('bconcept')[1]/skos:prefLabel[1]/text()"></div>
     <div id="bprefLabelDe" class="xrx-bind" data-ref="xrx:bind('bconcept')[1]/skos:prefLabel[2]/text()"></div>
     <div id="bdefinitionEn" class="xrx-bind" data-ref="xrx:bind('bconcept')[1]//skos:definition[1]/text()"></div>
     <div id="bdefinitionDe" class="xrx-bind" data-ref="xrx:bind('bconcept')[1]//skos:definition[2]/text()"></div>
+    <div id="bnarrower" class="xrx-bind" data-ref="xrx:bind('bconcept')[1]//skos:narrower"></div>
+    <div id="brelated" class="xrx-bind" data-ref="xrx:bind('bconcept')[1]//skos:related"></div>
+    <div id="bbroader" class="xrx-bind" data-ref="xrx:bind('bconcept')[1]//skos:broader"></div>
   </div>
   <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container">
@@ -88,7 +92,7 @@
         </div-->
         <div class="tab-content">
           <div role="tabpane" class="tab-pane" id="browse">
-            <h1 class="page-header">Browse Concepts</h1>
+            <h1 class="page-header">Browse SKOS Concepts</h1>
             <form class="form-horizontal" role="form">
               <div class="form-group">
                 <label for="notation" class="col-sm-2 control-label">ID</label>
@@ -140,7 +144,7 @@
             <pre>&lt;test/&gt;</pre>
           </div>
           <div role="tabpane" class="tab-pane active" id="edit"><!--edit-->
-            <h1 class="page-header">Edit Concept</h1>
+            <h1 class="page-header">Edit SKOS Concept</h1>
             <form class="form-horizontal" role="form">
               <div class="form-group">
                 <label for="notation" class="col-sm-2 control-label">ID</label>
@@ -173,26 +177,49 @@
                 </div>
               </div>
               <div class="panel panel-default">
-                <div class="panel-heading">Narrower Concepts</div>
+                <div class="panel-heading">
+                  <strong>Narrower Concepts</strong>
+                  <button type="button" class="btn btn-default pull-right">
+                    <span class="glyphicon glyphicon-plus"></span> Add Narrower Concept
+                  </button>
+                </div>
                 <div class="panel-body">
+                  <div class="xrx-mvc-repeat" data-bind="bnarrower">
+                    <div class="input-group">
+                      <input type="text" class="form-control xrx-input pull-left" data-ref="./@rdf:resource">
+                      <span class="input-group-btn">
+                        <button type="button" class="btn btn-default">
+                          <span class="glyphicon glyphicon-minus"></span> Remove
+                        </button>
+                      </span>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="panel panel-default">
-                <div class="panel-heading">Broader Concepts</div>
+                <div class="panel-heading">
+                  <strong>Broader Concepts</strong>
+                </div>
                 <div class="panel-body">
+                  <div class="xrx-mvc-repeat" data-bind="bbroader">
+                    <input type="text" class="form-control xrx-input" data-ref="./@rdf:resource">
+                  </div>
                 </div>
               </div>
               <div class="panel panel-default">
                 <div class="panel-heading">Related Concepts</div>
                 <div class="panel-body">
+                  <div class="xrx-mvc-repeat" data-bind="brelated">
+                    <input type="text" class="form-control xrx-input" data-ref="./@rdf:resource">
+                  </div>
                 </div>
               </div>
             </form>
             <h3>XML View</h3>
-            <!--pre class="xrx-widget-console" data-bind="bconcept"></pre-->
+            <pre class="xrx-widget-console" data-bind="bconcept"></pre>
           </div><!--/edit-->
           <div role="tabpane" class="tab-pane" id="new">
-            <h1 class="page-header">New Concept</h1>
+            <h1 class="page-header">New SKOS Concept</h1>
             <form class="form-horizontal" role="form">
               <div class="form-group">
                 <label for="newId" class="col-sm-2 control-label">New ID</label>
@@ -207,7 +234,7 @@
               </div>
             </form>
             <h3>XML View</h3>
-            <!--pre class="xrx-widget-console" data-bind="bconcept"></pre-->
+            <pre class="xrx-widget-console" data-bind="bconcept"></pre>
           </div>
           <div role="tabpane" class="tab-pane" id="delete">
             <h1 class="page-header">Delete Concept</h1>
