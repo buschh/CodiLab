@@ -36,8 +36,9 @@
     <div class="xrx-namespace" data-prefix="skos" data-uri="http://www.w3.org/2004/02/skos/core#"></div>
     <!-- instances -->
     <div id="iconcept" class="xrx-instance" data-src="./SKOS.test.rdf.txt"></div>
+    <div id="itemplate" class="xrx-instance" data-src="./CodiKOS.template.rdf.txt"></div>
     <!-- binds -->
-    <div id="bconcept" class="xrx-bind" data-ref="xrx:instance('iconcept')//rdf:Description[@rdf:about='http://www.ecodicology.org/0']"></div>
+    <div id="bconcept" class="xrx-bind" data-ref="xrx:instance('iconcept')//rdf:Description[@rdf:about='http://www.ecodicology.org/CodiKOS']"></div>
     <div id="bprefLabelEn" class="xrx-bind" data-ref="xrx:bind('bconcept')[1]/skos:prefLabel[1]/text()"></div>
     <div id="bprefLabelDe" class="xrx-bind" data-ref="xrx:bind('bconcept')[1]/skos:prefLabel[2]/text()"></div>
     <div id="bdefinitionEn" class="xrx-bind" data-ref="xrx:bind('bconcept')[1]//skos:definition[1]/text()"></div>
@@ -45,6 +46,13 @@
     <div id="bnarrower" class="xrx-bind" data-ref="xrx:bind('bconcept')[1]//skos:narrower"></div>
     <div id="brelated" class="xrx-bind" data-ref="xrx:bind('bconcept')[1]//skos:related"></div>
     <div id="bbroader" class="xrx-bind" data-ref="xrx:bind('bconcept')[1]//skos:broader"></div>
+
+    <div id="btargetNarrower" class="xrx-bind" data-ref="(xrx:bind('bconcept')[1]/skos:note|xrx:bind('bconcept')[1]/skos:narrower)[last()]"></div>
+    <div id="btargetBroader" class="xrx-bind" data-ref="(xrx:bind('bconcept')[1]/skos:note|xrx:bind('bconcept')[1]/skos:narrower|xrx:bind('bconcept')[1]/skos:broader)[last()]"></div>
+    <div id="btargetRelated" class="xrx-bind" data-ref="(xrx:bind('bconcept')[1]/skos:note|xrx:bind('bconcept')[1]/skos:narrower|xrx:bind('bconcept')[1]/skos:broader|xrx:bind('bconcept')[1]/skos:related)[last()]"></div>
+    <div id="boriginNarrower" class="xrx-bind" data-ref="xrx:instance('itemplate')//skos:narrower"></div>
+    <div id="boriginBroader" class="xrx-bind" data-ref="xrx:instance('itemplate')//skos:broader"></div>
+    <div id="boriginRelated" class="xrx-bind" data-ref="xrx:instance('itemplate')//skos:related"></div>
   </div>
   <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container">
@@ -179,16 +187,19 @@
               <div class="panel panel-default">
                 <div class="panel-heading">
                   <strong>Narrower Concepts</strong>
-                  <button type="button" class="btn btn-default pull-right">
-                    <span class="glyphicon glyphicon-plus"></span> Add Narrower Concept
-                  </button>
                 </div>
                 <div class="panel-body">
                   <div class="xrx-mvc-repeat" data-bind="bnarrower">
                     <div class="input-group">
                       <input type="text" class="form-control xrx-input pull-left" data-ref="./@rdf:resource">
                       <span class="input-group-btn">
-                        <button type="button" class="btn btn-default">
+                        <button type="button" class="btn btn-default xrx-button">
+                          <span class="glyphicon glyphicon-plus"></span> Add
+                          <span class="xrx-action" data-event="xrx-event-click">
+                            <span class="xrx-insert" data-origin="boriginNarrower" data-target="btargetNarrower"></span>
+                          </span>
+                        </button>
+                        <button type="button" class="btn btn-default xrx-button">
                           <span class="glyphicon glyphicon-minus"></span> Remove
                         </button>
                       </span>
@@ -199,6 +210,12 @@
               <div class="panel panel-default">
                 <div class="panel-heading">
                   <strong>Broader Concepts</strong>
+                  <button type="button" class="btn btn-default pull-right xrx-button">
+                    <span class="glyphicon glyphicon-plus"></span> Add Broader Concept
+                    <span class="xrx-action" data-event="xrx-event-click">
+                      <span class="xrx-insert" data-origin="boriginBroader" data-target="btargetBroader"></span>
+                    </span>
+                  </button>
                 </div>
                 <div class="panel-body">
                   <div class="xrx-mvc-repeat" data-bind="bbroader">
@@ -207,7 +224,15 @@
                 </div>
               </div>
               <div class="panel panel-default">
-                <div class="panel-heading">Related Concepts</div>
+                <div class="panel-heading">
+                  <strong>Related Concepts</strong>
+                  <button type="button" class="btn btn-default pull-right xrx-button">
+                    <span class="glyphicon glyphicon-plus"></span> Add Related Concept
+                    <span class="xrx-action" data-event="xrx-event-click">
+                      <span class="xrx-insert" data-origin="boriginRelated" data-target="btargetRelated"></span>
+                    </span>
+                  </button>
+                </div>
                 <div class="panel-body">
                   <div class="xrx-mvc-repeat" data-bind="brelated">
                     <input type="text" class="form-control xrx-input" data-ref="./@rdf:resource">
