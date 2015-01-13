@@ -35,7 +35,14 @@
     <div class="xrx-namespace" data-prefix="rdf" data-uri="http://www.w3.org/1999/02/22-rdf-syntax-ns#"></div>
     <div class="xrx-namespace" data-prefix="skos" data-uri="http://www.w3.org/2004/02/skos/core#"></div>
     <!-- instances --> 
-    <div id="icodikos" class="xrx-instance" data-src="./SKOS.test.rdf"></div>
+    <div id="icodikos" class="xrx-instance" data-src="./SKOS.test.rdf">
+      <div class="xrx-action" data-event="xrx-event-instance-update">
+        <div class="xrx-classes-add" data-select=".save-message" data-classes="hidden"></div>
+        <div class="xrx-classes-remove" data-select="#save-updated" data-classes="hidden"></div>
+        <div class="xrx-classes-remove" data-select="#nav" data-classes="alert-warning alert-success alert-danger"></div>
+        <div class="xrx-classes-add" data-select="#nav" data-classes="alert-warning"></div>
+      </div>
+    </div>
     <div id="itemplate" class="xrx-instance" data-src="./CodiKOS.template.rdf.txt"></div>
     <!-- binds -->
     <div id="bcodikos" class="xrx-bind" data-ref="xrx:instance('icodikos')"></div>
@@ -54,9 +61,22 @@
     <div id="boriginBroader" class="xrx-bind" data-ref="xrx:instance('itemplate')//skos:broader"></div>
     <div id="boriginRelated" class="xrx-bind" data-ref="xrx:instance('itemplate')//skos:related"></div>
     <!-- submissions -->
-    <div id="ssave" class="xrx-submission" data-bind="bcodikos" data-resource="https://api.github.com/repos/JochenGraf/eCodicology/contents/SKOS.test.rdf" data-method="PUT"></div>
+    <div id="ssave" class="xrx-submission" data-bind="bcodikos" data-resource="https://api.github.com/repos/JochenGraf/eCodicology/contents/SKOS.test.rdf" data-method="PUT">
+      <div class="xrx-action" data-event="xrx-event-submit-done">
+        <div class="xrx-classes-add" data-select=".save-message" data-classes="hidden"></div>
+        <div class="xrx-classes-remove" data-select="#save-success" data-classes="hidden"></div>
+        <div class="xrx-classes-remove" data-select="#nav" data-classes="alert-warning alert-success alert-danger"></div>
+        <div class="xrx-classes-add" data-select="#nav" data-classes="alert-success"></div>
+      </div>
+      <div class="xrx-action" data-event="xrx-event-submit-error">
+        <div class="xrx-classes-add" data-select=".save-message" data-classes="hidden"></div>
+        <div class="xrx-classes-remove" data-select="#save-error" data-classes="hidden"></div>
+        <div class="xrx-classes-remove" data-select="#nav" data-classes="alert-warning alert-success alert-danger"></div>
+        <div class="xrx-classes-add" data-select="#nav" data-classes="alert-danger"></div>
+      </div>
+    </div>
   </div>
-  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <nav id="nav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -95,6 +115,7 @@
           <div class="xrx-action" data-event="xrx-event-submit-done">
             <div class="xrx-classes-remove" data-select=".inputUser" data-classes="has-error has-feedback"></div>
             <div class="xrx-classes-remove" data-select=".inputPassword" data-classes="has-error has-feedback"></div>
+            <div class="xrx-send" data-submission="ssave"></div>
           </div>
         </div>
       </div><!--/.navbar-collapse -->
@@ -173,6 +194,9 @@
               <div class="form-group">
                 <label class="col-sm-2 control-label"></label>
                 <div class="col-sm-10">
+                  <strong id="save-error" class="text-danger save-message hidden">Data could not be saved. Please sign in first.</strong>
+                  <strong id="save-success" class="text-success save-message hidden">Data successfully saved. </strong>
+                  <strong id="save-updated" class="text-warning save-message hidden">There are unsaved changes.</strong>
                   <button class="btn btn-primary pull-right xrx-button">
                     <span>Save</span>
                     <div class="xrx-action" data-event="xrx-event-click">
