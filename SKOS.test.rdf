@@ -6,7 +6,7 @@
     <skos:notation>CodiKOS</skos:notation>
     <skos:note>
       <skos:definition xml:lang="en">Description of CodiKOS (en)</skos:definition>
-      <skos:definition xml:lang="de">Description of CodiKOS (de) test test</skos:definition>
+      <skos:definition xml:lang="de">Description of CodiKOS (de)</skos:definition>
     </skos:note>
     <skos:narrower rdf:resource="http://www.ecodicology.org/0"/>
     <skos:narrower rdf:resource="http://www.ecodicology.org/1"/>
