@@ -47,4 +47,28 @@
     </skos:note>
     <skos:broader rdf:resource="http://www.ecodicology.org/0"/>
   </rdf:Description>
+  <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+    <rdf:Description rdf:about="http://www.ecodicology.org/123">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel xml:lang="en"></skos:prefLabel>
+      <skos:prefLabel xml:lang="de"></skos:prefLabel>
+      <skos:notation>123</skos:notation>
+      <skos:note>
+        <skos:definition xml:lang="en"></skos:definition>
+        <skos:definition xml:lang="de"></skos:definition>
+      </skos:note>
+    </rdf:Description>
+  </rdf:RDF>
+  <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+    <rdf:Description rdf:about="http://www.ecodicology.org/test">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel xml:lang="en"></skos:prefLabel>
+      <skos:prefLabel xml:lang="de"></skos:prefLabel>
+      <skos:notation>test</skos:notation>
+      <skos:note>
+        <skos:definition xml:lang="en"></skos:definition>
+        <skos:definition xml:lang="de"></skos:definition>
+      </skos:note>
+    </rdf:Description>
+  </rdf:RDF>
 </rdf:RDF>
