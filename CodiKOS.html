@@ -43,10 +43,11 @@
         <div class="xrx-classes-add" data-select="#nav" data-classes="alert-warning"></div>
       </div>
     </div>
-    <div id="itemplate" class="xrx-instance" data-src="./CodiKOS.template.rdf.txt"></div>
+    <div id="itemplate" class="xrx-instance" data-src="./CodiKOS.template.rdf"></div>
     <!-- binds -->
     <div id="bcodikos" class="xrx-bind" data-ref="xrx:instance('icodikos')"></div>
     <div id="bconcept" class="xrx-bind" data-ref="xrx:instance('icodikos')//rdf:Description[@rdf:about='http://www.ecodicology.org/CodiKOS']"></div>
+    <div id="blastConcept" class="xrx-bind" data-ref="xrx:instance('icodikos')//rdf:Description[last()]"></div>
     <div id="bprefLabelEn" class="xrx-bind" data-ref="xrx:bind('bconcept')[1]/skos:prefLabel[1]/text()"></div>
     <div id="bprefLabelDe" class="xrx-bind" data-ref="xrx:bind('bconcept')[1]/skos:prefLabel[2]/text()"></div>
     <div id="bdefinitionEn" class="xrx-bind" data-ref="xrx:bind('bconcept')[1]//skos:definition[1]/text()"></div>
@@ -126,9 +127,9 @@
     <div class="starter-template">
       <div role="tabpane">
         <ul class="nav nav-tabs" role="tablist">
-          <li role="presentation"><a href="#browse" aria-controls="view" role="tab" data-toggle="tab">Browse</a></li>
-          <li role="presentation" class="active"><a href="#edit" aria-controls="edit" role="tab" data-toggle="tab">Edit</a></li>
-          <li role="presentation"><a href="#new" aria-controls="new" role="tab" data-toggle="tab">New</a></li>
+          <li role="presentation" class="nav-tab"><a href="#browse" aria-controls="view" role="tab" data-toggle="tab">Browse</a></li>
+          <li id="navEdit" role="presentation" class="nav-tab active"><a href="#edit" aria-controls="edit" role="tab" data-toggle="tab">Edit</a></li>
+          <li role="presentation" class="nav-tab"><a href="#new" aria-controls="new" role="tab" data-toggle="tab">New</a></li>
         </ul>
         <!--div class="btn-toolbar">
           <div class="btn-group">
@@ -195,7 +196,7 @@
                 <label class="col-sm-2 control-label"></label>
                 <div class="col-sm-10">
                   <strong id="save-error" class="text-danger save-message hidden">Data could not be saved. Please sign in first.</strong>
-                  <strong id="save-success" class="text-success save-message hidden">Data successfully saved. </strong>
+                  <strong id="save-success" class="text-success save-message hidden">Data successfully saved.</strong>
                   <strong id="save-updated" class="text-warning save-message hidden">There are unsaved changes.</strong>
                   <button class="btn btn-primary pull-right xrx-button">
                     <span>Save</span>
@@ -295,24 +296,45 @@
             <h3>XML View</h3>
             <pre class="xrx-widget-console" data-bind="bconcept"></pre>
           </div><!--/edit-->
-          <div role="tabpane" class="tab-pane" id="new">
+          <div role="tabpane" class="tab-pane" id="new"><!--new-->
+            <!--model-->
+            <div id="inewConcept" class="xrx-instance" data-src="./CodiKOS.new.rdf"></div>
+            <div id="bnewConcept" class="xrx-bind" data-ref="xrx:instance('inewConcept')//rdf:Description"></div>
+            <div id="bnewNotation" class="xrx-bind" data-ref="xrx:instance('inewConcept')//skos:notation/text()"></div>
+            <div id="bnewIdTarget" class="xrx-bind" data-ref="xrx:instance('inewConcept')//rdf:Description/@rdf:about"></div>          
+            <!--view-->
             <h1 class="page-header">New SKOS Concept</h1>
             <form class="form-horizontal" role="form">
               <div class="form-group">
                 <label for="newId" class="col-sm-2 control-label">New ID</label>
                 <div class="col-sm-10">
-                  <input type="text" class="form-control" id="newId">
+                  <div class="input-group">
+                    <span class="input-group-addon">http://www.ecodicology.org/</span>
+                    <input id="newId" type="text" placeholder="00" class="form-control xrx-input" data-bind="bnewNotation">
+                    <div class="xrx-action" data-for="newId" data-event="xrx-event-input">
+                      <div class="xrx-update" data-value="concat('http://www.ecodicology.org/', xrx:bind('bnewNotation'))" data-bind="bnewIdTarget"></div>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="form-group">
                 <div class="col-sm-offset-2 col-sm-10">
-                  <button type="button" class="btn btn-primary" id="create">Create and edit</button>
+                  <button type="button" class="btn btn-primary xrx-button" id="create">
+                    <span>Create and edit</span>
+                    <div class="xrx-action" data-event="xrx-event-click">
+                      <div class="xrx-insert" data-origin="bnewConcept" data-target="blastConcept"></div>
+                      <div class="xrx-classes-remove" data-select=".tab-pane" data-classes="active"></div>
+                      <div class="xrx-classes-add" data-select="#edit" data-classes="active"></div>
+                      <div class="xrx-classes-remove" data-select=".nav-tab" data-classes="active"></div>
+                      <div class="xrx-classes-add" data-select="#navEdit" data-classes="active"></div>
+                    </div>
+                  </button>
                 </div>
               </div>
             </form>
             <h3>XML View</h3>
-            <pre class="xrx-widget-console" data-bind="bconcept"></pre>
-          </div>
+            <pre class="xrx-widget-console" data-bind="bnewConcept"></pre>
+          </div><!--/new-->
         </div>
       </div>
     </div> 
