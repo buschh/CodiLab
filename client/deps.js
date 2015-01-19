@@ -62,11 +62,12 @@ goog.addDependency('../../../../../client/src/core/graphics/shape/shapeVertexDra
 goog.addDependency('../../../../../client/src/core/mvc/action/mvcAbstractAction.js', ['xrx.mvc.AbstractAction'], ['xrx.mvc', 'xrx.mvc.Component']);
 goog.addDependency('../../../../../client/src/core/mvc/action/mvcAction.js', ['xrx.mvc.Action'], ['goog.array', 'goog.dom.DomHelper', 'xrx.mvc.AbstractAction']);
 goog.addDependency('../../../../../client/src/core/mvc/action/mvcCalculate.js', ['xrx.mvc.Calculate'], ['xrx.mvc.AbstractAction']);
-goog.addDependency('../../../../../client/src/core/mvc/action/mvcDispatch.js', ['xrx.mvc.Dispatch'], ['xrx.mvc', 'xrx.mvc.AbstractAction']);
+goog.addDependency('../../../../../client/src/core/mvc/action/mvcDispatch.js', ['xrx.mvc.Dispatch'], ['goog.dom.dataset', 'xrx.mvc', 'xrx.mvc.AbstractAction']);
 goog.addDependency('../../../../../client/src/core/mvc/action/mvcDom.js', ['xrx.mvc.ClassesAdd', 'xrx.mvc.ClassesRemove', 'xrx.mvc.Dom'], ['goog.array', 'goog.dom.DomHelper', 'goog.dom.classes', 'xrx.mvc.AbstractAction']);
 goog.addDependency('../../../../../client/src/core/mvc/action/mvcInsert.js', ['xrx.mvc.Insert'], ['xrx.mvc.AbstractAction', 'xrx.mvc.Controller']);
+goog.addDependency('../../../../../client/src/core/mvc/action/mvcRemove.js', ['xrx.mvc.Remove'], ['xrx.mvc.AbstractAction', 'xrx.mvc.Controller']);
 goog.addDependency('../../../../../client/src/core/mvc/action/mvcSend.js', ['xrx.mvc.Send'], ['goog.events.EventType', 'xrx.mvc', 'xrx.mvc.AbstractAction']);
-goog.addDependency('../../../../../client/src/core/mvc/action/mvcUpdate.js', ['xrx.mvc.Update'], ['xrx.mvc.AbstractAction']);
+goog.addDependency('../../../../../client/src/core/mvc/action/mvcUpdate.js', ['xrx.mvc.Update'], ['xrx.mvc.AbstractAction', 'xrx.mvc.Controller']);
 goog.addDependency('../../../../../client/src/core/mvc/mvc.js', ['xrx.mvc'], ['goog.dom.DomHelper', 'goog.object']);
 goog.addDependency('../../../../../client/src/core/mvc/mvcAuth.js', ['xrx.mvc.Auth', 'xrx.mvc.Password', 'xrx.mvc.Signin', 'xrx.mvc.Signout', 'xrx.mvc.User'], ['goog.crypt.base64', 'goog.dom.DomHelper', 'goog.dom.dataset', 'goog.dom.forms', 'goog.events', 'goog.events.EventType', 'goog.net.Cookies', 'goog.net.XhrIo', 'goog.style', 'xrx.mvc.Component']);
 goog.addDependency('../../../../../client/src/core/mvc/mvcBind.js', ['xrx.mvc.Bind'], ['xrx.mvc.ComponentModel', 'xrx.xpath']);
@@ -74,7 +75,7 @@ goog.addDependency('../../../../../client/src/core/mvc/mvcComponent.js', ['xrx.m
 goog.addDependency('../../../../../client/src/core/mvc/mvcComponentContext.js', ['xrx.mvc.ComponentContext'], []);
 goog.addDependency('../../../../../client/src/core/mvc/mvcComponentModel.js', ['xrx.mvc.ComponentModel'], ['xrx.mvc.Component']);
 goog.addDependency('../../../../../client/src/core/mvc/mvcComponentView.js', ['xrx.mvc.ComponentView'], ['xrx.mvc.Component']);
-goog.addDependency('../../../../../client/src/core/mvc/mvcComponents.js', ['xrx.mvc.Components'], ['xrx.mvc.Action', 'xrx.mvc.Auth', 'xrx.mvc.Bind', 'xrx.mvc.Calculate', 'xrx.mvc.ClassesAdd', 'xrx.mvc.ClassesRemove', 'xrx.mvc.Dispatch', 'xrx.mvc.Insert', 'xrx.mvc.Instance', 'xrx.mvc.InstanceGithub', 'xrx.mvc.InstanceRest', 'xrx.mvc.Namespace', 'xrx.mvc.Optgroup', 'xrx.mvc.Password', 'xrx.mvc.Repeat', 'xrx.mvc.Send', 'xrx.mvc.Signin', 'xrx.mvc.Signout', 'xrx.mvc.Submission', 'xrx.mvc.Update', 'xrx.mvc.User']);
+goog.addDependency('../../../../../client/src/core/mvc/mvcComponents.js', ['xrx.mvc.Components'], ['xrx.mvc.Action', 'xrx.mvc.Auth', 'xrx.mvc.Bind', 'xrx.mvc.Calculate', 'xrx.mvc.ClassesAdd', 'xrx.mvc.ClassesRemove', 'xrx.mvc.Dispatch', 'xrx.mvc.Insert', 'xrx.mvc.Instance', 'xrx.mvc.InstanceGithub', 'xrx.mvc.InstanceRest', 'xrx.mvc.Namespace', 'xrx.mvc.Optgroup', 'xrx.mvc.Password', 'xrx.mvc.Remove', 'xrx.mvc.Repeat', 'xrx.mvc.Send', 'xrx.mvc.Signin', 'xrx.mvc.Signout', 'xrx.mvc.Submission', 'xrx.mvc.Update', 'xrx.mvc.User']);
 goog.addDependency('../../../../../client/src/core/mvc/mvcController.js', ['xrx.mvc.Controller'], ['xrx.index.Rebuild', 'xrx.mvc.Cursor', 'xrx.node', 'xrx.node.Binary', 'xrx.token', 'xrx.token.Tokens', 'xrx.xml.Update']);
 goog.addDependency('../../../../../client/src/core/mvc/mvcCursor.js', ['xrx.mvc.Cursor'], []);
 goog.addDependency('../../../../../client/src/core/mvc/mvcInstance.js', ['xrx.mvc.Instance', 'xrx.mvc.InstanceGithub', 'xrx.mvc.InstanceRest'], ['goog.Uri', 'goog.dom.DomHelper', 'goog.events', 'goog.events.EventType', 'goog.json', 'goog.net.XhrIo', 'xrx.index.Index', 'xrx.mvc.ComponentModel', 'xrx.mvc.Uidl', 'xrx.node.Nodes', 'xrx.xml.Indent', 'xrx.xml.Parser', 'xrx.xml.Pilot', 'xrx.xml.Stream']);

@@ -1,5 +1,5 @@
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
-  <rdf:Description rdf:about="http://www.ecodicology.org/">
+  <rdf:Description rdf:about="http://www.ecodicology.org/CodiKOS">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:prefLabel xml:lang="en"></skos:prefLabel>
     <skos:prefLabel xml:lang="de"></skos:prefLabel>
@@ -8,8 +8,8 @@
       <skos:definition xml:lang="en"></skos:definition>
       <skos:definition xml:lang="de"></skos:definition>
     </skos:note>
-    <skos:narrower rdf:resource="http://www.ecodicology.org/"/>
-    <skos:related rdf:resource="http://www.ecodicology.org/"/>
-    <skos:broader rdf:resource="http://www.ecodicology.org/"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/CodiKOS"/>
+    <skos:related rdf:resource="http://www.ecodicology.org/CodiKOS"/>
+    <skos:broader rdf:resource="http://www.ecodicology.org/CodiKOS"/>
   </rdf:Description>
 </rdf:RDF>
