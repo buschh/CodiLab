@@ -13,6 +13,16 @@
     <skos:narrower rdf:resource="http://www.ecodicology.org/00"/>
     <skos:broader rdf:resource="http://www.ecodicology.org/CodiKOS"/>
     <skos:broader rdf:resource="http://www.ecodicology.org/CodiKOS"/>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0"/>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0"/>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0"/>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0"/>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0"/>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0"/>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0"/>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0"/>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0"/>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0"/>
     <skos:related rdf:resource="http://www.ecodicology.org/1"/>
     <skos:related rdf:resource="http://www.ecodicology.org/1"/>
   </rdf:Description>
@@ -57,6 +67,1986 @@
     <skos:prefLabel xml:lang="en"></skos:prefLabel>
     <skos:prefLabel xml:lang="de"></skos:prefLabel>
     <skos:notation>test</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/4">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>4</skos:notation>
     <skos:note>
       <skos:definition xml:lang="en"></skos:definition>
       <skos:definition xml:lang="de"></skos:definition>

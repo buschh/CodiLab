@@ -35,7 +35,7 @@
     <div class="xrx-namespace" data-prefix="rdf" data-uri="http://www.w3.org/1999/02/22-rdf-syntax-ns#"></div>
     <div class="xrx-namespace" data-prefix="skos" data-uri="http://www.w3.org/2004/02/skos/core#"></div>
     <!-- instances -->
-    <div class="xrx-instance" id="iactual">&lt;c&gt;http://www.ecodicology.org/CodiKOS&lt;/c&gt;</div>
+    <div class="xrx-instance" id="iactual">&lt;c&gt;http://www.ecodicology.org/0&lt;/c&gt;</div>
     <div class="xrx-instance" id="icodikos" data-src="./SKOS.test.rdf">
       <div class="xrx-action" data-event="xrx-event-instance-update">
         <div class="xrx-classes-add" data-select=".save-message" data-classes="hidden"></div>
@@ -55,13 +55,15 @@
     <div class="xrx-bind" id="bdescriptions"
          data-ref="xrx:instance('icodikos')//rdf:Description"></div>
     <div class="xrx-bind" id="bconcept"
-         data-ref="xrx:instance('icodikos')//rdf:Description[@rdf:about=xrx:instance('iactual')/c/text()]"></div>
+         data-ref="xrx:instance('icodikos')//rdf:Description[@rdf:about=xrx:bind('bactualConcept')]"></div>
     <div class="xrx-bind" id="blastConcept"
          data-ref="xrx:instance('icodikos')//rdf:Description[last()]"></div>
     <div class="xrx-bind" id="bprefLabelEn"
          data-ref="xrx:bind('bconcept')[1]/skos:prefLabel[1]/text()"></div>
     <div class="xrx-bind" id="bprefLabelDe"
          data-ref="xrx:bind('bconcept')[1]/skos:prefLabel[2]/text()"></div>
+    <div class="xrx-bind" id="bnotation"
+         data-ref="xrx:bind('bconcept')[1]/skos:notation"></div>
     <div class="xrx-bind" id="bdefinitionEn"
          data-ref="xrx:bind('bconcept')[1]//skos:definition[1]/text()"></div>
     <div class="xrx-bind" id="bdefinitionDe"
@@ -141,7 +143,7 @@
             <button class="btn btn-default xrx-signout">Sign out</button>
           </div>
           <div class="form-group">
-            <a class="btn btn-primary" href="./register.html">Sign up</a>
+            <a class="btn btn-primary" href="./register.html">Sign up &raquo;</a>
           </div>
           <div class="xrx-action" data-event="xrx-event-submit-error">
             <div class="xrx-classes-add" data-select=".inputUser" data-classes="has-error has-feedback"></div>
@@ -162,7 +164,6 @@
         <ul class="nav nav-tabs" role="tablist">
           <li role="presentation" class="nav-tab"><a href="#browse" aria-controls="view" role="tab" data-toggle="tab">Browse</a></li>
           <li id="navEdit" role="presentation" class="nav-tab active"><a href="#edit" aria-controls="edit" role="tab" data-toggle="tab">Edit</a></li>
-          <li role="presentation" class="nav-tab"><a href="#new" aria-controls="new" role="tab" data-toggle="tab">New</a></li>
         </ul>
         <div class="tab-content">
           <div role="tabpane" class="tab-pane" id="browse">
@@ -219,14 +220,226 @@
               </div>
             </form>
             <h3>XML View</h3>
-            <pre>&lt;test/&gt;</pre>
+            <pre class="xrx-widget-console" data-bind="bcodikos"></pre>
           </div>
 
 
 
           <!--**
-           * Edit SKOS Concept
-           * @DIV
+           * Modal dialog to create a new SKOS concept entry
+           * -->
+          <div class="modal fade" id="newEntry" tabindex="-1" role="dialog" aria-labelledby="newEntryLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="newEntryLabel">New SKOS Concept</h4>
+                </div>
+                <div class="modal-body">
+                  <!--model-->
+                  <div id="inewConcept" class="xrx-instance" data-src="./CodiKOS.new.rdf"></div>
+                  <div id="bnewConcept" class="xrx-bind" data-ref="xrx:instance('inewConcept')//rdf:Description"></div>
+                  <div id="bnewNotation" class="xrx-bind" data-ref="xrx:instance('inewConcept')//skos:notation/text()"></div>
+                  <div id="bnewIdTarget" class="xrx-bind" data-ref="xrx:instance('inewConcept')//rdf:Description/@rdf:about"></div>
+                  <!--view-->
+                  <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                      <label class="col-sm-2 control-label"></label>
+                      <div class="col-sm-10">
+                        <strong id="newid-empty" class="text-danger newid-message hidden">New concept ID may not be empty. </strong>
+                        <strong id="newid-exists" class="text-danger newid-message hidden">Concept ID already exists.</strong>
+                        <strong class="invisible">6#160;</strong>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="newId" class="col-sm-2 control-label">New ID</label>
+                      <div class="col-sm-10">
+                        <div id="grpNewId" class="input-group">
+                          <span class="input-group-addon">http://www.ecodicology.org/</span>
+                          <input id="newId" type="text" placeholder="00" class="form-control xrx-input" data-bind="bnewNotation">
+                          <div class="xrx-action" id="anewIdAlert" data-for="newId" data-event="xrx-event-input">
+                            <!-- keep skos:notation and @red:about synchronous -->
+                            <div class="xrx-update"
+                                 data-value="concat('http://www.ecodicology.org/', xrx:bind('bnewNotation'))"
+                                 data-bind="bnewIdTarget"></div>
+                            <!-- calculate whether new ID is empty or already exists -->
+                            <div class="xrx-calculate" id="cnewIdExists"
+                                 data-ref="count(xrx:instance('icodikos')//skos:notation[.=xrx:bind('bnewNotation')]) > 0"></div>
+                            <div class="xrx-calculate" id="cnewIdEmpty"
+                                 data-ref="xrx:bind('bnewNotation') = ''"></div>
+                            <!-- reset messages and alerts -->
+                            <div class="xrx-classes-remove" data-select="#grpNewId" data-classes="has-success has-error"></div>
+                            <div class="xrx-classes-add" data-select=".newid-message" data-classes="hidden"></div>
+                            <!-- ID is not empty -->
+                            <div class="xrx-classes-add" data-select="#grpNewId" data-classes="has-success" data-if-not="cnewIdEmpty"></div>
+                            <!-- ID does not exist -->
+                            <div class="xrx-classes-add" data-select="#grpNewId" data-classes="has-success" data-if-not="cnewIdExists"></div>
+                            <!-- ID is empty -->
+                            <div class="xrx-action" data-if="cnewIdEmpty">
+                              <div class="xrx-classes-remove" data-select="#grpNewId" data-classes="has-success"></div>
+                              <div class="xrx-classes-add" data-select="#grpNewId" data-classes="has-error"></div>
+                              <div class="xrx-classes-remove" data-select="#newid-empty" data-classes="hidden"></div>
+                            </div>
+                            <!-- ID exists -->
+                            <div class="xrx-action" data-if="cnewIdExists">
+                              <div class="xrx-classes-remove" data-select="#grpNewId" data-classes="has-success"></div>
+                              <div class="xrx-classes-add" data-select="#grpNewId" data-classes="has-error"></div>
+                              <div class="xrx-classes-remove" data-select="#newid-exists" data-classes="hidden"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                  <h3>XML View</h3>
+                  <pre class="xrx-widget-console" data-bind="bnewConcept"></pre>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary xrx-button" id="create" data-dismiss="modal">
+                    <span>Create and edit</span>
+                    <div class="xrx-action" id="acreateAndEdit">
+                      <div class="xrx-insert" data-bind="blastConcept" data-origin="bnewConcept"></div>
+                      <!-- change concept entry in edit form -->
+                      <div class="xrx-update" data-bind="bactualConcept" data-value="concat('http://www.ecodicology.org/', xrx:bind('bnewNotation'))"></div>
+                      <!-- validate edit form -->
+                      <div class="xrx-dispatch" data-action="avalidateNarrower"></div>
+                      <div class="xrx-dispatch" data-action="avalidateBroader"></div>
+                      <div class="xrx-dispatch" data-action="avalidateRelated"></div>
+                    </div>
+                    <div class="xrx-action" data-event="xrx-event-click">
+                      <div class="xrx-calculate" id="cnewIdValid"
+                           data-ref="(count(xrx:instance('icodikos')//skos:notation[.=xrx:bind('bnewNotation')]) = 0) and xrx:bind('bnewNotation') != ''"></div>
+                      <div class="xrx-dispatch" data-action="anewIdAlert" data-if-not="cnewIdValid"></div>
+                      <div class="xrx-action" data-if="cnewIdValid">
+                        <div class="xrx-dispatch" data-action="acreateAndEdit"></div>
+                        <!-- reset messages and alerts -->
+                        <div class="xrx-classes-remove" data-select="#grpNewId" data-classes="has-success has-error"></div>
+                        <div class="xrx-classes-add" data-select=".newid-message" data-classes="hidden"></div>
+                      </div>
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <!--**
+           * Modal dialog to rename an SKOS concept entry
+           * -->
+          <!-- model -->
+          <span class="xrx-instance" id="irename">&lt;data&gt;00&lt;/data&gt;</span>
+          <span class="xrx-bind" id="brenameNewNotation" data-ref="xrx:instance('irename')/data/text()"></span>
+          <!-- view -->
+          <div class="modal fade" id="renameEntry" tabindex="-1" role="dialog" aria-labelledby="renameEntryLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="renameEntryLabel">Rename SKOS Concept</h4>
+                </div>
+                <div class="modal-body">
+                  <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                      <label class="col-sm-2 control-label"></label>
+                      <div class="col-sm-10">
+                        <strong id="msgRenameIdEmpty" class="text-danger rename-id-message hidden">New concept ID may not be empty. </strong>
+                        <strong id="msgRenameIdExists" class="text-danger rename-id-message hidden">Concept ID already exists.</strong>
+                        <strong class="invisible">6#160;</strong>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="input-group">
+                        <label class="col-sm-2 control-label">Old ID</label>
+                        <div class="col-sm-10">
+                          <p class="form-control-static xrx-output" data-bind="bactualConcept"></p>
+                        </div>
+                        <label class="col-sm-2 control-label">New ID</label>
+                        <div class="col-sm-10">
+                          <div id="grpRenameId" class="input-group">
+                            <span class="input-group-addon">http://www.ecodicology.org/</span>
+                            <input class="form-control xrx-input" data-bind="brenameNewNotation">
+                            <div class="xrx-action" data-event="xrx-event-input">
+                              <!-- calculate whether new ID is empty or already exists -->
+                              <div class="xrx-calculate" id="crenameIdExists"
+                                   data-ref="count(xrx:instance('icodikos')//skos:notation[.=xrx:bind('brenameNewNotation')]) > 0"></div>
+                              <div class="xrx-calculate" id="crenameIdEmpty"
+                                   data-ref="xrx:bind('brenameNewNotation') = ''"></div>
+                              <!-- reset messages and alerts -->
+                              <div class="xrx-classes-remove" data-select="#grpRenameId" data-classes="has-success has-error"></div>
+                              <div class="xrx-classes-add" data-select=".rename-id-message" data-classes="hidden"></div>
+                              <!-- ID is not empty -->
+                              <div class="xrx-classes-add" data-select="#grpRenameId" data-classes="has-success" data-if-not="crenameIdEmpty"></div>
+                              <!-- ID does not exist -->
+                              <div class="xrx-classes-add" data-select="#grpRenameId" data-classes="has-success" data-if-not="crenameIdExists"></div>
+                              <!-- ID is empty -->
+                              <div class="xrx-action" data-if="crenameIdEmpty">
+                                <div class="xrx-classes-remove" data-select="#grpRenameId" data-classes="has-success"></div>
+                                <div class="xrx-classes-add" data-select="#grpRenameId" data-classes="has-error"></div>
+                                <div class="xrx-classes-remove" data-select="#msgRenameIdEmpty" data-classes="hidden"></div>
+                              </div>
+                              <!-- ID exists -->
+                              <div class="xrx-action" data-if="crenameIdExists">
+                                <div class="xrx-classes-remove" data-select="#grpRenameId" data-classes="has-success"></div>
+                                <div class="xrx-classes-add" data-select="#grpRenameId" data-classes="has-error"></div>
+                                <div class="xrx-classes-remove" data-select="#msgRenameIdExists" data-classes="hidden"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Rename now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <!--**
+           * Modal dialog to delete an SKOS concept entry
+           * -->
+          <div class="modal fade" id="deleteEntry" tabindex="-1" role="dialog" aria-labelledby="deleteEntryLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h3 class="modal-title" id="deleteEntryLabel">Delete SKOS Concept</h3>
+                </div>
+                <div class="modal-body">
+                  <p class="alert alert-danger">
+                    <strong class="xrx-output" data-bind="bactualConcept"></strong><br>
+                    <span>Do you really want to delete this entry and all links referencing this entry?<br>This cannot be undone!</span>
+                  </p>
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-default" data-dismiss="modal" type="button">Close</button>
+                  <button class="xrx-button btn btn-danger" type="button">
+                    <span>Delete now</span>
+                    <span class="xrx-bind" id="bentryLinks"
+                          data-ref="xrx:instance('icodikos')//*[./@rdf:resource=xrx:bind('bactualConcept')]"></span>
+                    <span class="xrx-action" data-event="xrx-event-click">
+                      <span class="xrx-remove" data-bind="bconcept"></span>
+                      <span class="xrx-remove" data-bind="bentryLinks"></span>
+                      <span class="xrx-script" data-script="$('#deleteEntry').modal('hide')"></span>
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <!--**
+           * Form to edit an SKOS concept
            * -->
           <div role="tabpane" class="tab-pane active" id="edit"><!--edit-->
             <h1 class="page-header">Edit SKOS Concept</h1>
@@ -237,12 +450,23 @@
                   <strong id="save-error" class="text-danger save-message hidden">Data could not be saved. Please sign in first.</strong>
                   <strong id="save-success" class="text-success save-message hidden">Data successfully saved.</strong>
                   <strong id="save-updated" class="text-warning save-message hidden">There are unsaved changes.</strong>
-                  <button class="btn btn-primary pull-right xrx-button">
-                    <span>Save</span>
-                    <div class="xrx-action" data-event="xrx-event-click">
-                      <div class="xrx-send" data-submission="ssave"></div>
-                    </div>
-                  </button>
+                  <div class="pull-right">
+                    <button class="btn btn-primary xrx-button" data-toggle="modal" data-target="#newEntry">
+                      <span>New&hellip;</span>
+                    </button>
+                    <button class="btn btn-primary xrx-button" data-toggle="modal" data-target="#renameEntry">
+                      <span>Rename&hellip;</span>
+                    </button>
+                    <button class="btn btn-primary xrx-button" data-toggle="modal" data-target="#deleteEntry">
+                      <span>Delete&hellip;</span>
+                    </button>
+                    <button class="btn btn-primary xrx-button">
+                      <span>Save</span>
+                      <div class="xrx-action" data-event="xrx-event-click">
+                        <div class="xrx-send" data-submission="ssave"></div>
+                      </div>
+                    </button>
+                  </div>
                 </div>
               </div>
 
@@ -334,7 +558,6 @@
 
               <!--**
                * Broader Concepts
-               * @DIV
                * -->
               <!-- whether the broader concept is selected twice -->
               <div class="xrx-calculate" id="cbroaderTwice"
@@ -381,9 +604,8 @@
 
               <!--**
                * Related Concepts
-               * @DIV
                * -->
-              <!--whether the related concept is selected twice-->
+              <!-- whether the related concept is selected twice -->
               <div class="xrx-calculate" id="crelatedTwice"
                    data-ref="count(xrx:bind('brelated')[./@rdf:resource = ./following-sibling::skos:related/@rdf:resource]) > 0"></div>
               <div id="relatedAlert" class="panel panel-default">
@@ -426,110 +648,11 @@
             </form>
             <h3>XML View</h3>
             <pre class="xrx-widget-console" data-bind="bconcept"></pre>
-          </div><!--/edit-->
-
-
-
-          <!--**
-           * New SKOS Concept
-           * @DIV
-           * -->
-          <div role="tabpane" class="tab-pane" id="new">
-            <!--model-->
-            <div id="inewConcept" class="xrx-instance" data-src="./CodiKOS.new.rdf"></div>
-            <div id="bnewConcept" class="xrx-bind" data-ref="xrx:instance('inewConcept')//rdf:Description"></div>
-            <div id="bnewNotation" class="xrx-bind" data-ref="xrx:instance('inewConcept')//skos:notation/text()"></div>
-            <div id="bnewIdTarget" class="xrx-bind" data-ref="xrx:instance('inewConcept')//rdf:Description/@rdf:about"></div>
-            <!--view-->
-            <h1 class="page-header">New SKOS Concept</h1>
-            <form class="form-horizontal" role="form">
-              <div class="form-group">
-                <label class="col-sm-2 control-label"></label>
-                <div class="col-sm-10">
-                  <strong id="newid-empty" class="text-danger newid-message hidden">New concept ID may not be empty. </strong>
-                  <strong id="newid-exists" class="text-danger newid-message hidden">Concept ID already exists.</strong>
-                  <strong class="invisible">6#160;</strong>
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="newId" class="col-sm-2 control-label">New ID</label>
-                <div class="col-sm-10">
-                  <div id="grpNewId" class="input-group">
-                    <span class="input-group-addon">http://www.ecodicology.org/</span>
-                    <input id="newId" type="text" placeholder="00" class="form-control xrx-input" data-bind="bnewNotation">
-                    <div class="xrx-action" id="anewIdAlert" data-for="newId" data-event="xrx-event-input">
-                      <!-- keep skos:notation and @red:about synchronous -->
-                      <div class="xrx-update"
-                           data-value="concat('http://www.ecodicology.org/', xrx:bind('bnewNotation'))"
-                           data-bind="bnewIdTarget"></div>
-                      <!-- calculate whether new ID is empty or already exists -->
-                      <div class="xrx-calculate" id="cnewIdExists"
-                           data-ref="count(xrx:instance('icodikos')//skos:notation[.=xrx:bind('bnewNotation')]) > 0"></div>
-                      <div class="xrx-calculate" id="cnewIdEmpty"
-                           data-ref="xrx:bind('bnewNotation') = ''"></div>
-                      <!-- reset messages and alerts -->
-                      <div class="xrx-classes-remove" data-select="#grpNewId" data-classes="has-success has-error"></div>
-                      <div class="xrx-classes-add" data-select=".newid-message" data-classes="hidden"></div>
-                      <!-- ID is not empty -->
-                      <div class="xrx-classes-add" data-select="#grpNewId" data-classes="has-success" data-if-not="cnewIdEmpty"></div>
-                      <!-- ID does not exist -->
-                      <div class="xrx-classes-add" data-select="#grpNewId" data-classes="has-success" data-if-not="cnewIdExists"></div>
-                      <!-- ID is empty -->
-                      <div class="xrx-action" data-if="cnewIdEmpty">
-                        <div class="xrx-classes-remove" data-select="#grpNewId" data-classes="has-success"></div>
-                        <div class="xrx-classes-add" data-select="#grpNewId" data-classes="has-error"></div>
-                        <div class="xrx-classes-remove" data-select="#newid-empty" data-classes="hidden"></div>
-                      </div>
-                      <!-- ID exists -->
-                      <div class="xrx-action" data-if="cnewIdExists">
-                        <div class="xrx-classes-remove" data-select="#grpNewId" data-classes="has-success"></div>
-                        <div class="xrx-classes-add" data-select="#grpNewId" data-classes="has-error"></div>
-                        <div class="xrx-classes-remove" data-select="#newid-exists" data-classes="hidden"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="col-sm-offset-2 col-sm-10">
-                  <button type="button" class="btn btn-primary xrx-button" id="create">
-                    <span>Create and edit</span>
-                    <div class="xrx-action" id="acreateAndEdit">
-                      <div class="xrx-insert" data-bind="blastConcept" data-origin="bnewConcept"></div>
-                      <!-- switch tab -->
-                      <div class="xrx-classes-remove" data-select=".tab-pane" data-classes="active"></div>
-                      <div class="xrx-classes-add" data-select="#edit" data-classes="active"></div>
-                      <div class="xrx-classes-remove" data-select=".nav-tab" data-classes="active"></div>
-                      <div class="xrx-classes-add" data-select="#navEdit" data-classes="active"></div>
-                      <!-- change concept entry in edit form -->
-                      <div class="xrx-update" data-bind="bactualConcept" data-value="concat('http://www.ecodicology.org/', xrx:bind('bnewNotation'))"></div>
-                      <!-- validate edit form -->
-                      <div class="xrx-dispatch" data-action="avalidateNarrower"></div>
-                      <div class="xrx-dispatch" data-action="avalidateBroader"></div>
-                      <div class="xrx-dispatch" data-action="avalidateRelated"></div>
-                    </div>
-                    <div class="xrx-action" data-event="xrx-event-click">
-                      <div class="xrx-calculate" id="cnewIdValid"
-                           data-ref="(count(xrx:instance('icodikos')//skos:notation[.=xrx:bind('bnewNotation')]) = 0) and xrx:bind('bnewNotation') != ''"></div>
-                      <div class="xrx-dispatch" data-action="anewIdAlert" data-if-not="cnewIdValid"></div>
-                      <div class="xrx-action" data-if="cnewIdValid">
-                        <div class="xrx-dispatch" data-action="acreateAndEdit"></div>
-                        <!-- reset messages and alerts -->
-                        <div class="xrx-classes-remove" data-select="#grpNewId" data-classes="has-success has-error"></div>
-                        <div class="xrx-classes-add" data-select=".newid-message" data-classes="hidden"></div>
-                      </div>
-                    </div>
-                  </button>
-                </div>
-              </div>
-            </form>
-            <h3>XML View</h3>
-            <pre class="xrx-widget-console" data-bind="bnewConcept"></pre>
-          </div>
+          </div><!-- /edit -->
         </div>
       </div>
     </div> 
-  </div> <!-- /container -->
+  </div><!-- /container -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
   <script>
