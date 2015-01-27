@@ -36,7 +36,7 @@
     <div class="xrx-namespace" data-prefix="skos" data-uri="http://www.w3.org/2004/02/skos/core#"></div>
     <!-- instances -->
     <div class="xrx-instance" id="iactual">&lt;c&gt;http://www.ecodicology.org/CodiKOS&lt;/c&gt;</div>
-    <div class="xrx-instance" id="icodikos" data-src="./SKOS.test.rdf">
+    <div class="xrx-instance" id="icodikos" data-src="./data/CodiKOS.rdf">
       <div class="xrx-action" data-event="xrx-event-instance-update">
         <div class="xrx-classes-add" data-select=".save-message" data-classes="hidden"></div>
         <div class="xrx-classes-remove" data-select="#save-updated" data-classes="hidden"></div>
@@ -48,8 +48,6 @@
     <!-- binds -->
     <div class="xrx-bind" id="bactualConcept"
          data-ref="xrx:instance('iactual')/c/text()"></div>
-    <div class="xrx-bind" id="bactual"
-         data-ref="xrx:instance('iactual')"></div>
     <div class="xrx-bind" id="bcodikos"
          data-ref="xrx:instance('icodikos')"></div>
     <div class="xrx-bind" id="bdescriptions"
@@ -94,7 +92,7 @@
            data-label="concat('[', ./@rdf:about, '] ', ./skos:prefLabel[1]/text())"></div>
     </div>
     <!-- submissions -->
-    <div id="ssave" class="xrx-submission" data-bind="bcodikos" data-resource="https://api.github.com/repos/JochenGraf/eCodicology/contents/SKOS.test.rdf" data-method="PUT">
+    <div id="ssave" class="xrx-submission" data-bind="bcodikos" data-resource="https://api.github.com/repos/JochenGraf/eCodicology/contents/data/CodiKOS.rdf" data-method="PUT">
       <div class="xrx-action" data-event="xrx-event-submit-done">
         <div class="xrx-classes-add" data-select=".save-message" data-classes="hidden"></div>
         <div class="xrx-classes-remove" data-select="#save-success" data-classes="hidden"></div>
@@ -167,8 +165,8 @@
        *-->
       <div id="browse">
         <h1 class="page-header">Browse SKOS Concepts
-          <a class="btn btn-primary pull-right" target="_blank"
-             href="https://github.com/JochenGraf/eCodicology/tree/master/data/CodiKOS" role="button">View <em>CodiKOS</em> on GitHub &raquo;</a>
+          <a class="btn btn-default pull-right" target="_blank"
+             href="https://github.com/JochenGraf/eCodicology/blob/master/data/CodiKOS.rdf" role="button">View <em>CodiKOS</em> on GitHub &raquo;</a>
         </h1>
         <!-- instances -->
         <div class="xrx-instance" id="ibreadcrumb">&lt;breadcrumb&gt;
@@ -176,25 +174,26 @@
           &lt;/breadcrumb&gt;
         </div>
         <div class="xrx-instance" id="inewBreadcrumb">&lt;item&gt;---&lt;/item&gt;</div>
-        <div class="xrx-bind" id="bnewBreadcrumb" data-ref="xrx:instance('inewBreadcrumb')"></div>
-        <div class="xrx-bind" id="bbreadcrumbNewItem" data-ref="xrx:instance('inewBreadcrumb')/item"></div>
         <!-- binds -->
-        <div class="xrx-bind" id="bbreadcrumb"
-             data-ref="xrx:instance('ibreadcrumb')"></div>
+        <div class="xrx-bind" id="bbreadcrumbNewItem" data-ref="xrx:instance('inewBreadcrumb')/item"></div>
+        <div class="xrx-bind" id="bbreadcrumbNewItemValue" data-ref="xrx:instance('inewBreadcrumb')/item/text()"></div>
         <div class="xrx-bind" id="bbreadcrumbItems"
              data-ref="xrx:instance('ibreadcrumb')/breadcrumb/item"></div>
         <div class="xrx-bind" id="bbreadcrumbLastItem"
              data-ref="xrx:instance('ibreadcrumb')/breadcrumb/item[last()]"></div>
         <div class="xrx-bind" id="bbrowseNarrower"
-             data-ref="xrx:instance('icodikos')/rdf:RDF/rdf:Description[./skos:broader/@rdf:resource=xrx:bind('bactualConcept')]"></div>
+             data-ref="xrx:instance('icodikos')/rdf:RDF/rdf:Description[./@rdf:about=xrx:bind('bnarrower')/@rdf:resource]"></div>
         <div>
-          <pre class="xrx-widget-console" data-bind="bbreadcrumb"></pre>
-          <pre class="xrx-widget-console" data-bind="bnewBreadcrumb"></pre>
-          <pre class="xrx-widget-console" data-bind="bactualConcept"></pre>
-          <ol class="breadcrumb xrx-repeat" data-bind="bbreadcrumbItems">
+          <ol class="breadcrumb xrx-repeat" id="rbreadcrumb" data-bind="bbreadcrumbItems"> 
             <li>
-              <a href="#">
+              <a class="xrx-button" href="#">
                 <span class="xrx-output" data-ref="./self::*"></span>
+                <span class="xrx-action" data-event="xrx-event-click">
+                  <span class="xrx-update">
+                    <span class="xrx-origin" data-ref="concat('http://www.ecodicology.org/', ./text())"></span>
+                    <span class="xrx-target" data-bind="bactualConcept"></span>
+                  </span>
+                </span>
               </a>
             </li>
           </ol>
@@ -212,13 +211,15 @@
                 <span>-</span>
                 <span class="xrx-output" data-ref="./skos:note/skos:definition[2]/text()"></span>
                 <span class="xrx-action" data-event="xrx-event-click">
-                  <span class="xrx-update" data-ref="xrx:bind('bbreadcrumbNewItem')/text()" data-value="xrx:bind('bbrowseNarrower')[xrx:index('rbrowseNarrower')]/skos:notation/text()"></span>
-                  <span class="xrx-insert" data-bind="bbreadcrumbLastItem" data-origin="bbreadcrumbNewItem"></span>
-                </span>
-              </a>
-              <a href="#edit" class="btn btn-primary btn-xs xrx-button">Edit
-                <span class="xrx-action" data-event="xrx-event-click">
-                  <span class="xrx-update" data-bind="bactualConcept" data-value="xrx:bind('bbrowseNarrower')[xrx:index('rbrowseNarrower')]/@rdf:about"></span>
+                  <!--span class="xrx-update" data-bind="bbreadcrumbNewItemValue" data-value="xrx:bind('bbrowseNarrower')[xrx:index('rbrowseNarrower')]/skos:notation/text()"></span>
+                  <span class="xrx-insert" data-bind="bbreadcrumbLastItem" data-origin="bbreadcrumbNewItem"></span-->
+                  <span class="xrx-update">
+                    <span class="xrx-origin" data-ref="./@rdf:about"></span>
+                    <span class="xrx-target" data-bind="bactualConcept"></span>
+                  </span>
+                  <!--span class="xrx-dispatch" data-action="avalidateNarrower"></span>
+                  <span class="xrx-dispatch" data-action="avalidateBroader"></span>
+                  <span class="xrx-dispatch" data-action="avalidateRelated"></span-->
                 </span>
               </a>
             </dd>
@@ -262,9 +263,9 @@
                       <input id="newId" type="text" placeholder="00" class="form-control xrx-input" data-bind="bnewNotation">
                       <div class="xrx-action" id="anewIdAlert" data-for="newId" data-event="xrx-event-input">
                         <!-- keep skos:notation and @red:about synchronous -->
-                        <div class="xrx-update"
+                        <!--div class="xrx-update"
                              data-value="concat('http://www.ecodicology.org/', xrx:bind('bnewNotation'))"
-                             data-bind="bnewIdTarget"></div>
+                             data-bind="bnewIdTarget"></div-->
                         <!-- calculate whether new ID is empty or already exists -->
                         <div class="xrx-calculate" id="cnewIdExists"
                              data-ref="count(xrx:instance('icodikos')//skos:notation[.=xrx:bind('bnewNotation')]) > 0"></div>
@@ -302,9 +303,9 @@
               <button type="button" class="btn btn-primary xrx-button" id="create" data-dismiss="modal">
                 <span>Create and edit</span>
                 <div class="xrx-action" id="acreateAndEdit">
-                  <div class="xrx-insert" data-bind="blastConcept" data-origin="bnewConcept"></div>
+                  <!--div class="xrx-insert" data-bind="blastConcept" data-origin="bnewConcept"></div-->
                   <!-- change concept entry in edit form -->
-                  <div class="xrx-update" data-bind="bactualConcept" data-value="concat('http://www.ecodicology.org/', xrx:bind('bnewNotation'))"></div>
+                  <!--div class="xrx-update" data-bind="bactualConcept" data-value="concat('http://www.ecodicology.org/', xrx:bind('bnewNotation'))"></div-->
                   <!-- validate edit form -->
                   <div class="xrx-dispatch" data-action="avalidateNarrower"></div>
                   <div class="xrx-dispatch" data-action="avalidateBroader"></div>
@@ -429,8 +430,8 @@
                 <span class="xrx-bind" id="bentryLinks"
                       data-ref="xrx:instance('icodikos')//*[./@rdf:resource=xrx:bind('bactualConcept')]"></span>
                 <span class="xrx-action" data-event="xrx-event-click">
-                  <span class="xrx-remove" data-bind="bconcept"></span>
-                  <span class="xrx-remove" data-bind="bentryLinks"></span>
+                  <!--span class="xrx-remove" data-bind="bconcept"></span-->
+                  <!--span class="xrx-remove" data-bind="bentryLinks"></span-->
                   <span class="xrx-script" data-script="$('#deleteEntry').modal('hide')"></span>
                 </span>
               </button>
@@ -538,14 +539,19 @@
                     <button type="button" class="btn btn-default xrx-button">
                       <span class="glyphicon glyphicon-plus"></span> Insert
                       <span class="xrx-action" data-event="xrx-event-click">
-                        <span class="xrx-insert" data-ref="xrx:bind('bnarrower')[xrx:index('rnarrower')]" data-origin="boriginNarrower"></span>
+                        <span class="xrx-insert">
+                          <span class="xrx-origin" data-bind="boriginNarrower"></span>
+                          <span class="xrx-target" data-ref="./self::*"></span>
+                        </span>
                         <span class="xrx-dispatch" data-action="avalidateNarrower"></span>
                       </span>
                     </button>
                     <button type="button" class="btn btn-default xrx-button">
                       <span class="glyphicon glyphicon-minus"></span> Remove
                       <span class="xrx-action" data-event="xrx-event-click">
-                        <span class="xrx-remove" data-ref="xrx:bind('bnarrower')[xrx:index('rnarrower')]"></span>
+                        <span class="xrx-remove">
+                          <span class="xrx-target" data-ref="./self::*"></span>
+                        </span>
                         <span class="xrx-dispatch" data-action="avalidateNarrower"></span>
                       </span>
                     </button>
@@ -584,14 +590,19 @@
                     <button type="button" class="btn btn-default xrx-button">
                       <span class="glyphicon glyphicon-plus"></span> Insert
                       <span class="xrx-action" data-event="xrx-event-click">
-                        <span class="xrx-insert" data-ref="xrx:bind('bbroader')[xrx:index('rbroader')]" data-origin="boriginBroader"></span>
+                        <span class="xrx-insert">
+                          <span class="xrx-origin" data-bind="boriginBroader"></span>
+                          <span class="xrx-target" data-ref="./self::*"></span>
+                        </span>
                         <span class="xrx-dispatch" data-action="avalidateBroader"></span>
                       </span>
                     </button>
                     <button type="button" class="btn btn-default xrx-button">
                       <span class="glyphicon glyphicon-minus"></span> Remove
                       <span class="xrx-action" data-event="xrx-event-click">
-                        <span class="xrx-remove" data-ref="xrx:bind('bbroader')[xrx:index('rbroader')]"></span>
+                        <span class="xrx-remove">
+                          <span class="xrx-target" data-ref="./self::*"></span>
+                        </span>
                         <span class="xrx-dispatch" data-action="avalidateBroader"></span>
                       </span>
                     </button>
@@ -630,14 +641,19 @@
                     <button type="button" class="btn btn-default xrx-button">
                       <span class="glyphicon glyphicon-plus"></span> Insert
                       <span class="xrx-action" data-event="xrx-event-click">
-                        <span class="xrx-insert" data-ref="xrx:bind('brelated')[xrx:index('rrelated')]" data-origin="boriginRelated"></span>
+                        <span class="xrx-insert">
+                          <span class="xrx-origin" data-bind="boriginRelated"></span>
+                          <span class="xrx-target" data-ref="./self::*"></span>
+                        </span>
                         <span class="xrx-dispatch" data-action="avalidateRelated"></span>
                       </span>
                     </button>
                     <button type="button" class="btn btn-default xrx-button">
                       <span class="glyphicon glyphicon-minus"></span> Remove
                       <span class="xrx-action" data-event="xrx-event-click">
-                        <span class="xrx-remove" data-ref="xrx:bind('brelated')[xrx:index('rrelated')]"></span>
+                        <span class="xrx-remove">
+                          <span class="xrx-target" data-ref="./self::*"></span>
+                        </span>
                         <span class="xrx-dispatch" data-action="avalidateRelated"></span>
                       </span>
                     </button>
