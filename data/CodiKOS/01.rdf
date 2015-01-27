@@ -1,9 +1,0 @@
-<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
-  <rdf:Description rdf:about="http://www.ecodicology.org/01">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:prefLabel xml:lang="en">Arrangement of the Text</skos:prefLabel>
-    <skos:prefLabel xml:lang="de">Seitenlayout</skos:prefLabel>
-    <skos:notation>01</skos:notation>
-    <skos:broader rdf:resource="http://www.ecodicology.org/0"/>
-  </rdf:Description> 
-</rdf:RDF>

@@ -1,8 +1,0 @@
-<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
-  <rdf:Description rdf:about="http://www.ecodicology.org/1">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:prefLabel xml:lang="en">Manuscript Illumination</skos:prefLabel>
-    <skos:prefLabel xml:lang="de">Illumination von Handschriften</skos:prefLabel>
-    <skos:notation>1</skos:notation>
-  </rdf:Description>
-</rdf:RDF>

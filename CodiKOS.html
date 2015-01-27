@@ -35,7 +35,7 @@
     <div class="xrx-namespace" data-prefix="rdf" data-uri="http://www.w3.org/1999/02/22-rdf-syntax-ns#"></div>
     <div class="xrx-namespace" data-prefix="skos" data-uri="http://www.w3.org/2004/02/skos/core#"></div>
     <!-- instances -->
-    <div class="xrx-instance" id="iactual">&lt;c&gt;http://www.ecodicology.org/0&lt;/c&gt;</div>
+    <div class="xrx-instance" id="iactual">&lt;c&gt;http://www.ecodicology.org/CodiKOS&lt;/c&gt;</div>
     <div class="xrx-instance" id="icodikos" data-src="./SKOS.test.rdf">
       <div class="xrx-action" data-event="xrx-event-instance-update">
         <div class="xrx-classes-add" data-select=".save-message" data-classes="hidden"></div>
@@ -53,33 +53,33 @@
     <div class="xrx-bind" id="bcodikos"
          data-ref="xrx:instance('icodikos')"></div>
     <div class="xrx-bind" id="bdescriptions"
-         data-ref="xrx:instance('icodikos')//rdf:Description"></div>
+         data-ref="xrx:instance('icodikos')/rdf:RDF/rdf:Description"></div>
     <div class="xrx-bind" id="bconcept"
-         data-ref="xrx:instance('icodikos')//rdf:Description[@rdf:about=xrx:bind('bactualConcept')]"></div>
+         data-ref="xrx:instance('icodikos')/rdf:RDF/rdf:Description[@rdf:about=xrx:bind('bactualConcept')]"></div>
     <div class="xrx-bind" id="blastConcept"
-         data-ref="xrx:instance('icodikos')//rdf:Description[last()]"></div>
+         data-ref="xrx:instance('icodikos')/rdf:RDF/rdf:Description[last()]"></div>
     <div class="xrx-bind" id="bprefLabelEn"
-         data-ref="xrx:bind('bconcept')[1]/skos:prefLabel[1]/text()"></div>
+         data-ref="xrx:bind('bconcept')/skos:prefLabel[1]/text()"></div>
     <div class="xrx-bind" id="bprefLabelDe"
-         data-ref="xrx:bind('bconcept')[1]/skos:prefLabel[2]/text()"></div>
+         data-ref="xrx:bind('bconcept')/skos:prefLabel[2]/text()"></div>
     <div class="xrx-bind" id="bnotation"
-         data-ref="xrx:bind('bconcept')[1]/skos:notation"></div>
+         data-ref="xrx:bind('bconcept')/skos:notation"></div>
     <div class="xrx-bind" id="bdefinitionEn"
-         data-ref="xrx:bind('bconcept')[1]//skos:definition[1]/text()"></div>
+         data-ref="xrx:bind('bconcept')/skos:note/skos:definition[1]/text()"></div>
     <div class="xrx-bind" id="bdefinitionDe"
-         data-ref="xrx:bind('bconcept')[1]//skos:definition[2]/text()"></div>
+         data-ref="xrx:bind('bconcept')/skos:note/skos:definition[2]/text()"></div>
     <div class="xrx-bind" id="bnarrower"
-         data-ref="xrx:bind('bconcept')[1]//skos:narrower"></div>
+         data-ref="xrx:bind('bconcept')/skos:narrower"></div>
     <div class="xrx-bind" id="brelated"
-         data-ref="xrx:bind('bconcept')[1]//skos:related"></div>
+         data-ref="xrx:bind('bconcept')/skos:related"></div>
     <div class="xrx-bind" id="bbroader"
-         data-ref="xrx:bind('bconcept')[1]//skos:broader"></div>
+         data-ref="xrx:bind('bconcept')/skos:broader"></div>
     <div class="xrx-bind" id="btargetNarrower"
-         data-ref="(xrx:bind('bconcept')[1]/skos:note|xrx:bind('bconcept')[1]/skos:narrower)[last()]"></div>
+         data-ref="(xrx:bind('bconcept')/skos:note|xrx:bind('bconcept')/skos:narrower)[last()]"></div>
     <div class="xrx-bind" id="btargetBroader"
-         data-ref="(xrx:bind('bconcept')[1]/skos:note|xrx:bind('bconcept')[1]/skos:narrower|xrx:bind('bconcept')[1]/skos:broader)[last()]"></div>
+         data-ref="(xrx:bind('bconcept')/skos:note|xrx:bind('bconcept')/skos:narrower|xrx:bind('bconcept')/skos:broader)[last()]"></div>
     <div class="xrx-bind" id="btargetRelated"
-         data-ref="(xrx:bind('bconcept')[1]/skos:note|xrx:bind('bconcept')[1]/skos:narrower|xrx:bind('bconcept')[1]/skos:broader|xrx:bind('bconcept')[1]/skos:related)[last()]"></div>
+         data-ref="(xrx:bind('bconcept')/skos:note|xrx:bind('bconcept')/skos:narrower|xrx:bind('bconcept')/skos:broader|xrx:bind('bconcept')/skos:related)[last()]"></div>
     <div class="xrx-bind" id="boriginNarrower"
          data-ref="xrx:instance('itemplate')//skos:narrower"></div>
     <div class="xrx-bind" id="boriginBroader"
@@ -91,8 +91,7 @@
          data-bind="bdescriptions">
       <div class="xrx-option"
            data-value="./@rdf:about"
-           data-label="concat('[', ./@rdf:about, '] ', ./skos:prefLabel[1]/text())"
-           data-sort=""></div>
+           data-label="concat('[', ./@rdf:about, '] ', ./skos:prefLabel[1]/text())"></div>
     </div>
     <!-- submissions -->
     <div id="ssave" class="xrx-submission" data-bind="bcodikos" data-resource="https://api.github.com/repos/JochenGraf/eCodicology/contents/SKOS.test.rdf" data-method="PUT">
@@ -160,6 +159,12 @@
   </nav>
   <div class="container">
     <div class="starter-template">
+
+
+
+      <!--**
+       * SKOS concept browser
+       *-->
       <div id="browse">
         <h1 class="page-header">Browse SKOS Concepts
           <a class="btn btn-primary pull-right" target="_blank"
@@ -168,8 +173,6 @@
         <!-- instances -->
         <div class="xrx-instance" id="ibreadcrumb">&lt;breadcrumb&gt;
             &lt;item&gt;CodiKOS&lt;/item&gt;
-            &lt;item&gt;0&lt;/item&gt;
-            &lt;item&gt;00&lt;/item&gt;
           &lt;/breadcrumb&gt;
         </div>
         <div class="xrx-instance" id="inewBreadcrumb">&lt;item&gt;---&lt;/item&gt;</div>
@@ -187,6 +190,7 @@
         <div>
           <pre class="xrx-widget-console" data-bind="bbreadcrumb"></pre>
           <pre class="xrx-widget-console" data-bind="bnewBreadcrumb"></pre>
+          <pre class="xrx-widget-console" data-bind="bactualConcept"></pre>
           <ol class="breadcrumb xrx-repeat" data-bind="bbreadcrumbItems">
             <li>
               <a href="#">
@@ -209,7 +213,7 @@
                 <span class="xrx-output" data-ref="./skos:note/skos:definition[2]/text()"></span>
                 <span class="xrx-action" data-event="xrx-event-click">
                   <span class="xrx-update" data-ref="xrx:bind('bbreadcrumbNewItem')/text()" data-value="xrx:bind('bbrowseNarrower')[xrx:index('rbrowseNarrower')]/skos:notation/text()"></span>
-                  <span class="xrx-insert" data-ref="xrx:bind('bbreadcrumbLastItem')" data-origin="bbreadcrumbNewItem"></span>
+                  <span class="xrx-insert" data-bind="bbreadcrumbLastItem" data-origin="bbreadcrumbNewItem"></span>
                 </span>
               </a>
               <a href="#edit" class="btn btn-primary btn-xs xrx-button">Edit
@@ -477,7 +481,7 @@
           <div class="form-group">
             <label for="notation" class="col-sm-2 control-label">ID</label>
             <div class="col-sm-10">
-              <p class="form-control-static" id="notation">CodiKOS</p>
+              <p class="form-control-static xrx-output" id="notation" data-bind="bnotation"></p>
             </div>
           </div>
           <div class="form-group">
@@ -523,7 +527,7 @@
               <div class="xrx-repeat" id="rnarrower" data-bind="bnarrower">
                 <div class="input-group">
                   <select class="form-control pull-left xrx-select" data-ref="./@rdf:resource" data-optgroup="odescriptions"></select>
-                  <div class="xrx-action" id="avalidateNarrower" data-event="xrx-event-input">
+                  <div class="xrx-action" id="avalidateNarrower" data-event="xrx-event-change">
                     <div class="xrx-classes-remove" data-select="#narrower-twice" data-classes="hidden" data-if="cnarrowerTwice"></div>
                     <div class="xrx-classes-add" data-select="#narrower-twice" data-classes="hidden" data-if-not="cnarrowerTwice"></div>
                     <div class="xrx-classes-remove" data-select="#narrowerAlert" data-classes="panel-default panel-danger panel-success"></div>
@@ -569,7 +573,7 @@
               <div id="rbroader" class="xrx-repeat" data-bind="bbroader">
                 <div class="input-group">
                   <select class="form-control pull-left xrx-select" data-ref="./@rdf:resource" data-optgroup="odescriptions"></select>
-                  <div class="xrx-action" id="avalidateBroader" data-event="xrx-event-input">
+                  <div class="xrx-action" id="avalidateBroader" data-event="xrx-event-change">
                     <div class="xrx-classes-remove" data-select="#broader-twice" data-classes="hidden" data-if="cbroaderTwice"></div>
                     <div class="xrx-classes-add" data-select="#broader-twice" data-classes="hidden" data-if-not="cbroaderTwice"></div>
                     <div class="xrx-classes-remove" data-select="#broaderAlert" data-classes="panel-default panel-danger panel-success"></div>
@@ -615,7 +619,7 @@
               <div class="xrx-repeat" id="rrelated" data-bind="brelated">
                 <div class="input-group">
                   <select class="form-control pull-left xrx-select" data-ref="./@rdf:resource" data-optgroup="odescriptions"></select>
-                  <div class="xrx-action" id="avalidateRelated" data-event="xrx-event-input">
+                  <div class="xrx-action" id="avalidateRelated" data-event="xrx-event-change">
                     <div class="xrx-classes-remove" data-select="#related-twice" data-classes="hidden" data-if="crelatedTwice"></div>
                     <div class="xrx-classes-add" data-select="#related-twice" data-classes="hidden" data-if-not="crelatedTwice"></div>
                     <div class="xrx-classes-remove" data-select="#relatedAlert" data-classes="panel-default panel-danger panel-success"></div>
