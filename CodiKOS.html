@@ -57,15 +57,15 @@
     <div class="xrx-bind" id="blastConcept"
          data-ref="xrx:instance('icodikos')/rdf:RDF/rdf:Description[last()]"></div>
     <div class="xrx-bind" id="bprefLabelEn"
-         data-ref="xrx:bind('bconcept')/skos:prefLabel[1]/text()"></div>
+         data-ref="xrx:bind('bconcept')/skos:prefLabel[1]"></div>
     <div class="xrx-bind" id="bprefLabelDe"
-         data-ref="xrx:bind('bconcept')/skos:prefLabel[2]/text()"></div>
+         data-ref="xrx:bind('bconcept')/skos:prefLabel[2]"></div>
     <div class="xrx-bind" id="bnotation"
          data-ref="xrx:bind('bconcept')/skos:notation"></div>
     <div class="xrx-bind" id="bdefinitionEn"
-         data-ref="xrx:bind('bconcept')/skos:note/skos:definition[1]/text()"></div>
+         data-ref="xrx:bind('bconcept')/skos:note/skos:definition[1]"></div>
     <div class="xrx-bind" id="bdefinitionDe"
-         data-ref="xrx:bind('bconcept')/skos:note/skos:definition[2]/text()"></div>
+         data-ref="xrx:bind('bconcept')/skos:note/skos:definition[2]"></div>
     <div class="xrx-bind" id="bnarrower"
          data-ref="xrx:bind('bconcept')/skos:narrower"></div>
     <div class="xrx-bind" id="brelated"
@@ -184,6 +184,15 @@
         <div class="xrx-bind" id="bbrowseNarrower"
              data-ref="xrx:instance('icodikos')/rdf:RDF/rdf:Description[./@rdf:about=xrx:bind('bnarrower')/@rdf:resource]"></div>
         <div>
+          <div class="xrx-action" id="aupdate-breadcrumb">
+            <span class="xrx-calculate" id="cbreadcrumbItems"
+                data-ref="count(xrx:bind('bbreadcrumbItems')) > xrx:index('rbreadcrumb')"></span>
+            <span class="xrx-while" data-test="cbreadcrumbItems">
+              <span class="xrx-remove">
+                <span class="xrx-target" data-bind="bbreadcrumbLastItem"></span>
+              </span>
+            </span>
+          </div>
           <ol class="breadcrumb xrx-repeat" id="rbreadcrumb" data-bind="bbreadcrumbItems"> 
             <li>
               <a class="xrx-button" href="#">
@@ -193,6 +202,7 @@
                     <span class="xrx-origin" data-ref="concat('http://www.ecodicology.org/', ./text())"></span>
                     <span class="xrx-target" data-bind="bactualConcept"></span>
                   </span>
+                  <span class="xrx-dispatch" data-action="aupdate-breadcrumb"></span>
                 </span>
               </a>
             </li>
@@ -211,15 +221,21 @@
                 <span>-</span>
                 <span class="xrx-output" data-ref="./skos:note/skos:definition[2]/text()"></span>
                 <span class="xrx-action" data-event="xrx-event-click">
-                  <!--span class="xrx-update" data-bind="bbreadcrumbNewItemValue" data-value="xrx:bind('bbrowseNarrower')[xrx:index('rbrowseNarrower')]/skos:notation/text()"></span>
-                  <span class="xrx-insert" data-bind="bbreadcrumbLastItem" data-origin="bbreadcrumbNewItem"></span-->
+                  <span class="xrx-update">
+                    <span class="xrx-origin" data-ref="./skos:notation/text()"></span>
+                    <span class="xrx-target" data-bind="bbreadcrumbNewItemValue"></span>
+                  </span>
+                  <span class="xrx-insert">
+                    <span class="xrx-origin" data-bind="bbreadcrumbNewItem"></span>
+                    <span class="xrx-target" data-bind="bbreadcrumbLastItem"></span>
+                  </span>
                   <span class="xrx-update">
                     <span class="xrx-origin" data-ref="./@rdf:about"></span>
                     <span class="xrx-target" data-bind="bactualConcept"></span>
                   </span>
-                  <!--span class="xrx-dispatch" data-action="avalidateNarrower"></span>
+                  <span class="xrx-dispatch" data-action="avalidateNarrower"></span>
                   <span class="xrx-dispatch" data-action="avalidateBroader"></span>
-                  <span class="xrx-dispatch" data-action="avalidateRelated"></span-->
+                  <span class="xrx-dispatch" data-action="avalidateRelated"></span>
                 </span>
               </a>
             </dd>
@@ -241,10 +257,10 @@
             </div>
             <div class="modal-body">
               <!--model-->
-              <div id="inewConcept" class="xrx-instance" data-src="./CodiKOS.new.rdf"></div>
-              <div id="bnewConcept" class="xrx-bind" data-ref="xrx:instance('inewConcept')//rdf:Description"></div>
-              <div id="bnewNotation" class="xrx-bind" data-ref="xrx:instance('inewConcept')//skos:notation/text()"></div>
-              <div id="bnewIdTarget" class="xrx-bind" data-ref="xrx:instance('inewConcept')//rdf:Description/@rdf:about"></div>
+              <div class="xrx-instance" id="inewConcept" data-src="./CodiKOS.new.rdf"></div>
+              <div class="xrx-bind" id="bnewConcept" data-ref="xrx:instance('inewConcept')//rdf:Description"></div>
+              <div class="xrx-bind" id="bnewNotation" data-ref="xrx:instance('inewConcept')//skos:notation"></div>
+              <div class="xrx-bind" id="bnewIdTarget" data-ref="xrx:instance('inewConcept')//rdf:Description/@rdf:about"></div>
               <!--view-->
               <form class="form-horizontal" role="form">
                 <div class="form-group">
@@ -263,9 +279,11 @@
                       <input id="newId" type="text" placeholder="00" class="form-control xrx-input" data-bind="bnewNotation">
                       <div class="xrx-action" id="anewIdAlert" data-for="newId" data-event="xrx-event-input">
                         <!-- keep skos:notation and @red:about synchronous -->
-                        <!--div class="xrx-update"
-                             data-value="concat('http://www.ecodicology.org/', xrx:bind('bnewNotation'))"
-                             data-bind="bnewIdTarget"></div-->
+                        <div class="xrx-calculate" id="cnewIdOrigin" data-ref="concat('http://www.ecodicology.org/', xrx:bind('bnewNotation'))"></div>
+                        <!--div class="xrx-update">
+                          <div class="xrx-origin" data-calculate="cnewIdOrigin"></div>
+                          <div class="xrx-target" data-bind="bnewIdTarget"></div>
+                        </div-->
                         <!-- calculate whether new ID is empty or already exists -->
                         <div class="xrx-calculate" id="cnewIdExists"
                              data-ref="count(xrx:instance('icodikos')//skos:notation[.=xrx:bind('bnewNotation')]) > 0"></div>
@@ -335,7 +353,7 @@
        * -->
       <!-- model -->
       <span class="xrx-instance" id="irename">&lt;data&gt;00&lt;/data&gt;</span>
-      <span class="xrx-bind" id="brenameNewNotation" data-ref="xrx:instance('irename')/data/text()"></span>
+      <span class="xrx-bind" id="brenameNewNotation" data-ref="xrx:instance('irename')/data"></span>
       <!-- view -->
       <div class="modal fade" id="renameEntry" tabindex="-1" role="dialog" aria-labelledby="renameEntryLabel" aria-hidden="true">
         <div class="modal-dialog">
