@@ -44,7 +44,7 @@
         <div class="xrx-classes-add" data-select="#nav" data-classes="alert-warning"></div>
       </div>
     </div>
-    <div class="xrx-instance" id="itemplate" data-src="./CodiKOS.template.rdf"></div>
+    <div class="xrx-instance" id="itemplate" data-src="./client/CodiKOS.template.rdf"></div>
     <!-- binds -->
     <div class="xrx-bind" id="bactualConcept"
          data-ref="xrx:instance('iactual')/c/text()"></div>
@@ -127,6 +127,8 @@
         <ul class="nav navbar-nav">
           <li><a href="./index.html">Home</a></li>
           <li class="active"><a href="./CodiKOS.html">CodiKOS</a></li>
+          <li><a href="./CodiAnn.html">CodiAnn</a></li>
+          <li><a href="./CodiQ.html">CodiQ</a></li>
         </ul>
         <div class="navbar-form navbar-right xrx-auth" data-endpoint="https://api.github.com/user">
           <div class="form-group inputUser">
@@ -142,7 +144,7 @@
             <button class="btn btn-default xrx-signout">Sign out</button>
           </div>
           <div class="form-group">
-            <a class="btn btn-primary" href="./register.html">Sign up &raquo;</a>
+            <a class="btn btn-primary" href="./SignUp.html">Sign up &raquo;</a>
           </div>
           <div class="xrx-action" data-event="xrx-event-submit-error">
             <div class="xrx-classes-add" data-select=".inputUser" data-classes="has-error has-feedback"></div>
@@ -259,7 +261,7 @@
             </div>
             <div class="modal-body">
               <!--model-->
-              <div class="xrx-instance" id="inewConcept" data-src="./CodiKOS.new.rdf"></div>
+              <div class="xrx-instance" id="inewConcept" data-src="./client/CodiKOS.new.rdf"></div>
               <div class="xrx-bind" id="bnewConcept" data-ref="xrx:instance('inewConcept')/rdf:RDF/rdf:Description"></div>
               <div class="xrx-bind" id="bnewNotation" data-ref="xrx:bind('bnewConcept')/skos:notation"></div>
               <div class="xrx-bind" id="bnewIdTarget" data-ref="xrx:bind('bnewConcept')/@rdf:about"></div>
