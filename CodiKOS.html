@@ -58,6 +58,8 @@
          data-ref="xrx:instance('icodikos')/rdf:RDF/rdf:Description[1]"></div>
     <div class="xrx-bind" id="blastConcept"
          data-ref="xrx:instance('icodikos')/rdf:RDF/rdf:Description[last()]"></div>
+    <div class="xrx-bind" id="babout"
+         data-ref="xrx:bind('bconcept')/@rdf:about"></div>
     <div class="xrx-bind" id="bprefLabelEn"
          data-ref="xrx:bind('bconcept')/skos:prefLabel[1]"></div>
     <div class="xrx-bind" id="bprefLabelDe"
@@ -364,8 +366,21 @@
        * Modal dialog to rename an SKOS concept entry
        * -->
       <!-- model -->
-      <span class="xrx-instance" id="irename">&lt;data&gt;00&lt;/data&gt;</span>
-      <span class="xrx-bind" id="brenameNewNotation" data-ref="xrx:instance('irename')/data"></span>
+      <div class="xrx-instance" id="irename">&lt;data&gt;&lt;/data&gt;</div>
+      <div class="xrx-bind" id="brenameNewNotation" data-ref="xrx:instance('irename')/data"></div>
+      <div class="xrx-bind" id="brenameNewNotationValue" data-ref="xrx:instance('irename')/data/text()"></div>
+      <div class="xrx-bind" id="brenameNewId" data-ref="concat('http://www.ecodicology.org/', xrx:bind('brenameNewNotationValue'))"></div>
+      <!-- calculate whether new ID is empty or already exists or is equal 'CodiKOS' -->
+      <div class="xrx-calculate" id="crenameIdExists"
+           data-ref="count(xrx:instance('icodikos')//skos:notation[.=xrx:bind('brenameNewNotation')]) > 0"></div>
+      <div class="xrx-calculate" id="crenameIdEmpty"
+           data-ref="xrx:bind('brenameNewNotation') = ''"></div>
+      <div class="xrx-calculate" id="crenameIdEqualCodiKOS"
+           data-ref="xrx:bind('bnotation') = 'CodiKOS'"></div>
+      <!-- calculate whether the new ID is valid -->
+      <div class="xrx-calculate" id="crenameIdValid"
+           data-ref="(count(xrx:instance('icodikos')//skos:notation[.=xrx:bind('brenameNewNotation')]) = 0) and (xrx:bind('brenameNewNotation') != '') and (xrx:bind('bnotation') != 'CodiKOS')"></div>
+      <div class="xrx-calculate" id="bstillNotRenamedEntryLinks" data-ref="count(xrx:instance('icodikos')//*[./@rdf:resource=xrx:bind('bactualConcept')]) > 0"></div>
       <!-- view -->
       <div class="modal fade" id="renameEntry" tabindex="-1" role="dialog" aria-labelledby="renameEntryLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -380,7 +395,8 @@
                   <label class="col-sm-2 control-label"></label>
                   <div class="col-sm-10">
                     <strong id="msgRenameIdEmpty" class="text-danger rename-id-message hidden">New concept ID may not be empty. </strong>
-                    <strong id="msgRenameIdExists" class="text-danger rename-id-message hidden">Concept ID already exists.</strong>
+                    <strong id="msgRenameIdExists" class="text-danger rename-id-message hidden">Concept ID already exists. </strong>
+                    <strong id="msgRenameIdEqualCodiKOS" class="text-danger rename-id-message hidden">Root concept 'CodiKOS' cannot be renamed.</strong>
                     <strong class="invisible">6#160;</strong>
                   </div>
                 </div>
@@ -395,12 +411,7 @@
                       <div id="grpRenameId" class="input-group">
                         <span class="input-group-addon">http://www.ecodicology.org/</span>
                         <input class="form-control xrx-input" data-bind="brenameNewNotation">
-                        <div class="xrx-action" data-event="xrx-event-input">
-                          <!-- calculate whether new ID is empty or already exists -->
-                          <div class="xrx-calculate" id="crenameIdExists"
-                               data-ref="count(xrx:instance('icodikos')//skos:notation[.=xrx:bind('brenameNewNotation')]) > 0"></div>
-                          <div class="xrx-calculate" id="crenameIdEmpty"
-                               data-ref="xrx:bind('brenameNewNotation') = ''"></div>
+                        <div class="xrx-action" id="arenameValidate" data-event="xrx-event-input">
                           <!-- reset messages and alerts -->
                           <div class="xrx-classes-remove" data-select="#grpRenameId" data-classes="has-success has-error"></div>
                           <div class="xrx-classes-add" data-select=".rename-id-message" data-classes="hidden"></div>
@@ -408,6 +419,8 @@
                           <div class="xrx-classes-add" data-select="#grpRenameId" data-classes="has-success" data-if-not="crenameIdEmpty"></div>
                           <!-- ID does not exist -->
                           <div class="xrx-classes-add" data-select="#grpRenameId" data-classes="has-success" data-if-not="crenameIdExists"></div>
+                          <!-- ID is not equal 'CodiKOS' -->
+                          <div class="xrx-classes-add" data-select="#grpRenameId" data-classes="has-success" data-if-not="crenameIdEqualCodiKOS"></div>
                           <!-- ID is empty -->
                           <div class="xrx-action" data-if="crenameIdEmpty">
                             <div class="xrx-classes-remove" data-select="#grpRenameId" data-classes="has-success"></div>
@@ -420,6 +433,12 @@
                             <div class="xrx-classes-add" data-select="#grpRenameId" data-classes="has-error"></div>
                             <div class="xrx-classes-remove" data-select="#msgRenameIdExists" data-classes="hidden"></div>
                           </div>
+                          <!-- ID is equal 'CodiKOS' -->
+                          <div class="xrx-action" data-if="crenameIdEqualCodiKOS">
+                            <div class="xrx-classes-remove" data-select="#grpRenameId" data-classes="has-success"></div>
+                            <div class="xrx-classes-add" data-select="#grpRenameId" data-classes="has-error"></div>
+                            <div class="xrx-classes-remove" data-select="#msgRenameIdEqualCodiKOS" data-classes="hidden"></div>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -429,7 +448,37 @@
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Rename now</button>
+              <button class="btn btn-primary xrx-button" type="button">
+                <span>Rename now</span>
+                <span class="xrx-action" data-event="xrx-event-click" data-if="crenameIdValid">
+                  <!-- rename all entry links -->
+
+                  TODO
+                     
+                  <span class="xrx-while" data-test="bstillNotRenamedEntryLinks">
+                    <span class="xrx-update">
+                      <span class="xrx-origin" data-bind="brenameNewNotationValue"></span>
+                      <span class="xrx-target" data-bind=""></span>
+                    </span>
+                  </span>
+                  <!-- update actual skos:notation -->
+                  <span class="xrx-update">
+                    <span class="xrx-origin" data-bind="brenameNewNotationValue"></span>
+                    <span class="xrx-target" data-bind="bnotation"></span>
+                  </span>
+                  <!-- update actual @rdf:about -->
+                  <span class="xrx-update">
+                    <span class="xrx-origin" data-bind="brenameNewId"></span>
+                    <span class="xrx-target" data-bind="babout"></span>
+                  </span>
+                  <!-- update the whole view by updating bactualConcept -->
+                  <span class="xrx-update">
+                    <span class="xrx-origin" data-bind="brenameNewId"></span>
+                    <span class="xrx-target" data-bind="bactualConcept"></span>
+                  </span>
+                  <span class="xrx-script" data-script="$('#renameEntry').modal('hide')"></span>
+                </span>
+              </button>
             </div>
           </div>
         </div>
@@ -450,7 +499,7 @@
             <div class="modal-body">
               <p>
                 <strong id="msgFirstCannotBeRemoved" class="text-danger rename-id-message hidden">The root concept 'CodiKOS' cannot be removed.</strong>
-                <strong class="invisible">6#160;</strong>
+                <strong class="invisible">&#160;</strong>
               </p>
               <p class="alert alert-danger">
                 <strong class="xrx-output" data-bind="bactualConcept"></strong><br>
@@ -461,14 +510,14 @@
               <button class="btn btn-default" data-dismiss="modal" type="button">Close</button>
               <button class="xrx-button btn btn-danger" type="button">
                 <span>Delete now</span>
+                <!-- model -->
+                <!-- binds -->
+                <span class="xrx-bind" id="bcodikosIdLiteral" data-ref="'http://www.ecodicology.org/CodiKOS'"></span>
+                <span class="xrx-bind" id="bfirstEntryLink" data-ref="xrx:instance('icodikos')//*[./@rdf:resource=xrx:bind('bactualConcept')][1]"></span>
                 <!-- calculate whether the actual entry is the root entry 'CodiKOS' -->
                 <span class="xrx-calculate" id="cactualIsFirstConcept" data-ref="xrx:bind('bconcept') != xrx:bind('bfirstConcept')"></span>
-                <span class="xrx-bind" id="bcodikosIdLiteral" data-ref="'http://www.ecodicology.org/CodiKOS'"></span>
-                <span class="xrx-bind" id="bentryLinks"
-                      data-ref="xrx:instance('icodikos')//*[./@rdf:resource=xrx:bind('bactualConcept')]"></span>
-                <span class="xrx-bind" id="bfirstEntryLink" data-ref="xrx:instance('icodikos')//*[./@rdf:resource=xrx:bind('bactualConcept')][1]"></span>
                 <!-- calculate whether there are still links referencing the entry actually deleted -->
-                <span class="xrx-calculate" id="cstillEntryLinks" data-ref="count(xrx:bind('bentryLinks')) > 0"></span>
+                <span class="xrx-calculate" id="cstillEntryLinks" data-ref="count(xrx:instance('icodikos')//*[./@rdf:resource=xrx:bind('bactualConcept')]) > 0"></span>
                 <span class="xrx-action" data-event="xrx-event-click">
                   <span class="xrx-action" data-if="cactualIsFirstConcept">
                     <span class="xrx-while" data-test="cstillEntryLinks">
@@ -514,8 +563,11 @@
                 <button class="btn btn-primary xrx-button" data-toggle="modal" data-target="#newEntry">
                   <span>New&hellip;</span>
                 </button>
-                <button class="btn btn-primary xrx-button" data-toggle="modal" data-target="#renameEntry">
+                <button class="xrx-button btn btn-primary" data-toggle="modal" data-target="#renameEntry">
                   <span>Rename&hellip;</span>
+                  <span class="xrx-action" data-event="xrx-event-click">
+                    <span class="xrx-dispatch" data-action="arenameValidate"></span>
+                  </span>
                 </button>
                 <button class="btn btn-primary xrx-button" data-toggle="modal" data-target="#deleteEntry">
                   <span>Delete&hellip;</span>
