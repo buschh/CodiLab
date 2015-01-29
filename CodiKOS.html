@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>CodiKOS | eCodicology</title>
+  <title>CodiKOS | CodiLab</title>
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
   <link href="../../HKIKoeln/SemToNotes/client/res/xrx.css" rel="stylesheet">
   <script type="text/javascript" src="../../HKIKoeln/SemToNotes/client/lib/jssaxparser/SAXException.js"></script>
@@ -54,6 +54,8 @@
          data-ref="xrx:instance('icodikos')/rdf:RDF/rdf:Description"></div>
     <div class="xrx-bind" id="bconcept"
          data-ref="xrx:instance('icodikos')/rdf:RDF/rdf:Description[@rdf:about=xrx:bind('bactualConcept')]"></div>
+    <div class="xrx-bind" id="bfirstConcept"
+         data-ref="xrx:instance('icodikos')/rdf:RDF/rdf:Description[1]"></div>
     <div class="xrx-bind" id="blastConcept"
          data-ref="xrx:instance('icodikos')/rdf:RDF/rdf:Description[last()]"></div>
     <div class="xrx-bind" id="bprefLabelEn"
@@ -119,7 +121,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="./index.html">eCodicology</a>
+        <a class="navbar-brand" href="./index.html">CodiLab</a>
       </div>
       <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
@@ -258,9 +260,10 @@
             <div class="modal-body">
               <!--model-->
               <div class="xrx-instance" id="inewConcept" data-src="./CodiKOS.new.rdf"></div>
-              <div class="xrx-bind" id="bnewConcept" data-ref="xrx:instance('inewConcept')//rdf:Description"></div>
-              <div class="xrx-bind" id="bnewNotation" data-ref="xrx:instance('inewConcept')//skos:notation"></div>
-              <div class="xrx-bind" id="bnewIdTarget" data-ref="xrx:instance('inewConcept')//rdf:Description/@rdf:about"></div>
+              <div class="xrx-bind" id="bnewConcept" data-ref="xrx:instance('inewConcept')/rdf:RDF/rdf:Description"></div>
+              <div class="xrx-bind" id="bnewNotation" data-ref="xrx:bind('bnewConcept')/skos:notation"></div>
+              <div class="xrx-bind" id="bnewIdTarget" data-ref="xrx:bind('bnewConcept')/@rdf:about"></div>
+              <div class="xrx-bind" id="bnewIdOrigin" data-ref="concat('http://www.ecodicology.org/', xrx:bind('bnewNotation')/text())"></div>
               <!--view-->
               <form class="form-horizontal" role="form">
                 <div class="form-group">
@@ -279,11 +282,10 @@
                       <input id="newId" type="text" placeholder="00" class="form-control xrx-input" data-bind="bnewNotation">
                       <div class="xrx-action" id="anewIdAlert" data-for="newId" data-event="xrx-event-input">
                         <!-- keep skos:notation and @red:about synchronous -->
-                        <div class="xrx-calculate" id="cnewIdOrigin" data-ref="concat('http://www.ecodicology.org/', xrx:bind('bnewNotation'))"></div>
-                        <!--div class="xrx-update">
-                          <div class="xrx-origin" data-calculate="cnewIdOrigin"></div>
+                        <div class="xrx-update">
+                          <div class="xrx-origin" data-bind="bnewIdOrigin"></div>
                           <div class="xrx-target" data-bind="bnewIdTarget"></div>
-                        </div-->
+                        </div>
                         <!-- calculate whether new ID is empty or already exists -->
                         <div class="xrx-calculate" id="cnewIdExists"
                              data-ref="count(xrx:instance('icodikos')//skos:notation[.=xrx:bind('bnewNotation')]) > 0"></div>
@@ -318,12 +320,19 @@
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary xrx-button" id="create" data-dismiss="modal">
+              <button type="button" class="btn btn-primary xrx-button" id="create">
                 <span>Create and edit</span>
                 <div class="xrx-action" id="acreateAndEdit">
-                  <!--div class="xrx-insert" data-bind="blastConcept" data-origin="bnewConcept"></div-->
+                  <!-- insert new concept entry -->
+                  <div class="xrx-insert">
+                    <div class="xrx-origin" data-bind="bnewConcept"></div>
+                    <div class="xrx-target" data-bind="blastConcept"></div>
+                  </div>
                   <!-- change concept entry in edit form -->
-                  <!--div class="xrx-update" data-bind="bactualConcept" data-value="concat('http://www.ecodicology.org/', xrx:bind('bnewNotation'))"></div-->
+                  <div class="xrx-update">
+                    <div class="xrx-origin" data-bind="bnewIdOrigin"></div>
+                    <div class="xrx-target" data-bind="bactualConcept"></div>
+                  </div>
                   <!-- validate edit form -->
                   <div class="xrx-dispatch" data-action="avalidateNarrower"></div>
                   <div class="xrx-dispatch" data-action="avalidateBroader"></div>
@@ -338,6 +347,7 @@
                     <!-- reset messages and alerts -->
                     <div class="xrx-classes-remove" data-select="#grpNewId" data-classes="has-success has-error"></div>
                     <div class="xrx-classes-add" data-select=".newid-message" data-classes="hidden"></div>
+                    <span class="xrx-script" data-script="$('#newEntry').modal('hide')"></span>
                   </div>
                 </div>
               </button>
@@ -436,6 +446,10 @@
               <h3 class="modal-title" id="deleteEntryLabel">Delete SKOS Concept</h3>
             </div>
             <div class="modal-body">
+              <p>
+                <strong id="msgFirstCannotBeRemoved" class="text-danger rename-id-message hidden">The root concept 'CodiKOS' cannot be removed.</strong>
+                <strong class="invisible">6#160;</strong>
+              </p>
               <p class="alert alert-danger">
                 <strong class="xrx-output" data-bind="bactualConcept"></strong><br>
                 <span>Do you really want to delete this entry and all links referencing this entry?<br>This cannot be undone!</span>
@@ -445,12 +459,34 @@
               <button class="btn btn-default" data-dismiss="modal" type="button">Close</button>
               <button class="xrx-button btn btn-danger" type="button">
                 <span>Delete now</span>
+                <!-- calculate whether the actual entry is the root entry 'CodiKOS' -->
+                <span class="xrx-calculate" id="cactualIsFirstConcept" data-ref="xrx:bind('bconcept') != xrx:bind('bfirstConcept')"></span>
+                <span class="xrx-bind" id="bcodikosIdLiteral" data-ref="'http://www.ecodicology.org/CodiKOS'"></span>
                 <span class="xrx-bind" id="bentryLinks"
                       data-ref="xrx:instance('icodikos')//*[./@rdf:resource=xrx:bind('bactualConcept')]"></span>
+                <span class="xrx-bind" id="bfirstEntryLink" data-ref="xrx:instance('icodikos')//*[./@rdf:resource=xrx:bind('bactualConcept')][1]"></span>
+                <!-- calculate whether there are still links referencing the entry actually deleted -->
+                <span class="xrx-calculate" id="cstillEntryLinks" data-ref="count(xrx:bind('bentryLinks')) > 0"></span>
                 <span class="xrx-action" data-event="xrx-event-click">
-                  <!--span class="xrx-remove" data-bind="bconcept"></span-->
-                  <!--span class="xrx-remove" data-bind="bentryLinks"></span-->
-                  <span class="xrx-script" data-script="$('#deleteEntry').modal('hide')"></span>
+                  <span class="xrx-action" data-if="cactualIsFirstConcept">
+                    <span class="xrx-while" data-test="cstillEntryLinks">
+                      <span class="xrx-remove">
+                        <span class="xrx-target" data-bind="bfirstEntryLink"></span>
+                      </span>
+                    </span>
+                    <span class="xrx-remove">
+                      <span class="xrx-target" data-bind="bconcept"></span>
+                    </span>
+                    <span class="xrx-update">
+                      <span class="xrx-origin" data-bind="bcodikosIdLiteral"></span>
+                      <span class="xrx-target" data-bind="bactualConcept"></span>
+                    </span>
+                    <span class="xrx-classes-add" data-select="#msgFirstCannotBeRemoved" data-classes="hidden"></span>
+                    <span class="xrx-script" data-script="$('#deleteEntry').modal('hide')"></span>
+                  </span>
+                  <span class="xrx-action" data-if-not="cactualIsFirstConcept">
+                    <span class="xrx-classes-remove" data-select="#msgFirstCannotBeRemoved" data-classes="hidden"></span>
+                  </span>
                 </span>
               </button>
             </div>
