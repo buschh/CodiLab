@@ -58,6 +58,10 @@
          data-ref="xrx:instance('icodikos')/rdf:RDF/rdf:Description[1]"></div>
     <div class="xrx-bind" id="blastConcept"
          data-ref="xrx:instance('icodikos')/rdf:RDF/rdf:Description[last()]"></div>
+    <div class="xrx-bind" id="bfirstEntryLink"
+         data-ref="xrx:instance('icodikos')//*[./@rdf:resource=xrx:bind('bactualConcept')][1]"></div>
+    <div class="xrx-bind" id="bfirstEntryLinkResource"
+         data-ref="xrx:bind('bfirstEntryLink')/@rdf:resource"></div>
     <div class="xrx-bind" id="babout"
          data-ref="xrx:bind('bconcept')/@rdf:about"></div>
     <div class="xrx-bind" id="bprefLabelEn"
@@ -380,7 +384,8 @@
       <!-- calculate whether the new ID is valid -->
       <div class="xrx-calculate" id="crenameIdValid"
            data-ref="(count(xrx:instance('icodikos')//skos:notation[.=xrx:bind('brenameNewNotation')]) = 0) and (xrx:bind('brenameNewNotation') != '') and (xrx:bind('bnotation') != 'CodiKOS')"></div>
-      <div class="xrx-calculate" id="bstillNotRenamedEntryLinks" data-ref="count(xrx:instance('icodikos')//*[./@rdf:resource=xrx:bind('bactualConcept')]) > 0"></div>
+      <!-- calculate whether there are still entry links, not renamed yet -->
+      <div class="xrx-calculate" id="cstillNotRenamedEntryLinks" data-ref="count(xrx:instance('icodikos')//*[./@rdf:resource=xrx:bind('bactualConcept')]) > 0"></div>
       <!-- view -->
       <div class="modal fade" id="renameEntry" tabindex="-1" role="dialog" aria-labelledby="renameEntryLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -452,13 +457,10 @@
                 <span>Rename now</span>
                 <span class="xrx-action" data-event="xrx-event-click" data-if="crenameIdValid">
                   <!-- rename all entry links -->
-
-                  TODO
-                     
-                  <span class="xrx-while" data-test="bstillNotRenamedEntryLinks">
+                  <span class="xrx-while" data-test="cstillNotRenamedEntryLinks">
                     <span class="xrx-update">
-                      <span class="xrx-origin" data-bind="brenameNewNotationValue"></span>
-                      <span class="xrx-target" data-bind=""></span>
+                      <span class="xrx-origin" data-bind="brenameNewId"></span>
+                      <span class="xrx-target" data-bind="bfirstEntryLinkResource"></span>
                     </span>
                   </span>
                   <!-- update actual skos:notation -->
@@ -471,7 +473,7 @@
                     <span class="xrx-origin" data-bind="brenameNewId"></span>
                     <span class="xrx-target" data-bind="babout"></span>
                   </span>
-                  <!-- update the whole view by updating bactualConcept -->
+                  <!-- update the whole view by updating xrx:bind('bactualConcept') -->
                   <span class="xrx-update">
                     <span class="xrx-origin" data-bind="brenameNewId"></span>
                     <span class="xrx-target" data-bind="bactualConcept"></span>
@@ -513,7 +515,6 @@
                 <!-- model -->
                 <!-- binds -->
                 <span class="xrx-bind" id="bcodikosIdLiteral" data-ref="'http://www.ecodicology.org/CodiKOS'"></span>
-                <span class="xrx-bind" id="bfirstEntryLink" data-ref="xrx:instance('icodikos')//*[./@rdf:resource=xrx:bind('bactualConcept')][1]"></span>
                 <!-- calculate whether the actual entry is the root entry 'CodiKOS' -->
                 <span class="xrx-calculate" id="cactualIsFirstConcept" data-ref="xrx:bind('bconcept') != xrx:bind('bfirstConcept')"></span>
                 <!-- calculate whether there are still links referencing the entry actually deleted -->
@@ -629,6 +630,17 @@
           <div id="narrowerAlert" class="panel panel-default">
             <div class="panel-heading">
               <strong>Narrower Concepts</strong>
+              <div class="xrx-hide" data-bind="bnarrower">
+                <button class="xrx-button btn btn-default pull-right" type="button">
+                  <span class="glyphicon glyphicon-plus"></span> Add Narrower Concept
+                  <span class="xrx-action" data-event="xrx-event-click">
+                    <span class="xrx-insert">
+                      <span class="xrx-origin" data-bind="boriginNarrower"></span>
+                      <span class="xrx-target" data-bind="btargetNarrower"></span>
+                    </span>
+                  </span>
+                </button>
+              </div>
             </div>
             <div class="panel-body">
               <span id="narrower-twice" class="text-danger narrower-message hidden">Concepts can be linked once only.</span>
@@ -680,6 +692,17 @@
           <div id="broaderAlert" class="panel panel-default">
             <div class="panel-heading">
               <strong>Broader Concepts</strong>
+              <div class="xrx-hide" data-bind="bbroader">
+                <button class="xrx-button btn btn-default pull-right" type="button">
+                  <span class="glyphicon glyphicon-plus"></span> Add Broader Concept
+                  <span class="xrx-action" data-event="xrx-event-click">
+                    <span class="xrx-insert">
+                      <span class="xrx-origin" data-bind="boriginBroader"></span>
+                      <span class="xrx-target" data-bind="btargetBroader"></span>
+                    </span>
+                  </span>
+                </button>
+              </div>
             </div>
             <div class="panel-body">
               <span id="broader-twice" class="text-danger broader-message hidden">Concepts can be linked once only.</span>
@@ -731,6 +754,17 @@
           <div id="relatedAlert" class="panel panel-default">
             <div class="panel-heading">
               <strong>Related Concepts</strong>
+              <div class="xrx-hide" data-bind="brelated">
+                <button class="xrx-button btn btn-default pull-right" type="button">
+                  <span class="glyphicon glyphicon-plus"></span> Add Related Concept
+                  <span class="xrx-action" data-event="xrx-event-click">
+                    <span class="xrx-insert">
+                      <span class="xrx-origin" data-bind="boriginRelated"></span>
+                      <span class="xrx-target" data-bind="btargetRelated"></span>
+                    </span>
+                  </span>
+                </button>
+              </div>
             </div>
             <div class="panel-body">
               <span id="related-twice" class="text-danger related-message hidden">Concepts can be linked once only.</span>
