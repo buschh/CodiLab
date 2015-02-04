@@ -1,14 +1,13 @@
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
   <rdf:Description rdf:about="http://www.ecodicology.org/CodiKOS">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:prefLabel xml:lang="en">Label CodiKOS (en)</skos:prefLabel>
-    <skos:prefLabel xml:lang="de">Label CodiKOS (de)</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Physical description</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Physikalische Beschreibung</skos:prefLabel>
     <skos:notation>CodiKOS</skos:notation>
     <skos:note>
-      <skos:definition xml:lang="en">Description of CodiKOS (en)</skos:definition>
-      <skos:definition xml:lang="de">Description of CodiKOS (de)</skos:definition>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
     </skos:note>
-    <skos:narrower rdf:resource="http://www.ecodicology.org/A"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.ecodicology.org/A">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
