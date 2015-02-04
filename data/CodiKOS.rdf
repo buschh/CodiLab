@@ -26,11 +26,11 @@
   <rdf:Description rdf:about="http://www.ecodicology.org/B">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:prefLabel xml:lang="en">Dimensions</skos:prefLabel>
-    <skos:prefLabel xml:lang="de">Maße</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Maße</skos:prefLabel>
     <skos:notation>B</skos:notation>
     <skos:note>
       <skos:definition xml:lang="en">e.g. height and width of a leaf, dimensions of the written space the text block (by measuring the frame ruling); dimensions usually given in millimetres</skos:definition>
-      <skos:definition xml:lang="de">z.B. Höhe und Breite eines Blattes, Ausmaße des beschriebenen Raumes auf dem Blatt (durch Messen der Rahmenlinierung); gewöhnlich in Millimeter angegeben</skos:definition>
+      <skos:definition xml:lang="de">z.B. HÃ¶he und Breite eines Blattes, AusmaÃe des beschriebenen Raumes auf dem Blatt (durch Messen der Rahmenlinierung); gewÃ¶hnlich in Millimeter angegeben</skos:definition>
     </skos:note>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.ecodicology.org/C">
@@ -40,7 +40,7 @@
     <skos:notation>C</skos:notation>
     <skos:note>
       <skos:definition xml:lang="en">the marking of a folio or bifolium by a point or knife to guide ruling</skos:definition>
-      <skos:definition xml:lang="de">Markierung eines Blattes oder einer Lage mittels kleiner Einstiche als Orientierung fÃÂ¼r das Liniennetz und den Linierungsrahmen</skos:definition>
+      <skos:definition xml:lang="de">Markierung eines Blattes oder einer Lage mittels kleiner Einstiche als Orientierung fÃÂÃÂ¼r das Liniennetz und den Linierungsrahmen</skos:definition>
     </skos:note>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.ecodicology.org/322.01">
