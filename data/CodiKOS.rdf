@@ -53,4 +53,14 @@
       <skos:definition xml:lang="de">Prozess der Linierung, Anlegen des Hilfsliniennetzes (Rahmen oder horizontale Schreiblinien) durch Vorzeichnung, Vorritzung oder Knicken/Falten der Seite</skos:definition>
     </skos:note>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/331.01">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Layout</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Seitenlayout</skos:prefLabel>
+    <skos:notation>331.01</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">refers to the layout of a page which means the general arrangement of the various elements on a page</skos:definition>
+      <skos:definition xml:lang="de">bezieht sich auf die Seitengestaltung, die allgemeine Einteilung und Aufteilung der unterschiedlichen Elemente auf der Seite</skos:definition>
+    </skos:note>
+  </rdf:Description>
 </rdf:RDF>
