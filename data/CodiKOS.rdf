@@ -50,11 +50,6 @@
     <skos:broader rdf:resource="http://www.ecodicology.org/A"/>
     <skos:broader rdf:resource="http://www.ecodicology.org/A"/>
     <skos:broader rdf:resource="http://www.ecodicology.org/A"/>
-    <skos:broader rdf:resource="http://www.ecodicology.org/A"/>
-    <skos:broader rdf:resource="http://www.ecodicology.org/A"/>
-    <skos:broader rdf:resource="http://www.ecodicology.org/A"/>
-    <skos:related rdf:resource="http://www.ecodicology.org/B"/>
-    <skos:related rdf:resource="http://www.ecodicology.org/B"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.ecodicology.org/322.01">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
