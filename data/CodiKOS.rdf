@@ -8,13 +8,13 @@
       <skos:definition xml:lang="en">Description of CodiKOS (en)</skos:definition>
       <skos:definition xml:lang="de">Description of CodiKOS (de)</skos:definition>
     </skos:note>
-    <skos:narrower rdf:resource="http://www.ecodicology.org/0"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/A"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.ecodicology.org/0">
+  <rdf:Description rdf:about="http://www.ecodicology.org/A">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:prefLabel xml:lang="en">Label 0 (en)</skos:prefLabel>
     <skos:prefLabel xml:lang="de">Label 0 (de)</skos:prefLabel>
-    <skos:notation>0</skos:notation>
+    <skos:notation>A</skos:notation>
     <skos:note>
       <skos:definition xml:lang="en">Description of 0 (en)</skos:definition>
       <skos:definition xml:lang="de">Description of 0 (de)</skos:definition>
@@ -32,7 +32,7 @@
       <skos:definition xml:lang="en">Description of 1 (en)</skos:definition>
       <skos:definition xml:lang="de">Description of 1 (de)</skos:definition>
     </skos:note>
-    <skos:related rdf:resource="http://www.ecodicology.org/0"/>
+    <skos:related rdf:resource="http://www.ecodicology.org/A"/>
     <skos:broader rdf:resource="http://www.ecodicology.org/CodiKOS"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.ecodicology.org/00">
@@ -44,20 +44,20 @@
       <skos:definition xml:lang="en">Description of 00 (en)</skos:definition>
       <skos:definition xml:lang="de">Description of 00 (de)</skos:definition>
     </skos:note>
-    <skos:narrower rdf:resource="http://www.ecodicology.org/0"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/A"/>
     <skos:narrower rdf:resource="http://www.ecodicology.org/1"/>
     <skos:narrower rdf:resource="http://www.ecodicology.org/00"/>
-    <skos:broader rdf:resource="http://www.ecodicology.org/0"/>
-    <skos:broader rdf:resource="http://www.ecodicology.org/0"/>
-    <skos:broader rdf:resource="http://www.ecodicology.org/0"/>
-    <skos:broader rdf:resource="http://www.ecodicology.org/0"/>
-    <skos:broader rdf:resource="http://www.ecodicology.org/0"/>
-    <skos:broader rdf:resource="http://www.ecodicology.org/0"/>
-    <skos:broader rdf:resource="http://www.ecodicology.org/0"/>
-    <skos:broader rdf:resource="http://www.ecodicology.org/0"/>
-    <skos:broader rdf:resource="http://www.ecodicology.org/0"/>
-    <skos:broader rdf:resource="http://www.ecodicology.org/0"/>
-    <skos:broader rdf:resource="http://www.ecodicology.org/0"/>
+    <skos:broader rdf:resource="http://www.ecodicology.org/A"/>
+    <skos:broader rdf:resource="http://www.ecodicology.org/A"/>
+    <skos:broader rdf:resource="http://www.ecodicology.org/A"/>
+    <skos:broader rdf:resource="http://www.ecodicology.org/A"/>
+    <skos:broader rdf:resource="http://www.ecodicology.org/A"/>
+    <skos:broader rdf:resource="http://www.ecodicology.org/A"/>
+    <skos:broader rdf:resource="http://www.ecodicology.org/A"/>
+    <skos:broader rdf:resource="http://www.ecodicology.org/A"/>
+    <skos:broader rdf:resource="http://www.ecodicology.org/A"/>
+    <skos:broader rdf:resource="http://www.ecodicology.org/A"/>
+    <skos:broader rdf:resource="http://www.ecodicology.org/A"/>
     <skos:related rdf:resource="http://www.ecodicology.org/1"/>
     <skos:related rdf:resource="http://www.ecodicology.org/1"/>
   </rdf:Description>
