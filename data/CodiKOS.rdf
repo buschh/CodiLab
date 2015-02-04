@@ -33,8 +33,6 @@
       <skos:definition xml:lang="en">e.g. height and width of a leaf, dimensions of the written space the text block (by measuring the frame ruling) dimensions usually given in millimetres</skos:definition>
       <skos:definition xml:lang="de"></skos:definition>
     </skos:note>
-    <skos:related rdf:resource="http://www.ecodicology.org/A"/>
-    <skos:broader rdf:resource="http://www.ecodicology.org/CodiKOS"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.ecodicology.org/00">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
