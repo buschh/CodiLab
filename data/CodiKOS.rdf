@@ -8,6 +8,10 @@
       <skos:definition xml:lang="en"></skos:definition>
       <skos:definition xml:lang="de"></skos:definition>
     </skos:note>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/A"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/B"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/C"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/322.01"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.ecodicology.org/A">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
