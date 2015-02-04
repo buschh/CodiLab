@@ -42,9 +42,6 @@
       <skos:definition xml:lang="en">the marking of a folio or bifolium by a point or knife to guide ruling</skos:definition>
       <skos:definition xml:lang="de">Markierung eines Blattes oder einer Lage mittels kleiner Einstiche als Orientierung für das Liniennetz und den Linierungsrahmen</skos:definition>
     </skos:note>
-    <skos:broader rdf:resource="http://www.ecodicology.org/A"/>
-    <skos:broader rdf:resource="http://www.ecodicology.org/A"/>
-    <skos:broader rdf:resource="http://www.ecodicology.org/A"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.ecodicology.org/322.01">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
