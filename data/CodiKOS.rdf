@@ -11,12 +11,6 @@
     <skos:narrower rdf:resource="http://www.ecodicology.org/0"/>
     <skos:narrower rdf:resource="http://www.ecodicology.org/1"/>
     <skos:narrower rdf:resource="http://www.ecodicology.org/00"/>
-    <skos:broader rdf:resource="http://www.ecodicology.org/CodiKOS"/>
-    <skos:broader rdf:resource="http://www.ecodicology.org/CodiKOS"/>
-    <skos:broader rdf:resource="http://www.ecodicology.org/0"/>
-    <skos:broader rdf:resource="http://www.ecodicology.org/0"/>
-    <skos:broader rdf:resource="http://www.ecodicology.org/0"/>
-    <skos:broader rdf:resource="http://www.ecodicology.org/0"/>
     <skos:broader rdf:resource="http://www.ecodicology.org/0"/>
     <skos:broader rdf:resource="http://www.ecodicology.org/0"/>
     <skos:broader rdf:resource="http://www.ecodicology.org/0"/>
