@@ -86,4 +86,14 @@
       <skos:definition xml:lang="de">Verschönerung der Handschrift mit leuchtenden Farben (v.a. Gold und Silber); die Gesamtheit der dekorativen Elemente und bildlichen Darstellungen</skos:definition>
     </skos:note>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/311.05">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Page</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Seite</skos:prefLabel>
+    <skos:notation>311.05</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">each face of a folio</skos:definition>
+      <skos:definition xml:lang="de">jede Seitenfläche eines Blattes</skos:definition>
+    </skos:note>
+  </rdf:Description>
 </rdf:RDF>
