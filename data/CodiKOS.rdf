@@ -27,7 +27,7 @@
   <rdf:Description rdf:about="http://www.ecodicology.org/B">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:prefLabel xml:lang="en">Dimensions</skos:prefLabel>
-    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Maﬂe</skos:prefLabel>
     <skos:notation>B</skos:notation>
     <skos:note>
       <skos:definition xml:lang="en">e.g. height and width of a leaf, dimensions of the written space the text block (by measuring the frame ruling); dimensions usually given in millimetres</skos:definition>
