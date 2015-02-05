@@ -1,90 +1,100 @@
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
   <rdf:Description rdf:about="http://www.ecodicology.org/CodiKOS">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:prefLabel xml:lang="en">Label CodiKOS (en)</skos:prefLabel>
-    <skos:prefLabel xml:lang="de">Label CodiKOS (de)</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Codicological SKOS data model</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Kodikologisches SKOS Datenmodell</skos:prefLabel>
     <skos:notation>CodiKOS</skos:notation>
-    <skos:note>
-      <skos:definition xml:lang="en">Description of CodiKOS (en)</skos:definition>
-      <skos:definition xml:lang="de">Description of CodiKOS (de)</skos:definition>
-    </skos:note>
-    <skos:narrower rdf:resource="http://www.ecodicology.org/0"/>
-    <skos:narrower rdf:resource="http://www.ecodicology.org/1"/>
-    <skos:narrower rdf:resource="http://www.ecodicology.org/00"/>
-    <skos:broader rdf:resource="http://www.ecodicology.org/CodiKOS"/>
-    <skos:broader rdf:resource="http://www.ecodicology.org/CodiKOS"/>
-    <skos:broader rdf:resource="http://www.ecodicology.org/0"/>
-    <skos:broader rdf:resource="http://www.ecodicology.org/0"/>
-    <skos:broader rdf:resource="http://www.ecodicology.org/0"/>
-    <skos:broader rdf:resource="http://www.ecodicology.org/0"/>
-    <skos:broader rdf:resource="http://www.ecodicology.org/0"/>
-    <skos:broader rdf:resource="http://www.ecodicology.org/0"/>
-    <skos:broader rdf:resource="http://www.ecodicology.org/0"/>
-    <skos:broader rdf:resource="http://www.ecodicology.org/0"/>
-    <skos:broader rdf:resource="http://www.ecodicology.org/0"/>
-    <skos:broader rdf:resource="http://www.ecodicology.org/0"/>
-    <skos:related rdf:resource="http://www.ecodicology.org/1"/>
-    <skos:related rdf:resource="http://www.ecodicology.org/1"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.ecodicology.org/0">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:prefLabel xml:lang="en">Label 0 (en)</skos:prefLabel>
-    <skos:prefLabel xml:lang="de">Label 0 (de)</skos:prefLabel>
-    <skos:notation>0</skos:notation>
-    <skos:note>
-      <skos:definition xml:lang="en">Description of 0 (en)</skos:definition>
-      <skos:definition xml:lang="de">Description of 0 (de)</skos:definition>
-    </skos:note>
-    <skos:narrower rdf:resource="http://www.ecodicology.org/00"/>
-    <skos:related rdf:resource="http://www.ecodicology.org/1"/>
-    <skos:broader rdf:resource="http://www.ecodicology.org/CodiKOS"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.ecodicology.org/1">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:prefLabel xml:lang="en">Label 1 (en)</skos:prefLabel>
-    <skos:prefLabel xml:lang="de">Label 1 (de)</skos:prefLabel>
-    <skos:notation>1</skos:notation>
-    <skos:note>
-      <skos:definition xml:lang="en">Description of 1 (en)</skos:definition>
-      <skos:definition xml:lang="de">Description of 1 (de)</skos:definition>
-    </skos:note>
-    <skos:related rdf:resource="http://www.ecodicology.org/0"/>
-    <skos:broader rdf:resource="http://www.ecodicology.org/CodiKOS"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.ecodicology.org/00">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:prefLabel xml:lang="en">Label 00 (en)</skos:prefLabel>
-    <skos:prefLabel xml:lang="de">Label 00 (de)</skos:prefLabel>
-    <skos:notation>00</skos:notation>
-    <skos:note>
-      <skos:definition xml:lang="en">Description of 00 (en)</skos:definition>
-      <skos:definition xml:lang="de">Description of 00 (de)</skos:definition>
-    </skos:note>
-    <skos:narrower rdf:resource="http://www.ecodicology.org/0"/>
-    <skos:narrower rdf:resource="http://www.ecodicology.org/1"/>
-    <skos:narrower rdf:resource="http://www.ecodicology.org/00"/>
-    <skos:broader rdf:resource="http://www.ecodicology.org/0"/>
-    <skos:broader rdf:resource="http://www.ecodicology.org/0"/>
-    <skos:broader rdf:resource="http://www.ecodicology.org/0"/>
-    <skos:broader rdf:resource="http://www.ecodicology.org/0"/>
-    <skos:broader rdf:resource="http://www.ecodicology.org/0"/>
-    <skos:broader rdf:resource="http://www.ecodicology.org/0"/>
-    <skos:broader rdf:resource="http://www.ecodicology.org/0"/>
-    <skos:broader rdf:resource="http://www.ecodicology.org/0"/>
-    <skos:broader rdf:resource="http://www.ecodicology.org/0"/>
-    <skos:broader rdf:resource="http://www.ecodicology.org/0"/>
-    <skos:broader rdf:resource="http://www.ecodicology.org/0"/>
-    <skos:related rdf:resource="http://www.ecodicology.org/1"/>
-    <skos:related rdf:resource="http://www.ecodicology.org/1"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.ecodicology.org/test">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:prefLabel xml:lang="en"></skos:prefLabel>
-    <skos:prefLabel xml:lang="de"></skos:prefLabel>
-    <skos:notation>test</skos:notation>
     <skos:note>
       <skos:definition xml:lang="en"></skos:definition>
       <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/A"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/B"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/321.01"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/322.01"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/331.01"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/331.07"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/511.01"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/A">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Physical description</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Physikalische Beschreibung</skos:prefLabel>
+    <skos:notation>A</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/311.05"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/B">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Dimensions</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Maße</skos:prefLabel>
+    <skos:notation>B</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">e.g. height and width of a leaf, dimensions of the written space the text block (by measuring the frame ruling); dimensions usually given in millimetres</skos:definition>
+      <skos:definition xml:lang="de">z.B. Höhe und Breite eines Blattes, Ausmaße des beschriebenen Raumes auf dem Blatt (durch Messen der Rahmenlinierung); gewöhnlich in Millimeter angegeben</skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/321.01">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Pricking</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Einstechen</skos:prefLabel>
+    <skos:notation>321.01</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">the marking of a folio or bifolium by a point or knife to guide ruling</skos:definition>
+      <skos:definition xml:lang="de">Markierung eines Blattes oder einer Lage mittels kleiner Einstiche als Orientierung für das Liniennetz und den Linierungsrahmen</skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/322.01">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Ruling</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Linierung</skos:prefLabel>
+    <skos:notation>322.01</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">the process by which a frame and/or horizontal lines are produced (via drawing, scratching or folding) to guide the hand in writing</skos:definition>
+      <skos:definition xml:lang="de">Prozess der Linierung, Anlegen des Hilfsliniennetzes (Rahmen oder horizontale Schreiblinien) durch Vorzeichnung, Vorritzung oder Knicken/Falten der Seite</skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/331.01">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Layout</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Seitenlayout</skos:prefLabel>
+    <skos:notation>331.01</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">refers to the layout of a page which means the general arrangement of the various elements on a page</skos:definition>
+      <skos:definition xml:lang="de">bezieht sich auf die Seitengestaltung, die allgemeine Einteilung und Aufteilung der unterschiedlichen Elemente auf der Seite</skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/331.07">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Margin</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Randbereich</skos:prefLabel>
+    <skos:notation>331.07</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">space outside the writing frame</skos:definition>
+      <skos:definition xml:lang="de">Raum außerhalb des Beschriftungsrahmens</skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/511.01">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Illumination</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Buchmalerei</skos:prefLabel>
+    <skos:notation>511.01</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">the embellishment of a manuscript with luminous colours (especially gold and silver), i.e. the total of decorative elements and pictorial representations</skos:definition>
+      <skos:definition xml:lang="de">Verschönerung der Handschrift mit leuchtenden Farben (v.a. Gold und Silber); die Gesamtheit der dekorativen Elemente und bildlichen Darstellungen</skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/311.05">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Page</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Seite</skos:prefLabel>
+    <skos:notation>311.05</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">each face of a folio</skos:definition>
+      <skos:definition xml:lang="de">jede Seitenfläche eines Blattes</skos:definition>
     </skos:note>
   </rdf:Description>
 </rdf:RDF>
