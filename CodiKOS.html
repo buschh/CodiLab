@@ -35,8 +35,12 @@
     <div class="xrx-namespace" data-prefix="rdf" data-uri="http://www.w3.org/1999/02/22-rdf-syntax-ns#"></div>
     <div class="xrx-namespace" data-prefix="skos" data-uri="http://www.w3.org/2004/02/skos/core#"></div>
     <!-- instances -->
-    <div class="xrx-instance" id="iactual">&lt;c&gt;http://www.ecodicology.org/CodiKOS&lt;/c&gt;</div>
-    <div class="xrx-instance" id="icodikos" data-src="./data/CodiKOS.rdf">
+    <div class="xrx-instance" id="iactual">
+      <div class="xrx-document">
+        <c>http://www.ecodicology.org/CodiKOS</c>;
+      </div>
+    </div>
+    <div class="xrx-github" id="icodikos" data-src="https://api.github.com/repos/JochenGraf/CodiLab/contents/data/CodiKOS.rdf">
       <div class="xrx-action" data-event="xrx-event-instance-update">
         <div class="xrx-classes-add" data-select=".save-message" data-classes="hidden"></div>
         <div class="xrx-classes-remove" data-select="#save-updated" data-classes="hidden"></div>
@@ -100,7 +104,7 @@
            data-label="concat('[', ./@rdf:about, '] ', ./skos:prefLabel[1]/text())"></div>
     </div>
     <!-- submissions -->
-    <div id="ssave" class="xrx-submission" data-bind="bcodikos" data-resource="https://api.github.com/repos/JochenGraf/eCodicology/contents/data/CodiKOS.rdf" data-method="PUT">
+    <div id="ssave" class="xrx-submission" data-bind="bcodikos" data-resource="https://api.github.com/repos/JochenGraf/CodiLab/contents/data/CodiKOS.rdf" data-method="PUT">
       <div class="xrx-action" data-event="xrx-event-submit-done">
         <div class="xrx-classes-add" data-select=".save-message" data-classes="hidden"></div>
         <div class="xrx-classes-remove" data-select="#save-success" data-classes="hidden"></div>
@@ -176,14 +180,21 @@
       <div id="browse">
         <h1 class="page-header">Browse SKOS Concepts
           <a class="btn btn-default pull-right" target="_blank"
-             href="https://github.com/JochenGraf/eCodicology/blob/master/data/CodiKOS.rdf" role="button">View <em>CodiKOS</em> on GitHub &raquo;</a>
+             href="https://github.com/JochenGraf/CodiLab/blob/master/data/CodiKOS.rdf" role="button">View <em>CodiKOS</em> on GitHub &raquo;</a>
         </h1>
         <!-- instances -->
-        <div class="xrx-instance" id="ibreadcrumb">&lt;breadcrumb&gt;
-            &lt;item&gt;CodiKOS&lt;/item&gt;
-          &lt;/breadcrumb&gt;
+        <div class="xrx-instance" id="ibreadcrumb">
+          <div class="xrx-document">
+            <breadcrumb>
+              <item>CodiKOS</item>
+            </breadcrumb>
+          </div>
         </div>
-        <div class="xrx-instance" id="inewBreadcrumb">&lt;item&gt;---&lt;/item&gt;</div>
+        <div class="xrx-instance" id="inewBreadcrumb">
+          <div class="xrx-document">
+            <item>---</item>
+          </div>
+        </div>
         <!-- binds -->
         <div class="xrx-bind" id="bbreadcrumbNewItem" data-ref="xrx:instance('inewBreadcrumb')/item"></div>
         <div class="xrx-bind" id="bbreadcrumbNewItemValue" data-ref="xrx:instance('inewBreadcrumb')/item/text()"></div>
@@ -196,7 +207,7 @@
         <div>
           <div class="xrx-action" id="aupdate-breadcrumb">
             <span class="xrx-calculate" id="cbreadcrumbItems"
-                data-ref="count(xrx:bind('bbreadcrumbItems')) > xrx:index('rbreadcrumb')"></span>
+                data-ref="count(xrx:instance('ibreadcrumb')/breadcrumb/item) > xrx:index('rbreadcrumb')"></span>
             <span class="xrx-while" data-test="cbreadcrumbItems">
               <span class="xrx-remove">
                 <span class="xrx-target" data-bind="bbreadcrumbLastItem"></span>
@@ -223,9 +234,9 @@
             </dt>
             <dd>
               <a class="xrx-button" href="#">
-                <span class="xrx-output" data-ref="./skos:prefLabel[1]/text()"></span>
+                <strong class="xrx-output" data-ref="./skos:prefLabel[1]/text()"></strong>
                 <span>-</span>
-                <span class="xrx-output" data-ref="./skos:prefLabel[2]/text()"></span>
+                <strong class="xrx-output" data-ref="./skos:prefLabel[2]/text()"></strong>
                 <span>-</span>
                 <span class="xrx-output" data-ref="./skos:note/skos:definition[1]/text()"></span>
                 <span>-</span>
@@ -370,7 +381,11 @@
        * Modal dialog to rename an SKOS concept entry
        * -->
       <!-- model -->
-      <div class="xrx-instance" id="irename">&lt;data&gt;&lt;/data&gt;</div>
+      <div class="xrx-instance" id="irename">
+        <div class="xrx-document">
+          <data></data>
+        </div>
+      </div>
       <div class="xrx-bind" id="brenameNewNotation" data-ref="xrx:instance('irename')/data"></div>
       <div class="xrx-bind" id="brenameNewNotationValue" data-ref="xrx:instance('irename')/data/text()"></div>
       <div class="xrx-bind" id="brenameNewId" data-ref="concat('http://www.ecodicology.org/', xrx:bind('brenameNewNotationValue'))"></div>

@@ -30,7 +30,36 @@
   <![endif]-->
 </head>
 <body>
+  <!-- model -->
+  <div class="xrx-namespace" data-prefix="mets" data-uri="http://www.loc.gov/METS/"></div>
+  <div class="xrx-namespace" data-prefix="xlink" data-uri="http://www.w3.org/1999/xlink"></div>
 
+  <!--**
+   * Swati
+   *-->
+  <div class="xrx-instance" id="iswati" data-src="./data/T0152/test.swati.xml"></div>
+  <div class="xrx-bind" id="bswatiZone" data-ref="xrx:instance('iswati')/Page_Measure/zone"></div>
+
+  <!--**
+   * CodiAnn
+   *-->
+  <div class="xrx-instance" id="icodiann">
+    <div class="xrx-document">
+      <codiann>
+        <imagepos>11</imagepos>
+      </codiann>
+    </div>
+  </div>
+  <div class="xrx-bind" id="bimagePos" data-ref="number(xrx:instance('icodiann')/codiann/imagepos/text())"></div>
+
+  <!--**
+   * METS
+   *-->
+  <div class="xrx-instance" id="imets" data-src="./data/T0152/T0152.mets.xml"></div>
+  <div class="xrx-bind" id="bimageUrl"
+       data-ref="xrx:instance('imets')/mets:mets/mets:fileSec[1]/mets:fileGrp[1]/mets:file[xrx:bind('bimagePos')]/mets:FLocat/@xlink:href"></div>
+
+  <!-- view -->
   <nav id="nav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container">
       <div class="navbar-header">
@@ -80,11 +109,30 @@
   </nav>
   <div class="container">
     <div class="starter-template">
+      <div class="xrx-output" data-bind="bimageUrl"></div>
+      <div class="xrx-canvas">
+        <div class="xrx-canvas-background-image" data-bind="bimageUrl"></div>
+        <div class="xrx-canvas-graphics">
+          <div class="xrx-canvas-group">
+            <div class="xrx-repeat" data-bind="bswatiZone">
+              <div class="xrx-shape-rect"
+                  data-ref="./self::*"
+                  data-ref-x="number(./BX/text()) * 62"
+                  data-ref-y="number(./BY/text()) * 62"
+                  data-ref-width="number(./Width/text()) * 62"
+                  data-ref-height="number(./Height/text()) * 62">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div> 
   </div><!-- /container -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
   <script>
+    var width = $('.xrx-canvas').width();
+    $('.xrx-canvas').height(width);
     xrx.install();
   </script>
 </body>
