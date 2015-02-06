@@ -37,10 +37,10 @@
     <!-- instances -->
     <div class="xrx-instance" id="iactual">
       <div class="xrx-document">
-        <c>http://www.ecodicology.org/CodiKOS</c>;
+        <c>http://www.ecodicology.org/CodiKOS</c>
       </div>
     </div>
-    <div class="xrx-github" id="icodikos" data-src="https://api.github.com/repos/JochenGraf/CodiLab/contents/data/CodiKOS.rdf">
+    <div class="xrx-github" id="icodikos" data-resource="https://api.github.com/repos/JochenGraf/CodiLab/contents/data/CodiKOS.rdf">
       <div class="xrx-action" data-event="xrx-event-instance-update">
         <div class="xrx-classes-add" data-select=".save-message" data-classes="hidden"></div>
         <div class="xrx-classes-remove" data-select="#save-updated" data-classes="hidden"></div>
@@ -48,7 +48,7 @@
         <div class="xrx-classes-add" data-select="#nav" data-classes="alert-warning"></div>
       </div>
     </div>
-    <div class="xrx-instance" id="itemplate" data-src="./client/CodiKOS.template.rdf"></div>
+    <div class="xrx-instance" id="itemplate" data-resource="./client/CodiKOS.template.rdf"></div>
     <!-- binds -->
     <div class="xrx-bind" id="bactualConcept"
          data-ref="xrx:instance('iactual')/c/text()"></div>
@@ -278,7 +278,7 @@
             </div>
             <div class="modal-body">
               <!--model-->
-              <div class="xrx-instance" id="inewConcept" data-src="./client/CodiKOS.new.rdf"></div>
+              <div class="xrx-instance" id="inewConcept" data-resource="./client/CodiKOS.new.rdf"></div>
               <div class="xrx-bind" id="bnewConcept" data-ref="xrx:instance('inewConcept')/rdf:RDF/rdf:Description"></div>
               <div class="xrx-bind" id="bnewNotation" data-ref="xrx:bind('bnewConcept')/skos:notation"></div>
               <div class="xrx-bind" id="bnewIdTarget" data-ref="xrx:bind('bnewConcept')/@rdf:about"></div>

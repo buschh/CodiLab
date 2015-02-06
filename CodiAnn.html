@@ -35,29 +35,36 @@
   <div class="xrx-namespace" data-prefix="xlink" data-uri="http://www.w3.org/1999/xlink"></div>
 
   <!--**
-   * Swati
-   *-->
-  <div class="xrx-instance" id="iswati" data-src="./data/T0152/test.swati.xml"></div>
-  <div class="xrx-bind" id="bswatiZone" data-ref="xrx:instance('iswati')/Page_Measure/zone"></div>
-
-  <!--**
-   * CodiAnn
+   * CodiAnn model
    *-->
   <div class="xrx-instance" id="icodiann">
     <div class="xrx-document">
-      <codiann>
+      <app>
         <imagepos>11</imagepos>
-      </codiann>
+      </app>
     </div>
   </div>
-  <div class="xrx-bind" id="bimagePos" data-ref="number(xrx:instance('icodiann')/codiann/imagepos/text())"></div>
+  <div class="xrx-bind" id="bappActualImage" data-ref="xrx:instance('icodiann')/app/imagepos/text()"></div>
+  <div class="xrx-bind" id="bappImagePos" data-ref="number(xrx:instance('icodiann')/app/imagepos/text())"></div>
+  <div class="xrx-bind" id="bappNextImage" data-ref="xrx:bind('bappImagePos') + 1"></div>
+  <div class="xrx-bind" id="bappPreviousImage" data-ref="xrx:bind('bappImagePos') - 1"></div>
 
   <!--**
-   * METS
+   * METS model
    *-->
-  <div class="xrx-instance" id="imets" data-src="./data/T0152/T0152.mets.xml"></div>
-  <div class="xrx-bind" id="bimageUrl"
-       data-ref="xrx:instance('imets')/mets:mets/mets:fileSec[1]/mets:fileGrp[1]/mets:file[xrx:bind('bimagePos')]/mets:FLocat/@xlink:href"></div>
+  <div class="xrx-instance" id="imets" data-resource="./data/T0152/T0152.mets.xml"></div>
+  <div class="xrx-bind" id="bmetsActualFile"
+       data-ref="xrx:instance('imets')/mets:mets/mets:fileSec[1]/mets:fileGrp[1]/mets:file[xrx:bind('bappImagePos')]"></div>
+  <div class="xrx-bind" id="bmetsActualImageUrl"
+       data-ref="xrx:bind('bmetsActualFile')/mets:FLocat/@xlink:href"></div>
+  <div class="xrx-bind" id="bmetsActualImageId"
+       data-ref="substring-before(xrx:bind('bmetsActualFile')/@ID, '-DEF')"></div>
+
+  <!--**
+   * Swati model
+   *-->
+  <div class="xrx-instance" id="iswati" data-resource="./data/T0152/T0152.swati.xml"></div>
+  <div class="xrx-bind" id="bswatiZone" data-ref="xrx:instance('iswati')/SwatiXml/Page_Measure[./ImageID=xrx:bind('bmetsActualImageId')]/zone"></div>
 
   <!-- view -->
   <nav id="nav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -107,31 +114,58 @@
       </div><!--/.navbar-collapse -->
     </div>
   </nav>
+
+  <!--*
+   * Image Annotation Tool
+   *-->
   <div class="container">
     <div class="starter-template">
-      <div class="xrx-output" data-bind="bimageUrl"></div>
+      <div>
+        <button class="xrx-button btn btn-default">
+          <span>Previous Image</span>
+          <span class="xrx-action" data-event="xrx-event-click">
+            <span class="xrx-update">
+              <span class="xrx-origin" data-bind="bappPreviousImage"></span>
+              <span class="xrx-target" data-bind="bappActualImage"></span>
+            </span>
+          </span>
+        </button>
+        <button class="xrx-button btn btn-default">
+          <span>Next Image</span>
+          <span class="xrx-action" data-event="xrx-event-click">
+            <span class="xrx-update">
+              <span class="xrx-origin" data-bind="bappNextImage"></span>
+              <span class="xrx-target" data-bind="bappActualImage"></span>
+            </span>
+          </span>
+        </button>
+      </div>
+      <div class="xrx-output" data-bind="bappActualImage"></div>
       <div class="xrx-canvas">
-        <div class="xrx-canvas-background-image" data-bind="bimageUrl"></div>
+        <div class="xrx-canvas-background-image" data-bind="bmetsActualImageUrl"
+             data-zone-bottom="-125"></div>
         <div class="xrx-canvas-graphics">
           <div class="xrx-canvas-group">
-            <div class="xrx-repeat" data-bind="bswatiZone">
-              <div class="xrx-shape-rect"
+            <!--div class="xrx-repeat" data-bind="bswatiZone">
+              <div class="xrx-shape-rect" data-unit="percentage"
                   data-ref="./self::*"
-                  data-ref-x="number(./BX/text()) * 62"
-                  data-ref-y="number(./BY/text()) * 62"
-                  data-ref-width="number(./Width/text()) * 62"
-                  data-ref-height="number(./Height/text()) * 62">
+                  data-ref-x="./BX_Percentage/text()"
+                  data-ref-y="./BY_Percentage/text()"
+                  data-ref-width="./RelativeWidth_Percentage/text()"
+                  data-ref-height="number(./RelativeHeight_Percentage/text())">
               </div>
-            </div>
+            </div-->
           </div>
         </div>
       </div>
     </div> 
   </div><!-- /container -->
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
   <script>
-    var width = $('.xrx-canvas').width();
+    var width = $('.container').width();
+    $('.xrx-canvas').width(width);
     $('.xrx-canvas').height(width);
     xrx.install();
   </script>
