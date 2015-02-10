@@ -1,0 +1,82 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:oa="http://www.w3.org/ns/oa#"
+         xmlns:foaf="http://xmlns.com/foaf/spec/"
+         xmlns:dc="http://purl.org/dc/terms/"
+         xmlns:cnt="http://www.w3.org/2011/content#"
+         xmlns:exif="http://www.w3.org/2003/12/exif/ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:ore="http://www.openarchives.org/ore/terms/">
+  <rdf:Description rdf:about="http://www.ecodicology.org/Canvas/???">
+    <exif:height rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"></exif:height>
+    <exif:width rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"></exif:width>
+    <rdfs:label></rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/AnnoList/???">
+    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Aggregation"/>
+    <ore:aggregates rdf:resource="http://www.ecodicology.org/Anno/???"/>
+  </rdf:Description>
+  <ore:ResourceMap rdf:about="http://www.ecodicology.org/ResourceMap/???">
+    <ore:describes rdf:resource="http://www.ecodicology.org/AnnoList/???"/>
+    <dc:modified></dc:modified>
+    <dc:creator>
+      <dc:Agent rdf:about="">
+        <foaf:mbox></foaf:mbox>
+        <foaf:name></foaf:name>
+      </dc:Agent>
+    </dc:creator>
+  </ore:ResourceMap>
+  <rdf:Description rdf:about="http://www.ecodicology.org/Anno/7654321">
+    <oa:annotatedAt></oa:annotatedAt>
+    <oa:annotatedBy>
+      <foaf:Person rdf:about="">
+        <foaf:mbox></foaf:mbox>
+        <foaf:name></foaf:name>
+      </foaf:Person>
+    </oa:annotatedBy>
+    <oa:serializedAt></oa:serializedAt>
+    <oa:serializedBy rdf:resource=""/>
+    <oa:motivatedBy rdf:resource="http://www.shared-canvas.org/ns/painting"/>
+    <oa:hasBody>
+      <oa:SemanticTag rdf:about=""/>
+    </oa:hasBody>
+    <oa:hasTarget>
+      <oa:SpecificResource>
+        <oa:hasSelector>
+          <cnt:ContentAsXML>
+            <cnt:rest>
+              <svg:rect xmlns:svg="http://www.w3.org/2000/svg" x="41.0" y="32.8" width="230" height="360"/>
+            </cnt:rest>
+          </cnt:ContentAsXML>
+        </oa:hasSelector>
+        <oa:hasSource></oa:hasSource>
+      </oa:SpecificResource>
+    </oa:hasTarget>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/Anno/1234567">
+    <oa:annotatedAt></oa:annotatedAt>
+    <oa:annotatedBy>
+      <foaf:Person rdf:about="">
+        <foaf:mbox></foaf:mbox>
+        <foaf:name></foaf:name>
+      </foaf:Person>
+    </oa:annotatedBy>
+    <oa:serializedAt></oa:serializedAt>
+    <oa:serializedBy rdf:resource=""/>
+    <oa:motivatedBy rdf:resource="http://www.shared-canvas.org/ns/painting"/>
+    <oa:hasBody>
+      <oa:SemanticTag rdf:about=""/>
+    </oa:hasBody>
+    <oa:hasTarget>
+      <oa:SpecificResource>
+        <oa:hasSelector>
+          <cnt:ContentAsXML>
+            <cnt:rest>
+              <svg:polygon xmlns:svg="http://www.w3.org/2000/svg" points="14.8,41.0 7.4,80.7 56.5,32.2 56.8,32.8 67.1,33.4 5.5,33.7 67.1,33.3 4.6,32.2"/>
+            </cnt:rest>
+          </cnt:ContentAsXML>
+        </oa:hasSelector>
+        <oa:hasSource></oa:hasSource>
+      </oa:SpecificResource>
+    </oa:hasTarget>
+  </rdf:Description>
+</rdf:RDF>

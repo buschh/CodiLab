@@ -18,12 +18,38 @@
       <oa:SemanticTag rdf:about=""/>
     </oa:hasBody>
     <oa:hasTarget>
-      <oa:SpecificResource rdf:about="">
+      <oa:SpecificResource>
         <oa:hasSelector>
-          <cnt:ContentAsXML rdf:about="">
+          <cnt:ContentAsXML>
+            <cnt:rest>
+              <svg:rect xmlns:svg="http://www.w3.org/2000/svg" x="" y="" width="" height=""/>
+            </cnt:rest>
+          </cnt:ContentAsXML>
+        </oa:hasSelector>
+        <oa:hasSource></oa:hasSource>
+      </oa:SpecificResource>
+    </oa:hasTarget>
+  </rdf:Description>
+  <rdf:Description rdf:about="">
+    <oa:annotatedAt></oa:annotatedAt>
+    <oa:annotatedBy>
+      <foaf:Person rdf:about="">
+        <foaf:mbox></foaf:mbox>
+        <foaf:name></foaf:name>
+      </foaf:Person>
+    </oa:annotatedBy>
+    <oa:serializedAt></oa:serializedAt>
+    <oa:serializedBy rdf:resource=""/>
+    <oa:motivatedBy rdf:resource="http://www.shared-canvas.org/ns/painting"/>
+    <oa:hasBody>
+      <oa:SemanticTag rdf:about=""/>
+    </oa:hasBody>
+    <oa:hasTarget>
+      <oa:SpecificResource>
+        <oa:hasSelector>
+          <cnt:ContentAsXML>
             <cnt:rest>
               <svg:polygon xmlns:svg="http://www.w3.org/2000/svg" points=""/>
-              <svg:rect xmlns:svg="http://www.w3.org/2000/svg" x="" y="" width="" height=""/>
             </cnt:rest>
           </cnt:ContentAsXML>
         </oa:hasSelector>
