@@ -97,4 +97,14 @@
       <skos:definition xml:lang="de">jede Seitenfläche eines Blattes</skos:definition>
     </skos:note>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/331.071">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Inner Margin</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Bundsteg</skos:prefLabel>
+    <skos:notation>331.071</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">inner marginal area of the page</skos:definition>
+      <skos:definition xml:lang="de">innerer Rand der Seite (zum Bund hin)</skos:definition>
+    </skos:note>
+  </rdf:Description>
 </rdf:RDF>
