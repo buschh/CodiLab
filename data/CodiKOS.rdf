@@ -119,4 +119,14 @@
       <skos:definition xml:lang="de">gesamte Fläche innerhalb des Beschriftungsraumes, muss von Randelementen unterschieden werden</skos:definition>
     </skos:note>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/333.02">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Initial</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Initiale</skos:prefLabel>
+    <skos:notation>333.02</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">enlarged and decorated letter, introducing an important section of a text (work, chapter), emphasised by size, colour form, and decoration. Initials can have different levels of significance (primary, secondary, tertiary)</skos:definition>
+      <skos:definition xml:lang="de">schmückender Buchstabe am Textanfang, hervorgehoben durch Größe, Farbe, Form und Verzierung, leitet einen hervorzuhebenden Abschnitt eines Textes (Werk, Kapitel) ein. Initialen haben verschiedene hierarchische Bedeutungsebenen (primär, sekundär, tertiär)</skos:definition>
+    </skos:note>
+  </rdf:Description>
 </rdf:RDF>
