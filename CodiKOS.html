@@ -178,7 +178,9 @@
        * SKOS concept browser
        *-->
       <div id="browse">
-        <h1 class="page-header">Browse SKOS Concepts
+        <h1 class="page-header">Browse SKOS Concepts 
+          <small class="xrx-output" data-bind="bprefLabelEn"></small><small> - </small><small class="xrx-output" data-bind="bprefLabelDe"></small>
+          <small> (</small><small class="xrx-output" data-bind="bnotation"></small><small>)</small>
           <a class="btn btn-default pull-right" target="_blank"
              href="https://github.com/JochenGraf/CodiLab/blob/master/data/CodiKOS.rdf" role="button">View <em>CodiKOS</em> on GitHub &raquo;</a>
         </h1>
@@ -237,10 +239,12 @@
                 <strong class="xrx-output" data-ref="./skos:prefLabel[1]/text()"></strong>
                 <span>-</span>
                 <strong class="xrx-output" data-ref="./skos:prefLabel[2]/text()"></strong>
-                <span>-</span>
-                <span class="xrx-output" data-ref="./skos:note/skos:definition[1]/text()"></span>
-                <span>-</span>
-                <span class="xrx-output" data-ref="./skos:note/skos:definition[2]/text()"></span>
+                <br>
+                <small>
+                  <span class="xrx-output" data-ref="./skos:note/skos:definition[1]/text()"></span>
+                  <span>-</span>
+                  <span class="xrx-output" data-ref="./skos:note/skos:definition[2]/text()"></span>
+                </small>
                 <span class="xrx-action" data-event="xrx-event-click">
                   <span class="xrx-update">
                     <span class="xrx-origin" data-ref="./skos:notation/text()"></span>
@@ -567,7 +571,10 @@
        * Form to edit an SKOS concept
        * -->
       <div id="edit"><!--edit-->
-        <h1 class="page-header">Edit SKOS Concept</h1>
+        <h1 class="page-header">Edit SKOS Concept
+          <small class="xrx-output" data-bind="bprefLabelEn"></small><small> - </small><small class="xrx-output" data-bind="bprefLabelDe"></small>
+          <small> (</small><small class="xrx-output" data-bind="bnotation"></small><small>)</small>
+        </h1>
         <form class="form-horizontal" role="form">
           <div class="form-group">
             <label class="col-sm-2 control-label"></label>

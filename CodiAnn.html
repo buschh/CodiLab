@@ -33,14 +33,7 @@ border-width: 5px;
 .automatic-annotation {
 border-style: solid;
 border-color: #0000ff;
-border-width: 2px;
-}
-
-.xrx-shape-vertex-dragger {
-}
-
-.xrx-canvas {
-border: 1px solid rgb(240,240,240);
+border-width: 3px;
 }
   </style>
   <!--[if lt IE 9]>
@@ -59,6 +52,7 @@ border: 1px solid rgb(240,240,240);
   <div class="xrx-namespace" data-prefix="svg" data-uri="http://www.w3.org/2000/svg"></div>
   <div class="xrx-namespace" data-prefix="rdf" data-uri="http://www.w3.org/1999/02/22-rdf-syntax-ns#"></div>
   <div class="xrx-namespace" data-prefix="oa" data-uri="http://www.w3.org/ns/oa#"></div>
+  <div class="xrx-namespace" data-prefix="skos" data-uri="http://www.w3.org/2004/02/skos/core#"></div>
 
 
 
@@ -154,6 +148,9 @@ border: 1px solid rgb(240,240,240);
   <div class="xrx-bind"                id="bscLastAnnotation"
        data-ref="xrx:instance('isc')/rdf:RDF/rdf:Description[last()]"></div>
 
+  <div class="xrx-bind"                id="bscSemanticTags"
+       data-ref="xrx:instance('isc')//oa:SemanticTag"></div>
+
   <!-- template model rect -->
   <div class="xrx-instance"            id="isct"
        data-resource="./client/sc.template.rdf"></div>
@@ -216,6 +213,16 @@ border: 1px solid rgb(240,240,240);
   <div class="xrx-bind"                id="bsctPolygonCoords"
        data-ref="xrx:bind('bsctPolygon')/@points"></div>
 
+
+
+  <!--**
+   * CodiKOS model
+   *-->
+  <div class="xrx-instance"            id="icodikos"
+       data-resource="./data/CodiKOS.rdf"></div>
+
+  <div class="xrx-bind"                id="bcodikosNotations"
+       data-ref="xrx:instance('icodikos')/rdf:RDF/rdf:Description[xrx:instance('isc')//oa:SemanticTag/@rdf:about = string(./@rdf:about)]/skos:prefLabel[1]"></div>
 
 
   <!-- view -->
@@ -313,164 +320,231 @@ border: 1px solid rgb(240,240,240);
        *-->
 
       <!--
-       * Annotation Functionality
+       * Tool-bar for annotation functionalities
        *-->
-      <div class="btn-group pull-right" role="group">
-        <button class="xrx-button btn">
-          <span>Pan</span>
-          <span class="xrx-action" data-event="xrx-event-click">
-            <span class="xrx-script" data-script="xrx.mvc.getComponent('dcanvas').setModeView();"></span>
-          </span>
-        </button>
-        <button class="btn">Verify</button>
-        <button class="xrx-button btn">
-          <span>Modify</span>
-          <span class="xrx-action" data-event="xrx-event-click">
-            <span class="xrx-script" data-script="xrx.mvc.getComponent('dcanvas').setModeModify();"></span>
-          </span>
-        </button>
-        <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-          <span>Draw</span>
-          <span class="caret"></span>
-        </button>
-        <ul class="dropdown-menu" role="menu">
-          <li>
-            <a class="xrx-button" href="#">
-              Draw Rectangle
-              <span class="xrx-action" data-event="xrx-event-click">
-                <span class="xrx-script" data-script="xrx.mvc.getComponent('dcanvas').setModeCreate('nManualRectangle');"></script>
-              </span>
-            </a>
-          </li>
-          <li>
-            <a class="xrx-button" href="#">
-              Draw Polygon
-              <span class="xrx-action" data-event="xrx-event-click">
-                <span class="xrx-script" data-script="xrx.mvc.getComponent('dcanvas').setModeCreate('nManualPolygon');"></script>
-              </span>
-            </a>
-          </li>
-        </ul>
-        <button class="btn">Tag</button>
-      </div>
-
-      <!--*
-       * Canvas
-       *-->
-      <div id="dcanvas" class="xrx-canvas">
-        <div class="xrx-canvas-background-image" data-bind="bmetsActualImageUrl"
-             data-zone-bottom="-125"></div>
-        <div class="xrx-canvas-graphics">
-
-          <div class="xrx-canvas-group"><!-- automatic Swati annotations -->
-            <div class="xrx-repeat" data-bind="bswatiZone">
-              <div class="xrx-shape-rect automatic-annotation"
-                   data-unit="percentage"
-                   data-modifiable="false"
-                   data-ref="./self::*"
-                   data-ref-x="./BX_Percentage/text()"
-                   data-ref-y="./BY_Percentage/text()"
-                   data-ref-width="./RelativeWidth_Percentage/text()"
-                   data-ref-height="./RelativeHeight_Percentage/text()">
-              </div>
-            </div>
-          </div>
-
-          <!-- manual rectangles -->
-          <div class="xrx-canvas-group" data-name="nManualRectangle">
-            <div class="xrx-repeat" data-bind="bscRectangles">
-              <div class="xrx-shape-rect manual-annotation"
-                   data-ref="./self::*"
-                   data-ref-x="./@x"
-                   data-ref-y="./@y"
-                   data-ref-width="./@width"
-                   data-ref-height="./@height">
-              </div>
-            </div>
-            <div class="xrx-shape-rect-create"
-                 data-bind="bsctRect"
-                 data-bind-x="bsctRectX"
-                 data-bind-y="bsctRectY"
-                 data-bind-width="bsctRectWidth"
-                 data-bind-height="bsctRectHeight">
-            </div>
-            <div class="xrx-action" data-event="xrx-event-graphic-created">
-              <div class="xrx-update">
-                <div class="xrx-origin" data-calculate="cuuid"></div>
-                <div class="xrx-target" data-bind="bsctRectAbout"></div>
-              </div>
-              <div class="xrx-update">
-                <div class="xrx-origin" data-calculate="ccurrentDateTime"></div>
-                <div class="xrx-target" data-bind="bsctRectAnnotatedAt"></div>
-              </div>
-              <div class="xrx-update">
-                <div class="xrx-origin" data-bind="buri"></div>
-                <div class="xrx-target" data-bind="bsctRectSerializedBy"></div>
-              </div>
-              <div class="xrx-update">
-                <div class="xrx-origin" data-calculate="ccurrentDateTime"></div>
-                <div class="xrx-target" data-bind="bsctRectSerializedAt"></div>
-              </div>
-              <div class="xrx-update">
-                <div class="xrx-origin" data-bind="bmetsActualImageUrl"></div>
-                <div class="xrx-target" data-bind="bsctRectHasSource"></div>
-              </div>
-              <div class="xrx-insert">
-                <div class="xrx-origin" data-bind="bsctOriginRect"></div>
-                <div class="xrx-target" data-bind="bscLastAnnotation"></div>
-              </div>
-            </div>
-          </div>
-
-          <!-- manual polygons -->
-          <div class="xrx-canvas-group" data-name="nManualPolygon">
-            <div class="xrx-repeat" data-bind="bscPolygons">
-              <div class="xrx-shape-polygon manual-annotation"
-                   data-ref="./self::*"
-                   data-ref-coords="./@points">
-              </div>
-            </div>
-            <div class="xrx-shape-polygon-create"
-                 data-bind="bsctPolygon"
-                 data-bind-coords="bsctPolygonCoords">
-            </div>
-            <div class="xrx-action" data-event="xrx-event-graphic-created">
-              <div class="xrx-update">
-                <div class="xrx-origin" data-calculate="cuuid"></div>
-                <div class="xrx-target" data-bind="bsctPolygonAbout"></div>
-              </div>
-              <div class="xrx-update">
-                <div class="xrx-origin" data-calculate="ccurrentDateTime"></div>
-                <div class="xrx-target" data-bind="bsctPolygonAnnotatedAt"></div>
-              </div>
-              <div class="xrx-update">
-                <div class="xrx-origin" data-bind="buri"></div>
-                <div class="xrx-target" data-bind="bsctPolygonSerializedBy"></div>
-              </div>
-              <div class="xrx-update">
-                <div class="xrx-origin" data-calculate="ccurrentDateTime"></div>
-                <div class="xrx-target" data-bind="bsctPolygonSerializedAt"></div>
-              </div>
-              <div class="xrx-update">
-                <div class="xrx-origin" data-bind="bmetsActualImageUrl"></div>
-                <div class="xrx-target" data-bind="bsctPolygonHasSource"></div>
-              </div>
-              <div class="xrx-insert">
-                <div class="xrx-origin" data-bind="bsctOriginPolygon"></div>
-                <div class="xrx-target" data-bind="bscLastAnnotation"></div>
-              </div>
-            </div>
-          </div>
-
+      <div>
+        <div class="btn-group pull-right" role="group">
+          <button class="xrx-button btn">
+            <span>Pan</span>
+            <span class="xrx-action" data-event="xrx-event-click">
+              <span class="xrx-script" data-script="xrx.mvc.getComponent('dcanvas').setModeView();"></span>
+              <span class="xrx-script" data-script="xrx.mvc.getComponent('dcanvas').resetGroups();"></span>
+            </span>
+          </button>
+          <button class="xrx-button btn">
+            <span>Verify</span>
+            <span class="xrx-action" data-event="xrx-event-click">
+              <span class="xrx-script" data-script="xrx.mvc.getComponent('dcanvas').setModeSelect();"></span>
+              <span class="xrx-script" data-script="xrx.mvc.getComponent('dautomaticAnnotation').toFront();"></span>
+            </span>
+          </button>
+          <button class="xrx-button btn">
+            <span>Modify</span>
+            <span class="xrx-action" data-event="xrx-event-click">
+              <span class="xrx-script" data-script="xrx.mvc.getComponent('dcanvas').setModeModify();"></span>
+              <span class="xrx-script" data-script="xrx.mvc.getComponent('dcanvas').resetGroups();"></span>
+            </span>
+          </button>
+          <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+            <span>Draw</span>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+            <li>
+              <a class="xrx-button" href="#">
+                Draw Rectangle
+                <span class="xrx-action" data-event="xrx-event-click">
+                  <span class="xrx-script" data-script="xrx.mvc.getComponent('dcanvas').resetGroups();"></span>
+                  <span class="xrx-script" data-script="xrx.mvc.getComponent('dcanvas').setModeCreate('nManualRectangle');"></script>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a class="xrx-button" href="#">
+                Draw Polygon
+                <span class="xrx-action" data-event="xrx-event-click">
+                  <span class="xrx-script" data-script="xrx.mvc.getComponent('dcanvas').resetGroups();"></span>
+                  <span class="xrx-script" data-script="xrx.mvc.getComponent('dcanvas').setModeCreate('nManualPolygon');"></script>
+                </span>
+              </a>
+            </li>
+          </ul>
+          <button class="xrx-button btn">
+            <span>Delete</span>
+            <span class="xrx-action" data-event="xrx-event-click">
+              <span class="xrx-script" data-script="xrx.mvc.getComponent('dcanvas').resetGroups();"></span>
+              <span class="xrx-script" data-script="xrx.mvc.getComponent('dcanvas').setModeSelect();"></span>
+            </span>
+          </button>
+          <button class="xrx-button btn">
+            <span>Tag</span>
+            <span class="xrx-action" data-event="xrx-event-click">
+              <span class="xrx-script" data-script="xrx.mvc.getComponent('dcanvas').resetGroups();"></span>
+            </span>
+          </button>
         </div>
       </div>
 
-      <div class="row" style="margin-top:100px;">
-        <div class="col-xs-8 col-sm-4 col-md-6">
+
+
+      <div class="row">
+
+        <!--*
+         * Semantic Tagging
+         *-->
+        <div id="dsemanticTagging" class="col-xs-2">
+          <h3>Tags Overview</h3>
+          <div class="xrx-repeat" data-bind="bcodikosNotations">
+            <li class="xrx-output" data-ref="./text()"></li>
+          </div>
+        </div>
+
+        <!--*
+         * Canvas
+         *-->
+        <div id="dcanvas" class="xrx-canvas col-xs-10">
+          <div class="xrx-canvas-background-image" data-bind="bmetsActualImageUrl"
+               data-zone-bottom="-125"></div>
+          <div class="xrx-canvas-graphics">
+
+            <div class="xrx-canvas-group" id="dautomaticAnnotation"><!-- automatic Swati annotations -->
+              <div class="xrx-repeat" data-bind="bswatiZone">
+                <div class="xrx-shape-rect automatic-annotation"
+                     data-unit="percentage"
+                     data-modifiable="false"
+                     data-ref="./self::*"
+                     data-ref-x="./BX_Percentage/text()"
+                     data-ref-y="./BY_Percentage/text()"
+                     data-ref-width="./RelativeWidth_Percentage/text()"
+                     data-ref-height="./RelativeHeight_Percentage/text()">
+                  <div class="xrx-action" data-event="xrx-event-graphic-selected">
+                    <div class="xrx-update">
+                      <div class="xrx-origin" data-ref="number(./BX_Percentage/text()) * 1500 div 100"></div>
+                      <div class="xrx-target" data-bind="bsctRectX"></div>
+                    </div>
+                    <div class="xrx-update">
+                      <div class="xrx-origin" data-ref="(number(./BY_Percentage/text()) * 2146 div 100) - (125 * number(./BY_Percentage/text()) div 100)"></div>
+                      <div class="xrx-target" data-bind="bsctRectY"></div>
+                    </div>
+                    <div class="xrx-update">
+                      <div class="xrx-origin" data-ref="number(./RelativeWidth_Percentage/text()) * 1500 div 100"></div>
+                      <div class="xrx-target" data-bind="bsctRectWidth"></div>
+                    </div>
+                    <div class="xrx-update">
+                      <div class="xrx-origin" data-ref="(number(./RelativeHeight_Percentage/text()) * 2146 div 100) - (125 * number(./RelativeHeight_Percentage/text()) div 100)"></div>
+                      <div class="xrx-target" data-bind="bsctRectHeight"></div>
+                    </div>
+                    <div class="xrx-dispatch" data-action="aprepareAndInsertRect"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- manual rectangles -->
+            <div class="xrx-canvas-group" data-name="nManualRectangle">
+              <div class="xrx-repeat" data-bind="bscRectangles">
+                <div class="xrx-shape-rect manual-annotation"
+                     data-ref="./self::*"
+                     data-ref-x="./@x"
+                     data-ref-y="./@y"
+                     data-ref-width="./@width"
+                     data-ref-height="./@height">
+                  <div class="xrx-action" data-event="xrx-event-graphic-selected">
+                    <div class="xrx-remove">
+                      <div class="xrx-target" data-ref="./ancestor::rdf:Description"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="xrx-shape-rect-create"
+                   data-bind="bsctRect"
+                   data-bind-x="bsctRectX"
+                   data-bind-y="bsctRectY"
+                   data-bind-width="bsctRectWidth"
+                   data-bind-height="bsctRectHeight">
+              </div>
+              <div class="xrx-action" id="aprepareAndInsertRect" data-event="xrx-event-graphic-created">
+                <div class="xrx-update">
+                  <div class="xrx-origin" data-calculate="cuuid"></div>
+                  <div class="xrx-target" data-bind="bsctRectAbout"></div>
+                </div>
+                <div class="xrx-update">
+                  <div class="xrx-origin" data-calculate="ccurrentDateTime"></div>
+                  <div class="xrx-target" data-bind="bsctRectAnnotatedAt"></div>
+                </div>
+                <div class="xrx-update">
+                  <div class="xrx-origin" data-bind="buri"></div>
+                  <div class="xrx-target" data-bind="bsctRectSerializedBy"></div>
+                </div>
+                <div class="xrx-update">
+                  <div class="xrx-origin" data-calculate="ccurrentDateTime"></div>
+                  <div class="xrx-target" data-bind="bsctRectSerializedAt"></div>
+                </div>
+                <div class="xrx-update">
+                  <div class="xrx-origin" data-bind="bmetsActualImageUrl"></div>
+                  <div class="xrx-target" data-bind="bsctRectHasSource"></div>
+                </div>
+                <div class="xrx-insert">
+                  <div class="xrx-origin" data-bind="bsctOriginRect"></div>
+                  <div class="xrx-target" data-bind="bscLastAnnotation"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- manual polygons -->
+            <div class="xrx-canvas-group" data-name="nManualPolygon">
+              <div class="xrx-repeat" data-bind="bscPolygons">
+                <div class="xrx-shape-polygon manual-annotation"
+                     data-ref="./self::*"
+                     data-ref-coords="./@points">
+                  <div class="xrx-action" data-event="xrx-event-graphic-selected">
+                    <div class="xrx-remove">
+                      <div class="xrx-target" data-ref="./ancestor::rdf:Description"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="xrx-shape-polygon-create"
+                   data-bind="bsctPolygon"
+                   data-bind-coords="bsctPolygonCoords">
+              </div>
+              <div class="xrx-action" data-event="xrx-event-graphic-created">
+                <div class="xrx-update">
+                  <div class="xrx-origin" data-calculate="cuuid"></div>
+                  <div class="xrx-target" data-bind="bsctPolygonAbout"></div>
+                </div>
+                <div class="xrx-update">
+                  <div class="xrx-origin" data-calculate="ccurrentDateTime"></div>
+                  <div class="xrx-target" data-bind="bsctPolygonAnnotatedAt"></div>
+                </div>
+                <div class="xrx-update">
+                  <div class="xrx-origin" data-bind="buri"></div>
+                  <div class="xrx-target" data-bind="bsctPolygonSerializedBy"></div>
+                </div>
+                <div class="xrx-update">
+                  <div class="xrx-origin" data-calculate="ccurrentDateTime"></div>
+                  <div class="xrx-target" data-bind="bsctPolygonSerializedAt"></div>
+                </div>
+                <div class="xrx-update">
+                  <div class="xrx-origin" data-bind="bmetsActualImageUrl"></div>
+                  <div class="xrx-target" data-bind="bsctPolygonHasSource"></div>
+                </div>
+                <div class="xrx-insert">
+                  <div class="xrx-origin" data-bind="bsctOriginPolygon"></div>
+                  <div class="xrx-target" data-bind="bscLastAnnotation"></div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-6">
           <div>Polygon</div>
           <pre class="xrx-console" data-bind="bsctOriginPolygon"></pre>
         </div>
-        <div class="col-xs-8 col-sm-4 col-md-6">
+        <div class="col-xs-6">
           <div>Rectangle</div>
           <pre class="xrx-console" data-bind="bsctOriginRect"></pre>
         </div>
@@ -482,11 +556,10 @@ border: 1px solid rgb(240,240,240);
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
   <script>
-    var width = $('.container').width();
-    $('.xrx-canvas').width(width);
+    var width = $('body').width();
     $('.xrx-canvas').height(width);
     xrx.install(function() {
-      for (var i = 0; i < 10; i++) {
+      for (var i = 0; i < 8; i++) {
         xrx.mvc.getComponent('dcanvas').getDrawing().getViewbox().zoomOut();
       }
     });
