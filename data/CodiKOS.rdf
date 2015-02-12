@@ -68,6 +68,7 @@
     <skos:narrower rdf:resource="http://www.ecodicology.org/331.07"/>
     <skos:narrower rdf:resource="http://www.ecodicology.org/331.071"/>
     <skos:narrower rdf:resource="http://www.ecodicology.org/331.09"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/333.02"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.ecodicology.org/331.07">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
