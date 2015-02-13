@@ -96,12 +96,12 @@
          data-ref="xrx:instance('itemplate')//skos:broader"></div>
     <div class="xrx-bind" id="boriginRelated"
          data-ref="xrx:instance('itemplate')//skos:related"></div>
-    <!-- option groups -->
-    <div class="xrx-optgroup" id="odescriptions"
+    <!-- map for option groups -->
+    <div class="xrx-map" id="mdescriptions"
          data-bind="bdescriptions">
-      <div class="xrx-option"
-           data-value="./@rdf:about"
-           data-label="concat('[', ./@rdf:about, '] ', ./skos:prefLabel[1]/text())"></div>
+      <div class="xrx-entry"
+           data-key="./@rdf:about"
+           data-value="concat('[', ./@rdf:about, '] ', ./skos:prefLabel[1]/text())"></div>
     </div>
     <!-- submissions -->
     <div id="ssave" class="xrx-submission" data-bind="bcodikos" data-resource="https://api.github.com/repos/JochenGraf/CodiLab/contents/data/CodiKOS.rdf" data-method="PUT">
@@ -669,7 +669,7 @@
               <span class="invisible">6#160;</span>
               <div class="xrx-repeat" id="rnarrower" data-bind="bnarrower">
                 <div class="form-inline">
-                  <select class="form-control pull-left xrx-select" data-ref="./@rdf:resource" data-optgroup="odescriptions"></select>
+                  <select class="form-control pull-left xrx-select" data-ref="./@rdf:resource" data-map="mdescriptions"></select>
                   <div class="xrx-action" id="avalidateNarrower" data-event="xrx-event-change">
                     <div class="xrx-classes-remove" data-select="#narrower-twice" data-classes="hidden" data-if="cnarrowerTwice"></div>
                     <div class="xrx-classes-add" data-select="#narrower-twice" data-classes="hidden" data-if-not="cnarrowerTwice"></div>
@@ -731,7 +731,7 @@
               <span class="invisible">6#160;</span>
               <div id="rbroader" class="xrx-repeat" data-bind="bbroader">
                 <div class="input-group">
-                  <select class="form-control pull-left xrx-select" data-ref="./@rdf:resource" data-optgroup="odescriptions"></select>
+                  <select class="form-control pull-left xrx-select" data-ref="./@rdf:resource" data-map="mdescriptions"></select>
                   <div class="xrx-action" id="avalidateBroader" data-event="xrx-event-change">
                     <div class="xrx-classes-remove" data-select="#broader-twice" data-classes="hidden" data-if="cbroaderTwice"></div>
                     <div class="xrx-classes-add" data-select="#broader-twice" data-classes="hidden" data-if-not="cbroaderTwice"></div>
@@ -793,7 +793,7 @@
               <span class="invisible">6#160;</span>
               <div class="xrx-repeat" id="rrelated" data-bind="brelated">
                 <div class="input-group">
-                  <select class="form-control pull-left xrx-select" data-ref="./@rdf:resource" data-optgroup="odescriptions"></select>
+                  <select class="form-control pull-left xrx-select" data-ref="./@rdf:resource" data-map="mdescriptions"></select>
                   <div class="xrx-action" id="avalidateRelated" data-event="xrx-event-change">
                     <div class="xrx-classes-remove" data-select="#related-twice" data-classes="hidden" data-if="crelatedTwice"></div>
                     <div class="xrx-classes-add" data-select="#related-twice" data-classes="hidden" data-if-not="crelatedTwice"></div>

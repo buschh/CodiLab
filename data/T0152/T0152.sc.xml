@@ -64,7 +64,7 @@
     <oa:serializedBy rdf:resource="http://localhost/Git/JochenGraf/CodiLab/CodiAnn.html"/>
     <oa:motivatedBy rdf:resource="http://www.shared-canvas.org/ns/painting"/>
     <oa:hasBody>
-      <oa:SemanticTag rdf:about="http://www.ecodicology.org/511.01"/>
+      <oa:SemanticTag rdf:about="http://www.ecodicology.org/333.02"/>
     </oa:hasBody>
     <oa:hasTarget>
       <oa:SpecificResource>
@@ -91,7 +91,7 @@
     <oa:serializedBy rdf:resource="http://localhost/Git/JochenGraf/CodiLab/CodiAnn.html"/>
     <oa:motivatedBy rdf:resource="http://www.shared-canvas.org/ns/painting"/>
     <oa:hasBody>
-      <oa:SemanticTag rdf:about="http://www.ecodicology.org/511.01"/>
+      <oa:SemanticTag rdf:about="http://www.ecodicology.org/333.02"/>
     </oa:hasBody>
     <oa:hasTarget>
       <oa:SpecificResource>
@@ -118,7 +118,7 @@
     <oa:serializedBy rdf:resource="http://localhost/Git/JochenGraf/CodiLab/CodiAnn.html"/>
     <oa:motivatedBy rdf:resource="http://www.shared-canvas.org/ns/painting"/>
     <oa:hasBody>
-      <oa:SemanticTag rdf:about="http://www.ecodicology.org/511.01"/>
+      <oa:SemanticTag rdf:about="http://www.ecodicology.org/333.02"/>
     </oa:hasBody>
     <oa:hasTarget>
       <oa:SpecificResource>
