@@ -6,25 +6,70 @@
          xmlns:exif="http://www.w3.org/2003/12/exif/ns#"
          xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
          xmlns:ore="http://www.openarchives.org/ore/terms/">
-  <rdf:Description rdf:about="http://www.ecodicology.org/Canvas/???">
-    <exif:height rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"></exif:height>
-    <exif:width rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"></exif:width>
-    <rdfs:label></rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.ecodicology.org/AnnoList/???">
+  <rdf:Description rdf:about="http://www.ecodicology.org/AnnoList/T0152-00001">
     <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Aggregation"/>
-    <ore:aggregates rdf:resource="http://www.ecodicology.org/Anno/???"/>
   </rdf:Description>
-  <ore:ResourceMap rdf:about="http://www.ecodicology.org/ResourceMap/???">
-    <ore:describes rdf:resource="http://www.ecodicology.org/AnnoList/???"/>
-    <dc:modified></dc:modified>
-    <dc:creator>
-      <dc:Agent rdf:about="">
-        <foaf:mbox></foaf:mbox>
-        <foaf:name></foaf:name>
-      </dc:Agent>
-    </dc:creator>
-  </ore:ResourceMap>
+  <rdf:Description rdf:about="http://www.ecodicology.org/AnnoList/T0152-00002">
+    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Aggregation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/AnnoList/T0152-00003">
+    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Aggregation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/AnnoList/T0152-00004">
+    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Aggregation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/AnnoList/T0152-00005">
+    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Aggregation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/AnnoList/T0152-00006">
+    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Aggregation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/AnnoList/T0152-00007">
+    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Aggregation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/AnnoList/T0152-00008">
+    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Aggregation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/AnnoList/T0152-00009">
+    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Aggregation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/AnnoList/T0152-00010">
+    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Aggregation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/AnnoList/T0152-00011">
+    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Aggregation"/>
+    <ore:aggregates rdf:resource="http://www.ecodicology.org/Anno/4e26257c-5cc9-43c1-e14c-8bb6ccce651a"/>
+    <ore:aggregates rdf:resource="http://www.ecodicology.org/Anno/68123283-35d9-4d55-bf9c-1feed9e79e44"/>
+    <ore:aggregates rdf:resource="http://www.ecodicology.org/Anno/ca18496e-8adb-4535-cff0-578a63980519"/>
+    <ore:aggregates rdf:resource="http://www.ecodicology.org/Anno/45ae06ae-75fe-406a-ccb3-4d43768ab32b"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/AnnoList/T0152-00012">
+    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Aggregation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/AnnoList/T0152-00013">
+    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Aggregation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/AnnoList/T0152-00014">
+    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Aggregation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/AnnoList/T0152-00015">
+    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Aggregation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/AnnoList/T0152-00016">
+    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Aggregation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/AnnoList/T0152-00017">
+    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Aggregation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/AnnoList/T0152-00018">
+    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Aggregation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/AnnoList/T0152-00019">
+    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Aggregation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/AnnoList/T0152-00020">
+    <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Aggregation"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://www.ecodicology.org/Anno/4e26257c-5cc9-43c1-e14c-8bb6ccce651a">
     <oa:annotatedAt>2015-02-12T15:56:33+01:00</oa:annotatedAt>
     <oa:annotatedBy>

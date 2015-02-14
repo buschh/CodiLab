@@ -67,18 +67,23 @@ background-color: #DDDDDD;
   <div class="xrx-namespace" data-prefix="rdf" data-uri="http://www.w3.org/1999/02/22-rdf-syntax-ns#"></div>
   <div class="xrx-namespace" data-prefix="oa" data-uri="http://www.w3.org/ns/oa#"></div>
   <div class="xrx-namespace" data-prefix="skos" data-uri="http://www.w3.org/2004/02/skos/core#"></div>
+  <div class="xrx-namespace" data-prefix="ore" data-uri="http://www.openarchives.org/ore/terms/"></div>
 
 
 
   <!--**
    * CodiAnn model
    *-->
-  <div class="xrx-instance" id="icodiann" data-resource="./client/CodiAnn.model.xml"></div>
+  <div class="xrx-instance"            id="icodiann"
+       data-resource="./client/CodiAnn.model.xml"></div>
 
-  <div class="xrx-calculate"                id="ccurrentDateTime"
+  <div class="xrx-bind"           id="bcodiann"
+       data-ref="xrx:instance('icodiann')/*"></div>
+
+  <div class="xrx-calculate"           id="ccurrentDateTime"
        data-ref="current-dateTime()"></div>
 
-  <div class="xrx-calculate"                id="cuuid"
+  <div class="xrx-calculate"           id="cuuid"
        data-ref="concat('http://www.ecodicology.org/Anno/', util:uuid())"></div>
 
   <div class="xrx-bind"                id="buri"
@@ -164,26 +169,78 @@ background-color: #DDDDDD;
   <!--*
    * Shared Canvas model
    *-->
-  <!-- target model -->
-  <div class="xrx-instance"            id="isc"
-       data-resource="./data/T0152/T0152.sc.xml"></div>
+  <div class="xrx-github"            id="isc"
+       data-resource="https://api.github.com/repos/JochenGraf/CodiLab/contents/data/T0152/T0152.sc.xml">
+    <div class="xrx-action" data-event="xrx-event-instance-update">
+      <div class="xrx-classes-add" data-select=".save-message" data-classes="hidden"></div>
+      <div class="xrx-classes-remove" data-select="#save-updated" data-classes="hidden"></div>
+      <div class="xrx-classes-remove" data-select="#nav" data-classes="alert-warning alert-success alert-danger"></div>
+      <div class="xrx-classes-add" data-select="#nav" data-classes="alert-warning"></div>
+    </div>
+  </div>
+
+  <div class="xrx-bind"                id="bsc"
+       data-ref="xrx:instance('isc')"></div>
+
+  <div class="xrx-submission"          id="ssave"
+       data-bind="bsc" data-resource="https://api.github.com/repos/JochenGraf/CodiLab/contents/data/T0152/T0152.sc.xml" data-method="PUT">
+    <div class="xrx-action" data-event="xrx-event-submit-done">
+      <div class="xrx-classes-add" data-select=".save-message" data-classes="hidden"></div>
+      <div class="xrx-classes-remove" data-select="#save-success" data-classes="hidden"></div>
+      <div class="xrx-classes-remove" data-select="#nav" data-classes="alert-warning alert-success alert-danger"></div>
+      <div class="xrx-classes-add" data-select="#nav" data-classes="alert-success"></div>
+    </div>
+    <div class="xrx-action" data-event="xrx-event-submit-error">
+      <div class="xrx-classes-add" data-select=".save-message" data-classes="hidden"></div>
+      <div class="xrx-classes-remove" data-select="#save-error" data-classes="hidden"></div>
+      <div class="xrx-classes-remove" data-select="#nav" data-classes="alert-warning alert-success alert-danger"></div>
+      <div class="xrx-classes-add" data-select="#nav" data-classes="alert-danger"></div>
+    </div>
+  </div>
+
+  <!-- aggregations -->
+  <div class="xrx-bind"                id="bscActualAggregationUri"
+       data-ref="concat('http://www.ecodicology.org/AnnoList/', xrx:bind('bmetsActualImageId'))"></div>
+
+  <div class="xrx-bind"                id="bscAggregation"
+       data-ref="xrx:instance('isc')/rdf:RDF/rdf:Description[./@rdf:about=xrx:bind('bscActualAggregationUri')]"></div>
+
+  <div class="xrx-bind"                id="bscAggregates"
+       data-ref="xrx:bind('bscAggregation')/ore:aggregates/@rdf:resource"></div>
+
+  <div class="xrx-bind"                id="bscLastAggregates"
+       data-ref="xrx:bind('bscAggregation')/rdf:type"></div>
+
+  <!-- annotations -->
+  <div class="xrx-bind"                id="bactualDescriptions"
+       data-ref="xrx:instance('isc')/rdf:RDF/rdf:Description[xrx:bind('bscAggregates') = string(./@rdf:about)]"></div>
 
   <div class="xrx-bind"                id="bscRectangles"
-       data-ref="xrx:instance('isc')//oa:SemanticTag[not(contains(xrx:bind('bappSemanticTagsActiveAbout'), ./@rdf:about)) or (./@rdf:about = '')]/ancestor::rdf:Description//svg:rect"></div>
+       data-ref="xrx:bind('bactualDescriptions')//oa:SemanticTag[not(contains(xrx:bind('bappSemanticTagsActiveAbout'), ./@rdf:about)) or (./@rdf:about = '')]/ancestor::rdf:Description//svg:rect"></div>
 
   <div class="xrx-bind"                id="bscPolygons"
-       data-ref="xrx:instance('isc')//oa:SemanticTag[not(contains(xrx:bind('bappSemanticTagsActiveAbout'), ./@rdf:about)) or (./@rdf:about = '')]/ancestor::rdf:Description//svg:polygon"></div>
+       data-ref="xrx:bind('bactualDescriptions')//oa:SemanticTag[not(contains(xrx:bind('bappSemanticTagsActiveAbout'), ./@rdf:about)) or (./@rdf:about = '')]/ancestor::rdf:Description//svg:polygon"></div>
 
   <div class="xrx-bind"                id="bscLastAnnotation"
        data-ref="xrx:instance('isc')/rdf:RDF/rdf:Description[last()]"></div>
 
   <div class="xrx-bind"                id="bscSemanticTags"
-       data-ref="xrx:instance('isc')//oa:SemanticTag"></div>
+       data-ref="xrx:bind('bactualDescriptions')//oa:SemanticTag/@rdf:about"></div>
 
-  <!-- template model rect -->
+  <!-- aggregations template -->
   <div class="xrx-instance"            id="isct"
        data-resource="./client/sc.template.rdf"></div>
 
+  <div class="xrx-bind"                id="bscTemplate"
+       data-ref="xrx:instance('isct')"></div>
+
+  <div class="xrx-bind"                id="bsctAggregates"
+       data-ref="xrx:instance('isct')/rdf:RDF/ore:aggregates"></div>
+
+  <div class="xrx-bind"                id="bsctAggregatesResource"
+       data-ref="xrx:instance('isct')/rdf:RDF/ore:aggregates/@rdf:resource"></div>
+
+  <!-- template model rect -->
   <div class="xrx-bind"                id="bsctOriginRect"
        data-ref="xrx:instance('isct')/rdf:RDF/rdf:Description[1]"></div>
 
@@ -251,7 +308,7 @@ background-color: #DDDDDD;
        data-resource="./data/CodiKOS.rdf"></div>
 
   <div class="xrx-bind"                id="bcodikosNotations"
-       data-ref="xrx:instance('icodikos')/rdf:RDF/rdf:Description[xrx:bind('bscSemanticTags')/@rdf:about = string(./@rdf:about)]/skos:prefLabel[1]"></div>
+       data-ref="xrx:instance('icodikos')/rdf:RDF/rdf:Description[xrx:bind('bscSemanticTags') = string(./@rdf:about)]/skos:prefLabel[1]"></div>
 
 
   <!-- view -->
@@ -303,11 +360,15 @@ background-color: #DDDDDD;
     </div>
   </nav>
 
+
+
   <!--*
    * Image Annotation Tool
    *-->
   <div class="container">
     <div class="starter-template">
+
+
 
       <!--*
        * Image Navigation
@@ -342,11 +403,29 @@ background-color: #DDDDDD;
             </span>
           </button>
         </div>
+        <div class="form-group">
+          <button class="xrx-button btn btn-primary form-control">
+            <span>Save&#160;</span>
+            <span class="xrx-action" data-event="xrx-event-click">
+              <span class="xrx-send" data-submission="ssave"></span>
+            </span>
+          </button>
+        </div>
       </div>
 
-      <!--*
-       * Viewer Functionality
+
+
+      <!--**
+       * Application messages
        *-->
+      <div class="form" style="margin-top:1em;">
+        <strong id="save-error" class="alert alert-danger save-message hidden">Data could not be saved. Please sign in first.</strong>
+        <strong id="save-success" class="alert alert-success save-message hidden">Data successfully saved.</strong>
+        <strong id="save-updated" class="alert alert-warning save-message hidden">There are unsaved changes.</strong>
+        <strong class="alert invisible">invisible</strong>
+      </div>
+
+
 
       <!--
        * Tool-bar for annotation functionalities
@@ -453,12 +532,48 @@ background-color: #DDDDDD;
               <input class="xrx-checkbox" type="checkbox" data-bind="bswatiActive"> Automatic annotations
             </label>
           </div>
-          <h3>Actual Annotation</h3>
+          <h3>Selected Annotation</h3>
         </div>
 
         <!--*
          * Canvas
          *-->
+        <!-- actions -->
+        <div class="xrx-action" id="aprepareAndInsertRect">
+          <div class="xrx-update">
+            <div class="xrx-origin" data-calculate="cuuid"></div>
+            <div class="xrx-target" data-bind="bsctRectAbout"></div>
+          </div>
+          <div class="xrx-update">
+            <div class="xrx-origin" data-calculate="ccurrentDateTime"></div>
+            <div class="xrx-target" data-bind="bsctRectAnnotatedAt"></div>
+          </div>
+          <div class="xrx-update">
+            <div class="xrx-origin" data-bind="buri"></div>
+            <div class="xrx-target" data-bind="bsctRectSerializedBy"></div>
+          </div>
+          <div class="xrx-update">
+            <div class="xrx-origin" data-calculate="ccurrentDateTime"></div>
+            <div class="xrx-target" data-bind="bsctRectSerializedAt"></div>
+          </div>
+          <div class="xrx-update">
+            <div class="xrx-origin" data-bind="bmetsActualImageUrl"></div>
+            <div class="xrx-target" data-bind="bsctRectHasSource"></div>
+          </div>
+          <div class="xrx-update">
+            <div class="xrx-origin" data-bind="bsctRectAbout"></div>
+            <div class="xrx-target" data-bind="bsctAggregatesResource"></div>
+          </div>
+          <div class="xrx-insert">
+            <div class="xrx-origin" data-bind="bsctAggregates"></div>
+            <div class="xrx-target" data-bind="bscLastAggregates"></div>
+          </div>
+          <div class="xrx-insert">
+            <div class="xrx-origin" data-bind="bsctOriginRect"></div>
+            <div class="xrx-target" data-bind="bscLastAnnotation"></div>
+          </div>
+        </div>
+        <!-- view -->
         <div id="dcanvas" class="xrx-canvas col-xs-9">
           <div class="xrx-canvas-background-image" data-bind="bmetsActualImageUrl"
                data-zone-bottom="-125"></div>
@@ -521,31 +636,8 @@ background-color: #DDDDDD;
                    data-bind-width="bsctRectWidth"
                    data-bind-height="bsctRectHeight">
               </div>
-              <div class="xrx-action" id="aprepareAndInsertRect" data-event="xrx-event-graphic-created">
-                <div class="xrx-update">
-                  <div class="xrx-origin" data-calculate="cuuid"></div>
-                  <div class="xrx-target" data-bind="bsctRectAbout"></div>
-                </div>
-                <div class="xrx-update">
-                  <div class="xrx-origin" data-calculate="ccurrentDateTime"></div>
-                  <div class="xrx-target" data-bind="bsctRectAnnotatedAt"></div>
-                </div>
-                <div class="xrx-update">
-                  <div class="xrx-origin" data-bind="buri"></div>
-                  <div class="xrx-target" data-bind="bsctRectSerializedBy"></div>
-                </div>
-                <div class="xrx-update">
-                  <div class="xrx-origin" data-calculate="ccurrentDateTime"></div>
-                  <div class="xrx-target" data-bind="bsctRectSerializedAt"></div>
-                </div>
-                <div class="xrx-update">
-                  <div class="xrx-origin" data-bind="bmetsActualImageUrl"></div>
-                  <div class="xrx-target" data-bind="bsctRectHasSource"></div>
-                </div>
-                <div class="xrx-insert">
-                  <div class="xrx-origin" data-bind="bsctOriginRect"></div>
-                  <div class="xrx-target" data-bind="bscLastAnnotation"></div>
-                </div>
+              <div class="xrx-action" data-event="xrx-event-graphic-created">
+                <div class="xrx-dispatch" data-action="aprepareAndInsertRect"></div>
               </div>
             </div>
 
@@ -586,6 +678,14 @@ background-color: #DDDDDD;
                 <div class="xrx-update">
                   <div class="xrx-origin" data-bind="bmetsActualImageUrl"></div>
                   <div class="xrx-target" data-bind="bsctPolygonHasSource"></div>
+                </div>
+                <div class="xrx-update">
+                  <div class="xrx-origin" data-bind="bsctPolygonAbout"></div>
+                  <div class="xrx-target" data-bind="bsctAggregatesResource"></div>
+                </div>
+                <div class="xrx-insert">
+                  <div class="xrx-origin" data-bind="bsctAggregates"></div>
+                  <div class="xrx-target" data-bind="bscLastAggregates"></div>
                 </div>
                 <div class="xrx-insert">
                   <div class="xrx-origin" data-bind="bsctOriginPolygon"></div>

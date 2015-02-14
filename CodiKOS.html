@@ -104,7 +104,10 @@
            data-value="concat('[', ./@rdf:about, '] ', ./skos:prefLabel[1]/text())"></div>
     </div>
     <!-- submissions -->
-    <div id="ssave" class="xrx-submission" data-bind="bcodikos" data-resource="https://api.github.com/repos/JochenGraf/CodiLab/contents/data/CodiKOS.rdf" data-method="PUT">
+    <div class="xrx-submission"        id="ssave"
+         data-bind="bcodikos"
+         data-resource="https://api.github.com/repos/JochenGraf/CodiLab/contents/data/CodiKOS.rdf"
+         data-method="PUT">
       <div class="xrx-action" data-event="xrx-event-submit-done">
         <div class="xrx-classes-add" data-select=".save-message" data-classes="hidden"></div>
         <div class="xrx-classes-remove" data-select="#save-success" data-classes="hidden"></div>

@@ -2,7 +2,9 @@
          xmlns:oa="http://www.w3.org/ns/oa#"
          xmlns:foaf="http://xmlns.com/foaf/spec/"
          xmlns:dc="http://purl.org/dc/terms/"
-         xmlns:cnt="http://www.w3.org/2011/content#">  
+         xmlns:cnt="http://www.w3.org/2011/content#"
+         xmlns:ore="http://www.openarchives.org/ore/terms/">
+  <ore:aggregates rdf:resource=""/>
   <rdf:Description rdf:about="">
     <oa:annotatedAt></oa:annotatedAt>
     <oa:annotatedBy>
@@ -30,6 +32,7 @@
       </oa:SpecificResource>
     </oa:hasTarget>
   </rdf:Description>
+  <!-- template for polygon annotation -->
   <rdf:Description rdf:about="">
     <oa:annotatedAt></oa:annotatedAt>
     <oa:annotatedBy>
