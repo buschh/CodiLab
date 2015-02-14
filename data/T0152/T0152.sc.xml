@@ -28,6 +28,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.ecodicology.org/AnnoList/T0152-00010">
     <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Aggregation"/>
+    <ore:aggregates rdf:resource="http://www.ecodicology.org/Anno/6f3e474e-e0d6-4597-e68c-db7b2da59daa"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.ecodicology.org/AnnoList/T0152-00011">
     <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Aggregation"/>
@@ -168,6 +169,33 @@
           </cnt:ContentAsXML>
         </oa:hasSelector>
         <oa:hasSource>http://zimks68.uni-trier.de/stmatthias/T0152/T0152-00011-DEF.jpg</oa:hasSource>
+      </oa:SpecificResource>
+    </oa:hasTarget>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/Anno/6f3e474e-e0d6-4597-e68c-db7b2da59daa">
+    <oa:annotatedAt>2015-02-14T18:53:23+01:00</oa:annotatedAt>
+    <oa:annotatedBy>
+      <foaf:Person rdf:about="">
+        <foaf:mbox></foaf:mbox>
+        <foaf:name></foaf:name>
+      </foaf:Person>
+    </oa:annotatedBy>
+    <oa:serializedAt>2015-02-14T18:53:23+01:00</oa:serializedAt>
+    <oa:serializedBy rdf:resource="http://localhost/GitHub/JochenGraf/CodiLab/CodiAnn.html"/>
+    <oa:motivatedBy rdf:resource="http://www.shared-canvas.org/ns/painting"/>
+    <oa:hasBody>
+      <oa:SemanticTag rdf:about=""/>
+    </oa:hasBody>
+    <oa:hasTarget>
+      <oa:SpecificResource>
+        <oa:hasSelector>
+          <cnt:ContentAsXML>
+            <cnt:rest>
+              <svg:rect xmlns:svg="http://www.w3.org/2000/svg" x="598.8" y="348.5" width="678.7" height="1220.1"/>
+            </cnt:rest>
+          </cnt:ContentAsXML>
+        </oa:hasSelector>
+        <oa:hasSource>http://zimks68.uni-trier.de/stmatthias/T0152/T0152-00010-DEF.jpg</oa:hasSource>
       </oa:SpecificResource>
     </oa:hasTarget>
   </rdf:Description>
