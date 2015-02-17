@@ -167,6 +167,7 @@
     <oa:motivatedBy rdf:resource="http://www.shared-canvas.org/ns/painting"/>
     <oa:hasBody>
       <oa:SemanticTag rdf:about="http://www.ecodicology.org/333.02"/>
+      <oa:SemanticTag rdf:about="http://www.ecodicology.org/511.01"/>
     </oa:hasBody>
     <oa:hasTarget>
       <oa:SpecificResource>

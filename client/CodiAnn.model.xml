@@ -1,5 +1,7 @@
 <app>
   <imagepos>11</imagepos>
+  <mode>pan</mode>
+  <annoselected>#</annoselected>
   <tag></tag>
   <semantictags type="manual" is="inactive">
     <dummy/>

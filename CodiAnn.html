@@ -45,6 +45,16 @@ border-width: 3px;
 color: #0000ff;
 }
 
+.selected-annotation {
+border-style: solid;
+border-color: #63a35c;
+border-width: 5px;
+}
+
+.selected-annotation-text * {
+color: #63a35c;
+}
+
 body {
 background-color: #DDDDDD;
 }
@@ -72,13 +82,8 @@ background-color: #DDDDDD;
 
 
   <!--**
-   * CodiAnn model
+   * Global model
    *-->
-  <div class="xrx-instance"            id="icodiann"
-       data-resource="./client/CodiAnn.model.xml"></div>
-
-  <div class="xrx-bind"           id="bcodiann"
-       data-ref="xrx:instance('icodiann')/*"></div>
 
   <div class="xrx-calculate"           id="ccurrentDateTime"
        data-ref="current-dateTime()"></div>
@@ -88,6 +93,53 @@ background-color: #DDDDDD;
 
   <div class="xrx-bind"                id="buri"
        data-ref="request:uri()"></div>
+
+  <div class="xrx-bind"                id="bdummyText"
+       data-ref="'#'"></div>
+
+
+
+  <!--**
+   * CodiAnn model
+   *-->
+  <div class="xrx-instance"            id="icodiann"
+       data-resource="./client/CodiAnn.model.xml"></div>
+
+  <div class="xrx-bind"           id="bcodiann"
+       data-ref="xrx:instance('icodiann')/*"></div>
+
+  <div class="xrx-bind"                id="bappMode"
+       data-ref="xrx:instance('icodiann')/app/mode/text()"></div>
+
+  <div class="xrx-bind"                id="bappModePan"
+       data-ref="'pan'"></div>
+
+  <div class="xrx-bind"                id="bappModeVerify"
+       data-ref="'verify'"></div>
+
+  <div class="xrx-bind"                id="bappModeModify"
+       data-ref="'modify'"></div>
+
+  <div class="xrx-bind"                id="bappModeDelete"
+       data-ref="'delete'"></div>
+
+  <div class="xrx-bind"                id="bappModeDrawRectangle"
+       data-ref="'drawRectangle'"></div>
+
+  <div class="xrx-bind"                id="bappModeDrawPolygon"
+       data-ref="'drawPolygon'"></div>
+
+  <div class="xrx-bind"                id="bappModeTag"
+       data-ref="'tag'"></div>
+
+  <div class="xrx-calculate"           id="isModeVerify"
+       data-ref="xrx:bind('bappMode') = xrx:bind('bappModeVerify')"></div>
+
+  <div class="xrx-calculate"           id="isModeDelete"
+       data-ref="xrx:bind('bappMode') = xrx:bind('bappModeDelete')"></div>
+
+  <div class="xrx-calculate"           id="isModeTag"
+       data-ref="xrx:bind('bappMode') = xrx:bind('bappModeTag')"></div>
 
   <div class="xrx-bind"                id="bappActualImage"
        data-ref="xrx:instance('icodiann')/app/imagepos/text()"></div>
@@ -112,6 +164,9 @@ background-color: #DDDDDD;
 
   <div class="xrx-bind"                id="bappTag"
        data-ref="xrx:instance('icodiann')/app/tag"></div>
+
+  <div class="xrx-bind"                id="bappAnnoSelected"
+       data-ref="xrx:instance('icodiann')/app/annoselected/text()"></div>
 
 
 
@@ -169,8 +224,10 @@ background-color: #DDDDDD;
   <!--*
    * Shared Canvas model
    *-->
-  <div class="xrx-github"            id="isc"
-       data-resource="https://api.github.com/repos/JochenGraf/CodiLab/contents/data/T0152/T0152.sc.xml">
+  <!--div class="xrx-github"            id="isc"
+       data-resource="https://api.github.com/repos/JochenGraf/CodiLab/contents/data/T0152/T0152.sc.xml"-->
+  <div class="xrx-instance"            id="isc"
+       data-resource="./data/T0152/T0152.sc.xml">
     <div class="xrx-action" data-event="xrx-event-instance-update">
       <div class="xrx-classes-add" data-select=".save-message" data-classes="hidden"></div>
       <div class="xrx-classes-remove" data-select="#save-updated" data-classes="hidden"></div>
@@ -211,7 +268,7 @@ background-color: #DDDDDD;
   <div class="xrx-bind"                id="bscLastAggregates"
        data-ref="xrx:bind('bscAggregation')/rdf:type"></div>
 
-  <!-- annotations -->
+  <!-- annotations overview -->
   <div class="xrx-bind"                id="bactualDescriptions"
        data-ref="xrx:instance('isc')/rdf:RDF/rdf:Description[xrx:bind('bscAggregates') = string(./@rdf:about)]"></div>
 
@@ -299,6 +356,26 @@ background-color: #DDDDDD;
   <div class="xrx-bind"                id="bsctPolygonCoords"
        data-ref="xrx:bind('bsctPolygon')/@points"></div>
 
+  <!-- template semantic tag -->
+  <div class="xrx-bind"                id="bsctSemanticTag"
+       data-ref="xrx:instance('isct')/rdf:RDF/oa:SemanticTag"></div>
+
+  <div class="xrx-bind"                id="bsctSemanticTagAbout"
+       data-ref="xrx:bind('bsctSemanticTag')/@rdf:about"></div>
+
+  <!-- selected annotation -->
+  <div class="xrx-bind"                id="bscSelectedAnnotation"
+       data-ref="xrx:instance('isc')/rdf:RDF/rdf:Description[./@rdf:about = xrx:bind('bappAnnoSelected')]"></div>
+
+  <div class="xrx-bind"                id="bscSelectedAnnotationRect"
+       data-ref="xrx:bind('bscSelectedAnnotation')//svg:rect"></div>
+
+  <div class="xrx-bind"                id="bscSelectedAnnotationPolygon"
+       data-ref="xrx:bind('bscSelectedAnnotation')//svg:polygon"></div>
+
+  <div class="xrx-bind"                id="bscSelectedAnnotationLastSemanticTag"
+       data-ref="xrx:bind('bscSelectedAnnotation')/oa:hasBody/oa:SemanticTag[last()]"></div>
+
 
 
   <!--**
@@ -307,8 +384,22 @@ background-color: #DDDDDD;
   <div class="xrx-instance"            id="icodikos"
        data-resource="./data/CodiKOS.rdf"></div>
 
+  <div class="xrx-bind" id="bdescriptions"
+       data-ref="xrx:instance('icodikos')/rdf:RDF/rdf:Description"></div>
+
   <div class="xrx-bind"                id="bcodikosNotations"
        data-ref="xrx:instance('icodikos')/rdf:RDF/rdf:Description[xrx:bind('bscSemanticTags') = string(./@rdf:about)]/skos:prefLabel[1]"></div>
+
+  <div class="xrx-bind"                id="bselectedAnnotationSemanticTagsNotation"
+       data-ref="xrx:instance('icodikos')/rdf:RDF/rdf:Description[xrx:bind('bscSelectedAnnotation')/oa:hasBody/oa:SemanticTag/@rdf:about = string(./@rdf:about)]/skos:prefLabel[1]"></div>
+
+  <div class="xrx-map" id="mdescriptions"
+       data-bind="bdescriptions">
+    <div class="xrx-entry"
+         data-key="./@rdf:about"
+         data-value="concat('[', ./@rdf:about, '] ', ./skos:prefLabel[1]/text())"></div>
+  </div>
+
 
 
   <!-- view -->
@@ -367,8 +458,6 @@ background-color: #DDDDDD;
    *-->
   <div class="container">
     <div class="starter-template">
-
-
 
       <!--*
        * Image Navigation
@@ -437,6 +526,14 @@ background-color: #DDDDDD;
             <span class="xrx-action" data-event="xrx-event-click">
               <span class="xrx-script" data-script="xrx.mvc.getComponent('dcanvas').setModeView();"></span>
               <span class="xrx-script" data-script="xrx.mvc.getComponent('dcanvas').resetGroups();"></span>
+              <span class="xrx-update">
+                <span class="xrx-origin" data-bind="bappModePan"></span>
+                <span class="xrx-target" data-bind="bappMode"></span>
+              </span>
+              <span class="xrx-update">
+                <div class="xrx-origin" data-bind="bdummyText"></div>
+                <div class="xrx-target" data-bind="bappAnnoSelected"></div>
+              </span>
             </span>
           </button>
           <button class="xrx-button btn">
@@ -444,6 +541,14 @@ background-color: #DDDDDD;
             <span class="xrx-action" data-event="xrx-event-click">
               <span class="xrx-script" data-script="xrx.mvc.getComponent('dcanvas').setModeSelect();"></span>
               <span class="xrx-script" data-script="xrx.mvc.getComponent('dautomaticAnnotation').toFront();"></span>
+              <span class="xrx-update">
+                <span class="xrx-origin" data-bind="bappModeVerify"></span>
+                <span class="xrx-target" data-bind="bappMode"></span>
+              </span>
+              <span class="xrx-update">
+                <div class="xrx-origin" data-bind="bdummyText"></div>
+                <div class="xrx-target" data-bind="bappAnnoSelected"></div>
+              </span>
             </span>
           </button>
           <button class="xrx-button btn">
@@ -451,6 +556,14 @@ background-color: #DDDDDD;
             <span class="xrx-action" data-event="xrx-event-click">
               <span class="xrx-script" data-script="xrx.mvc.getComponent('dcanvas').setModeModify();"></span>
               <span class="xrx-script" data-script="xrx.mvc.getComponent('dcanvas').resetGroups();"></span>
+              <span class="xrx-update">
+                <span class="xrx-origin" data-bind="bappModeModify"></span>
+                <span class="xrx-target" data-bind="bappMode"></span>
+              </span>
+              <span class="xrx-update">
+                <div class="xrx-origin" data-bind="bdummyText"></div>
+                <div class="xrx-target" data-bind="bappAnnoSelected"></div>
+              </span>
             </span>
           </button>
           <span class="dropdown">
@@ -462,6 +575,14 @@ background-color: #DDDDDD;
                 <a class="xrx-button" href="#">
                   Draw Rectangle
                   <span class="xrx-action" data-event="xrx-event-click">
+                    <span class="xrx-update">
+                      <span class="xrx-origin" data-bind="bappModeDrawRectangle"></span>
+                      <span class="xrx-target" data-bind="bappMode"></span>
+                    </span>
+                    <span class="xrx-update">
+                      <div class="xrx-origin" data-bind="bdummyText"></div>
+                      <div class="xrx-target" data-bind="bappAnnoSelected"></div>
+                    </span>
                     <span class="xrx-script" data-script="xrx.mvc.getComponent('dcanvas').resetGroups();"></span>
                     <span class="xrx-script" data-script="xrx.mvc.getComponent('dcanvas').setModeCreate('nManualRectangle');"></script>
                   </span>
@@ -471,6 +592,14 @@ background-color: #DDDDDD;
                 <a class="xrx-button" href="#">
                   Draw Polygon
                   <span class="xrx-action" data-event="xrx-event-click">
+                    <span class="xrx-update">
+                      <span class="xrx-origin" data-bind="bappModeDrawPolygon"></span>
+                      <span class="xrx-target" data-bind="bappMode"></span>
+                    </span>
+                    <span class="xrx-update">
+                      <div class="xrx-origin" data-bind="bdummyText"></div>
+                      <div class="xrx-target" data-bind="bappAnnoSelected"></div>
+                    </span>
                     <span class="xrx-script" data-script="xrx.mvc.getComponent('dcanvas').resetGroups();"></span>
                     <span class="xrx-script" data-script="xrx.mvc.getComponent('dcanvas').setModeCreate('nManualPolygon');"></script>
                   </span>
@@ -481,6 +610,14 @@ background-color: #DDDDDD;
           <button class="xrx-button btn">
             <span>Delete</span>
             <span class="xrx-action" data-event="xrx-event-click">
+              <span class="xrx-update">
+                <div class="xrx-origin" data-bind="bdummyText"></div>
+                <div class="xrx-target" data-bind="bappAnnoSelected"></div>
+              </span>
+              <span class="xrx-update">
+                <span class="xrx-origin" data-bind="bappModeDelete"></span>
+                <span class="xrx-target" data-bind="bappMode"></span>
+              </span>
               <span class="xrx-script" data-script="xrx.mvc.getComponent('dcanvas').resetGroups();"></span>
               <span class="xrx-script" data-script="xrx.mvc.getComponent('dcanvas').setModeSelect();"></span>
             </span>
@@ -490,6 +627,10 @@ background-color: #DDDDDD;
             <span class="xrx-action" data-event="xrx-event-click">
               <span class="xrx-script" data-script="xrx.mvc.getComponent('dcanvas').resetGroups();"></span>
               <span class="xrx-script" data-script="xrx.mvc.getComponent('dcanvas').setModeSelect();"></span>
+              <span class="xrx-update">
+                <span class="xrx-origin" data-bind="bappModeTag"></span>
+                <span class="xrx-target" data-bind="bappMode"></span>
+              </span>
             </span>
           </button>
         </div>
@@ -533,12 +674,26 @@ background-color: #DDDDDD;
             </label>
           </div>
           <h3>Selected Annotation</h3>
+          <div class="xrx-repeat selected-annotation-text" data-bind="bselectedAnnotationSemanticTagsNotation">
+            <div>
+              <label class="xrx-output" data-ref="./text()"></label>
+            </div>
+          </div>
+          <div class="xrx-show" data-bind="bscSelectedAnnotation">
+            <select class="xrx-select form-control" data-bind="bsctSemanticTagAbout" data-map="mdescriptions"></select>
+            <div class="xrx-action" id="avalidateNarrower" data-event="xrx-event-change">
+              <div class="xrx-insert">
+                <div class="xrx-origin" data-bind="bsctSemanticTag"></div>
+                <div class="xrx-target" data-bind="bscSelectedAnnotationLastSemanticTag"></div>
+              </div>
+            </div>
+          </div>
         </div>
 
         <!--*
          * Canvas
          *-->
-        <!-- actions -->
+        <!-- model -->
         <div class="xrx-action" id="aprepareAndInsertRect">
           <div class="xrx-update">
             <div class="xrx-origin" data-calculate="cuuid"></div>
@@ -590,7 +745,7 @@ background-color: #DDDDDD;
                      data-ref-y="./BY_Percentage/text()"
                      data-ref-width="./RelativeWidth_Percentage/text()"
                      data-ref-height="./RelativeHeight_Percentage/text()">
-                  <div class="xrx-action" data-event="xrx-event-graphic-selected">
+                  <div class="xrx-action" data-event="xrx-event-graphic-selected" data-if="isModeVerify">
                     <div class="xrx-update">
                       <div class="xrx-origin" data-ref="number(./BX_Percentage/text()) * 1500 div 100"></div>
                       <div class="xrx-target" data-bind="bsctRectX"></div>
@@ -622,9 +777,15 @@ background-color: #DDDDDD;
                      data-ref-y="./@y"
                      data-ref-width="./@width"
                      data-ref-height="./@height">
-                  <div class="xrx-action" data-event="xrx-event-graphic-selected">
+                  <div class="xrx-action" data-event="xrx-event-graphic-selected" data-if="isModeDelete">
                     <div class="xrx-remove">
                       <div class="xrx-target" data-ref="./ancestor::rdf:Description"></div>
+                    </div>
+                  </div>
+                  <div class="xrx-action" data-event="xrx-event-graphic-selected" data-if="isModeTag">
+                    <div class="xrx-update">
+                      <div class="xrx-origin" data-ref="./ancestor::rdf:Description/@rdf:about"></div>
+                      <div class="xrx-target" data-bind="bappAnnoSelected"></div>
                     </div>
                   </div>
                 </div>
@@ -647,9 +808,15 @@ background-color: #DDDDDD;
                 <div class="xrx-shape-polygon manual-annotation"
                      data-ref="./self::*"
                      data-ref-coords="./@points">
-                  <div class="xrx-action" data-event="xrx-event-graphic-selected">
+                  <div class="xrx-action" data-event="xrx-event-graphic-selected" data-if="isModeDelete">
                     <div class="xrx-remove">
                       <div class="xrx-target" data-ref="./ancestor::rdf:Description"></div>
+                    </div>
+                  </div>
+                  <div class="xrx-action" data-event="xrx-event-graphic-selected" data-if="isModeTag">
+                    <div class="xrx-update">
+                      <div class="xrx-origin" data-ref="./ancestor::rdf:Description/@rdf:about"></div>
+                      <div class="xrx-target" data-bind="bappAnnoSelected"></div>
                     </div>
                   </div>
                 </div>
@@ -690,6 +857,29 @@ background-color: #DDDDDD;
                 <div class="xrx-insert">
                   <div class="xrx-origin" data-bind="bsctOriginPolygon"></div>
                   <div class="xrx-target" data-bind="bscLastAnnotation"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- selected rectangle -->
+            <div class="xrx-canvas-group">
+              <div class="xrx-repeat" data-bind="bscSelectedAnnotationRect">
+                <div class="xrx-shape-rect selected-annotation"
+                     data-ref="./self::*"
+                     data-ref-x="./@x"
+                     data-ref-y="./@y"
+                     data-ref-width="./@width"
+                     data-ref-height="./@height">
+                </div>
+              </div>
+            </div>
+
+            <!-- selected polygon -->
+            <div class="xrx-canvas-group">
+              <div class="xrx-repeat" data-bind="bscSelectedAnnotationPolygon">
+                <div class="xrx-shape-polygon selected-annotation"
+                     data-ref="./self::*"
+                     data-ref-coords="./@points">
                 </div>
               </div>
             </div>

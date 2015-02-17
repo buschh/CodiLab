@@ -5,6 +5,7 @@
          xmlns:cnt="http://www.w3.org/2011/content#"
          xmlns:ore="http://www.openarchives.org/ore/terms/">
   <ore:aggregates rdf:resource=""/>
+  <oa:SemanticTag rdf:about=""/>
   <rdf:Description rdf:about="">
     <oa:annotatedAt></oa:annotatedAt>
     <oa:annotatedBy>
