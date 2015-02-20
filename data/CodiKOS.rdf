@@ -14,7 +14,6 @@
     <skos:narrower rdf:resource="http://www.ecodicology.org/322.01"/>
     <skos:narrower rdf:resource="http://www.ecodicology.org/331.01"/>
     <skos:narrower rdf:resource="http://www.ecodicology.org/511.01"/>
-    <skos:narrower rdf:resource="http://www.ecodicology.org/ABC"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.ecodicology.org/A">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -129,16 +128,6 @@
     <skos:note>
       <skos:definition xml:lang="en">enlarged and decorated letter, introducing an important section of a text (work, chapter), emphasised by size, colour form, and decoration. Initials can have different levels of significance (primary, secondary, tertiary)</skos:definition>
       <skos:definition xml:lang="de">schmückender Buchstabe am Textanfang, hervorgehoben durch Größe, Farbe, Form und Verzierung, leitet einen hervorzuhebenden Abschnitt eines Textes (Werk, Kapitel) ein. Initialen haben verschiedene hierarchische Bedeutungsebenen (primär, sekundär, tertiär)</skos:definition>
-    </skos:note>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.ecodicology.org/ABC">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:prefLabel xml:lang="en"></skos:prefLabel>
-    <skos:prefLabel xml:lang="de"></skos:prefLabel>
-    <skos:notation>ABC</skos:notation>
-    <skos:note>
-      <skos:definition xml:lang="en"></skos:definition>
-      <skos:definition xml:lang="de"></skos:definition>
     </skos:note>
   </rdf:Description>
 </rdf:RDF>
