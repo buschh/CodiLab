@@ -130,4 +130,14 @@
       <skos:definition xml:lang="de">schmückender Buchstabe am Textanfang, hervorgehoben durch Größe, Farbe, Form und Verzierung, leitet einen hervorzuhebenden Abschnitt eines Textes (Werk, Kapitel) ein. Initialen haben verschiedene hierarchische Bedeutungsebenen (primär, sekundär, tertiär)</skos:definition>
     </skos:note>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/ABC">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de"></skos:prefLabel>
+    <skos:notation>ABC</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
 </rdf:RDF>
