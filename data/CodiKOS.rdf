@@ -32,6 +32,8 @@
     <skos:narrower rdf:resource="http://www.ecodicology.org/0011"/>
     <skos:narrower rdf:resource="http://www.ecodicology.org/0012"/>
     <skos:narrower rdf:resource="http://www.ecodicology.org/0013"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0014"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0015"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.ecodicology.org/0002">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
