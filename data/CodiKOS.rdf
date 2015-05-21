@@ -8,18 +8,18 @@
       <skos:definition xml:lang="en">Codicological SKOS data model</skos:definition>
       <skos:definition xml:lang="de">Kodikologisches SKOS Datenmodell</skos:definition>
     </skos:note>
-    <skos:narrower rdf:resource="http://www.ecodicology.org/A"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0001"/>
     <skos:narrower rdf:resource="http://www.ecodicology.org/B"/>
     <skos:narrower rdf:resource="http://www.ecodicology.org/321.01"/>
     <skos:narrower rdf:resource="http://www.ecodicology.org/322.01"/>
     <skos:narrower rdf:resource="http://www.ecodicology.org/331.01"/>
     <skos:narrower rdf:resource="http://www.ecodicology.org/511.01"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.ecodicology.org/A">
+  <rdf:Description rdf:about="http://www.ecodicology.org/0001">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:prefLabel xml:lang="en">Physical description</skos:prefLabel>
     <skos:prefLabel xml:lang="de">Physikalische Beschreibung</skos:prefLabel>
-    <skos:notation>A</skos:notation>
+    <skos:notation>0001</skos:notation>
     <skos:note>
       <skos:definition xml:lang="en"></skos:definition>
       <skos:definition xml:lang="de"></skos:definition>
