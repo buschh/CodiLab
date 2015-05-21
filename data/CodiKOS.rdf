@@ -64,7 +64,7 @@
   <rdf:Description rdf:about="http://www.ecodicology.org/0002">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:prefLabel xml:lang="en">Dimensions</skos:prefLabel>
-    <skos:prefLabel xml:lang="de">Maße</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Maße</skos:prefLabel>
     <skos:notation>0002</skos:notation>
     <skos:note>
       <skos:definition xml:lang="en">E.g. height and width of a leaf, dimensions of the written space the text block (by measuring the frame ruling); dimensions usually given in millimetres.</skos:definition>
