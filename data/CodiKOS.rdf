@@ -85,8 +85,8 @@
     <skos:prefLabel xml:lang="de">Einstechen</skos:prefLabel>
     <skos:notation>0003</skos:notation>
     <skos:note>
-      <skos:definition xml:lang="en">the marking of a folio or bifolium by a point or knife to guide ruling</skos:definition>
-      <skos:definition xml:lang="de">Markierung eines Blattes oder einer Lage mittels kleiner Einstiche als Orientierung für das Liniennetz und den Linierungsrahmen</skos:definition>
+      <skos:definition xml:lang="en">The marking of a folio or bifolium by a point or knife to guide ruling.</skos:definition>
+      <skos:definition xml:lang="de">Markierung eines Blattes oder einer Lage mittels kleiner Einstiche als Orientierung für das Liniennetz und den Linierungsrahmen.</skos:definition>
     </skos:note>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.ecodicology.org/0004">
