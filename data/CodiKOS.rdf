@@ -473,4 +473,15 @@
     </skos:note>
     <skos:broader rdf:resource="http://www.ecodicology.org/0001"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0037">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Reinforcing strip</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Bindungsverstärkung</skos:prefLabel>
+    <skos:notation>0037</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Strip of parchment folded in half along its length and placed on the fold, on the outside or the center of the book.</skos:definition>
+      <skos:definition xml:lang="de">Pergamentstreifen, zur Hälfte längs gefaltet, am Falz, an der Außenseite oder innerhalb des Buches befestigt. Oft ein Fragment.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0001"/>
+  </rdf:Description>
 </rdf:RDF>
