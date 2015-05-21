@@ -210,8 +210,8 @@
     <skos:prefLabel xml:lang="de">Buchblock</skos:prefLabel>
     <skos:notation>0013</skos:notation>
     <skos:note>
-      <skos:definition xml:lang="en">bound folios without cover, assembled in sequence (part between the boards), consists of several quires</skos:definition>
-      <skos:definition xml:lang="de">alle Blätter eines Buches mit Ausnahme des Einbandes (Teil zwischen den Buchdeckeln), besteht aus mehreren Lagen</skos:definition>
+      <skos:definition xml:lang="en">Bound folios without cover, assembled in sequence (part between the boards), consists of several quires.</skos:definition>
+      <skos:definition xml:lang="de">Alle Blätter eines Buches mit Ausnahme des Einbandes (Teil zwischen den Buchdeckeln); besteht aus mehreren Lagen.</skos:definition>
     </skos:note>
     <skos:broader rdf:resource="http://www.ecodicology.org/0001"/>
   </rdf:Description>
