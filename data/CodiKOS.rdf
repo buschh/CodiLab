@@ -45,6 +45,10 @@
     <skos:narrower rdf:resource="http://www.ecodicology.org/0025"/>
     <skos:narrower rdf:resource="http://www.ecodicology.org/0026"/>
     <skos:narrower rdf:resource="http://www.ecodicology.org/0027"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0028"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0029"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0030"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0031"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.ecodicology.org/0002">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
