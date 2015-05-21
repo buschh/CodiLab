@@ -284,4 +284,15 @@
     </skos:note>
     <skos:broader rdf:resource="http://www.ecodicology.org/0001"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0020">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Insertion</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Einfügung</skos:prefLabel>
+    <skos:notation>0020</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Additional element added to a quire.</skos:definition>
+      <skos:definition xml:lang="de">Zusätzliches Element, Zusatz zur Lage.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0001"/>
+  </rdf:Description>
 </rdf:RDF>
