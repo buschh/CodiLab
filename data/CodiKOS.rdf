@@ -67,8 +67,8 @@
     <skos:prefLabel xml:lang="de">Maße</skos:prefLabel>
     <skos:notation>0002</skos:notation>
     <skos:note>
-      <skos:definition xml:lang="en">e.g. height and width of a leaf, dimensions of the written space the text block (by measuring the frame ruling); dimensions usually given in millimetres</skos:definition>
-      <skos:definition xml:lang="de">z.B. Höhe und Breite eines Blattes, Ausmaße des beschriebenen Raumes auf dem Blatt (durch Messen der Rahmenlinierung); gewöhnlich in Millimeter angegeben</skos:definition>
+      <skos:definition xml:lang="en">E.g. height and width of a leaf, dimensions of the written space the text block (by measuring the frame ruling); dimensions usually given in millimetres.</skos:definition>
+      <skos:definition xml:lang="de">z.B. Höhe und Breite eines Blattes, Ausmaße des beschriebenen Raumes auf dem Blatt (durch Messen der Rahmenlinierung); gewöhnlich in Millimeter angegeben.</skos:definition>
     </skos:note>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.ecodicology.org/0003">
