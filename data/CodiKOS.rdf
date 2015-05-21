@@ -15,6 +15,7 @@
     <skos:narrower rdf:resource="http://www.ecodicology.org/0005"/>
     <skos:narrower rdf:resource="http://www.ecodicology.org/0009"/>
     <skos:narrower rdf:resource="http://www.ecodicology.org/0006"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0008"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.ecodicology.org/0001">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -148,6 +149,16 @@
     <skos:prefLabel xml:lang="en">Script</skos:prefLabel>
     <skos:prefLabel xml:lang="de">Schrift</skos:prefLabel>
     <skos:notation>0008</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0007">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Initial</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Initiale</skos:prefLabel>
+    <skos:notation>0007</skos:notation>
     <skos:note>
       <skos:definition xml:lang="en"></skos:definition>
       <skos:definition xml:lang="de"></skos:definition>
