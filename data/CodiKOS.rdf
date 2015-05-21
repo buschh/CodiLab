@@ -17,7 +17,7 @@
     <skos:narrower rdf:resource="http://www.ecodicology.org/0006"/>
     <skos:narrower rdf:resource="http://www.ecodicology.org/0007"/>
     <skos:narrower rdf:resource="http://www.ecodicology.org/0008"/>
-    <skos:narrower rdf:resource="http://www.ecodicology.org/511.01"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0009"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.ecodicology.org/0001">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -84,16 +84,15 @@
       <skos:definition xml:lang="de">Raum außerhalb des Beschriftungsrahmens</skos:definition>
     </skos:note>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.ecodicology.org/511.01">
+  <rdf:Description rdf:about="http://www.ecodicology.org/0009">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:prefLabel xml:lang="en">Illumination</skos:prefLabel>
     <skos:prefLabel xml:lang="de">Buchmalerei</skos:prefLabel>
-    <skos:notation>511.01</skos:notation>
+    <skos:notation>0009</skos:notation>
     <skos:note>
       <skos:definition xml:lang="en">the embellishment of a manuscript with luminous colours (especially gold and silver), i.e. the total of decorative elements and pictorial representations</skos:definition>
       <skos:definition xml:lang="de">Verschönerung der Handschrift mit leuchtenden Farben (v.a. Gold und Silber); die Gesamtheit der dekorativen Elemente und bildlichen Darstellungen</skos:definition>
     </skos:note>
-    <skos:narrower rdf:resource="http://www.ecodicology.org/333.02"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.ecodicology.org/311.05">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
