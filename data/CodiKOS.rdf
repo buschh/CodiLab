@@ -27,7 +27,6 @@
       <skos:definition xml:lang="en"></skos:definition>
       <skos:definition xml:lang="de"></skos:definition>
     </skos:note>
-    <skos:narrower rdf:resource="http://www.ecodicology.org/0027"/>
     <skos:narrower rdf:resource="http://www.ecodicology.org/0010"/>
     <skos:narrower rdf:resource="http://www.ecodicology.org/0011"/>
     <skos:narrower rdf:resource="http://www.ecodicology.org/0012"/>
@@ -41,6 +40,11 @@
     <skos:narrower rdf:resource="http://www.ecodicology.org/0020"/>
     <skos:narrower rdf:resource="http://www.ecodicology.org/0021"/>
     <skos:narrower rdf:resource="http://www.ecodicology.org/0022"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0023"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0024"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0025"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0026"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0027"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.ecodicology.org/0002">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
