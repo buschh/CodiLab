@@ -322,4 +322,15 @@
     </skos:note>
     <skos:broader rdf:resource="http://www.ecodicology.org/0001"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0023">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Opening</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Doppelseite, Doppelseitenansicht</skos:prefLabel>
+    <skos:notation>0023</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Ensemble / together of two facing pages when the codex is opened.</skos:definition>
+      <skos:definition xml:lang="de">Ansicht zweier gegenüberliegender Seiten beim Öffnen des Buches.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0001"/>
+  </rdf:Description>
 </rdf:RDF>
