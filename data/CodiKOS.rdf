@@ -244,8 +244,8 @@
     <skos:prefLabel xml:lang="de">Bifolium, Doppelblatt</skos:prefLabel>
     <skos:notation>0016</skos:notation>
     <skos:note>
-      <skos:definition xml:lang="en">rectangular piece of parchment folded in the middle/in half to produce two leaves (i.e., four pages). A number of bifolia folded together form a quire</skos:definition>
-      <skos:definition xml:lang="de">rechteckiges Stück Pergament, in der Mitte zur Hälfte gefaltet, um zwei Blätter (i.e. 4 Seiten) zu erhalten. Eine Gruppe gefalteter Bifolia ergibt eine Lage.</skos:definition>
+      <skos:definition xml:lang="en">Rectangular piece of parchment folded in the middle/in half to produce two leaves (i.e., four pages). A number of bifolia folded together form a quire.</skos:definition>
+      <skos:definition xml:lang="de">Rechteckiges Stück Pergament, in der Mitte zur Hälfte gefaltet, um zwei Blätter (i.e. 4 Seiten) zu erhalten. Eine Gruppe gefalteter Bifolia ergibt eine Lage.</skos:definition>
     </skos:note>
     <skos:broader rdf:resource="http://www.ecodicology.org/0001"/>
     <skos:related rdf:resource="http://www.ecodicology.org/0015"/>
