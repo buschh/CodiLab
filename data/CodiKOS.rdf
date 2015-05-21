@@ -381,4 +381,15 @@
     </skos:note>
     <skos:broader rdf:resource="http://www.ecodicology.org/0001"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0029">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Verso</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">verso, Rückseite (Blatt)</skos:prefLabel>
+    <skos:notation>0029</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">The back side of the leaf.</skos:definition>
+      <skos:definition xml:lang="de">Hintere Fläche bzw. Rückseite eines Blattes, die sich im aufgeschlagenen Buch auf der linken Seite befindet.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0001"/>
+  </rdf:Description>
 </rdf:RDF>
