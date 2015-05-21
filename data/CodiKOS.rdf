@@ -199,8 +199,8 @@
     <skos:prefLabel xml:lang="de">Band</skos:prefLabel>
     <skos:notation>0012</skos:notation>
     <skos:note>
-      <skos:definition xml:lang="en">unit, consisting of a set of sheets bound together; part of a homogeneous text</skos:definition>
-      <skos:definition xml:lang="de">Einheit, aus einer Reihe von zusammengebundenen Bögen bestehend; Teil eines homogenen Textes</skos:definition>
+      <skos:definition xml:lang="en">Unit, consisting of a set of sheets bound together; part of a homogeneous text.</skos:definition>
+      <skos:definition xml:lang="de">Einheit, aus einer Reihe von zusammengebundenen Bögen bestehend; Teil eines homogenen Textes.</skos:definition>
     </skos:note>
     <skos:broader rdf:resource="http://www.ecodicology.org/0001"/>
   </rdf:Description>
