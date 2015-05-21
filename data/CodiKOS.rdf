@@ -462,4 +462,15 @@
     </skos:note>
     <skos:broader rdf:resource="http://www.ecodicology.org/0001"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0036">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Watermark</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Wasserzeichen</skos:prefLabel>
+    <skos:notation>0036</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Distinguishing mark or design on paper, visible only when held up to the light; drawing whose footprint is left in the paper sheet by a wire forming a figure.</skos:definition>
+      <skos:definition xml:lang="de">Charakteristisches Zeichen bzw. Symbol auf dem Papier, nur sichtbar, wenn gegen das Licht gehalten; mit einem gebogenen Draht aufgebracht.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0001"/>
+  </rdf:Description>
 </rdf:RDF>
