@@ -273,4 +273,15 @@
     </skos:note>
     <skos:broader rdf:resource="http://www.ecodicology.org/0001"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0019">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Back (Tail)</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Hinterer Teil, (Anhang)</skos:prefLabel>
+    <skos:notation>0019</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Last pages of a manuscript / volume / codex. Contained are any appendixes following the main part of the text, including end papers.</skos:definition>
+      <skos:definition xml:lang="de">Das hindere Ende / die letzten Seiten einer Handschrift / eines Bandes, anschließend an den Haupttext auch: Anhang.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0001"/>
+  </rdf:Description>
 </rdf:RDF>
