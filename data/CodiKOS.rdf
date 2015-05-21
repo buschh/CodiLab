@@ -526,4 +526,15 @@
     </skos:note>
     <skos:broader rdf:resource="http://www.ecodicology.org/0001"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0041">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Fore edge</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Buchschnitt, Vorderschnitt</skos:prefLabel>
+    <skos:notation>0041</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">The edge of a book opposite the spine, sometimes decorated.</skos:definition>
+      <skos:definition xml:lang="de">Vorderkante des Buches, liegt dem Buchrücken gegenüber; z. T. dekoriert.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0001"/>
+  </rdf:Description>
 </rdf:RDF>
