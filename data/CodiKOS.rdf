@@ -232,8 +232,8 @@
     <skos:prefLabel xml:lang="de">Lage</skos:prefLabel>
     <skos:notation>0015</skos:notation>
     <skos:note>
-      <skos:definition xml:lang="en">a number of bifolia folded together; a set of bifolia nested one on top of the other. Quires are the 'gatherings' or 'booklets' of which a book is formed</skos:definition>
-      <skos:definition xml:lang="de">besteht aus mehreren ineinandergelegten Doppelblättern. Hieraus ergeben sich Einzelheftchen, aus denen sich ein Buch zusammensetzt</skos:definition>
+      <skos:definition xml:lang="en">A number of bifolia folded together; a set of bifolia nested one on top of the other. Quires are the 'gatherings' or 'booklets' of which a book is formed.</skos:definition>
+      <skos:definition xml:lang="de">Besteht aus mehreren ineinandergelegten Doppelblättern. Hieraus ergeben sich Einzelheftchen, aus denen sich ein Buch zusammensetzt.</skos:definition>
     </skos:note>
     <skos:broader rdf:resource="http://www.ecodicology.org/0001"/>
     <skos:related rdf:resource="http://www.ecodicology.org/0016"/>
