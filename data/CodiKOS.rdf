@@ -98,8 +98,8 @@
     <skos:prefLabel xml:lang="de">Linierung</skos:prefLabel>
     <skos:notation>0004</skos:notation>
     <skos:note>
-      <skos:definition xml:lang="en">the process by which a frame and/or horizontal lines are produced (via drawing, scratching or folding) to guide the hand in writing</skos:definition>
-      <skos:definition xml:lang="de">Prozess der Linierung, Anlegen des Hilfsliniennetzes (Rahmen oder horizontale Schreiblinien) durch Vorzeichnung, Vorritzung oder Knicken/Falten der Seite</skos:definition>
+      <skos:definition xml:lang="en">The process by which a frame and/or horizontal lines are produced (via drawing, scratching or folding) to guide the hand in writing.</skos:definition>
+      <skos:definition xml:lang="de">Prozess der Linierung, Anlegen des Hilfsliniennetzes (Rahmen oder horizontale Schreiblinien) durch Vorzeichnung, Vorritzung oder Knicken/Falten der Seite.</skos:definition>
     </skos:note>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.ecodicology.org/0005">
