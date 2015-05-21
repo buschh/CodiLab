@@ -506,4 +506,15 @@
     </skos:note>
     <skos:broader rdf:resource="http://www.ecodicology.org/0001"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0040">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Spine</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Buchrücken</skos:prefLabel>
+    <skos:notation>0040</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">The edge at which a book is sewn together; length of the volume saddle, corresponding to the cover of the book.</skos:definition>
+      <skos:definition xml:lang="de">Die Seite, an der das Buch gebunden wurde; Länge des Buchrückens, gemessen am Bucheinband.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0001"/>
+  </rdf:Description>
 </rdf:RDF>
