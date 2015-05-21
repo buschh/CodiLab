@@ -306,4 +306,15 @@
     </skos:note>
     <skos:broader rdf:resource="http://www.ecodicology.org/0001"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0022">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Leaf / Folio</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Blatt</skos:prefLabel>
+    <skos:notation>0022</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">One leaf, half / quarter / eigth of a sheet; one half of a bifolium. The front and back of a folio are referred to as the recto and verso.</skos:definition>
+      <skos:definition xml:lang="de">Eine Hälfte / ein Viertel / ein Achtel eines Bogens bzw. ein halbes Bifolium. Die Vorder- und Rückseite eines Blattes werden mit recto und verso bezeichnet.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0001"/>
+  </rdf:Description>
 </rdf:RDF>
