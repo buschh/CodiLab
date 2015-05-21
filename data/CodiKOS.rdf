@@ -403,4 +403,15 @@
     </skos:note>
     <skos:broader rdf:resource="http://www.ecodicology.org/0001"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0031">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Singleton, Half sheet</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Einzelblatt</skos:prefLabel>
+    <skos:notation>0031</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">A single folio that has lost its facing mate (the other half of the bifolium) or that originally was designed to be sewn into a book as a single page.</skos:definition>
+      <skos:definition xml:lang="de">Seite ohne gegenüberliegende Seite. Hälfte eines Bifoliums, eventuell nachträglich eingefügt.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0001"/>
+  </rdf:Description>
 </rdf:RDF>
