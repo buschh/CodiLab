@@ -250,4 +250,15 @@
     <skos:broader rdf:resource="http://www.ecodicology.org/0001"/>
     <skos:related rdf:resource="http://www.ecodicology.org/0015"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0017">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Endpaper / Front end paper (FEP)</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Vorsatzpapierbogen</skos:prefLabel>
+    <skos:notation>0017</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Leaves of paper inserted before the title page and after the text. Doublepage consisting of Pastedown and Flyleaf.</skos:definition>
+      <skos:definition xml:lang="de">Zwei oder mehr Blätter, die am Anfang oder Ende des Buches eingefügt sind und Buchblock und Einband verbinden.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0001"/>
+  </rdf:Description>
 </rdf:RDF>
