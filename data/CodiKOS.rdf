@@ -657,4 +657,15 @@
     </skos:note>
     <skos:broader rdf:resource="http://www.ecodicology.org/0003"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0052">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Ruling prick</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Einstich für Linierung</skos:prefLabel>
+    <skos:notation>0052</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Single prick on the far right of the page which determines the distances of the later writing lines.</skos:definition>
+      <skos:definition xml:lang="de">Einstichlich an der rechten Seite des Blattes als Markierung für die Ausrichtung der späteren Schreiblinien.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0003"/>
+  </rdf:Description>
 </rdf:RDF>
