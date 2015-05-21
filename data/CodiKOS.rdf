@@ -188,8 +188,8 @@
     <skos:prefLabel xml:lang="de">Sammelhandschrift</skos:prefLabel>
     <skos:notation>0011</skos:notation>
     <skos:note>
-      <skos:definition xml:lang="en">codex with more than one text, e.g. different authors or genres. May be conceptional but mostly random for aims of conservation</skos:definition>
-      <skos:definition xml:lang="de">Heterogene Handschriften, in denen Texte unterschiedlicher Autoren oder Textsorten zu einem Kodex zusammengeführt sind. Sowohl konzeptionell als Sammlung oder wahllos aus Konservierungszwecken</skos:definition>
+      <skos:definition xml:lang="en">Codex with more than one text, e.g. different authors or genres. May be conceptional but mostly random for aims of conservation.</skos:definition>
+      <skos:definition xml:lang="de">Heterogene Handschriften, in denen Texte unterschiedlicher Autoren oder Textsorten zu einem Kodex zusammengeführt sind. Sowohl konzeptionell als Sammlung oder wahllos aus Konservierungszwecken.</skos:definition>
     </skos:note>
     <skos:broader rdf:resource="http://www.ecodicology.org/0001"/>
   </rdf:Description>
