@@ -28,6 +28,7 @@
       <skos:definition xml:lang="de"></skos:definition>
     </skos:note>
     <skos:narrower rdf:resource="http://www.ecodicology.org/311.05"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0010"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.ecodicology.org/0002">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
