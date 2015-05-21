@@ -392,4 +392,15 @@
     </skos:note>
     <skos:broader rdf:resource="http://www.ecodicology.org/0001"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0030">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Facing page</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Gegenüberliegende Seite</skos:prefLabel>
+    <skos:notation>0030</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">A page which forms a double page with a given page; one half of a double page ( > opposite page).</skos:definition>
+      <skos:definition xml:lang="de">Seite, die mit der jeweils gegenüberliegenden Seite eine Doppelseite bildet.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0001"/>
+  </rdf:Description>
 </rdf:RDF>
