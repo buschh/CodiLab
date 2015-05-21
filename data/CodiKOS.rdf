@@ -221,8 +221,8 @@
     <skos:prefLabel xml:lang="de">Bogen</skos:prefLabel>
     <skos:notation>0014</skos:notation>
     <skos:note>
-      <skos:definition xml:lang="en">whole piece of parchment or paper, not folded</skos:definition>
-      <skos:definition xml:lang="de">ein ganzes ungefaltetes Stück Pergament oder Papier</skos:definition>
+      <skos:definition xml:lang="en">Whole piece of parchment or paper, not folded.</skos:definition>
+      <skos:definition xml:lang="de">Ein ganzes ungefaltetes Stück Pergament oder Papier.</skos:definition>
     </skos:note>
     <skos:broader rdf:resource="http://www.ecodicology.org/0001"/>
   </rdf:Description>
