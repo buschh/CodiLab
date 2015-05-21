@@ -89,6 +89,7 @@
       <skos:definition xml:lang="en">the embellishment of a manuscript with luminous colours (especially gold and silver), i.e. the total of decorative elements and pictorial representations</skos:definition>
       <skos:definition xml:lang="de">Verschönerung der Handschrift mit leuchtenden Farben (v.a. Gold und Silber); die Gesamtheit der dekorativen Elemente und bildlichen Darstellungen</skos:definition>
     </skos:note>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/333.02"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.ecodicology.org/311.05">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
