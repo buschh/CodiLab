@@ -418,4 +418,15 @@
     </skos:note>
     <skos:broader rdf:resource="http://www.ecodicology.org/0001"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0032">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Pastedown</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Einbandspiegel</skos:prefLabel>
+    <skos:notation>0032</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">A leaf pasted onto the inside of a board, that means the inner surface of the book cover.</skos:definition>
+      <skos:definition xml:lang="de">Ein Blatt, das auf der Innenseite des Buchdeckels festgeklebt wurde.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0001"/>
+  </rdf:Description>
 </rdf:RDF>
