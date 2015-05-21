@@ -9,7 +9,7 @@
       <skos:definition xml:lang="de">Kodikologisches SKOS Datenmodell</skos:definition>
     </skos:note>
     <skos:narrower rdf:resource="http://www.ecodicology.org/0001"/>
-    <skos:narrower rdf:resource="http://www.ecodicology.org/B"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0002"/>
     <skos:narrower rdf:resource="http://www.ecodicology.org/321.01"/>
     <skos:narrower rdf:resource="http://www.ecodicology.org/322.01"/>
     <skos:narrower rdf:resource="http://www.ecodicology.org/331.01"/>
@@ -26,11 +26,11 @@
     </skos:note>
     <skos:narrower rdf:resource="http://www.ecodicology.org/311.05"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.ecodicology.org/B">
+  <rdf:Description rdf:about="http://www.ecodicology.org/0002">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:prefLabel xml:lang="en">Dimensions</skos:prefLabel>
     <skos:prefLabel xml:lang="de">Maße</skos:prefLabel>
-    <skos:notation>B</skos:notation>
+    <skos:notation>0002</skos:notation>
     <skos:note>
       <skos:definition xml:lang="en">e.g. height and width of a leaf, dimensions of the written space the text block (by measuring the frame ruling); dimensions usually given in millimetres</skos:definition>
       <skos:definition xml:lang="de">z.B. Höhe und Breite eines Blattes, Ausmaße des beschriebenen Raumes auf dem Blatt (durch Messen der Rahmenlinierung); gewöhnlich in Millimeter angegeben</skos:definition>
