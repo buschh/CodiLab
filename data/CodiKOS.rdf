@@ -1134,4 +1134,15 @@ Zeilenfüllung: Ornamentale oder figürliche Ausfüllung leerer Zeilen oder Zeil
     </skos:note>
     <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0095">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Rubric</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Rubrizierung</skos:prefLabel>
+    <skos:notation>0095</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">All red-coloured titles, chapter headings, paragraph signs and passages, as well as strokes, underlinings and dots of capitals which help to identify the text components.</skos:definition>
+      <skos:definition xml:lang="de">Alle Überschriften, Initialen, Paragraphenzeichen und Absätze sowie Strichelungen, Unterstreichungen und Punkte von Großbuchstaben in roter Farbe; dienen der Textgliederung.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
+  </rdf:Description>
 </rdf:RDF>
