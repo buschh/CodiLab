@@ -1101,4 +1101,15 @@ Zeilenfüllung: Ornamentale oder figürliche Ausfüllung leerer Zeilen oder Zeil
     </skos:note>
     <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0092">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Per cola et commata</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Per cola et commata</skos:prefLabel>
+    <skos:notation>0092</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">The practice of dividing text lines by clause and phrase units.</skos:definition>
+      <skos:definition xml:lang="de">Die einzelnen Textzeilen werden nach Teilsatz- und Satzeinheiten getrennt.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
+  </rdf:Description>
 </rdf:RDF>
