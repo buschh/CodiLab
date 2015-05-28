@@ -2019,4 +2019,15 @@ script, which is independant from borders or initials. The pictorial element may
     </skos:note>
     <skos:broader rdf:resource="http://www.ecodicology.org/0009"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0171">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Kleinbild	</skos:prefLabel>
+    <skos:notation>0171</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Miniature, whose width and height occupies only a small part of the writing space.</skos:definition>
+      <skos:definition xml:lang="de">In den Text eingestellte Miniatur, die in Höhe und Breite nur einen Teil des Schriftraums einnimmt.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0009"/>
+  </rdf:Description>
 </rdf:RDF>
