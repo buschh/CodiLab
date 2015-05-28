@@ -189,7 +189,7 @@
   <rdf:Description rdf:about="http://www.ecodicology.org/0009">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:prefLabel xml:lang="en">Illumination</skos:prefLabel>
-    <skos:prefLabel xml:lang="de">Buchmalerei</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Buchmalerei, Ausstattung</skos:prefLabel>
     <skos:notation>0009</skos:notation>
     <skos:note>
       <skos:definition xml:lang="en">The embellishment of a manuscript with luminous colours (especially gold and silver), i.e. the total of decorative elements and pictorial representations.</skos:definition>
