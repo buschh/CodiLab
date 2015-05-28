@@ -1909,4 +1909,15 @@ script, which is independant from borders or initials. The pictorial element may
     </skos:note>
     <skos:broader rdf:resource="http://www.ecodicology.org/0009"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0161">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Panel / Compartment</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Bild, Bildfeld</skos:prefLabel>
+    <skos:notation>0161</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Predefined space which contains figural decoration.</skos:definition>
+      <skos:definition xml:lang="de">Vorgegebener Raum, der mit einer figürlichen Darstellung ausgefüllt ist.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0009"/>
+  </rdf:Description>
 </rdf:RDF>
