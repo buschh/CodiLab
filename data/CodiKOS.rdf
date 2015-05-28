@@ -1625,4 +1625,15 @@ tes Explicit-Incipit auftretend.</skos:definition>
     </skos:note>
     <skos:broader rdf:resource="http://www.ecodicology.org/0007"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0136">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Penwork initial</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Initiale in Federzeichnung</skos:prefLabel>
+    <skos:notation>0136</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">A monochrome ornamental initial produced entirely with a pen,  generally using the same ink as the text, related to the pen-florished initial.</skos:definition>
+      <skos:definition xml:lang="de">Ausführung des Buchstabens mit der Feder in einfarbigen Linien; gewöhnlich in der gleichen Tinte wie der Text, verwandt mit der Fleuronné-Initiale.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0007"/>
+  </rdf:Description>
 </rdf:RDF>
