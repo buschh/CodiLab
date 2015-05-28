@@ -1373,4 +1373,16 @@ Satzmajuskel: kleine Majuskel am Satzanfang oder im Fließtext, häufig gestrich
     </skos:note>
     <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0115">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Explicit, closing words</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Explicit	</skos:prefLabel>
+    <skos:notation>0115</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">An inscription recording information relating to the circumstances of the production of a manuscript. During antiquity at the end of the manuscript.</skos:definition>
+      <skos:definition xml:lang="de">Titel mit Bezug auf die Umstände der Abfassung, stand in der Antike noch am Ende der Handschrift. Teilweise als kombinier-
+tes Explicit-Incipit auftretend.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
+  </rdf:Description>
 </rdf:RDF>
