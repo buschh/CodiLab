@@ -1445,4 +1445,15 @@ tes Explicit-Incipit auftretend.</skos:definition>
     </skos:note>
     <skos:broader rdf:resource="http://www.ecodicology.org/0006"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0121">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Side note</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Randbemerkung</skos:prefLabel>
+    <skos:notation>0121</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Small annotations on the margins.</skos:definition>
+      <skos:definition xml:lang="de">Kleine Anmerkungen am Rand zur Identifikation eine Textpassage. z.B. durch Untertitel oder Nummerierungen.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0006"/>
+  </rdf:Description>
 </rdf:RDF>
