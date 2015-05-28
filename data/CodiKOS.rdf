@@ -1079,4 +1079,15 @@ Zeilenfüllung: Ornamentale oder figürliche Ausfüllung leerer Zeilen oder Zeil
     </skos:note>
     <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0090">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Set out</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Ausgerücktes Element</skos:prefLabel>
+    <skos:notation>0090</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Small initials, signs or words set outside the justification of the text block.</skos:definition>
+      <skos:definition xml:lang="de">Kleine Initialen, Symbole oder Wörter außerhalb des Schriftspiegels.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
+  </rdf:Description>
 </rdf:RDF>
