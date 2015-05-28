@@ -1887,4 +1887,15 @@ script, which is independant from borders or initials. The pictorial element may
     </skos:note>
     <skos:broader rdf:resource="http://www.ecodicology.org/0009"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0159">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Cycle of illustrations (see also “Register”)</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Bildzyklus (siehe auch “Registerbild”)</skos:prefLabel>
+    <skos:notation>0159</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Sequence of representations illustrating the successive phases of a story or the different sections of a text.</skos:definition>
+      <skos:definition xml:lang="de">Serie von bildlichen Darstellungen, die den Inhalt einer Geschichte wiedergeben und den Text illustrieren.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0009"/>
+  </rdf:Description>
 </rdf:RDF>
