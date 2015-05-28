@@ -994,4 +994,15 @@
     </skos:note>
     <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0082">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Long line</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Verlängerte Schreib-/Hilfslinie</skos:prefLabel>
+    <skos:notation>0082</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Writing line extending from one margin to the other side.</skos:definition>
+      <skos:definition xml:lang="de">Durchgehende Schreiblinie von einem Rand zum anderen (über den Textblock hinaus).</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
+  </rdf:Description>
 </rdf:RDF>
