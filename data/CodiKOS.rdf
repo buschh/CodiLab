@@ -1385,4 +1385,15 @@ tes Explicit-Incipit auftretend.</skos:definition>
     </skos:note>
     <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0116">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Colophon</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Kolophon	</skos:prefLabel>
+    <skos:notation>0116</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Short note at the end of a manuscript, often with details about time of creation and place of origin or the name of the writer.</skos:definition>
+      <skos:definition xml:lang="de">Schriftlicher Vermerk am Ende eines Manuskripts, häufig mit Angaben über Entstehungszeit und -ort oder dem Namen des Schreibers.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
+  </rdf:Description>
 </rdf:RDF>
