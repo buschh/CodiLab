@@ -1953,4 +1953,15 @@ script, which is independant from borders or initials. The pictorial element may
     </skos:note>
     <skos:broader rdf:resource="http://www.ecodicology.org/0009"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0165">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Full border, Framing</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Rahmenbild, Rahmung 	</skos:prefLabel>
+    <skos:notation>0165</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">The border decorations running along all four sides of the text.</skos:definition>
+      <skos:definition xml:lang="de">Verzierung des gesamten marginalen Raumes, dekorative Umrahmung des Schriftraumes.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0009"/>
+  </rdf:Description>
 </rdf:RDF>
