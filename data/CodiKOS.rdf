@@ -1533,4 +1533,15 @@ tes Explicit-Incipit auftretend.</skos:definition>
     </skos:note>
     <skos:broader rdf:resource="http://www.ecodicology.org/0006"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0129">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Note / Annotation</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Notiz, Anmerkung</skos:prefLabel>
+    <skos:notation>0129</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Short explicative or critical mention.</skos:definition>
+      <skos:definition xml:lang="de">Kurze erklärende oder kritische Bemerkung.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0006"/>
+  </rdf:Description>
 </rdf:RDF>
