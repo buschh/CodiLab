@@ -126,8 +126,8 @@
     <skos:prefLabel xml:lang="de">Seitenlayout</skos:prefLabel>
     <skos:notation>0005</skos:notation>
     <skos:note>
-      <skos:definition xml:lang="en">refers to the layout of a page which means the general arrangement of the various elements on a page</skos:definition>
-      <skos:definition xml:lang="de">bezieht sich auf die Seitengestaltung, die allgemeine Einteilung und Aufteilung der unterschiedlichen Elemente auf der Seite</skos:definition>
+      <skos:definition xml:lang="en">Refers to the layout of a page which means the general arrangement of the various elements on a page.</skos:definition>
+      <skos:definition xml:lang="de">Bezieht sich auf die Seitengestaltung, die allgemeine Einteilung und Aufteilung der unterschiedlichen Elemente auf der Seite.</skos:definition>
     </skos:note>
     <skos:narrower rdf:resource="http://www.ecodicology.org/331.07"/>
     <skos:narrower rdf:resource="http://www.ecodicology.org/331.071"/>
