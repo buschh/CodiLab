@@ -1055,4 +1055,17 @@
     </skos:note>
     <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0088">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Line return, Line filler</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Leeres Zeilenende, Zeilenfüllung</skos:prefLabel>
+    <skos:notation>0088</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Line return: rest of the writing line is left blank. 
+Line filler: Often this free space is decorated with ornaments or figures to keep the justification</skos:definition>
+      <skos:definition xml:lang="de">Leeres Zeilenende: die Schriftzeile hört vor dem Ende der Zeilenraumes auf. 
+Zeilenfüllung: Ornamentale oder figürliche Ausfüllung leerer Zeilen oder Zeilenenden, um den Blocksatz zu wahren.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
+  </rdf:Description>
 </rdf:RDF>
