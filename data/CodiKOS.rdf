@@ -1898,4 +1898,15 @@ script, which is independant from borders or initials. The pictorial element may
     </skos:note>
     <skos:broader rdf:resource="http://www.ecodicology.org/0009"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0160">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Decorated, Illuminated border / Decorated marginalia</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Randillustration, Randminiatur, Kommentarillustration</skos:prefLabel>
+    <skos:notation>0160</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Decorative element with relation to the text content which is situated on the margin of the page ( ≠ marginal drawing).</skos:definition>
+      <skos:definition xml:lang="de">Textbezogene, dekorative Darstellung  auf einem der Seitenränder ( ≠ Randzeichnung).</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0009"/>
+  </rdf:Description>
 </rdf:RDF>
