@@ -869,4 +869,15 @@
     </skos:note>
     <skos:broader rdf:resource="http://www.ecodicology.org/0004"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0071">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Independant ruling</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Marginallinierung</skos:prefLabel>
+    <skos:notation>0071</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Lineation drawn in the margin for a gloss. Its spacing is unrelated to the lineation of the body of the page.</skos:definition>
+      <skos:definition xml:lang="de">Liniensystem am Rand der Kodexseite für Marginalglossen, ohne Bezug zur Linierung des Hauptteils der Seite.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0004"/>
+  </rdf:Description>
 </rdf:RDF>
