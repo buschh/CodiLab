@@ -1258,4 +1258,15 @@ Satzmajuskel: kleine Majuskel am Satzanfang oder im Fließtext, häufig gestrich
     </skos:note>
     <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0107">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Frame</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Rahmen, Rahmung</skos:prefLabel>
+    <skos:notation>0107</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Group of frames or nets which limit the scope of a painting.</skos:definition>
+      <skos:definition xml:lang="de">Eine Gruppe von Rahmen um eine Miniatur herum oder Begrenzung der Miniaturen eines Bildzyklus.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
+  </rdf:Description>
 </rdf:RDF>
