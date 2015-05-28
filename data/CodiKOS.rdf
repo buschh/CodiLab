@@ -1647,4 +1647,15 @@ tes Explicit-Incipit auftretend.</skos:definition>
     </skos:note>
     <skos:broader rdf:resource="http://www.ecodicology.org/0007"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0138">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Champ initial</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Feldinitiale</skos:prefLabel>
+    <skos:notation>0138</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Small and compact couloured or golden initial on a monochrome ground/field.</skos:definition>
+      <skos:definition xml:lang="de">Kleine kompakte Initiale (farbig oder aus Gold) hinterlegt mit einem einfarbigen Feld / auf einfarbigem Grund.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0007"/>
+  </rdf:Description>
 </rdf:RDF>
