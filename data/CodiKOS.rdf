@@ -737,4 +737,15 @@
     </skos:note>
     <skos:broader rdf:resource="http://www.ecodicology.org/0004"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0059">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Intercolumn</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Begrenzung des Spaltenabstands</skos:prefLabel>
+    <skos:notation>0059</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Two or more vertical lines to define the space which separates two columns.</skos:definition>
+      <skos:definition xml:lang="de">Zwei oder mehr vertikale Linien, die den freien Raum zwischen zwei Spalten definieren.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0004"/>
+  </rdf:Description>
 </rdf:RDF>
