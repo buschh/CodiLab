@@ -131,7 +131,6 @@
     </skos:note>
     <skos:narrower rdf:resource="http://www.ecodicology.org/0075"/>
     <skos:narrower rdf:resource="http://www.ecodicology.org/0076"/>
-    <skos:narrower rdf:resource="http://www.ecodicology.org/331.09"/>
     <skos:narrower rdf:resource="http://www.ecodicology.org/333.02"/>
     <skos:narrower rdf:resource="http://www.ecodicology.org/0072"/>
     <skos:narrower rdf:resource="http://www.ecodicology.org/0073"/>
@@ -181,16 +180,6 @@
       <skos:definition xml:lang="de">Innerer Rand der Seite (zum Bund hin).</skos:definition>
     </skos:note>
     <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.ecodicology.org/331.09">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:prefLabel xml:lang="en">Body of page</skos:prefLabel>
-    <skos:prefLabel xml:lang="de">Schriftraum</skos:prefLabel>
-    <skos:notation>331.09</skos:notation>
-    <skos:note>
-      <skos:definition xml:lang="en">everything within the writing space/ has to be distinguished from marginal elements</skos:definition>
-      <skos:definition xml:lang="de">gesamte Fläche innerhalb des Beschriftungsraumes, muss von Randelementen unterschieden werden</skos:definition>
-    </skos:note>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.ecodicology.org/333.02">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
