@@ -1269,4 +1269,15 @@ Satzmajuskel: kleine Majuskel am Satzanfang oder im Fließtext, häufig gestrich
     </skos:note>
     <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0108">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Guide letter</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Platzhalter</skos:prefLabel>
+    <skos:notation>0108</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Small letter as placeholder for initials, written to tell the scribe/illuminator which initial to supply.</skos:definition>
+      <skos:definition xml:lang="de">Kleiner Buchstabe als Platzhalter für eine spätere Initiale.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
+  </rdf:Description>
 </rdf:RDF>
