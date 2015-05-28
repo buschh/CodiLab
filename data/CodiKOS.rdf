@@ -1749,4 +1749,14 @@ tes Explicit-Incipit auftretend.</skos:definition>
     </skos:note>
     <skos:broader rdf:resource="http://www.ecodicology.org/0007"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0146">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Hand</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">‘Hand’, Schreiberhand</skos:prefLabel>
+    <skos:notation>0146</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">The appearance of a script was determined by the speed and care with which the letters were formed and the form and number of space-saving devices employed (ductus).</skos:definition>
+      <skos:definition xml:lang="de">Handschrift, teils synonym mit script verwendet, auch: Schreiberhand.</skos:definition>
+    </skos:note>
+  </rdf:Description>
 </rdf:RDF>
