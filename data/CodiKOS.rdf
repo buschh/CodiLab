@@ -1456,4 +1456,15 @@ tes Explicit-Incipit auftretend.</skos:definition>
     </skos:note>
     <skos:broader rdf:resource="http://www.ecodicology.org/0006"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0122">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Gloss</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Glosse</skos:prefLabel>
+    <skos:notation>0122</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">A word or words commenting on, elucidating, or translating those of the main text, often written in the margins or between the lines.</skos:definition>
+      <skos:definition xml:lang="de">Einzelwörter oder Sätze am Seitenrand oder zwischen den Zeilen, verwendet zur Kommentierung, Erläuterung oder Übersetzung des Haupttextes.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0006"/>
+  </rdf:Description>
 </rdf:RDF>
