@@ -192,8 +192,8 @@
     <skos:prefLabel xml:lang="de">Buchmalerei</skos:prefLabel>
     <skos:notation>0009</skos:notation>
     <skos:note>
-      <skos:definition xml:lang="en">the embellishment of a manuscript with luminous colours (especially gold and silver), i.e. the total of decorative elements and pictorial representations</skos:definition>
-      <skos:definition xml:lang="de">Verschönerung der Handschrift mit leuchtenden Farben (v.a. Gold und Silber); die Gesamtheit der dekorativen Elemente und bildlichen Darstellungen</skos:definition>
+      <skos:definition xml:lang="en">The embellishment of a manuscript with luminous colours (especially gold and silver), i.e. the total of decorative elements and pictorial representations.</skos:definition>
+      <skos:definition xml:lang="de">Verschönerung der Handschrift mit leuchtenden Farben (v.a. Gold und Silber); die Gesamtheit der dekorativen Elemente und bildlichen Darstellungen.</skos:definition>
     </skos:note>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.ecodicology.org/0027">
