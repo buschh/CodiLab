@@ -1832,4 +1832,15 @@ script, which is independant from borders or initials. The pictorial element may
     </skos:note>
     <skos:broader rdf:resource="http://www.ecodicology.org/0009"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0154">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Ornamentation /  Decoration</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Ornamentik, Dekoration</skos:prefLabel>
+    <skos:notation>0154</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Decoration which does not belong to the illustration itself.</skos:definition>
+      <skos:definition xml:lang="de">Schmuck / Dekoration, der nicht zu einer Illustration an sich zugehörig ist.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0009"/>
+  </rdf:Description>
 </rdf:RDF>
