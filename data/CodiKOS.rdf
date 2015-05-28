@@ -1783,4 +1783,15 @@ tes Explicit-Incipit auftretend.</skos:definition>
     </skos:note>
     <skos:broader rdf:resource="http://www.ecodicology.org/0008"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0149">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Highlighted letter/  Colour stroked letter (see also “Rubric")</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Hervorgehobener Buchstabe (siehe auch “Rubrizierung”)</skos:prefLabel>
+    <skos:notation>0149</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Letter whose body or concave parts are filled with colour/highlighted with a vertical red colour stroke.</skos:definition>
+      <skos:definition xml:lang="de">Der Buchstabenkörper ist mit roter Farbe gefüllt oder durch einen senkrechten roten Farbstrich hervorgehoben.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0008"/>
+  </rdf:Description>
 </rdf:RDF>
