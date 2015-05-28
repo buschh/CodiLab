@@ -195,6 +195,26 @@
       <skos:definition xml:lang="en">The embellishment of a manuscript with luminous colours (especially gold and silver), i.e. the total of decorative elements and pictorial representations.</skos:definition>
       <skos:definition xml:lang="de">Verschönerung der Handschrift mit leuchtenden Farben (v.a. Gold und Silber); die Gesamtheit der dekorativen Elemente und bildlichen Darstellungen.</skos:definition>
     </skos:note>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0152"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0153"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0154"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0155"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0156"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0157"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0158"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0159"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0160"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0161"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0162"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0163"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0164"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0165"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0166"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0167"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0168"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0169"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0170"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0171"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.ecodicology.org/0027">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
