@@ -1942,4 +1942,15 @@ script, which is independant from borders or initials. The pictorial element may
     </skos:note>
     <skos:broader rdf:resource="http://www.ecodicology.org/0009"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0164">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Fleuronnéstab</skos:prefLabel>
+    <skos:notation>0164</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de">Länglicher Ausläufer, entweder von einem Buchstaben ausgehend oder an ihn angesetzt, in den Randbereich hineinragend (Übergang zu Bordürenformen).</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0009"/>
+  </rdf:Description>
 </rdf:RDF>
