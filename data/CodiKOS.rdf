@@ -1702,4 +1702,15 @@ tes Explicit-Incipit auftretend.</skos:definition>
     </skos:note>
     <skos:broader rdf:resource="http://www.ecodicology.org/0007"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0143">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Historiated initial (see also “Figured initial”)</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Historisierte Initiale</skos:prefLabel>
+    <skos:notation>0143</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">A letter containing an identifiable scene or figures, relating to the content of the text.</skos:definition>
+      <skos:definition xml:lang="de">Initiale, die eine szenenhafte Darstellung beinhaltet, bezogen auf den Inhalt des Textes.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0007"/>
+  </rdf:Description>
 </rdf:RDF>
