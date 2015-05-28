@@ -1123,4 +1123,15 @@ Zeilenfüllung: Ornamentale oder figürliche Ausfüllung leerer Zeilen oder Zeil
     </skos:note>
     <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0094">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Wavy / wobbly</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Unregelmäßige Schreiblinien</skos:prefLabel>
+    <skos:notation>0094</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Non-regular writing lines, not rectangular or not parallel.</skos:definition>
+      <skos:definition xml:lang="de">Unregelmäßig (wellig, wackelig) ausgeführte Schreiblinien.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
+  </rdf:Description>
 </rdf:RDF>
