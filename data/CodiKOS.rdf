@@ -230,12 +230,12 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.ecodicology.org/0006">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:prefLabel xml:lang="en">Margin / Marginal Notes</skos:prefLabel>
-    <skos:prefLabel xml:lang="de">Marginalien</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Marginalia</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Marginalie, Randnotiz</skos:prefLabel>
     <skos:notation>0006</skos:notation>
     <skos:note>
-      <skos:definition xml:lang="en"></skos:definition>
-      <skos:definition xml:lang="de"></skos:definition>
+      <skos:definition xml:lang="en">Refers to writing or decoration in the margins of a manuscript, including glosses, reference signs, annotations, and diagrams.</skos:definition>
+      <skos:definition xml:lang="de">Beschriftung oder Dekor an den Seitenrändern der Handschrift, beinhaltet Glossen, Verweiszeichen, Anmerkungen und graphische Darstellungen.</skos:definition>
     </skos:note>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.ecodicology.org/0008">
