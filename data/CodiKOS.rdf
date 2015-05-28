@@ -1691,4 +1691,15 @@ tes Explicit-Incipit auftretend.</skos:definition>
     </skos:note>
     <skos:broader rdf:resource="http://www.ecodicology.org/0007"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0142">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Gymnastic initial</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Gymnastische Initiale</skos:prefLabel>
+    <skos:notation>0142</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">An initial composed of lively, acrobatic human and/or animal figures.</skos:definition>
+      <skos:definition xml:lang="de">Initiale, die sich aus akrobatischen Menschen- oder Tierfiguren zusammensetzt.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0007"/>
+  </rdf:Description>
 </rdf:RDF>
