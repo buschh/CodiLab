@@ -1351,4 +1351,15 @@ Satzmajuskel: kleine Majuskel am Satzanfang oder im Fließtext, häufig gestrich
     </skos:note>
     <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0113">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Calligram (see also “Cul-de-lampe”)</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Textfigur, Figurengedicht, Bildgedicht, Umrissgedicht (siehe auch “Cul-de-lampe”)</skos:prefLabel>
+    <skos:notation>0113</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Phrase, or word in which the typeface, calligraphy or handwriting is arranged in a way that it creates a visual image; in Middle Ages content-related to the text.</skos:definition>
+      <skos:definition xml:lang="de">Textfigur mit geometrischem oder figürlichem Aussehen, im Mittelalter mit inhaltlichem Bezug zum Text.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
+  </rdf:Description>
 </rdf:RDF>
