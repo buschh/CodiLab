@@ -920,4 +920,15 @@
     </skos:note>
     <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0074">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Half occupied</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Halbe Seite, halbseitig</skos:prefLabel>
+    <skos:notation>0074</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Image or text occupying only half the page or justification.</skos:definition>
+      <skos:definition xml:lang="de">Der Seitenraum wird nur zur Hälfte für Bebilderung und Beschriftung genutzt.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
+  </rdf:Description>
 </rdf:RDF>
