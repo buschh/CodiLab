@@ -1400,4 +1400,15 @@ tes Explicit-Incipit auftretend.</skos:definition>
     </skos:note>
     <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0117">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Margin rule</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Randlinie	</skos:prefLabel>
+    <skos:notation>0117</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Ruling lines on all four sides of the text block which define the space left blank for marginal notes.</skos:definition>
+      <skos:definition xml:lang="de">Linierung auf allen vier Seiten des Textblocks, Festlegung des freien Raumes für Randanmerkungen.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0006"/>
+  </rdf:Description>
 </rdf:RDF>
