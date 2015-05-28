@@ -1713,4 +1713,15 @@ tes Explicit-Incipit auftretend.</skos:definition>
     </skos:note>
     <skos:broader rdf:resource="http://www.ecodicology.org/0007"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0144">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Parted letter / Parti-coloured letters</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Initiale mit Schaftaussparung zweifarbige / mehrfarbige Initiale</skos:prefLabel>
+    <skos:notation>0144</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Bicoloured initial (often red an blue) with resemblance to the woodworking technique of intarsias.</skos:definition>
+      <skos:definition xml:lang="de">Initiale in zwei oder mehr Farben (oft rot und blau), die der Intarsientechnik (Einlegetechnik, Dekorationstechnik aus der Holzarbeit) nachempfunden ist.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0007"/>
+  </rdf:Description>
 </rdf:RDF>
