@@ -847,4 +847,15 @@
     </skos:note>
     <skos:broader rdf:resource="http://www.ecodicology.org/0004"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0069">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Unit of ruling / Module</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Linierungsabstand</skos:prefLabel>
+    <skos:notation>0069</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Space between two lines for writing.</skos:definition>
+      <skos:definition xml:lang="de">Abstand zwischen zwei Schreiblinien.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0004"/>
+  </rdf:Description>
 </rdf:RDF>
