@@ -1603,4 +1603,15 @@ tes Explicit-Incipit auftretend.</skos:definition>
     </skos:note>
     <skos:broader rdf:resource="http://www.ecodicology.org/0007"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0134">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Floriate initial  – Foliate initial</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Initiale mit pflanzlichen Motiven, z.B. Rankeninitiale</skos:prefLabel>
+    <skos:notation>0134</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Initial decorated with herbal/floral ornaments: blossoms, flowers, tendrils. Initials, whose tendrils are connected with the borders of the letter are called initials with scroll ornament.</skos:definition>
+      <skos:definition xml:lang="de">Initiale mit Verzierungen aus dem botanischen Bereich: Blüten, Blätter, Ranken. Initialen, deren Ranken mit den Randleisten der Buchstaben verschmelzen, nennt man Rankeninitialen.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0007"/>
+  </rdf:Description>
 </rdf:RDF>
