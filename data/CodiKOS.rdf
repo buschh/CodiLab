@@ -1422,4 +1422,15 @@ tes Explicit-Incipit auftretend.</skos:definition>
     </skos:note>
     <skos:broader rdf:resource="http://www.ecodicology.org/0006"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0119">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Marginal drawing</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Randzeichnung</skos:prefLabel>
+    <skos:notation>0119</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Autonomous drawing on one of the page margins. In general without relation to the text.</skos:definition>
+      <skos:definition xml:lang="de">Autonome Zeichnung, die an einem der Seitenränder angebracht wurde. Allgemein ohne Textbezug.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0006"/>
+  </rdf:Description>
 </rdf:RDF>
