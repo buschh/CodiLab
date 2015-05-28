@@ -704,4 +704,15 @@
     </skos:note>
     <skos:broader rdf:resource="http://www.ecodicology.org/0004"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0056">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Writing frame</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Beschriftungsrahmen</skos:prefLabel>
+    <skos:notation>0056</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Four lines limiting the justification on every page; can be divided into columns.</skos:definition>
+      <skos:definition xml:lang="de">Vier Linien, die den Schriftspiegel begrenzen (ausgenommen Kolumnentitel); kann in Spalten aufgeteilt sein.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0004"/>
+  </rdf:Description>
 </rdf:RDF>
