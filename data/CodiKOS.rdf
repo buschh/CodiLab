@@ -237,6 +237,21 @@
       <skos:definition xml:lang="en">Refers to writing or decoration in the margins of a manuscript, including glosses, reference signs, annotations, and diagrams.</skos:definition>
       <skos:definition xml:lang="de">Beschriftung oder Dekor an den Seitenrändern der Handschrift, beinhaltet Glossen, Verweiszeichen, Anmerkungen und graphische Darstellungen.</skos:definition>
     </skos:note>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0117"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0118"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0119"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0120"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0121"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0122"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0123"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0124"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0125"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0126"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0127"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0128"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0129"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0130"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0131"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.ecodicology.org/0008">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
