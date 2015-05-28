@@ -983,4 +983,15 @@
     </skos:note>
     <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0081">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Column</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Kolumne, Schriftspalte</skos:prefLabel>
+    <skos:notation>0081</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">One, two or more vertical text blocks positioned within the justification, separated by the intercolumn lines.</skos:definition>
+      <skos:definition xml:lang="de">Ein, zwei oder mehr vertikale Textblöcke innerhalb des Beschriftungsraumes, gekennzeichnet durch Spaltentrennlinien.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
+  </rdf:Description>
 </rdf:RDF>
