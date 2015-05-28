@@ -204,7 +204,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.ecodicology.org/0076">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:prefLabel xml:lang="en">Inner Margin</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Inner margin / Gutter</skos:prefLabel>
     <skos:prefLabel xml:lang="de">Bundsteg</skos:prefLabel>
     <skos:notation>0076</skos:notation>
     <skos:note>
