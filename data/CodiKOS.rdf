@@ -1362,4 +1362,15 @@ Satzmajuskel: kleine Majuskel am Satzanfang oder im Fließtext, häufig gestrich
     </skos:note>
     <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0114">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Incipit</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Incipit</skos:prefLabel>
+    <skos:notation>0114</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">The opening words of a text, often used in place of a title to identify a text. Contains title, author, abstract.</skos:definition>
+      <skos:definition xml:lang="de">Anfangsworte eines Textes, oft anstelle eines Titels verwendet. Enthält Titel, Autor oder Inhaltsangabe.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
+  </rdf:Description>
 </rdf:RDF>
