@@ -263,6 +263,10 @@
       <skos:definition xml:lang="de">Handschrift eines Schreibers in mittelalterlichen Handschriften, deren Ausführung strikteren Regeln und Hierarchien unterlag als moderne Handschriften (besitzt weniger Merkmale einer individuellen Handschrift).</skos:definition>
     </skos:note>
     <skos:narrower rdf:resource="http://www.ecodicology.org/0146"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0147"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0148"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0149"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0150"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.ecodicology.org/0007">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
