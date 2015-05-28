@@ -1330,7 +1330,7 @@ Satzmajuskel: kleine Majuskel am Satzanfang oder im Fließtext, häufig gestrich
   </rdf:Description>
   <rdf:Description rdf:about="http://www.ecodicology.org/0111">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:prefLabel xml:lang="en">Cul-de-lampe</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Cul-de-lampe (see also “Calligram”)</skos:prefLabel>
     <skos:prefLabel xml:lang="de">Cul-de-Lampe, figurale Schriftfläche (siehe auch “Textfigur”)</skos:prefLabel>
     <skos:notation>0111</skos:notation>
     <skos:note>
