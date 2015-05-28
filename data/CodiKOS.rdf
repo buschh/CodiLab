@@ -1920,4 +1920,15 @@ script, which is independant from borders or initials. The pictorial element may
     </skos:note>
     <skos:broader rdf:resource="http://www.ecodicology.org/0009"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0162">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Bas-de-page(-scene)</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Bas-de-page (-Szene)</skos:prefLabel>
+    <skos:notation>0162</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Usually an unframed miniature at the bottom of a page that may or may not refer to the text or image above.</skos:definition>
+      <skos:definition xml:lang="de">Bebilderung am Fuß einer Seite, die sich auf den Text oder die Abbildung darüber beziehen kann.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0009"/>
+  </rdf:Description>
 </rdf:RDF>
