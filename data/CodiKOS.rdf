@@ -1876,4 +1876,15 @@ script, which is independant from borders or initials. The pictorial element may
     </skos:note>
     <skos:broader rdf:resource="http://www.ecodicology.org/0009"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0158">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Illustration</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Illustration</skos:prefLabel>
+    <skos:notation>0158</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Pictorial representations of objects, persons and scenes with relation to the content of the text.</skos:definition>
+      <skos:definition xml:lang="de">Bildliche Darstellungen von Objekten, Personen und Szenen mit Bezug zum Textinhalt.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0009"/>
+  </rdf:Description>
 </rdf:RDF>
