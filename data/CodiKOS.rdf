@@ -1581,4 +1581,15 @@ tes Explicit-Incipit auftretend.</skos:definition>
     </skos:note>
     <skos:broader rdf:resource="http://www.ecodicology.org/0006"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0132">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Plain initial (see also “Secondary initial”, “Lombard”, “Versal”)</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Lombarde / einfache Initiale / Initialmajuskel (siehe auch “sekundäre Initiale”, “Lomarde”, “Versal”)</skos:prefLabel>
+    <skos:notation>0132</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Initial without frame and decoration, distinction from the rest of the text only via size, form and coloration (especially in red and blue colour).</skos:definition>
+      <skos:definition xml:lang="de">Einfache Initiale, ohne Rahmung und Dekoration, unterscheidet sich nur in Größe, Form und Farbe (charakteristisch ist die einfarbig rote (oder blaue) Ausführung der Buchstaben).</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0007"/>
+  </rdf:Description>
 </rdf:RDF>
