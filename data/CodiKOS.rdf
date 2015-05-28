@@ -1555,4 +1555,15 @@ tes Explicit-Incipit auftretend.</skos:definition>
     </skos:note>
     <skos:broader rdf:resource="http://www.ecodicology.org/0006"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0131">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Invocation</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Invokation/ Nomina sacra</skos:prefLabel>
+    <skos:notation>0131</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Abbreviated sacred name at the beginning of a text as invocation.</skos:definition>
+      <skos:definition xml:lang="de">Anrufung durch Abkürzung heiliger Namen zu Beginn eines Textes, bspw. IHS.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0006"/>
+  </rdf:Description>
 </rdf:RDF>
