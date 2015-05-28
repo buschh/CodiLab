@@ -170,6 +170,10 @@
     <skos:narrower rdf:resource="http://www.ecodicology.org/0110"/>
     <skos:narrower rdf:resource="http://www.ecodicology.org/0111"/>
     <skos:narrower rdf:resource="http://www.ecodicology.org/0112"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0113"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0114"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0115"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0116"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.ecodicology.org/0075">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
