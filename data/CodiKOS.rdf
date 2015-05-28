@@ -1090,4 +1090,15 @@ Zeilenfüllung: Ornamentale oder figürliche Ausfüllung leerer Zeilen oder Zeil
     </skos:note>
     <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0091">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Over-run</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Überlappung, Überlauf</skos:prefLabel>
+    <skos:notation>0091</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Word or part of word which does not fit into the ruling pattern.</skos:definition>
+      <skos:definition xml:lang="de">“Schwänzchen” einer vorhergehenden Zeile, das außerhalb des Liniennetzmusters hinzugefügt wird. Oft farbig abgesetzt.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
+  </rdf:Description>
 </rdf:RDF>
