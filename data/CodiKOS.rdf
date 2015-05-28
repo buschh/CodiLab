@@ -1669,4 +1669,15 @@ tes Explicit-Incipit auftretend.</skos:definition>
     </skos:note>
     <skos:broader rdf:resource="http://www.ecodicology.org/0007"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0140">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Inhabited initial</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Bewohnte Initiale, Bildeinschlussinitiale</skos:prefLabel>
+    <skos:notation>0140</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">An initial, which is inhabited by human or animal figures but does not contain an identifiable narrative scene. The figures act in the initial.</skos:definition>
+      <skos:definition xml:lang="de">Initiale, die von menschlichen oder tierhaften Figuren ‘bewohnt’ ist, jedoch keine narrative Szene beinhaltet. Die Figuren agieren in der Initiale.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0007"/>
+  </rdf:Description>
 </rdf:RDF>
