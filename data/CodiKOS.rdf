@@ -2008,4 +2008,15 @@ script, which is independant from borders or initials. The pictorial element may
     </skos:note>
     <skos:broader rdf:resource="http://www.ecodicology.org/0009"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0170">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Streifenbild</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Streifenbild</skos:prefLabel>
+    <skos:notation>0170</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Miniature, which occupies the whole width of the justification and maximally half of its height.</skos:definition>
+      <skos:definition xml:lang="de">Bildstreifen, der in den Text integriert ist und die gesamte Breite des Schriftraums, aber nur bis zur Hälfte seine Höhe umfasst.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0009"/>
+  </rdf:Description>
 </rdf:RDF>
