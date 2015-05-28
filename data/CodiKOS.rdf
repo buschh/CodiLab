@@ -726,4 +726,15 @@
     </skos:note>
     <skos:broader rdf:resource="http://www.ecodicology.org/0004"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0058">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Framing</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Gitternetz</skos:prefLabel>
+    <skos:notation>0058</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Ensemble of frame lines, surrounding the justification on three or four sides.</skos:definition>
+      <skos:definition xml:lang="de">Gesamtheit der Rahmenlinien, die die Beschriftungsfläche an drei oder vier Seiten begrenzen.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0004"/>
+  </rdf:Description>
 </rdf:RDF>
