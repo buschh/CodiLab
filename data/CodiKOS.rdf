@@ -792,4 +792,14 @@
     </skos:note>
     <skos:broader rdf:resource="http://www.ecodicology.org/0004"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0064">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Line ruling</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Zeilenlinierung</skos:prefLabel>
+    <skos:notation>0064</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Horizontal aid lines within the writing space.</skos:definition>
+      <skos:definition xml:lang="de">Linierung mit horizontalen Schreiblinien innerhalb des beschrifteten Raumes.</skos:definition>
+    </skos:note>
+  </rdf:Description>
 </rdf:RDF>
