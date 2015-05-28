@@ -136,6 +136,9 @@
     <skos:narrower rdf:resource="http://www.ecodicology.org/0072"/>
     <skos:narrower rdf:resource="http://www.ecodicology.org/0073"/>
     <skos:narrower rdf:resource="http://www.ecodicology.org/0074"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0077"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0078"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0079"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.ecodicology.org/0075">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
