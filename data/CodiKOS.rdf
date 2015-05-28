@@ -101,6 +101,24 @@
       <skos:definition xml:lang="en">The process by which a frame and/or horizontal lines are produced (via drawing, scratching or folding) to guide the hand in writing.</skos:definition>
       <skos:definition xml:lang="de">Prozess der Linierung, Anlegen des Hilfsliniennetzes (Rahmen oder horizontale Schreiblinien) durch Vorzeichnung, Vorritzung oder Knicken/Falten der Seite.</skos:definition>
     </skos:note>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0054"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0055"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0056"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0057"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0058"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0059"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0060"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0061"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0062"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0063"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0064"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0065"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0066"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0067"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0068"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0069"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0070"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0071"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.ecodicology.org/0005">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
