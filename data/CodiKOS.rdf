@@ -1112,4 +1112,15 @@ Zeilenfüllung: Ornamentale oder figürliche Ausfüllung leerer Zeilen oder Zeil
     </skos:note>
     <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0093">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Stichometry</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Kolometrie, Stichometrie</skos:prefLabel>
+    <skos:notation>0093</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Positioning of writing lines to highlight the metric structure of a text in verse, for example to indicate the beginning of a stanza.</skos:definition>
+      <skos:definition xml:lang="de">Einrückungsmethode bei lyrischen Texten, wobei die metrische Struktur des Textes hervorgehoben wird.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
+  </rdf:Description>
 </rdf:RDF>
