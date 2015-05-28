@@ -1759,5 +1759,6 @@ tes Explicit-Incipit auftretend.</skos:definition>
       <skos:definition xml:lang="en">The appearance of a script was determined by the speed and care with which the letters were formed and the form and number of space-saving devices employed (ductus).</skos:definition>
       <skos:definition xml:lang="de">Handschrift, teils synonym mit script verwendet, auch: Schreiberhand.</skos:definition>
     </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0008"/>
   </rdf:Description>
 </rdf:RDF>
