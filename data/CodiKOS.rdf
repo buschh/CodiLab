@@ -995,7 +995,7 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.ecodicology.org/0080">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:prefLabel xml:lang="en">Body of page / Text block</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Body of page / Text block / Writing area</skos:prefLabel>
     <skos:prefLabel xml:lang="de">Schriftraum, Textblock</skos:prefLabel>
     <skos:notation>0080</skos:notation>
     <skos:note>
