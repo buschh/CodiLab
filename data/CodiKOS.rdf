@@ -1236,4 +1236,15 @@ Satzmajuskel: kleine Majuskel am Satzanfang oder im Fließtext, häufig gestrich
     </skos:note>
     <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0105">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Reserved space/ Void space</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Leerraum, ausgesparter Raum</skos:prefLabel>
+    <skos:notation>0105</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Reserved space for additions, e.g. illuminations/initials.</skos:definition>
+      <skos:definition xml:lang="de">Freigelassene Stellen innerhalb des Textkörpers für spätere Nachtragungen.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
+  </rdf:Description>
 </rdf:RDF>
