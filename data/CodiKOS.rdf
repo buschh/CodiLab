@@ -122,8 +122,8 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.ecodicology.org/0005">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:prefLabel xml:lang="en">Layout</skos:prefLabel>
-    <skos:prefLabel xml:lang="de">Seitenlayout</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Mise en page / Page design / Layout</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Seitengestaltung, Seiteneinrichtung, Seitenlayout</skos:prefLabel>
     <skos:notation>0005</skos:notation>
     <skos:note>
       <skos:definition xml:lang="en">Refers to the layout of a page which means the general arrangement of the various elements on a page.</skos:definition>
