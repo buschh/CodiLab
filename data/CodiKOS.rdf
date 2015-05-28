@@ -1931,4 +1931,15 @@ script, which is independant from borders or initials. The pictorial element may
     </skos:note>
     <skos:broader rdf:resource="http://www.ecodicology.org/0009"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0163">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Border</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Randornamentik, Bordüre</skos:prefLabel>
+    <skos:notation>0163</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Decorative surrounds. A border surrounds text and/or image and may occupy margins and intercolumnar space.</skos:definition>
+      <skos:definition xml:lang="de">Dekorierte Umgebung; dekorative Ornamentik, die den Text umgibt und dabei Seitenränder und Spaltenzwischenraum einnehmen kann.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0009"/>
+  </rdf:Description>
 </rdf:RDF>
