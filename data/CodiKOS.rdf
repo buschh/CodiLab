@@ -1772,4 +1772,15 @@ tes Explicit-Incipit auftretend.</skos:definition>
     </skos:note>
     <skos:broader rdf:resource="http://www.ecodicology.org/0008"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0148">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Display script</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Auszeichnungsschrift, Textschrift</skos:prefLabel>
+    <skos:notation>0148</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">A script which differs from the rest of the text, emphasizes certain parts of the text. Display script is often used, along with an enlarged initial, to emphasize major textual openings (beginning of the text, headings).</skos:definition>
+      <skos:definition xml:lang="de">Eine in ihrer Form, Farbe und Größe vom übrigen Text abweichende Schrift, hebt bestimmte Textteile besonders hervor. Oftmals in Kombination mit einer Initiale gebraucht, um den Anfang eines Textes zu betonen (Textanfang, Über- schriften).</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0008"/>
+  </rdf:Description>
 </rdf:RDF>
