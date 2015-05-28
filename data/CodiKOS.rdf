@@ -1489,4 +1489,15 @@ tes Explicit-Incipit auftretend.</skos:definition>
     </skos:note>
     <skos:broader rdf:resource="http://www.ecodicology.org/0006"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0125">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Surrounding gloss</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Katene, Kettenkommentar, Klammerglosse/ umschließende Glosse</skos:prefLabel>
+    <skos:notation>0125</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Gloss written on one, two, three or four sides of the page’s periphery. The text block itself occupies the centre.</skos:definition>
+      <skos:definition xml:lang="de">Glossierung auf einem, zwei, drei oder vier den Text umgebenden Seitenrändern. Der Textblock nimmt dabei die Mitte der Seite ein.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0006"/>
+  </rdf:Description>
 </rdf:RDF>
