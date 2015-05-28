@@ -1821,4 +1821,15 @@ script, which is independant from borders or initials. The pictorial element may
     </skos:note>
     <skos:broader rdf:resource="http://www.ecodicology.org/0009"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0153">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Painting</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Farbe</skos:prefLabel>
+    <skos:notation>0153</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Colored preparation to cover a certain area.</skos:definition>
+      <skos:definition xml:lang="de">Farbe zum Auftragen, flüssig oder in Form einer Paste.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0009"/>
+  </rdf:Description>
 </rdf:RDF>
