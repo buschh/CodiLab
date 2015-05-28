@@ -1658,4 +1658,15 @@ tes Explicit-Incipit auftretend.</skos:definition>
     </skos:note>
     <skos:broader rdf:resource="http://www.ecodicology.org/0007"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0139">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Silhouette initial</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Silhouetten-Initiale</skos:prefLabel>
+    <skos:notation>0139</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Mostly monochrome initial with curved lines, drop-shaped leaf forms or rolled-up tendrils inside the body of the letter, which are executed in another colour. Most used colours: red, green or blue.</skos:definition>
+      <skos:definition xml:lang="de">Häufig einfarbige Initiale mit gebogten konturbegleitenden Linien oder eingerollten Ranken mit tropfenförmigen Blattformen im Binnenfeld, die in einer anderen Farbe ausgeführt sind. Häufigste Farben: Blau, Grün oder Rot.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0007"/>
+  </rdf:Description>
 </rdf:RDF>
