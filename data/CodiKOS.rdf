@@ -1062,7 +1062,7 @@
     <skos:notation>0088</skos:notation>
     <skos:note>
       <skos:definition xml:lang="en">Line return: rest of the writing line is left blank. 
-Line filler: Often this free space is decorated with ornaments or figures to keep the justification</skos:definition>
+Line filler: Often this free space is decorated with ornaments or figures to keep the justification.</skos:definition>
       <skos:definition xml:lang="de">Leeres Zeilenende: die Schriftzeile hört vor dem Ende der Zeilenraumes auf. 
 Zeilenfüllung: Ornamentale oder figürliche Ausfüllung leerer Zeilen oder Zeilenenden, um den Blocksatz zu wahren.</skos:definition>
     </skos:note>
