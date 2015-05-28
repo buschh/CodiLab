@@ -255,12 +255,12 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.ecodicology.org/0008">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-    <skos:prefLabel xml:lang="en">Script</skos:prefLabel>
-    <skos:prefLabel xml:lang="de">Schrift</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Script / Lettering</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Schrift, Schriftart</skos:prefLabel>
     <skos:notation>0008</skos:notation>
     <skos:note>
-      <skos:definition xml:lang="en"></skos:definition>
-      <skos:definition xml:lang="de"></skos:definition>
+      <skos:definition xml:lang="en">The handwriting used in Medieval manuscripts which was subject to more rigid rules and hierarchies than modern personal handwriting (less features of an individual handwriting).</skos:definition>
+      <skos:definition xml:lang="de">Handschrift eines Schreibers in mittelalterlichen Handschriften, deren Ausführung strikteren Regeln und Hierarchien unterlag als moderne Handschriften (besitzt weniger Merkmale einer individuellen Handschrift).</skos:definition>
     </skos:note>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.ecodicology.org/0007">
