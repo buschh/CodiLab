@@ -814,4 +814,15 @@
     </skos:note>
     <skos:broader rdf:resource="http://www.ecodicology.org/0004"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0066">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Writing base-line</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Grundlinie</skos:prefLabel>
+    <skos:notation>0066</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Imaginary line joining the bottom of the letters in one line.</skos:definition>
+      <skos:definition xml:lang="de">Gedachte Linie, auf der die Buchstaben einer Zeile sitzen.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0004"/>
+  </rdf:Description>
 </rdf:RDF>
