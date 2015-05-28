@@ -138,6 +138,12 @@
     <skos:narrower rdf:resource="http://www.ecodicology.org/0077"/>
     <skos:narrower rdf:resource="http://www.ecodicology.org/0078"/>
     <skos:narrower rdf:resource="http://www.ecodicology.org/0079"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0080"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0081"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0082"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0083"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0084"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0085"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.ecodicology.org/0075">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
