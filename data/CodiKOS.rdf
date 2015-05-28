@@ -1214,4 +1214,15 @@ Satzmajuskel: kleine Majuskel am Satzanfang oder im Fließtext, häufig gestrich
     </skos:note>
     <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0103">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Lombard</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Lombarde</skos:prefLabel>
+    <skos:notation>0103</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Simple bulbous initial type, often monochrome or alternately blue and red, sometimes with dot-shaped bulges at the ends.</skos:definition>
+      <skos:definition xml:lang="de">Einfacher, bauchig gerundeter Initialtyp, zumeist einfarbig oder abwechselnd blau und rot, teilweise Punktverdickung an den Endstellen.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
+  </rdf:Description>
 </rdf:RDF>
