@@ -836,4 +836,15 @@
     </skos:note>
     <skos:broader rdf:resource="http://www.ecodicology.org/0004"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0068">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Through line</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Verlängerte Schreiblinie</skos:prefLabel>
+    <skos:notation>0068</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Prolonged line for writing; in most cases on top and bottom of the text block, sometimes in the middle.</skos:definition>
+      <skos:definition xml:lang="de">Schreiblinie, die bis zum Rand oder Einstich verlängert wurde. Meist oben und unten, manchmal auch in der Mitte des Schriftblocks.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0004"/>
+  </rdf:Description>
 </rdf:RDF>
