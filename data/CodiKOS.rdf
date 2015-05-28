@@ -748,4 +748,15 @@
     </skos:note>
     <skos:broader rdf:resource="http://www.ecodicology.org/0004"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0060">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Decentralized intercolumn</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Ungleichmäßige Spaltenbreite</skos:prefLabel>
+    <skos:notation>0060</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">The distance between the columns is defined irregularly with respect to the central axis of the justification. The width of the text columns varies in consequence of the fitting to the predefined writing space.</skos:definition>
+      <skos:definition xml:lang="de">Der Spaltenzwischen- raum ist asymmetrisch zur vertikalen Mittel- achse des Schriftraums angelegt. Die Breite der Textspalten variiert aufgrund der Anpassung in den vorgegebenen Schriftraum.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0004"/>
+  </rdf:Description>
 </rdf:RDF>
