@@ -1145,4 +1145,15 @@ Zeilenfüllung: Ornamentale oder figürliche Ausfüllung leerer Zeilen oder Zeil
     </skos:note>
     <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0096">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Final rubric</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Finale Rubrizierung</skos:prefLabel>
+    <skos:notation>0096</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Adding of additional text in red ink in a separate working step.</skos:definition>
+      <skos:definition xml:lang="de">Ausführung von Partien mit roter Tinte in einem separaten Arbeitsgang.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
+  </rdf:Description>
 </rdf:RDF>
