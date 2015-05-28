@@ -1068,4 +1068,15 @@ Zeilenfüllung: Ornamentale oder figürliche Ausfüllung leerer Zeilen oder Zeil
     </skos:note>
     <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0089">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Unjustified</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Offener Zeilenfall</skos:prefLabel>
+    <skos:notation>0089</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Series of writing lines which are left-adjusted but with irregular ends.</skos:definition>
+      <skos:definition xml:lang="de">“Flattersatz”, ungleichmäßige Länge der Zeilen.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
+  </rdf:Description>
 </rdf:RDF>
