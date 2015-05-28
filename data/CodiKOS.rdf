@@ -1809,4 +1809,16 @@ tes Explicit-Incipit auftretend.</skos:definition>
     </skos:note>
     <skos:broader rdf:resource="http://www.ecodicology.org/0008"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0152">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Miniature/ Full-page miniature</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Miniatur/ Bildseite</skos:prefLabel>
+    <skos:notation>0152</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Umbrella term for illustration in manuscripts. Refers to an illustration or painting executed in a manu-
+script, which is independant from borders or initials. The pictorial element may occupy also a whole page.</skos:definition>
+      <skos:definition xml:lang="de">Überbegriff für Bebilderung in Handschriften. Bezeichnet alle selbständigen, von anderen dekorativen Elementen (Randornamente, Initialen) unabhängigen bildlichen Darstellungen. Auch eine ganze Seite kann mit einer Miniatur ausgefüllt sein.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0009"/>
+  </rdf:Description>
 </rdf:RDF>
