@@ -1178,4 +1178,16 @@ Zeilenfüllung: Ornamentale oder figürliche Ausfüllung leerer Zeilen oder Zeil
     </skos:note>
     <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0099">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Headpiece</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">“Kopfleiste”</skos:prefLabel>
+    <skos:notation>0099</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">A panel of ornament, sometimes incorporating a rubric or heading, that stands at the top of a page.
+</skos:definition>
+      <skos:definition xml:lang="de">Dekoratives Element (z.T. mit Rubrizierung oder Titel), im oberen Bereich der Seite positioniert.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
+  </rdf:Description>
 </rdf:RDF>
