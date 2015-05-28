@@ -1313,4 +1313,16 @@ Satzmajuskel: kleine Majuskel am Satzanfang oder im Fließtext, häufig gestrich
     </skos:note>
     <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0112">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Letter below letter</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Vertikale Buchstabenfolge</skos:prefLabel>
+    <skos:notation>0112</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">A text of vertically arranged letters, of which every letter has its normal orientation.
+</skos:definition>
+      <skos:definition xml:lang="de">Senkrecht ausgerichtete Buchstabenreihe, jeder Buchstabe mit Normalausrichtung.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
+  </rdf:Description>
 </rdf:RDF>
