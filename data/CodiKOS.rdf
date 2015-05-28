@@ -781,4 +781,15 @@
     </skos:note>
     <skos:broader rdf:resource="http://www.ecodicology.org/0004"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0063">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Double / Triple ruling</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Doppellinierung, Dreifachlinierung</skos:prefLabel>
+    <skos:notation>0063</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Two or more parallel lines separated to a minor distance of each other with the same function.</skos:definition>
+      <skos:definition xml:lang="de">Zwei oder mehr parallele, eng zusammenliegende Linien mit gleicher Funktion.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0004"/>
+  </rdf:Description>
 </rdf:RDF>
