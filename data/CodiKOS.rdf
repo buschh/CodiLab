@@ -1167,4 +1167,15 @@ Zeilenfüllung: Ornamentale oder figürliche Ausfüllung leerer Zeilen oder Zeil
     </skos:note>
     <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0098">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Column heading</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Kolumnenüberschrift</skos:prefLabel>
+    <skos:notation>0098</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Heading or title within a text column.</skos:definition>
+      <skos:definition xml:lang="de">Überschrift oder Titel innerhalb einer Textspalte.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
+  </rdf:Description>
 </rdf:RDF>
