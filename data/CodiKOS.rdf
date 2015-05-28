@@ -129,16 +129,16 @@
       <skos:definition xml:lang="en">Refers to the layout of a page which means the general arrangement of the various elements on a page.</skos:definition>
       <skos:definition xml:lang="de">Bezieht sich auf die Seitengestaltung, die allgemeine Einteilung und Aufteilung der unterschiedlichen Elemente auf der Seite.</skos:definition>
     </skos:note>
-    <skos:narrower rdf:resource="http://www.ecodicology.org/331.07"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0075"/>
     <skos:narrower rdf:resource="http://www.ecodicology.org/331.071"/>
     <skos:narrower rdf:resource="http://www.ecodicology.org/331.09"/>
     <skos:narrower rdf:resource="http://www.ecodicology.org/333.02"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.ecodicology.org/331.07">
+  <rdf:Description rdf:about="http://www.ecodicology.org/0075">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <skos:prefLabel xml:lang="en">Margin</skos:prefLabel>
     <skos:prefLabel xml:lang="de">Randbereich</skos:prefLabel>
-    <skos:notation>331.07</skos:notation>
+    <skos:notation>0075</skos:notation>
     <skos:note>
       <skos:definition xml:lang="en">Space outside the writing frame.</skos:definition>
       <skos:definition xml:lang="de">Raum außerhalb des Beschriftungsrahmens.</skos:definition>
