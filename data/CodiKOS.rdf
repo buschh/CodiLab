@@ -898,4 +898,15 @@
     </skos:note>
     <skos:broader rdf:resource="http://www.ecodicology.org/0004"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0072">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Justification</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Seitenspiegel</skos:prefLabel>
+    <skos:notation>0072</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">1. length of the writing lines on a page or in a column; 2. Height and width of written space; 3. virtual or actual rectangular “grid”, defining the writing surface.</skos:definition>
+      <skos:definition xml:lang="de">1. Länge der Schreiblinien; 2. Höhe und Breite des Schreibraumes; 3. gedachtes oder tatsächliches Netz oder Raster, das die Schreibfläche definiert.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
+  </rdf:Description>
 </rdf:RDF>
