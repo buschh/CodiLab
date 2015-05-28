@@ -1190,4 +1190,17 @@ Zeilenfüllung: Ornamentale oder figürliche Ausfüllung leerer Zeilen oder Zeil
     </skos:note>
     <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0101">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Secondary initial / Subsidiary initial / Minor initial</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">sekundäre Initiale, hervorgehobener Anfangsbuchstabe, Halbinitiale</skos:prefLabel>
+    <skos:notation>0101</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Paragraph initial: initial at the beginning of a phrase or line, often indented and coloured in red or blue.
+Sentence initial: little majuscle at the beginning of a sentence or within the continous text, often stroked.</skos:definition>
+      <skos:definition xml:lang="de">Initialmajuskel: hervorgehobener Anfangsbuchstabe am Zeilen- oder Satzanfang, häufig  eingerückt, vergrößert oder farblich abgesetzt in rot oder blau.
+Satzmajuskel: kleine Majuskel am Satzanfang oder im Fließtext, häufig gestrichelt.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
+  </rdf:Description>
 </rdf:RDF>
