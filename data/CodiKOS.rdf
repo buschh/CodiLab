@@ -1280,4 +1280,15 @@ Satzmajuskel: kleine Majuskel am Satzanfang oder im Fließtext, häufig gestrich
     </skos:note>
     <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0109">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Running title</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">lebendige Kolumne, Kolumnentitel Kopftitelzeile</skos:prefLabel>
+    <skos:notation>0109</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">A line of text written at the head of each page/folio that identifies the title of a work or one of its subsections.</skos:definition>
+      <skos:definition xml:lang="de">Textzeile am Kopf jeder Seite, die den Titel des Werks oder einzelner Abschnitte enthält. Steht die Seitennummerierung ebenfalls in der Kopfzeile, wird sie zum Kolumnentitel, und damit zum Textblock, gezählt.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
+  </rdf:Description>
 </rdf:RDF>
