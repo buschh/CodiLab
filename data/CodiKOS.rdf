@@ -1225,4 +1225,15 @@ Satzmajuskel: kleine Majuskel am Satzanfang oder im Fließtext, häufig gestrich
     </skos:note>
     <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0104">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">(Elaborate) initial page</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Initialzierseite, Initialseite</skos:prefLabel>
+    <skos:notation>0104</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Beginning of a text which is marked by an initial or a ligature of several initials. These can occupy a whole page.</skos:definition>
+      <skos:definition xml:lang="de">Ausgestaltung eines Textanfangs durch eine ganzseitige Initiale oder eine Ligatur aus mehreren Initialen, die eine ganze Seite einnehmen können.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
+  </rdf:Description>
 </rdf:RDF>
