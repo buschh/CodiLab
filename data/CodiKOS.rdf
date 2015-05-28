@@ -759,4 +759,15 @@
     </skos:note>
     <skos:broader rdf:resource="http://www.ecodicology.org/0004"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0061">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Varying intercolumn</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Variabler Spaltenabstand</skos:prefLabel>
+    <skos:notation>0061</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Varying distance of intercolumnial lines on every page; the width of intercolumnial space varies from page to page.</skos:definition>
+      <skos:definition xml:lang="de">Die Breite des Spaltenzwischenraumes variiert von Seite zu Seite, definiert durch die unregelmäßigen Abstand der Begrenzungslinien zueinander.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0004"/>
+  </rdf:Description>
 </rdf:RDF>
