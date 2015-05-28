@@ -1964,4 +1964,15 @@ script, which is independant from borders or initials. The pictorial element may
     </skos:note>
     <skos:broader rdf:resource="http://www.ecodicology.org/0009"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0166">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Marginal extension</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Randerweiterung der Ornamente, Randausläufer</skos:prefLabel>
+    <skos:notation>0166</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Element which is detached from the frame of a painting or decorated letter and extends into the margins.</skos:definition>
+      <skos:definition xml:lang="de">Dekoratives Element (aus Bild oder Initiale), das sich auf den Randbereich ausdehnt und den Schriftspiegel einfasst.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0009"/>
+  </rdf:Description>
 </rdf:RDF>
