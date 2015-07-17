@@ -1,0 +1,36 @@
+
+body {
+padding-top: 50px;
+padding-bottom: 20px;
+background-color: #DDDDDD;
+}
+
+.manual-annotation {
+border-style: solid;
+border-color: #ff0000;
+border-width: 5px;
+}
+
+.manual-annotation-text * {
+color: #ff0000;
+}
+
+.automatic-annotation {
+border-style: solid;
+border-color: #0000ff;
+border-width: 3px;
+}
+
+.automatic-annotation-text * {
+color: #0000ff;
+}
+
+.selected-annotation {
+border-style: solid;
+border-color: #63a35c;
+border-width: 5px;
+}
+
+.selected-annotation-text * {
+color: #63a35c;
+}

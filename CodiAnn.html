@@ -1,773 +1,654 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<html lang="en">
-<<<<<<< HEAD
-    <head>
-        <meta charset="utf-8"/>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        <title>CodiAnn | CodiLab</title>
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet"/>
-        <link href="./ressources/xrx.css" rel="stylesheet"/>
-        <script type="text/javascript" src="./client/lib/jssaxparser/SAXException.js"/>
-        <script type="text/javascript" src="./client/lib/jssaxparser/AttributesImpl.js"/>
-        <script type="text/javascript" src="./client/lib/jssaxparser/LocatorImpls.js"/>
-        <script type="text/javascript" src="./client/lib/jssaxparser/NamespaceSupport.js"/>
-        <script type="text/javascript" src="./client/lib/jssaxparser/sax.js"/>
-        <script type="text/javascript" src="./client/lib/jssaxparser/DefaultHandlers.js"/>
-        <script src="./client/lib/closure-library/closure/goog/base.js"/>
-        <script src="./client/deps.js"/>
-        <script>
-=======
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>CodiAnn | CodiLab</title>
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
-  <link href="./client/res/xrx.css" rel="stylesheet">
-  <script type="text/javascript" src="./client/jssaxparser/SAXException.js"></script>
-  <script type="text/javascript" src="./client/jssaxparser/AttributesImpl.js"></script>
-  <script type="text/javascript" src="./client/jssaxparser/LocatorImpls.js"></script>
-  <script type="text/javascript" src="./client/jssaxparser/NamespaceSupport.js"></script>
-  <script type="text/javascript" src="./client/jssaxparser/sax.js"></script>
-  <script type="text/javascript" src="./client/jssaxparser/DefaultHandlers.js"></script>
-  <!--script src="../../HKIKoeln/SemToNotes/client/lib/closure-library/closure/goog/base.js"></script>
-  <script src="./client/deps.js"></script-->
-  <script type="text/javascript" src="./client/CodiLab.js"></script>
-  <script>
->>>>>>> 404c1f1a79ba6f32af958a8b8a23e22678c0bc5d
-    goog.require('xrx');
-  </script>
-        <style>
+<div xmlns="http://www.w3.org/1999/xhtml" data-template="templates:surround" data-template-with="templates/app-portal.html" data-template-at="main">
+    <!-- model -->
 
-body {
-padding-top: 50px;
-padding-bottom: 20px;
-}
-
-.manual-annotation {
-border-style: solid;
-border-color: #ff0000;
-border-width: 5px;
-}
-
-.manual-annotation-text * {
-color: #ff0000;
-}
-
-.automatic-annotation {
-border-style: solid;
-border-color: #0000ff;
-border-width: 3px;
-}
-
-.automatic-annotation-text * {
-color: #0000ff;
-}
-
-.selected-annotation {
-border-style: solid;
-border-color: #63a35c;
-border-width: 5px;
-}
-
-.selected-annotation-text * {
-color: #63a35c;
-}
-
-body {
-background-color: #DDDDDD;
-}
-
-  </style>
-  <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-  <![endif]-->
-    </head>
-    <body>
-  <!-- model -->
-
-  <!--**
-   * XML Namespaces
-   *-->
-        <div class="xrx-namespace" data-prefix="mets" data-uri="http://www.loc.gov/METS/"/>
-        <div class="xrx-namespace" data-prefix="xlink" data-uri="http://www.w3.org/1999/xlink"/>
-        <div class="xrx-namespace" data-prefix="svg" data-uri="http://www.w3.org/2000/svg"/>
-        <div class="xrx-namespace" data-prefix="rdf" data-uri="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
-        <div class="xrx-namespace" data-prefix="oa" data-uri="http://www.w3.org/ns/oa#"/>
-        <div class="xrx-namespace" data-prefix="skos" data-uri="http://www.w3.org/2004/02/skos/core#"/>
-        <div class="xrx-namespace" data-prefix="ore" data-uri="http://www.openarchives.org/ore/terms/"/>
+    <!--**
+    * XML Namespaces
+    *-->
+    <div class="xrx-namespace" data-prefix="mets" data-uri="http://www.loc.gov/METS/"/>
+    <div class="xrx-namespace" data-prefix="xlink" data-uri="http://www.w3.org/1999/xlink"/>
+    <div class="xrx-namespace" data-prefix="svg" data-uri="http://www.w3.org/2000/svg"/>
+    <div class="xrx-namespace" data-prefix="rdf" data-uri="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <div class="xrx-namespace" data-prefix="oa" data-uri="http://www.w3.org/ns/oa#"/>
+    <div class="xrx-namespace" data-prefix="skos" data-uri="http://www.w3.org/2004/02/skos/core#"/>
+    <div class="xrx-namespace" data-prefix="ore" data-uri="http://www.openarchives.org/ore/terms/"/>
 
 
 
-  <!--**
-   * Global model
-   *-->
-        <div class="xrx-calculate" id="ccurrentDateTime" data-ref="current-dateTime()"/>
-        <div class="xrx-calculate" id="cuuid" data-ref="concat('http://www.ecodicology.org/Anno/', util:uuid())"/>
-        <div class="xrx-bind" id="buri" data-ref="request:uri()"/>
-        <div class="xrx-bind" id="bdummyText" data-ref="'#'"/>
+    <!--**
+    * Global model
+    *-->
+    <div class="xrx-calculate" id="ccurrentDateTime" data-ref="current-dateTime()"/>
+    <div class="xrx-calculate" id="cuuid" data-ref="concat('http://www.ecodicology.org/Anno/', util:uuid())"/>
+    <div class="xrx-bind" id="buri" data-ref="request:uri()"/>
+    <div class="xrx-bind" id="bdummyText" data-ref="'#'"/>
 
 
 
-  <!--**
-   * CodiAnn model
-   *-->
-        <div class="xrx-instance" id="icodiann" data-resource="./client/CodiAnn.model.xml"/>
-        <div class="xrx-bind" id="bcodiann" data-ref="xrx:instance('icodiann')/*"/>
-        <div class="xrx-bind" id="bappMode" data-ref="xrx:instance('icodiann')/app/mode/text()"/>
-        <div class="xrx-bind" id="bappModePan" data-ref="'pan'"/>
-        <div class="xrx-bind" id="bappModeVerify" data-ref="'verify'"/>
-        <div class="xrx-bind" id="bappModeModify" data-ref="'modify'"/>
-        <div class="xrx-bind" id="bappModeDelete" data-ref="'delete'"/>
-        <div class="xrx-bind" id="bappModeDrawRectangle" data-ref="'drawRectangle'"/>
-        <div class="xrx-bind" id="bappModeDrawPolygon" data-ref="'drawPolygon'"/>
-        <div class="xrx-bind" id="bappModeTag" data-ref="'tag'"/>
-        <div class="xrx-calculate" id="isModeVerify" data-ref="xrx:bind('bappMode') = xrx:bind('bappModeVerify')"/>
-        <div class="xrx-calculate" id="isModeDelete" data-ref="xrx:bind('bappMode') = xrx:bind('bappModeDelete')"/>
-        <div class="xrx-calculate" id="isModeTag" data-ref="xrx:bind('bappMode') = xrx:bind('bappModeTag')"/>
-        <div class="xrx-bind" id="bappActualImage" data-ref="xrx:instance('icodiann')/app/imagepos/text()"/>
-        <div class="xrx-bind" id="bappImagePos" data-ref="number(xrx:instance('icodiann')/app/imagepos/text())"/>
-        <div class="xrx-bind" id="bappNextImage" data-ref="xrx:bind('bappImagePos') + 1"/>
-        <div class="xrx-bind" id="bappPreviousImage" data-ref="xrx:bind('bappImagePos') - 1"/>
-        <div class="xrx-bind" id="bappSemanticTagsActive" data-ref="xrx:instance('icodiann')/app/semantictags/tag"/>
-        <div class="xrx-bind" id="bappSemanticTagsActiveAbout" data-ref="string-join(xrx:instance('icodiann')/app/semantictags/tag/text(), '')"/>
-        <div class="xrx-bind" id="bappSemanticTagsActiveLast" data-ref="xrx:instance('icodiann')/app/semantictags/dummy"/>
-        <div class="xrx-bind" id="bappTag" data-ref="xrx:instance('icodiann')/app/tag"/>
-        <div class="xrx-bind" id="bappAnnoSelected" data-ref="xrx:instance('icodiann')/app/annoselected/text()"/>
+    <!--**
+    * CodiAnn model
+    *-->
+    <div class="xrx-instance" id="icodiann" data-resource="./client/CodiAnn.model.xml"/>
+    <div class="xrx-bind" id="bcodiann" data-ref="xrx:instance('icodiann')/*"/>
+    <div class="xrx-bind" id="bappMode" data-ref="xrx:instance('icodiann')/app/mode/text()"/>
+    <div class="xrx-bind" id="bappModePan" data-ref="'pan'"/>
+    <div class="xrx-bind" id="bappModeVerify" data-ref="'verify'"/>
+    <div class="xrx-bind" id="bappModeModify" data-ref="'modify'"/>
+    <div class="xrx-bind" id="bappModeDelete" data-ref="'delete'"/>
+    <div class="xrx-bind" id="bappModeDrawRectangle" data-ref="'drawRectangle'"/>
+    <div class="xrx-bind" id="bappModeDrawPolygon" data-ref="'drawPolygon'"/>
+    <div class="xrx-bind" id="bappModeTag" data-ref="'tag'"/>
+    <div class="xrx-calculate" id="isModeVerify" data-ref="xrx:bind('bappMode') = xrx:bind('bappModeVerify')"/>
+    <div class="xrx-calculate" id="isModeDelete" data-ref="xrx:bind('bappMode') = xrx:bind('bappModeDelete')"/>
+    <div class="xrx-calculate" id="isModeTag" data-ref="xrx:bind('bappMode') = xrx:bind('bappModeTag')"/>
+    <div class="xrx-bind" id="bappActualImage" data-ref="xrx:instance('icodiann')/app/imagepos/text()"/>
+    <div class="xrx-bind" id="bappImagePos" data-ref="number(xrx:instance('icodiann')/app/imagepos/text())"/>
+    <div class="xrx-bind" id="bappNextImage" data-ref="xrx:bind('bappImagePos') + 1"/>
+    <div class="xrx-bind" id="bappPreviousImage" data-ref="xrx:bind('bappImagePos') - 1"/>
+    <div class="xrx-bind" id="bappSemanticTagsActive" data-ref="xrx:instance('icodiann')/app/semantictags/tag"/>
+    <div class="xrx-bind" id="bappSemanticTagsActiveAbout" data-ref="string-join(xrx:instance('icodiann')/app/semantictags/tag/text(), '')"/>
+    <div class="xrx-bind" id="bappSemanticTagsActiveLast" data-ref="xrx:instance('icodiann')/app/semantictags/dummy"/>
+    <div class="xrx-bind" id="bappTag" data-ref="xrx:instance('icodiann')/app/tag"/>
+    <div class="xrx-bind" id="bappAnnoSelected" data-ref="xrx:instance('icodiann')/app/annoselected/text()"/>
 
 
 
-  <!--**
-   * METS model
-   *-->
-        <div class="xrx-instance" id="imets" data-resource="./data/T0152/T0152.mets.xml"/>
-        <div class="xrx-bind" id="bmetsFiles" data-ref="xrx:instance('imets')/mets:mets/mets:fileSec[1]/mets:fileGrp[1]/mets:file"/>
-        <div class="xrx-bind" id="bmetsActualFile" data-ref="xrx:instance('imets')/mets:mets/mets:fileSec[1]/mets:fileGrp[1]/mets:file[xrx:bind('bappImagePos')]"/>
-        <div class="xrx-bind" id="bmetsActualImageUrl" data-ref="xrx:bind('bmetsActualFile')/mets:FLocat/@xlink:href"/>
-        <div class="xrx-bind" id="bmetsActualImageId" data-ref="substring-before(xrx:bind('bmetsActualFile')/@ID, '-DEF')"/>
-        <div class="xrx-map" id="mmetsFiles" data-bind="bmetsFiles">
-            <div class="xrx-entry" data-key="count(./preceding-sibling::*) + 1" data-value="substring-before(./@ID, '-DEF')"/>
+    <!--**
+    * METS model
+    *-->
+    <div class="xrx-instance" id="imets" data-resource="./data/T0152/T0152.mets.xml"/>
+    <div class="xrx-bind" id="bmetsFiles" data-ref="xrx:instance('imets')/mets:mets/mets:fileSec[1]/mets:fileGrp[1]/mets:file"/>
+    <div class="xrx-bind" id="bmetsActualFile" data-ref="xrx:instance('imets')/mets:mets/mets:fileSec[1]/mets:fileGrp[1]/mets:file[xrx:bind('bappImagePos')]"/>
+    <div class="xrx-bind" id="bmetsActualImageUrl" data-ref="xrx:bind('bmetsActualFile')/mets:FLocat/@xlink:href"/>
+    <div class="xrx-bind" id="bmetsActualImageId" data-ref="substring-before(xrx:bind('bmetsActualFile')/@ID, '-DEF')"/>
+    <div class="xrx-map" id="mmetsFiles" data-bind="bmetsFiles">
+        <div class="xrx-entry" data-key="count(./preceding-sibling::*) + 1" data-value="substring-before(./@ID, '-DEF')"/>
+    </div>
+
+
+
+    <!--**
+    * Swati model
+    *-->
+    <div class="xrx-instance" id="iswati" data-resource="./data/T0152/T0152.swati.xml"/>
+    <div class="xrx-instance" id="iswatiActive">
+        <div class="xrx-document">
+            <active>true</active>
         </div>
+    </div>
+    <div class="xrx-bind" id="bswatiActive" data-ref="xrx:instance('iswatiActive')/active/text()"/>
+    <div class="xrx-bind" id="bswatiIsActive" data-ref="xrx:bind('bswatiActive') = 'true'"/>
+    <div class="xrx-bind" id="bswatiZone" data-ref="xrx:instance('iswati')/SwatiXml/Page_Measure[xrx:bind('bswatiIsActive')][./ImageID=xrx:bind('bmetsActualImageId')]/zone"/>
 
 
 
-  <!--**
-   * Swati model
-   *-->
-        <div class="xrx-instance" id="iswati" data-resource="./data/T0152/T0152.swati.xml"/>
-        <div class="xrx-instance" id="iswatiActive">
-            <div class="xrx-document">
-                <active>true</active>
-            </div>
-        </div>
-        <div class="xrx-bind" id="bswatiActive" data-ref="xrx:instance('iswatiActive')/active/text()"/>
-        <div class="xrx-bind" id="bswatiIsActive" data-ref="xrx:bind('bswatiActive') = 'true'"/>
-        <div class="xrx-bind" id="bswatiZone" data-ref="xrx:instance('iswati')/SwatiXml/Page_Measure[xrx:bind('bswatiIsActive')][./ImageID=xrx:bind('bmetsActualImageId')]/zone"/>
-
-
-
-  <!--*
-   * Shared Canvas model
-   *-->
-<<<<<<< HEAD
-  <!--div class="xrx-github"            id="isc"
+    <!--*
+    * Shared Canvas model
+    *-->
+    <!--div class="xrx-github"            id="isc"
        data-resource="https://api.github.com/repos/JochenGraf/CodiLab/contents/data/T0152/T0152.sc.xml"-->
-        <div class="xrx-instance" id="isc" data-resource="./data/T0152/T0152.sc.xml">
-            <div class="xrx-action" data-event="xrx-event-instance-update">
-                <div class="xrx-classes-add" data-select=".save-message" data-classes="hidden"/>
-                <div class="xrx-classes-remove" data-select="#save-updated" data-classes="hidden"/>
-                <div class="xrx-classes-remove" data-select="#nav" data-classes="alert-warning alert-success alert-danger"/>
-                <div class="xrx-classes-add" data-select="#nav" data-classes="alert-warning"/>
-            </div>
+    <div class="xrx-instance" id="isc" data-resource="./data/T0152/T0152.sc.xml">
+        <div class="xrx-action" data-event="xrx-event-instance-update">
+            <div class="xrx-classes-add" data-select=".save-message" data-classes="hidden"/>
+            <div class="xrx-classes-remove" data-select="#save-updated" data-classes="hidden"/>
+            <div class="xrx-classes-remove" data-select="#nav" data-classes="alert-warning alert-success alert-danger"/>
+            <div class="xrx-classes-add" data-select="#nav" data-classes="alert-warning"/>
         </div>
-        <div class="xrx-bind" id="bsc" data-ref="xrx:instance('isc')"/>
-        <div class="xrx-submission" id="ssave" data-bind="bsc" data-resource="https://api.github.com/repos/JochenGraf/CodiLab/contents/data/T0152/T0152.sc.xml" data-method="PUT">
-            <div class="xrx-action" data-event="xrx-event-submit-done">
-                <div class="xrx-classes-add" data-select=".save-message" data-classes="hidden"/>
-                <div class="xrx-classes-remove" data-select="#save-success" data-classes="hidden"/>
-                <div class="xrx-classes-remove" data-select="#nav" data-classes="alert-warning alert-success alert-danger"/>
-                <div class="xrx-classes-add" data-select="#nav" data-classes="alert-success"/>
-            </div>
-            <div class="xrx-action" data-event="xrx-event-submit-error">
-                <div class="xrx-classes-add" data-select=".save-message" data-classes="hidden"/>
-                <div class="xrx-classes-remove" data-select="#save-error" data-classes="hidden"/>
-                <div class="xrx-classes-remove" data-select="#nav" data-classes="alert-warning alert-success alert-danger"/>
-                <div class="xrx-classes-add" data-select="#nav" data-classes="alert-danger"/>
-            </div>
+    </div>
+    <div class="xrx-bind" id="bsc" data-ref="xrx:instance('isc')"/>
+    <div class="xrx-submission" id="ssave" data-bind="bsc" data-resource="https://api.github.com/repos/JochenGraf/CodiLab/contents/data/T0152/T0152.sc.xml" data-method="PUT">
+        <div class="xrx-action" data-event="xrx-event-submit-done">
+            <div class="xrx-classes-add" data-select=".save-message" data-classes="hidden"/>
+            <div class="xrx-classes-remove" data-select="#save-success" data-classes="hidden"/>
+            <div class="xrx-classes-remove" data-select="#nav" data-classes="alert-warning alert-success alert-danger"/>
+            <div class="xrx-classes-add" data-select="#nav" data-classes="alert-success"/>
         </div>
-=======
-  <!--div class="xrx-instance"            id="isc"
-       data-resource="./data/T0152/T0152.sc.xml"-->
-  <div class="xrx-github"            id="isc"
-       data-resource="https://api.github.com/repos/JochenGraf/CodiLab/contents/data/T0152/T0152.sc.xml">
-    <div class="xrx-action" data-event="xrx-event-instance-update">
-      <div class="xrx-classes-add" data-select=".save-message" data-classes="hidden"></div>
-      <div class="xrx-classes-remove" data-select="#save-updated" data-classes="hidden"></div>
-      <div class="xrx-classes-remove" data-select="#nav" data-classes="alert-warning alert-success alert-danger"></div>
-      <div class="xrx-classes-add" data-select="#nav" data-classes="alert-warning"></div>
-    </div>
-  </div>
-
-  <div class="xrx-bind"                id="bsc"
-       data-ref="xrx:instance('isc')"></div>
-
-  <div class="xrx-submission"          id="ssave"
-       data-bind="bsc" data-resource="https://api.github.com/repos/JochenGraf/CodiLab/contents/data/T0152/T0152.sc.xml" data-method="PUT">
-    <div class="xrx-action" data-event="xrx-event-submit-done">
-      <div class="xrx-classes-add" data-select=".save-message" data-classes="hidden"></div>
-      <div class="xrx-classes-remove" data-select="#save-success" data-classes="hidden"></div>
-      <div class="xrx-classes-remove" data-select="#nav" data-classes="alert-warning alert-success alert-danger"></div>
-      <div class="xrx-classes-add" data-select="#nav" data-classes="alert-success"></div>
-    </div>
-    <div class="xrx-action" data-event="xrx-event-submit-error">
-      <div class="xrx-classes-add" data-select=".save-message" data-classes="hidden"></div>
-      <div class="xrx-classes-remove" data-select="#save-error" data-classes="hidden"></div>
-      <div class="xrx-classes-remove" data-select="#nav" data-classes="alert-warning alert-success alert-danger"></div>
-      <div class="xrx-classes-add" data-select="#nav" data-classes="alert-danger"></div>
-    </div>
-  </div>
->>>>>>> 404c1f1a79ba6f32af958a8b8a23e22678c0bc5d
-
-  <!-- aggregations -->
-        <div class="xrx-bind" id="bscActualAggregationUri" data-ref="concat('http://www.ecodicology.org/AnnoList/', xrx:bind('bmetsActualImageId'))"/>
-        <div class="xrx-bind" id="bscAggregation" data-ref="xrx:instance('isc')/rdf:RDF/rdf:Description[./@rdf:about=xrx:bind('bscActualAggregationUri')]"/>
-        <div class="xrx-bind" id="bscAggregates" data-ref="xrx:bind('bscAggregation')/ore:aggregates/@rdf:resource"/>
-        <div class="xrx-bind" id="bscLastAggregates" data-ref="xrx:bind('bscAggregation')/rdf:type"/>
-
-  <!-- annotations overview -->
-        <div class="xrx-bind" id="bactualDescriptions" data-ref="xrx:instance('isc')/rdf:RDF/rdf:Description[xrx:bind('bscAggregates') = string(./@rdf:about)]"/>
-        <div class="xrx-bind" id="bscRectangles" data-ref="xrx:bind('bactualDescriptions')//oa:SemanticTag[not(contains(xrx:bind('bappSemanticTagsActiveAbout'), ./@rdf:about)) or (./@rdf:about = '')]/ancestor::rdf:Description//svg:rect"/>
-        <div class="xrx-bind" id="bscPolygons" data-ref="xrx:bind('bactualDescriptions')//oa:SemanticTag[not(contains(xrx:bind('bappSemanticTagsActiveAbout'), ./@rdf:about)) or (./@rdf:about = '')]/ancestor::rdf:Description//svg:polygon"/>
-        <div class="xrx-bind" id="bscLastAnnotation" data-ref="xrx:instance('isc')/rdf:RDF/rdf:Description[last()]"/>
-        <div class="xrx-bind" id="bscSemanticTags" data-ref="xrx:bind('bactualDescriptions')//oa:SemanticTag/@rdf:about"/>
-
-  <!-- aggregations template -->
-        <div class="xrx-instance" id="isct" data-resource="./client/sc.template.rdf"/>
-        <div class="xrx-bind" id="bscTemplate" data-ref="xrx:instance('isct')"/>
-        <div class="xrx-bind" id="bsctAggregates" data-ref="xrx:instance('isct')/rdf:RDF/ore:aggregates"/>
-        <div class="xrx-bind" id="bsctAggregatesResource" data-ref="xrx:instance('isct')/rdf:RDF/ore:aggregates/@rdf:resource"/>
-
-  <!-- template model rect -->
-        <div class="xrx-bind" id="bsctOriginRect" data-ref="xrx:instance('isct')/rdf:RDF/rdf:Description[1]"/>
-        <div class="xrx-bind" id="bsctRectAbout" data-ref="xrx:bind('bsctOriginRect')/@rdf:about"/>
-        <div class="xrx-bind" id="bsctRectAnnotatedAt" data-ref="xrx:bind('bsctOriginRect')/oa:annotatedAt"/>
-        <div class="xrx-bind" id="bsctRectSerializedAt" data-ref="xrx:bind('bsctOriginRect')/oa:serializedAt"/>
-        <div class="xrx-bind" id="bsctRectSerializedBy" data-ref="xrx:bind('bsctOriginRect')/oa:serializedBy/@rdf:resource"/>
-        <div class="xrx-bind" id="bsctRectHasSource" data-ref="xrx:bind('bsctOriginRect')/oa:hasTarget/oa:SpecificResource/oa:hasSource"/>
-        <div class="xrx-bind" id="bsctRect" data-ref="xrx:instance('isct')//svg:rect"/>
-        <div class="xrx-bind" id="bsctRectX" data-ref="xrx:bind('bsctRect')/@x"/>
-        <div class="xrx-bind" id="bsctRectY" data-ref="xrx:bind('bsctRect')/@y"/>
-        <div class="xrx-bind" id="bsctRectWidth" data-ref="xrx:bind('bsctRect')/@width"/>
-        <div class="xrx-bind" id="bsctRectHeight" data-ref="xrx:bind('bsctRect')/@height"/>
-
-  <!-- template model polygon -->
-        <div class="xrx-bind" id="bsctOriginPolygon" data-ref="xrx:instance('isct')/rdf:RDF/rdf:Description[2]"/>
-        <div class="xrx-bind" id="bsctPolygonAbout" data-ref="xrx:bind('bsctOriginPolygon')/@rdf:about"/>
-        <div class="xrx-bind" id="bsctPolygonAnnotatedAt" data-ref="xrx:bind('bsctOriginPolygon')/oa:annotatedAt"/>
-        <div class="xrx-bind" id="bsctPolygonSerializedAt" data-ref="xrx:bind('bsctOriginPolygon')/oa:serializedAt"/>
-        <div class="xrx-bind" id="bsctPolygonSerializedBy" data-ref="xrx:bind('bsctOriginPolygon')/oa:serializedBy/@rdf:resource"/>
-        <div class="xrx-bind" id="bsctPolygonHasSource" data-ref="xrx:bind('bsctOriginPolygon')/oa:hasTarget/oa:SpecificResource/oa:hasSource"/>
-        <div class="xrx-bind" id="bsctPolygon" data-ref="xrx:instance('isct')//svg:polygon"/>
-        <div class="xrx-bind" id="bsctPolygonCoords" data-ref="xrx:bind('bsctPolygon')/@points"/>
-
-  <!-- template semantic tag -->
-        <div class="xrx-bind" id="bsctSemanticTag" data-ref="xrx:instance('isct')/rdf:RDF/oa:SemanticTag"/>
-        <div class="xrx-bind" id="bsctSemanticTagAbout" data-ref="xrx:bind('bsctSemanticTag')/@rdf:about"/>
-
-  <!-- selected annotation -->
-        <div class="xrx-bind" id="bscSelectedAnnotation" data-ref="xrx:instance('isc')/rdf:RDF/rdf:Description[./@rdf:about = xrx:bind('bappAnnoSelected')]"/>
-        <div class="xrx-bind" id="bscSelectedAnnotationRect" data-ref="xrx:bind('bscSelectedAnnotation')//svg:rect"/>
-        <div class="xrx-bind" id="bscSelectedAnnotationPolygon" data-ref="xrx:bind('bscSelectedAnnotation')//svg:polygon"/>
-        <div class="xrx-bind" id="bscSelectedAnnotationLastSemanticTag" data-ref="xrx:bind('bscSelectedAnnotation')/oa:hasBody/oa:SemanticTag[last()]"/>
-
-
-
-  <!--**
-   * CodiKOS model
-   *-->
-        <div class="xrx-instance" id="icodikos" data-resource="./data/CodiKOS.rdf"/>
-        <div class="xrx-bind" id="bdescriptions" data-ref="xrx:instance('icodikos')/rdf:RDF/rdf:Description"/>
-        <div class="xrx-bind" id="bcodikosNotations" data-ref="xrx:instance('icodikos')/rdf:RDF/rdf:Description[xrx:bind('bscSemanticTags') = string(./@rdf:about)]/skos:prefLabel[1]"/>
-        <div class="xrx-bind" id="bselectedAnnotationSemanticTagsNotation" data-ref="xrx:instance('icodikos')/rdf:RDF/rdf:Description[xrx:bind('bscSelectedAnnotation')/oa:hasBody/oa:SemanticTag/@rdf:about = string(./@rdf:about)]/skos:prefLabel[1]"/>
-        <div class="xrx-map" id="mdescriptions" data-bind="bdescriptions">
-            <div class="xrx-entry" data-key="./@rdf:about" data-value="concat('[', ./@rdf:about, '] ', ./skos:prefLabel[1]/text())"/>
+        <div class="xrx-action" data-event="xrx-event-submit-error">
+            <div class="xrx-classes-add" data-select=".save-message" data-classes="hidden"/>
+            <div class="xrx-classes-remove" data-select="#save-error" data-classes="hidden"/>
+            <div class="xrx-classes-remove" data-select="#nav" data-classes="alert-warning alert-success alert-danger"/>
+            <div class="xrx-classes-add" data-select="#nav" data-classes="alert-danger"/>
         </div>
+    </div>
+
+    <!-- aggregations -->
+    <div class="xrx-bind" id="bscActualAggregationUri" data-ref="concat('http://www.ecodicology.org/AnnoList/', xrx:bind('bmetsActualImageId'))"/>
+    <div class="xrx-bind" id="bscAggregation" data-ref="xrx:instance('isc')/rdf:RDF/rdf:Description[./@rdf:about=xrx:bind('bscActualAggregationUri')]"/>
+    <div class="xrx-bind" id="bscAggregates" data-ref="xrx:bind('bscAggregation')/ore:aggregates/@rdf:resource"/>
+    <div class="xrx-bind" id="bscLastAggregates" data-ref="xrx:bind('bscAggregation')/rdf:type"/>
+
+    <!-- annotations overview -->
+    <div class="xrx-bind" id="bactualDescriptions" data-ref="xrx:instance('isc')/rdf:RDF/rdf:Description[xrx:bind('bscAggregates') = string(./@rdf:about)]"/>
+    <div class="xrx-bind" id="bscRectangles" data-ref="xrx:bind('bactualDescriptions')//oa:SemanticTag[not(contains(xrx:bind('bappSemanticTagsActiveAbout'), ./@rdf:about)) or (./@rdf:about = '')]/ancestor::rdf:Description//svg:rect"/>
+    <div class="xrx-bind" id="bscPolygons" data-ref="xrx:bind('bactualDescriptions')//oa:SemanticTag[not(contains(xrx:bind('bappSemanticTagsActiveAbout'), ./@rdf:about)) or (./@rdf:about = '')]/ancestor::rdf:Description//svg:polygon"/>
+    <div class="xrx-bind" id="bscLastAnnotation" data-ref="xrx:instance('isc')/rdf:RDF/rdf:Description[last()]"/>
+    <div class="xrx-bind" id="bscSemanticTags" data-ref="xrx:bind('bactualDescriptions')//oa:SemanticTag/@rdf:about"/>
+
+    <!-- aggregations template -->
+    <div class="xrx-instance" id="isct" data-resource="./client/sc.template.rdf"/>
+    <div class="xrx-bind" id="bscTemplate" data-ref="xrx:instance('isct')"/>
+    <div class="xrx-bind" id="bsctAggregates" data-ref="xrx:instance('isct')/rdf:RDF/ore:aggregates"/>
+    <div class="xrx-bind" id="bsctAggregatesResource" data-ref="xrx:instance('isct')/rdf:RDF/ore:aggregates/@rdf:resource"/>
+
+    <!-- template model rect -->
+    <div class="xrx-bind" id="bsctOriginRect" data-ref="xrx:instance('isct')/rdf:RDF/rdf:Description[1]"/>
+    <div class="xrx-bind" id="bsctRectAbout" data-ref="xrx:bind('bsctOriginRect')/@rdf:about"/>
+    <div class="xrx-bind" id="bsctRectAnnotatedAt" data-ref="xrx:bind('bsctOriginRect')/oa:annotatedAt"/>
+    <div class="xrx-bind" id="bsctRectSerializedAt" data-ref="xrx:bind('bsctOriginRect')/oa:serializedAt"/>
+    <div class="xrx-bind" id="bsctRectSerializedBy" data-ref="xrx:bind('bsctOriginRect')/oa:serializedBy/@rdf:resource"/>
+    <div class="xrx-bind" id="bsctRectHasSource" data-ref="xrx:bind('bsctOriginRect')/oa:hasTarget/oa:SpecificResource/oa:hasSource"/>
+    <div class="xrx-bind" id="bsctRect" data-ref="xrx:instance('isct')//svg:rect"/>
+    <div class="xrx-bind" id="bsctRectX" data-ref="xrx:bind('bsctRect')/@x"/>
+    <div class="xrx-bind" id="bsctRectY" data-ref="xrx:bind('bsctRect')/@y"/>
+    <div class="xrx-bind" id="bsctRectWidth" data-ref="xrx:bind('bsctRect')/@width"/>
+    <div class="xrx-bind" id="bsctRectHeight" data-ref="xrx:bind('bsctRect')/@height"/>
+
+    <!-- template model polygon -->
+    <div class="xrx-bind" id="bsctOriginPolygon" data-ref="xrx:instance('isct')/rdf:RDF/rdf:Description[2]"/>
+    <div class="xrx-bind" id="bsctPolygonAbout" data-ref="xrx:bind('bsctOriginPolygon')/@rdf:about"/>
+    <div class="xrx-bind" id="bsctPolygonAnnotatedAt" data-ref="xrx:bind('bsctOriginPolygon')/oa:annotatedAt"/>
+    <div class="xrx-bind" id="bsctPolygonSerializedAt" data-ref="xrx:bind('bsctOriginPolygon')/oa:serializedAt"/>
+    <div class="xrx-bind" id="bsctPolygonSerializedBy" data-ref="xrx:bind('bsctOriginPolygon')/oa:serializedBy/@rdf:resource"/>
+    <div class="xrx-bind" id="bsctPolygonHasSource" data-ref="xrx:bind('bsctOriginPolygon')/oa:hasTarget/oa:SpecificResource/oa:hasSource"/>
+    <div class="xrx-bind" id="bsctPolygon" data-ref="xrx:instance('isct')//svg:polygon"/>
+    <div class="xrx-bind" id="bsctPolygonCoords" data-ref="xrx:bind('bsctPolygon')/@points"/>
+
+    <!-- template semantic tag -->
+    <div class="xrx-bind" id="bsctSemanticTag" data-ref="xrx:instance('isct')/rdf:RDF/oa:SemanticTag"/>
+    <div class="xrx-bind" id="bsctSemanticTagAbout" data-ref="xrx:bind('bsctSemanticTag')/@rdf:about"/>
+
+    <!-- selected annotation -->
+    <div class="xrx-bind" id="bscSelectedAnnotation" data-ref="xrx:instance('isc')/rdf:RDF/rdf:Description[./@rdf:about = xrx:bind('bappAnnoSelected')]"/>
+    <div class="xrx-bind" id="bscSelectedAnnotationRect" data-ref="xrx:bind('bscSelectedAnnotation')//svg:rect"/>
+    <div class="xrx-bind" id="bscSelectedAnnotationPolygon" data-ref="xrx:bind('bscSelectedAnnotation')//svg:polygon"/>
+    <div class="xrx-bind" id="bscSelectedAnnotationLastSemanticTag" data-ref="xrx:bind('bscSelectedAnnotation')/oa:hasBody/oa:SemanticTag[last()]"/>
 
 
 
-  <!-- view -->
-        <nav id="nav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"/>
-                        <span class="icon-bar"/>
-                        <span class="icon-bar"/>
-                    </button>
-                    <a class="navbar-brand" href="./index.html">CodiLab</a>
-                </div>
-                <div id="navbar" class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li>
-                            <a href="./index.html">Home</a>
-                        </li>
-                        <li>
-                            <a href="./CodiKOS.html">CodiKOS</a>
-                        </li>
-                        <li class="active">
-                            <a href="./CodiAnn.html">CodiAnn</a>
-                        </li>
-                        <li>
-                            <a href="./CodiQ.html">CodiQ</a>
-                        </li>
-                    </ul>
-                    <div class="navbar-form navbar-right xrx-auth" data-endpoint="https://api.github.com/user">
-                        <div class="form-group inputUser">
-                            <input type="text" placeholder="Email" class="form-control xrx-user"/>
-                            <span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"/>
-                        </div>
-                        <div class="form-group inputPassword">
-                            <input type="password" placeholder="Password" class="form-control xrx-password"/>
-                            <span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"/>
-                        </div>
-                        <div class="form-group">
-                            <button class="btn btn-default xrx-signin">Sign in</button>
-                            <button class="btn btn-default xrx-signout">Sign out</button>
-                        </div>
-                        <div class="form-group">
-                            <a class="btn btn-primary" href="./SignUp.html">Sign up </a>
-                        </div>
-                        <div class="xrx-action" data-event="xrx-event-submit-error">
-                            <div class="xrx-classes-add" data-select=".inputUser" data-classes="has-error has-feedback"/>
-                            <div class="xrx-classes-add" data-select=".inputPassword" data-classes="has-error has-feedback"/>
-                        </div>
-                        <div class="xrx-action" data-event="xrx-event-submit-done">
-                            <div class="xrx-classes-remove" data-select=".inputUser" data-classes="has-error has-feedback"/>
-                            <div class="xrx-classes-remove" data-select=".inputPassword" data-classes="has-error has-feedback"/>
-                            <div class="xrx-send" data-submission="ssave"/>
-                        </div>
-                    </div>
-                </div><!--/.navbar-collapse -->
-            </div>
-        </nav>
+    <!--**
+    * CodiKOS model
+    *-->
+    <div class="xrx-instance" id="icodikos" data-resource="./data/CodiKOS.rdf"/>
+    <div class="xrx-bind" id="bdescriptions" data-ref="xrx:instance('icodikos')/rdf:RDF/rdf:Description"/>
+    <div class="xrx-bind" id="bcodikosNotations" data-ref="xrx:instance('icodikos')/rdf:RDF/rdf:Description[xrx:bind('bscSemanticTags') = string(./@rdf:about)]/skos:prefLabel[1]"/>
+    <div class="xrx-bind" id="bselectedAnnotationSemanticTagsNotation" data-ref="xrx:instance('icodikos')/rdf:RDF/rdf:Description[xrx:bind('bscSelectedAnnotation')/oa:hasBody/oa:SemanticTag/@rdf:about = string(./@rdf:about)]/skos:prefLabel[1]"/>
+    <div class="xrx-map" id="mdescriptions" data-bind="bdescriptions">
+        <div class="xrx-entry" data-key="./@rdf:about" data-value="concat('[', ./@rdf:about, '] ', ./skos:prefLabel[1]/text())"/>
+    </div>
 
 
 
-  <!--*
-   * Image Annotation Tool
-   *-->
+    <!-- view -->
+    <nav id="nav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
-            <div class="starter-template">
-
-      <!--*
-       * Image Navigation
-       *-->
-                <div class="form-inline pull-right">
-                    <div class="form-group">
-                        <select class="xrx-select form-control" data-bind="bappActualImage" data-map="mmetsFiles"/>
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"/>
+                    <span class="icon-bar"/>
+                    <span class="icon-bar"/>
+                </button>
+                <a class="navbar-brand" href="./index.html">CodiLab</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="./CodiKOS.html">CodiKOS</a>
+                    </li>
+                    <li class="active">
+                        <a href="./CodiAnn.html">CodiAnn</a>
+                    </li>
+                    <li>
+                        <a href="./CodiQ.html">CodiQ</a>
+                    </li>
+                </ul>
+                <div class="navbar-form navbar-right xrx-auth" data-endpoint="https://api.github.com/user">
+                    <div class="form-group inputUser">
+                        <input type="text" placeholder="Email" class="form-control xrx-user"/>
+                        <span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"/>
+                    </div>
+                    <div class="form-group inputPassword">
+                        <input type="password" placeholder="Password" class="form-control xrx-password"/>
+                        <span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"/>
                     </div>
                     <div class="form-group">
-                        <button class="xrx-button btn btn-default form-control">
-                            <span class="glyphicon glyphicon-arrow-left" aria-hidden="true"/>
-                            <span>&#160;Previous</span>
-                            <span class="xrx-calculate" id="cisFirstImage" data-ref="xrx:bind('bappImagePos') = 1"/>
-                            <span class="xrx-calculate" id="cisLastImage" data-ref=""/>
-                            <span class="xrx-action" data-event="xrx-event-click" data-if-not="cisFirstImage">
-                                <span class="xrx-update">
-                                    <span class="xrx-origin" data-bind="bappPreviousImage"/>
-                                    <span class="xrx-target" data-bind="bappActualImage"/>
-                                </span>
-                            </span>
-                        </button>
+                        <button class="btn btn-default xrx-signin">Sign in</button>
+                        <button class="btn btn-default xrx-signout">Sign out</button>
                     </div>
                     <div class="form-group">
-                        <button class="xrx-button btn btn-default form-control">
-                            <span>Next&#160;</span>
-                            <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"/>
-                            <span class="xrx-action" data-event="xrx-event-click">
-                                <span class="xrx-update">
-                                    <span class="xrx-origin" data-bind="bappNextImage"/>
-                                    <span class="xrx-target" data-bind="bappActualImage"/>
-                                </span>
-                            </span>
-                        </button>
+                        <a class="btn btn-primary" href="./SignUp.html">Sign up </a>
                     </div>
-                    <div class="form-group">
-                        <button class="xrx-button btn btn-primary form-control">
-                            <span>Save&#160;</span>
-                            <span class="xrx-action" data-event="xrx-event-click">
-                                <span class="xrx-send" data-submission="ssave"/>
-                            </span>
-                        </button>
+                    <div class="xrx-action" data-event="xrx-event-submit-error">
+                        <div class="xrx-classes-add" data-select=".inputUser" data-classes="has-error has-feedback"/>
+                        <div class="xrx-classes-add" data-select=".inputPassword" data-classes="has-error has-feedback"/>
+                    </div>
+                    <div class="xrx-action" data-event="xrx-event-submit-done">
+                        <div class="xrx-classes-remove" data-select=".inputUser" data-classes="has-error has-feedback"/>
+                        <div class="xrx-classes-remove" data-select=".inputPassword" data-classes="has-error has-feedback"/>
+                        <div class="xrx-send" data-submission="ssave"/>
                     </div>
                 </div>
+            </div><!--/.navbar-collapse -->
+        </div>
+    </nav>
 
 
 
-      <!--**
-       * Application messages
-       *-->
-                <div class="form" style="margin-top:1em;">
-                    <strong id="save-error" class="alert alert-danger save-message hidden">Data could not be saved. Please sign in first.</strong>
-                    <strong id="save-success" class="alert alert-success save-message hidden">Data successfully saved.</strong>
-                    <strong id="save-updated" class="alert alert-warning save-message hidden">There are unsaved changes.</strong>
-                    <strong class="alert invisible">invisible</strong>
+    <!--*
+    * Image Annotation Tool
+    *-->
+    <div class="container">
+        <div class="starter-template">
+
+        <!--*
+        * Image Navigation
+        *-->
+            <div class="form-inline pull-right">
+                <div class="form-group">
+                    <select class="xrx-select form-control" data-bind="bappActualImage" data-map="mmetsFiles"/>
                 </div>
+                <div class="form-group">
+                    <button class="xrx-button btn btn-default form-control">
+                        <span class="glyphicon glyphicon-arrow-left" aria-hidden="true"/>
+                        <span>&#160;Previous</span>
+                        <span class="xrx-calculate" id="cisFirstImage" data-ref="xrx:bind('bappImagePos') = 1"/>
+                        <span class="xrx-calculate" id="cisLastImage" data-ref=""/>
+                        <span class="xrx-action" data-event="xrx-event-click" data-if-not="cisFirstImage">
+                            <span class="xrx-update">
+                                <span class="xrx-origin" data-bind="bappPreviousImage"/>
+                                <span class="xrx-target" data-bind="bappActualImage"/>
+                            </span>
+                        </span>
+                    </button>
+                </div>
+                <div class="form-group">
+                    <button class="xrx-button btn btn-default form-control">
+                        <span>Next&#160;</span>
+                        <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"/>
+                        <span class="xrx-action" data-event="xrx-event-click">
+                            <span class="xrx-update">
+                                <span class="xrx-origin" data-bind="bappNextImage"/>
+                                <span class="xrx-target" data-bind="bappActualImage"/>
+                            </span>
+                        </span>
+                    </button>
+                </div>
+                <div class="form-group">
+                    <button class="xrx-button btn btn-primary form-control">
+                        <span>Save&#160;</span>
+                        <span class="xrx-action" data-event="xrx-event-click">
+                            <span class="xrx-send" data-submission="ssave"/>
+                        </span>
+                    </button>
+                </div>
+            </div>
 
 
 
-      <!--
-       * Tool-bar for annotation functionalities
-       *-->
-                <div class="row">
-                    <div class="btn-group col-xs-10 col-xs-offset-3" role="group">
-                        <button class="xrx-button btn">
-                            <span>Pan</span>
-                            <span class="xrx-action" data-event="xrx-event-click">
-                                <span class="xrx-script" data-script="xrx.mvc.getComponent('dcanvas').setModeView();"/>
-                                <span class="xrx-script" data-script="xrx.mvc.getComponent('dcanvas').resetGroups();"/>
-                                <span class="xrx-update">
-                                    <span class="xrx-origin" data-bind="bappModePan"/>
-                                    <span class="xrx-target" data-bind="bappMode"/>
-                                </span>
-                                <span class="xrx-update">
-                                    <div class="xrx-origin" data-bind="bdummyText"/>
-                                    <div class="xrx-target" data-bind="bappAnnoSelected"/>
-                                </span>
+        <!--**
+        * Application messages
+        *-->
+            <div class="form" style="margin-top:1em;">
+                <strong id="save-error" class="alert alert-danger save-message hidden">Data could not be saved. Please sign in first.</strong>
+                <strong id="save-success" class="alert alert-success save-message hidden">Data successfully saved.</strong>
+                <strong id="save-updated" class="alert alert-warning save-message hidden">There are unsaved changes.</strong>
+                <strong class="alert invisible">invisible</strong>
+            </div>
+
+
+
+        <!--
+        * Tool-bar for annotation functionalities
+        *-->
+            <div class="row">
+                <div class="btn-group col-xs-10 col-xs-offset-3" role="group">
+                    <button class="xrx-button btn">
+                        <span>Pan</span>
+                        <span class="xrx-action" data-event="xrx-event-click">
+                            <span class="xrx-script" data-script="xrx.mvc.getComponent('dcanvas').setModeView();"/>
+                            <span class="xrx-script" data-script="xrx.mvc.getComponent('dcanvas').resetGroups();"/>
+                            <span class="xrx-update">
+                                <span class="xrx-origin" data-bind="bappModePan"/>
+                                <span class="xrx-target" data-bind="bappMode"/>
                             </span>
-                        </button>
-                        <button class="xrx-button btn">
-                            <span>Verify</span>
-                            <span class="xrx-action" data-event="xrx-event-click">
-                                <span class="xrx-script" data-script="xrx.mvc.getComponent('dcanvas').setModeSelect();"/>
-                                <span class="xrx-script" data-script="xrx.mvc.getComponent('dautomaticAnnotation').toFront();"/>
-                                <span class="xrx-update">
-                                    <span class="xrx-origin" data-bind="bappModeVerify"/>
-                                    <span class="xrx-target" data-bind="bappMode"/>
-                                </span>
-                                <span class="xrx-update">
-                                    <div class="xrx-origin" data-bind="bdummyText"/>
-                                    <div class="xrx-target" data-bind="bappAnnoSelected"/>
-                                </span>
+                            <span class="xrx-update">
+                                <div class="xrx-origin" data-bind="bdummyText"/>
+                                <div class="xrx-target" data-bind="bappAnnoSelected"/>
                             </span>
-                        </button>
-                        <button class="xrx-button btn">
-                            <span>Modify</span>
-                            <span class="xrx-action" data-event="xrx-event-click">
-                                <span class="xrx-script" data-script="xrx.mvc.getComponent('dcanvas').setModeModify();"/>
-                                <span class="xrx-script" data-script="xrx.mvc.getComponent('dcanvas').resetGroups();"/>
-                                <span class="xrx-update">
-                                    <span class="xrx-origin" data-bind="bappModeModify"/>
-                                    <span class="xrx-target" data-bind="bappMode"/>
-                                </span>
-                                <span class="xrx-update">
-                                    <div class="xrx-origin" data-bind="bdummyText"/>
-                                    <div class="xrx-target" data-bind="bappAnnoSelected"/>
-                                </span>
+                        </span>
+                    </button>
+                    <button class="xrx-button btn">
+                        <span>Verify</span>
+                        <span class="xrx-action" data-event="xrx-event-click">
+                            <span class="xrx-script" data-script="xrx.mvc.getComponent('dcanvas').setModeSelect();"/>
+                            <span class="xrx-script" data-script="xrx.mvc.getComponent('dautomaticAnnotation').toFront();"/>
+                            <span class="xrx-update">
+                                <span class="xrx-origin" data-bind="bappModeVerify"/>
+                                <span class="xrx-target" data-bind="bappMode"/>
                             </span>
-                        </button>
-                        <span class="dropdown">
-                            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                            <span class="xrx-update">
+                                <div class="xrx-origin" data-bind="bdummyText"/>
+                                <div class="xrx-target" data-bind="bappAnnoSelected"/>
+                            </span>
+                        </span>
+                    </button>
+                    <button class="xrx-button btn">
+                        <span>Modify</span>
+                        <span class="xrx-action" data-event="xrx-event-click">
+                            <span class="xrx-script" data-script="xrx.mvc.getComponent('dcanvas').setModeModify();"/>
+                            <span class="xrx-script" data-script="xrx.mvc.getComponent('dcanvas').resetGroups();"/>
+                            <span class="xrx-update">
+                                <span class="xrx-origin" data-bind="bappModeModify"/>
+                                <span class="xrx-target" data-bind="bappMode"/>
+                            </span>
+                            <span class="xrx-update">
+                                <div class="xrx-origin" data-bind="bdummyText"/>
+                                <div class="xrx-target" data-bind="bappAnnoSelected"/>
+                            </span>
+                        </span>
+                    </button>
+                    <span class="dropdown">
+                        <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
               Draw <span class="caret"/>
-                            </button>
-                            <ul class="dropdown-menu" role="menu">
-                                <li>
-                                    <a class="xrx-button" href="#">
+                        </button>
+                        <ul class="dropdown-menu" role="menu">
+                            <li>
+                                <a class="xrx-button" href="#">
                   Draw Rectangle
                   <span class="xrx-action" data-event="xrx-event-click">
-                                            <span class="xrx-update">
-                                                <span class="xrx-origin" data-bind="bappModeDrawRectangle"/>
-                                                <span class="xrx-target" data-bind="bappMode"/>
-                                            </span>
-                                            <span class="xrx-update">
-                                                <div class="xrx-origin" data-bind="bdummyText"/>
-                                                <div class="xrx-target" data-bind="bappAnnoSelected"/>
-                                            </span>
-                                            <span class="xrx-script" data-script="xrx.mvc.getComponent('dcanvas').resetGroups();"/>
-                                            <span class="xrx-script" data-script="xrx.mvc.getComponent('dcanvas').setModeCreate('nManualRectangle');"/>
+                                        <span class="xrx-update">
+                                            <span class="xrx-origin" data-bind="bappModeDrawRectangle"/>
+                                            <span class="xrx-target" data-bind="bappMode"/>
                                         </span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="xrx-button" href="#">
+                                        <span class="xrx-update">
+                                            <div class="xrx-origin" data-bind="bdummyText"/>
+                                            <div class="xrx-target" data-bind="bappAnnoSelected"/>
+                                        </span>
+                                        <span class="xrx-script" data-script="xrx.mvc.getComponent('dcanvas').resetGroups();"/>
+                                        <span class="xrx-script" data-script="xrx.mvc.getComponent('dcanvas').setModeCreate('nManualRectangle');"/>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="xrx-button" href="#">
                   Draw Polygon
                   <span class="xrx-action" data-event="xrx-event-click">
-                                            <span class="xrx-update">
-                                                <span class="xrx-origin" data-bind="bappModeDrawPolygon"/>
-                                                <span class="xrx-target" data-bind="bappMode"/>
-                                            </span>
-                                            <span class="xrx-update">
-                                                <div class="xrx-origin" data-bind="bdummyText"/>
-                                                <div class="xrx-target" data-bind="bappAnnoSelected"/>
-                                            </span>
-                                            <span class="xrx-script" data-script="xrx.mvc.getComponent('dcanvas').resetGroups();"/>
-                                            <span class="xrx-script" data-script="xrx.mvc.getComponent('dcanvas').setModeCreate('nManualPolygon');"/>
+                                        <span class="xrx-update">
+                                            <span class="xrx-origin" data-bind="bappModeDrawPolygon"/>
+                                            <span class="xrx-target" data-bind="bappMode"/>
                                         </span>
-                                    </a>
-                                </li>
-                            </ul>
+                                        <span class="xrx-update">
+                                            <div class="xrx-origin" data-bind="bdummyText"/>
+                                            <div class="xrx-target" data-bind="bappAnnoSelected"/>
+                                        </span>
+                                        <span class="xrx-script" data-script="xrx.mvc.getComponent('dcanvas').resetGroups();"/>
+                                        <span class="xrx-script" data-script="xrx.mvc.getComponent('dcanvas').setModeCreate('nManualPolygon');"/>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </span>
+                    <button class="xrx-button btn">
+                        <span>Delete</span>
+                        <span class="xrx-action" data-event="xrx-event-click">
+                            <span class="xrx-update">
+                                <div class="xrx-origin" data-bind="bdummyText"/>
+                                <div class="xrx-target" data-bind="bappAnnoSelected"/>
+                            </span>
+                            <span class="xrx-update">
+                                <span class="xrx-origin" data-bind="bappModeDelete"/>
+                                <span class="xrx-target" data-bind="bappMode"/>
+                            </span>
+                            <span class="xrx-script" data-script="xrx.mvc.getComponent('dcanvas').resetGroups();"/>
+                            <span class="xrx-script" data-script="xrx.mvc.getComponent('dcanvas').setModeSelect();"/>
                         </span>
-                        <button class="xrx-button btn">
-                            <span>Delete</span>
-                            <span class="xrx-action" data-event="xrx-event-click">
-                                <span class="xrx-update">
-                                    <div class="xrx-origin" data-bind="bdummyText"/>
-                                    <div class="xrx-target" data-bind="bappAnnoSelected"/>
-                                </span>
-                                <span class="xrx-update">
-                                    <span class="xrx-origin" data-bind="bappModeDelete"/>
-                                    <span class="xrx-target" data-bind="bappMode"/>
-                                </span>
-                                <span class="xrx-script" data-script="xrx.mvc.getComponent('dcanvas').resetGroups();"/>
-                                <span class="xrx-script" data-script="xrx.mvc.getComponent('dcanvas').setModeSelect();"/>
+                    </button>
+                    <button class="xrx-button btn">
+                        <span>Tag</span>
+                        <span class="xrx-action" data-event="xrx-event-click">
+                            <span class="xrx-script" data-script="xrx.mvc.getComponent('dcanvas').resetGroups();"/>
+                            <span class="xrx-script" data-script="xrx.mvc.getComponent('dcanvas').setModeSelect();"/>
+                            <span class="xrx-update">
+                                <span class="xrx-origin" data-bind="bappModeTag"/>
+                                <span class="xrx-target" data-bind="bappMode"/>
                             </span>
-                        </button>
-                        <button class="xrx-button btn">
-                            <span>Tag</span>
-                            <span class="xrx-action" data-event="xrx-event-click">
-                                <span class="xrx-script" data-script="xrx.mvc.getComponent('dcanvas').resetGroups();"/>
-                                <span class="xrx-script" data-script="xrx.mvc.getComponent('dcanvas').setModeSelect();"/>
-                                <span class="xrx-update">
-                                    <span class="xrx-origin" data-bind="bappModeTag"/>
-                                    <span class="xrx-target" data-bind="bappMode"/>
-                                </span>
-                            </span>
-                        </button>
-                    </div>
+                        </span>
+                    </button>
                 </div>
-                <div class="row">
+            </div>
+            <div class="row">
 
         <!--*
          * Semantic Tagging
          *-->
-                    <div id="dsemanticTagging" class="col-xs-3">
-                        <h3>Tags Overview</h3>
-                        <div class="xrx-repeat manual-annotation-text" data-bind="bcodikosNotations">
-                            <div>
-                                <label>
-                                    <input class="xrx-checkbox" type="checkbox" checked="checked" data-ref="xrx:bind('bappSemanticTagsActive')//dummy"/>
-                                    <span class="xrx-action" data-event="xrx-event-unchecked">
-                                        <span class="xrx-update">
-                                            <span class="xrx-origin" data-ref="./parent::rdf:Description/@rdf:about"/>
-                                            <span class="xrx-target" data-bind="bappTag"/>
-                                        </span>
-                                        <span class="xrx-insert">
-                                            <span class="xrx-origin" data-bind="bappTag"/>
-                                            <span class="xrx-target" data-bind="bappSemanticTagsActiveLast"/>
-                                        </span>
-                                    </span>
-                                    <span class="xrx-action" data-event="xrx-event-checked">
-                                        <span class="xrx-remove">
-                                            <span class="xrx-target" data-ref="xrx:bind('bappSemanticTagsActive')[./text() = xrx:bind('bcodikosNotations')[xrx:index()]/parent::rdf:Description/@rdf:about]"/>
-                                        </span>
-                                    </span>
-                                    <span class="xrx-output" data-ref="./text()"/>
-                                </label>
-                            </div>
-                        </div>
-                        <div class="automatic-annotation-text">
+                <div id="dsemanticTagging" class="col-xs-3">
+                    <h3>Tags Overview</h3>
+                    <div class="xrx-repeat manual-annotation-text" data-bind="bcodikosNotations">
+                        <div>
                             <label>
-                                <input class="xrx-checkbox" type="checkbox" data-bind="bswatiActive"/> Automatic annotations
+                                <input class="xrx-checkbox" type="checkbox" checked="checked" data-ref="xrx:bind('bappSemanticTagsActive')//dummy"/>
+                                <span class="xrx-action" data-event="xrx-event-unchecked">
+                                    <span class="xrx-update">
+                                        <span class="xrx-origin" data-ref="./parent::rdf:Description/@rdf:about"/>
+                                        <span class="xrx-target" data-bind="bappTag"/>
+                                    </span>
+                                    <span class="xrx-insert">
+                                        <span class="xrx-origin" data-bind="bappTag"/>
+                                        <span class="xrx-target" data-bind="bappSemanticTagsActiveLast"/>
+                                    </span>
+                                </span>
+                                <span class="xrx-action" data-event="xrx-event-checked">
+                                    <span class="xrx-remove">
+                                        <span class="xrx-target" data-ref="xrx:bind('bappSemanticTagsActive')[./text() = xrx:bind('bcodikosNotations')[xrx:index()]/parent::rdf:Description/@rdf:about]"/>
+                                    </span>
+                                </span>
+                                <span class="xrx-output" data-ref="./text()"/>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="automatic-annotation-text">
+                        <label>
+                            <input class="xrx-checkbox" type="checkbox" data-bind="bswatiActive"/> Automatic annotations
             </label>
+                    </div>
+                    <h3>Selected Annotation</h3>
+                    <div class="xrx-repeat selected-annotation-text" data-bind="bselectedAnnotationSemanticTagsNotation">
+                        <div>
+                            <label class="xrx-output" data-ref="./text()"/>
                         </div>
-                        <h3>Selected Annotation</h3>
-                        <div class="xrx-repeat selected-annotation-text" data-bind="bselectedAnnotationSemanticTagsNotation">
-                            <div>
-                                <label class="xrx-output" data-ref="./text()"/>
-                            </div>
-                        </div>
-                        <div class="xrx-show" data-bind="bscSelectedAnnotation">
-                            <select class="xrx-select form-control" data-bind="bsctSemanticTagAbout" data-map="mdescriptions"/>
-                            <div class="xrx-action" id="avalidateNarrower" data-event="xrx-event-change">
-                                <div class="xrx-insert">
-                                    <div class="xrx-origin" data-bind="bsctSemanticTag"/>
-                                    <div class="xrx-target" data-bind="bscSelectedAnnotationLastSemanticTag"/>
-                                </div>
+                    </div>
+                    <div class="xrx-show" data-bind="bscSelectedAnnotation">
+                        <select class="xrx-select form-control" data-bind="bsctSemanticTagAbout" data-map="mdescriptions"/>
+                        <div class="xrx-action" id="avalidateNarrower" data-event="xrx-event-change">
+                            <div class="xrx-insert">
+                                <div class="xrx-origin" data-bind="bsctSemanticTag"/>
+                                <div class="xrx-target" data-bind="bscSelectedAnnotationLastSemanticTag"/>
                             </div>
                         </div>
                     </div>
+                </div>
 
         <!--*
          * Canvas
          *-->
         <!-- model -->
-                    <div class="xrx-action" id="aprepareAndInsertRect">
-                        <div class="xrx-update">
-                            <div class="xrx-origin" data-calculate="cuuid"/>
-                            <div class="xrx-target" data-bind="bsctRectAbout"/>
-                        </div>
-                        <div class="xrx-update">
-                            <div class="xrx-origin" data-calculate="ccurrentDateTime"/>
-                            <div class="xrx-target" data-bind="bsctRectAnnotatedAt"/>
-                        </div>
-                        <div class="xrx-update">
-                            <div class="xrx-origin" data-bind="buri"/>
-                            <div class="xrx-target" data-bind="bsctRectSerializedBy"/>
-                        </div>
-                        <div class="xrx-update">
-                            <div class="xrx-origin" data-calculate="ccurrentDateTime"/>
-                            <div class="xrx-target" data-bind="bsctRectSerializedAt"/>
-                        </div>
-                        <div class="xrx-update">
-                            <div class="xrx-origin" data-bind="bmetsActualImageUrl"/>
-                            <div class="xrx-target" data-bind="bsctRectHasSource"/>
-                        </div>
-                        <div class="xrx-update">
-                            <div class="xrx-origin" data-bind="bsctRectAbout"/>
-                            <div class="xrx-target" data-bind="bsctAggregatesResource"/>
-                        </div>
-                        <div class="xrx-insert">
-                            <div class="xrx-origin" data-bind="bsctAggregates"/>
-                            <div class="xrx-target" data-bind="bscLastAggregates"/>
-                        </div>
-                        <div class="xrx-insert">
-                            <div class="xrx-origin" data-bind="bsctOriginRect"/>
-                            <div class="xrx-target" data-bind="bscLastAnnotation"/>
-                        </div>
+                <div class="xrx-action" id="aprepareAndInsertRect">
+                    <div class="xrx-update">
+                        <div class="xrx-origin" data-calculate="cuuid"/>
+                        <div class="xrx-target" data-bind="bsctRectAbout"/>
                     </div>
-        <!-- view -->
-                    <div id="dcanvas" class="xrx-canvas col-xs-9">
-                        <div class="xrx-canvas-background-image" data-bind="bmetsActualImageUrl" data-zone-bottom="-125"/>
-                        <div class="xrx-canvas-graphics">
-
-            <!-- automatic Swati annotations -->
-                            <div class="xrx-canvas-group" id="dautomaticAnnotation">
-                                <div class="xrx-repeat" data-bind="bswatiZone">
-                                    <div class="xrx-shape-rect automatic-annotation" data-unit="percentage" data-modifiable="false" data-ref="./self::*" data-ref-x="./BX_Percentage/text()" data-ref-y="./BY_Percentage/text()" data-ref-width="./RelativeWidth_Percentage/text()" data-ref-height="./RelativeHeight_Percentage/text()">
-                                        <div class="xrx-action" data-event="xrx-event-graphic-selected" data-if="isModeVerify">
-                                            <div class="xrx-update">
-                                                <div class="xrx-origin" data-ref="number(./BX_Percentage/text()) * 1500 div 100"/>
-                                                <div class="xrx-target" data-bind="bsctRectX"/>
-                                            </div>
-                                            <div class="xrx-update">
-                                                <div class="xrx-origin" data-ref="(number(./BY_Percentage/text()) * 2146 div 100) - (125 * number(./BY_Percentage/text()) div 100)"/>
-                                                <div class="xrx-target" data-bind="bsctRectY"/>
-                                            </div>
-                                            <div class="xrx-update">
-                                                <div class="xrx-origin" data-ref="number(./RelativeWidth_Percentage/text()) * 1500 div 100"/>
-                                                <div class="xrx-target" data-bind="bsctRectWidth"/>
-                                            </div>
-                                            <div class="xrx-update">
-                                                <div class="xrx-origin" data-ref="(number(./RelativeHeight_Percentage/text()) * 2146 div 100) - (125 * number(./RelativeHeight_Percentage/text()) div 100)"/>
-                                                <div class="xrx-target" data-bind="bsctRectHeight"/>
-                                            </div>
-                                            <div class="xrx-dispatch" data-action="aprepareAndInsertRect"/>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-            <!-- manual rectangles -->
-                            <div class="xrx-canvas-group" data-name="nManualRectangle">
-                                <div class="xrx-repeat" data-bind="bscRectangles">
-                                    <div class="xrx-shape-rect manual-annotation" data-ref="./self::*" data-ref-x="./@x" data-ref-y="./@y" data-ref-width="./@width" data-ref-height="./@height">
-                                        <div class="xrx-action" data-event="xrx-event-graphic-selected" data-if="isModeDelete">
-                                            <div class="xrx-remove">
-                                                <div class="xrx-target" data-ref="./ancestor::rdf:Description"/>
-                                            </div>
-                                        </div>
-                                        <div class="xrx-action" data-event="xrx-event-graphic-selected" data-if="isModeTag">
-                                            <div class="xrx-update">
-                                                <div class="xrx-origin" data-ref="./ancestor::rdf:Description/@rdf:about"/>
-                                                <div class="xrx-target" data-bind="bappAnnoSelected"/>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="xrx-shape-rect-create" data-bind="bsctRect" data-bind-x="bsctRectX" data-bind-y="bsctRectY" data-bind-width="bsctRectWidth" data-bind-height="bsctRectHeight"/>
-                                <div class="xrx-action" data-event="xrx-event-graphic-created">
-                                    <div class="xrx-dispatch" data-action="aprepareAndInsertRect"/>
-                                </div>
-                            </div>
-
-            <!-- manual polygons -->
-                            <div class="xrx-canvas-group" data-name="nManualPolygon">
-                                <div class="xrx-repeat" data-bind="bscPolygons">
-                                    <div class="xrx-shape-polygon manual-annotation" data-ref="./self::*" data-ref-coords="./@points">
-                                        <div class="xrx-action" data-event="xrx-event-graphic-selected" data-if="isModeDelete">
-                                            <div class="xrx-remove">
-                                                <div class="xrx-target" data-ref="./ancestor::rdf:Description"/>
-                                            </div>
-                                        </div>
-                                        <div class="xrx-action" data-event="xrx-event-graphic-selected" data-if="isModeTag">
-                                            <div class="xrx-update">
-                                                <div class="xrx-origin" data-ref="./ancestor::rdf:Description/@rdf:about"/>
-                                                <div class="xrx-target" data-bind="bappAnnoSelected"/>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="xrx-shape-polygon-create" data-bind="bsctPolygon" data-bind-coords="bsctPolygonCoords"/>
-                                <div class="xrx-action" data-event="xrx-event-graphic-created">
-                                    <div class="xrx-update">
-                                        <div class="xrx-origin" data-calculate="cuuid"/>
-                                        <div class="xrx-target" data-bind="bsctPolygonAbout"/>
-                                    </div>
-                                    <div class="xrx-update">
-                                        <div class="xrx-origin" data-calculate="ccurrentDateTime"/>
-                                        <div class="xrx-target" data-bind="bsctPolygonAnnotatedAt"/>
-                                    </div>
-                                    <div class="xrx-update">
-                                        <div class="xrx-origin" data-bind="buri"/>
-                                        <div class="xrx-target" data-bind="bsctPolygonSerializedBy"/>
-                                    </div>
-                                    <div class="xrx-update">
-                                        <div class="xrx-origin" data-calculate="ccurrentDateTime"/>
-                                        <div class="xrx-target" data-bind="bsctPolygonSerializedAt"/>
-                                    </div>
-                                    <div class="xrx-update">
-                                        <div class="xrx-origin" data-bind="bmetsActualImageUrl"/>
-                                        <div class="xrx-target" data-bind="bsctPolygonHasSource"/>
-                                    </div>
-                                    <div class="xrx-update">
-                                        <div class="xrx-origin" data-bind="bsctPolygonAbout"/>
-                                        <div class="xrx-target" data-bind="bsctAggregatesResource"/>
-                                    </div>
-                                    <div class="xrx-insert">
-                                        <div class="xrx-origin" data-bind="bsctAggregates"/>
-                                        <div class="xrx-target" data-bind="bscLastAggregates"/>
-                                    </div>
-                                    <div class="xrx-insert">
-                                        <div class="xrx-origin" data-bind="bsctOriginPolygon"/>
-                                        <div class="xrx-target" data-bind="bscLastAnnotation"/>
-                                    </div>
-                                </div>
-                            </div>
-
-            <!-- selected rectangle -->
-                            <div class="xrx-canvas-group">
-                                <div class="xrx-repeat" data-bind="bscSelectedAnnotationRect">
-                                    <div class="xrx-shape-rect selected-annotation" data-ref="./self::*" data-ref-x="./@x" data-ref-y="./@y" data-ref-width="./@width" data-ref-height="./@height"/>
-                                </div>
-                            </div>
-
-            <!-- selected polygon -->
-                            <div class="xrx-canvas-group">
-                                <div class="xrx-repeat" data-bind="bscSelectedAnnotationPolygon">
-                                    <div class="xrx-shape-polygon selected-annotation" data-ref="./self::*" data-ref-coords="./@points"/>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="xrx-update">
+                        <div class="xrx-origin" data-calculate="ccurrentDateTime"/>
+                        <div class="xrx-target" data-bind="bsctRectAnnotatedAt"/>
+                    </div>
+                    <div class="xrx-update">
+                        <div class="xrx-origin" data-bind="buri"/>
+                        <div class="xrx-target" data-bind="bsctRectSerializedBy"/>
+                    </div>
+                    <div class="xrx-update">
+                        <div class="xrx-origin" data-calculate="ccurrentDateTime"/>
+                        <div class="xrx-target" data-bind="bsctRectSerializedAt"/>
+                    </div>
+                    <div class="xrx-update">
+                        <div class="xrx-origin" data-bind="bmetsActualImageUrl"/>
+                        <div class="xrx-target" data-bind="bsctRectHasSource"/>
+                    </div>
+                    <div class="xrx-update">
+                        <div class="xrx-origin" data-bind="bsctRectAbout"/>
+                        <div class="xrx-target" data-bind="bsctAggregatesResource"/>
+                    </div>
+                    <div class="xrx-insert">
+                        <div class="xrx-origin" data-bind="bsctAggregates"/>
+                        <div class="xrx-target" data-bind="bscLastAggregates"/>
+                    </div>
+                    <div class="xrx-insert">
+                        <div class="xrx-origin" data-bind="bsctOriginRect"/>
+                        <div class="xrx-target" data-bind="bscLastAnnotation"/>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-xs-6">
-                        <div>Polygon</div>
-                        <pre class="xrx-console" data-bind="bsctOriginPolygon"/>
-                    </div>
-                    <div class="col-xs-6">
-                        <div>Rectangle</div>
-                        <pre class="xrx-console" data-bind="bsctOriginRect"/>
+        <!-- view -->
+                <div id="dcanvas" class="xrx-canvas col-xs-9">
+                    <div class="xrx-canvas-background-image" data-bind="bmetsActualImageUrl" data-zone-bottom="-125"/>
+                    <div class="xrx-canvas-graphics">
+
+            <!-- automatic Swati annotations -->
+                        <div class="xrx-canvas-group" id="dautomaticAnnotation">
+                            <div class="xrx-repeat" data-bind="bswatiZone">
+                                <div class="xrx-shape-rect automatic-annotation" data-unit="percentage" data-modifiable="false" data-ref="./self::*" data-ref-x="./BX_Percentage/text()" data-ref-y="./BY_Percentage/text()" data-ref-width="./RelativeWidth_Percentage/text()" data-ref-height="./RelativeHeight_Percentage/text()">
+                                    <div class="xrx-action" data-event="xrx-event-graphic-selected" data-if="isModeVerify">
+                                        <div class="xrx-update">
+                                            <div class="xrx-origin" data-ref="number(./BX_Percentage/text()) * 1500 div 100"/>
+                                            <div class="xrx-target" data-bind="bsctRectX"/>
+                                        </div>
+                                        <div class="xrx-update">
+                                            <div class="xrx-origin" data-ref="(number(./BY_Percentage/text()) * 2146 div 100) - (125 * number(./BY_Percentage/text()) div 100)"/>
+                                            <div class="xrx-target" data-bind="bsctRectY"/>
+                                        </div>
+                                        <div class="xrx-update">
+                                            <div class="xrx-origin" data-ref="number(./RelativeWidth_Percentage/text()) * 1500 div 100"/>
+                                            <div class="xrx-target" data-bind="bsctRectWidth"/>
+                                        </div>
+                                        <div class="xrx-update">
+                                            <div class="xrx-origin" data-ref="(number(./RelativeHeight_Percentage/text()) * 2146 div 100) - (125 * number(./RelativeHeight_Percentage/text()) div 100)"/>
+                                            <div class="xrx-target" data-bind="bsctRectHeight"/>
+                                        </div>
+                                        <div class="xrx-dispatch" data-action="aprepareAndInsertRect"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+            <!-- manual rectangles -->
+                        <div class="xrx-canvas-group" data-name="nManualRectangle">
+                            <div class="xrx-repeat" data-bind="bscRectangles">
+                                <div class="xrx-shape-rect manual-annotation" data-ref="./self::*" data-ref-x="./@x" data-ref-y="./@y" data-ref-width="./@width" data-ref-height="./@height">
+                                    <div class="xrx-action" data-event="xrx-event-graphic-selected" data-if="isModeDelete">
+                                        <div class="xrx-remove">
+                                            <div class="xrx-target" data-ref="./ancestor::rdf:Description"/>
+                                        </div>
+                                    </div>
+                                    <div class="xrx-action" data-event="xrx-event-graphic-selected" data-if="isModeTag">
+                                        <div class="xrx-update">
+                                            <div class="xrx-origin" data-ref="./ancestor::rdf:Description/@rdf:about"/>
+                                            <div class="xrx-target" data-bind="bappAnnoSelected"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="xrx-shape-rect-create" data-bind="bsctRect" data-bind-x="bsctRectX" data-bind-y="bsctRectY" data-bind-width="bsctRectWidth" data-bind-height="bsctRectHeight"/>
+                            <div class="xrx-action" data-event="xrx-event-graphic-created">
+                                <div class="xrx-dispatch" data-action="aprepareAndInsertRect"/>
+                            </div>
+                        </div>
+
+            <!-- manual polygons -->
+                        <div class="xrx-canvas-group" data-name="nManualPolygon">
+                            <div class="xrx-repeat" data-bind="bscPolygons">
+                                <div class="xrx-shape-polygon manual-annotation" data-ref="./self::*" data-ref-coords="./@points">
+                                    <div class="xrx-action" data-event="xrx-event-graphic-selected" data-if="isModeDelete">
+                                        <div class="xrx-remove">
+                                            <div class="xrx-target" data-ref="./ancestor::rdf:Description"/>
+                                        </div>
+                                    </div>
+                                    <div class="xrx-action" data-event="xrx-event-graphic-selected" data-if="isModeTag">
+                                        <div class="xrx-update">
+                                            <div class="xrx-origin" data-ref="./ancestor::rdf:Description/@rdf:about"/>
+                                            <div class="xrx-target" data-bind="bappAnnoSelected"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="xrx-shape-polygon-create" data-bind="bsctPolygon" data-bind-coords="bsctPolygonCoords"/>
+                            <div class="xrx-action" data-event="xrx-event-graphic-created">
+                                <div class="xrx-update">
+                                    <div class="xrx-origin" data-calculate="cuuid"/>
+                                    <div class="xrx-target" data-bind="bsctPolygonAbout"/>
+                                </div>
+                                <div class="xrx-update">
+                                    <div class="xrx-origin" data-calculate="ccurrentDateTime"/>
+                                    <div class="xrx-target" data-bind="bsctPolygonAnnotatedAt"/>
+                                </div>
+                                <div class="xrx-update">
+                                    <div class="xrx-origin" data-bind="buri"/>
+                                    <div class="xrx-target" data-bind="bsctPolygonSerializedBy"/>
+                                </div>
+                                <div class="xrx-update">
+                                    <div class="xrx-origin" data-calculate="ccurrentDateTime"/>
+                                    <div class="xrx-target" data-bind="bsctPolygonSerializedAt"/>
+                                </div>
+                                <div class="xrx-update">
+                                    <div class="xrx-origin" data-bind="bmetsActualImageUrl"/>
+                                    <div class="xrx-target" data-bind="bsctPolygonHasSource"/>
+                                </div>
+                                <div class="xrx-update">
+                                    <div class="xrx-origin" data-bind="bsctPolygonAbout"/>
+                                    <div class="xrx-target" data-bind="bsctAggregatesResource"/>
+                                </div>
+                                <div class="xrx-insert">
+                                    <div class="xrx-origin" data-bind="bsctAggregates"/>
+                                    <div class="xrx-target" data-bind="bscLastAggregates"/>
+                                </div>
+                                <div class="xrx-insert">
+                                    <div class="xrx-origin" data-bind="bsctOriginPolygon"/>
+                                    <div class="xrx-target" data-bind="bscLastAnnotation"/>
+                                </div>
+                            </div>
+                        </div>
+
+            <!-- selected rectangle -->
+                        <div class="xrx-canvas-group">
+                            <div class="xrx-repeat" data-bind="bscSelectedAnnotationRect">
+                                <div class="xrx-shape-rect selected-annotation" data-ref="./self::*" data-ref-x="./@x" data-ref-y="./@y" data-ref-width="./@width" data-ref-height="./@height"/>
+                            </div>
+                        </div>
+
+            <!-- selected polygon -->
+                        <div class="xrx-canvas-group">
+                            <div class="xrx-repeat" data-bind="bscSelectedAnnotationPolygon">
+                                <div class="xrx-shape-polygon selected-annotation" data-ref="./self::*" data-ref-coords="./@points"/>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div><!-- /container -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"/>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"/>
-        <script><!--
+            <div class="row">
+                <div class="col-xs-6">
+                    <div>Polygon</div>
+                    <pre class="xrx-console" data-bind="bsctOriginPolygon"/>
+                </div>
+                <div class="col-xs-6">
+                    <div>Rectangle</div>
+                    <pre class="xrx-console" data-bind="bsctOriginRect"/>
+                </div>
+            </div>
+        </div>
+    </div><!-- /container -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"/>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"/>
+    <script><!--
     var width = $('body').width();
     $('.xrx-canvas').height(width);
     xrx.install(function() {
@@ -776,5 +657,4 @@ background-color: #DDDDDD;
       }
     });
   --></script>
-    </body>
-</html>
+</div>
