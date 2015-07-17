@@ -1,9 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <app>
-  <imagepos>11</imagepos>
-  <mode>pan</mode>
-  <annoselected>#</annoselected>
-  <tag></tag>
-  <semantictags type="manual" is="inactive">
-    <dummy/>
-  </semantictags>
+    <imagepos>11</imagepos>
+    <mode>pan</mode>
+    <annoselected>#</annoselected>
+    <tag/>
+    <semantictags type="manual" is="inactive">
+        <dummy/>
+    </semantictags>
 </app>

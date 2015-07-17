@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<meta xmlns="http://exist-db.org/xquery/repo">
+    <description>Toolset for the Semi-Automatic Codicological Annotation and Analysis of Manuscript Pages</description>
+    <author>Jochen Graf</author>
+    <website/>
+    <status>alpha</status>
+    <license>GNU-LGPL</license>
+    <copyright>true</copyright>
+    <type>application</type>
+    <target>CodiLab</target>
+    <prepare>pre-install.xql</prepare>
+    <finish/>
+    <deployed>2015-07-17T12:17:01.192+02:00</deployed>
+</meta>

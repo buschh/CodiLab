@@ -1,64 +1,60 @@
-<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-         xmlns:oa="http://www.w3.org/ns/oa#"
-         xmlns:foaf="http://xmlns.com/foaf/spec/"
-         xmlns:dc="http://purl.org/dc/terms/"
-         xmlns:cnt="http://www.w3.org/2011/content#"
-         xmlns:ore="http://www.openarchives.org/ore/terms/">
-  <ore:aggregates rdf:resource=""/>
-  <oa:SemanticTag rdf:about=""/>
-  <rdf:Description rdf:about="">
-    <oa:annotatedAt></oa:annotatedAt>
-    <oa:annotatedBy>
-      <foaf:Person rdf:about="">
-        <foaf:mbox></foaf:mbox>
-        <foaf:name></foaf:name>
-      </foaf:Person>
-    </oa:annotatedBy>
-    <oa:serializedAt></oa:serializedAt>
-    <oa:serializedBy rdf:resource=""/>
-    <oa:motivatedBy rdf:resource="http://www.shared-canvas.org/ns/painting"/>
-    <oa:hasBody>
-      <oa:SemanticTag rdf:about=""/>
-    </oa:hasBody>
-    <oa:hasTarget>
-      <oa:SpecificResource>
-        <oa:hasSelector>
-          <cnt:ContentAsXML>
-            <cnt:rest>
-              <svg:rect xmlns:svg="http://www.w3.org/2000/svg" x="" y="" width="" height=""/>
-            </cnt:rest>
-          </cnt:ContentAsXML>
-        </oa:hasSelector>
-        <oa:hasSource></oa:hasSource>
-      </oa:SpecificResource>
-    </oa:hasTarget>
-  </rdf:Description>
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:oa="http://www.w3.org/ns/oa#" xmlns:ore="http://www.openarchives.org/ore/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:cnt="http://www.w3.org/2011/content#" xmlns:foaf="http://xmlns.com/foaf/spec/" xmlns:dc="http://purl.org/dc/terms/">
+    <ore:aggregates rdf:resource=""/>
+    <oa:SemanticTag rdf:about=""/>
+    <rdf:Description rdf:about="">
+        <oa:annotatedAt/>
+        <oa:annotatedBy>
+            <foaf:Person rdf:about="">
+                <foaf:mbox/>
+                <foaf:name/>
+            </foaf:Person>
+        </oa:annotatedBy>
+        <oa:serializedAt/>
+        <oa:serializedBy rdf:resource=""/>
+        <oa:motivatedBy rdf:resource="http://www.shared-canvas.org/ns/painting"/>
+        <oa:hasBody>
+            <oa:SemanticTag rdf:about=""/>
+        </oa:hasBody>
+        <oa:hasTarget>
+            <oa:SpecificResource>
+                <oa:hasSelector>
+                    <cnt:ContentAsXML>
+                        <cnt:rest>
+                            <svg:rect xmlns:svg="http://www.w3.org/2000/svg" x="" y="" width="" height=""/>
+                        </cnt:rest>
+                    </cnt:ContentAsXML>
+                </oa:hasSelector>
+                <oa:hasSource/>
+            </oa:SpecificResource>
+        </oa:hasTarget>
+    </rdf:Description>
   <!-- template for polygon annotation -->
-  <rdf:Description rdf:about="">
-    <oa:annotatedAt></oa:annotatedAt>
-    <oa:annotatedBy>
-      <foaf:Person rdf:about="">
-        <foaf:mbox></foaf:mbox>
-        <foaf:name></foaf:name>
-      </foaf:Person>
-    </oa:annotatedBy>
-    <oa:serializedAt></oa:serializedAt>
-    <oa:serializedBy rdf:resource=""/>
-    <oa:motivatedBy rdf:resource="http://www.shared-canvas.org/ns/painting"/>
-    <oa:hasBody>
-      <oa:SemanticTag rdf:about=""/>
-    </oa:hasBody>
-    <oa:hasTarget>
-      <oa:SpecificResource>
-        <oa:hasSelector>
-          <cnt:ContentAsXML>
-            <cnt:rest>
-              <svg:polygon xmlns:svg="http://www.w3.org/2000/svg" points=""/>
-            </cnt:rest>
-          </cnt:ContentAsXML>
-        </oa:hasSelector>
-        <oa:hasSource></oa:hasSource>
-      </oa:SpecificResource>
-    </oa:hasTarget>
-  </rdf:Description>
+    <rdf:Description rdf:about="">
+        <oa:annotatedAt/>
+        <oa:annotatedBy>
+            <foaf:Person rdf:about="">
+                <foaf:mbox/>
+                <foaf:name/>
+            </foaf:Person>
+        </oa:annotatedBy>
+        <oa:serializedAt/>
+        <oa:serializedBy rdf:resource=""/>
+        <oa:motivatedBy rdf:resource="http://www.shared-canvas.org/ns/painting"/>
+        <oa:hasBody>
+            <oa:SemanticTag rdf:about=""/>
+        </oa:hasBody>
+        <oa:hasTarget>
+            <oa:SpecificResource>
+                <oa:hasSelector>
+                    <cnt:ContentAsXML>
+                        <cnt:rest>
+                            <svg:polygon xmlns:svg="http://www.w3.org/2000/svg" points=""/>
+                        </cnt:rest>
+                    </cnt:ContentAsXML>
+                </oa:hasSelector>
+                <oa:hasSource/>
+            </oa:SpecificResource>
+        </oa:hasTarget>
+    </rdf:Description>
 </rdf:RDF>
