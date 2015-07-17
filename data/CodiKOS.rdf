@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+<<<<<<< HEAD
     <rdf:Description rdf:about="http://www.ecodicology.org/CodiKOS">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <skos:prefLabel xml:lang="en">CodiKOS</skos:prefLabel>
@@ -131,4 +132,2057 @@
             <skos:definition xml:lang="de">schmückender Buchstabe am Textanfang, hervorgehoben durch Größe, Farbe, Form und Verzierung, leitet einen hervorzuhebenden Abschnitt eines Textes (Werk, Kapitel) ein. Initialen haben verschiedene hierarchische Bedeutungsebenen (primär, sekundär, tertiär)</skos:definition>
         </skos:note>
     </rdf:Description>
+=======
+  <rdf:Description rdf:about="http://www.ecodicology.org/CodiKOS">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">CodiKOS</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">CodiKOS</skos:prefLabel>
+    <skos:notation>CodiKOS</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Codicological SKOS data model</skos:definition>
+      <skos:definition xml:lang="de">Kodikologisches SKOS Datenmodell</skos:definition>
+    </skos:note>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0001"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0002"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0003"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0004"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0005"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0006"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0007"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0008"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0009"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0001">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Physical description</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Physikalische Beschreibung</skos:prefLabel>
+    <skos:notation>0001</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de"></skos:definition>
+    </skos:note>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0010"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0011"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0012"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0013"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0014"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0015"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0016"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0017"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0018"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0019"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0020"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0021"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0022"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0023"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0024"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0025"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0026"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0027"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0028"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0029"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0030"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0031"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0032"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0033"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0034"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0035"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0036"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0037"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0038"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0039"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0040"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0041"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0042"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0002">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Dimensions</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Maße</skos:prefLabel>
+    <skos:notation>0002</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">E.g. height and width of a leaf, dimensions of the written space the text block (by measuring the frame ruling); dimensions usually given in millimetres.</skos:definition>
+      <skos:definition xml:lang="de">z.B. Höhe und Breite eines Blattes, Ausmaße des beschriebenen Raumes auf dem Blatt (durch Messen der Rahmenlinierung); gewöhnlich in Millimeter angegeben.</skos:definition>
+    </skos:note>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0043"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0044"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0045"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0046"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0047"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0048"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0049"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0050"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0003">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Pricking</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Einstechen</skos:prefLabel>
+    <skos:notation>0003</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">The marking of a folio or bifolium by a point or knife to guide ruling.</skos:definition>
+      <skos:definition xml:lang="de">Markierung eines Blattes oder einer Lage mittels kleiner Einstiche als Orientierung für das Liniennetz und den Linierungsrahmen.</skos:definition>
+    </skos:note>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0051"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0052"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0053"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0004">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Ruling</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Linierung</skos:prefLabel>
+    <skos:notation>0004</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">The process by which a frame and/or horizontal lines are produced (via drawing, scratching or folding) to guide the hand in writing.</skos:definition>
+      <skos:definition xml:lang="de">Prozess der Linierung, Anlegen des Hilfsliniennetzes (Rahmen oder horizontale Schreiblinien) durch Vorzeichnung, Vorritzung oder Knicken/Falten der Seite.</skos:definition>
+    </skos:note>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0054"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0055"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0056"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0057"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0058"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0059"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0060"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0061"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0062"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0063"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0064"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0065"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0066"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0067"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0068"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0069"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0070"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0071"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0005">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Mise en page / Page design / Layout</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Seitengestaltung, Seiteneinrichtung, Seitenlayout</skos:prefLabel>
+    <skos:notation>0005</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Refers to the layout of a page which means the general arrangement of the various elements on a page.</skos:definition>
+      <skos:definition xml:lang="de">Bezieht sich auf die Seitengestaltung, die allgemeine Einteilung und Aufteilung der unterschiedlichen Elemente auf der Seite.</skos:definition>
+    </skos:note>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0075"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0076"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0100"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0072"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0073"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0074"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0077"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0078"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0079"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0080"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0081"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0082"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0083"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0084"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0085"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0086"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0087"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0088"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0089"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0090"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0091"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0092"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0093"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0094"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0095"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0096"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0097"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0098"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0099"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0101"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0102"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0103"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0104"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0105"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0106"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0107"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0108"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0109"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0110"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0111"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0112"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0113"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0114"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0115"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0116"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0075">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Margin</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Randbereich</skos:prefLabel>
+    <skos:notation>0075</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Space outside the writing frame.</skos:definition>
+      <skos:definition xml:lang="de">Raum außerhalb des Beschriftungsrahmens.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0009">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Illumination</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Buchmalerei, Ausstattung</skos:prefLabel>
+    <skos:notation>0009</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">The embellishment of a manuscript with luminous colours (especially gold and silver), i.e. the total of decorative elements and pictorial representations.</skos:definition>
+      <skos:definition xml:lang="de">Verschönerung der Handschrift mit leuchtenden Farben (v.a. Gold und Silber); die Gesamtheit der dekorativen Elemente und bildlichen Darstellungen.</skos:definition>
+    </skos:note>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0152"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0153"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0154"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0155"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0156"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0157"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0158"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0159"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0160"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0161"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0162"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0163"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0164"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0165"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0166"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0167"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0168"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0169"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0170"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0171"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0027">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Page</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Seite</skos:prefLabel>
+    <skos:notation>0027</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Each face of a folio.</skos:definition>
+      <skos:definition xml:lang="de">Jede Seitenfläche eines Blattes.</skos:definition>
+    </skos:note>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0076">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Inner margin / Gutter</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Bundsteg</skos:prefLabel>
+    <skos:notation>0076</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Inner marginal area of the page.</skos:definition>
+      <skos:definition xml:lang="de">Innerer Rand der Seite (zum Bund hin).</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0100">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Initial</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Initiale</skos:prefLabel>
+    <skos:notation>0100</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Enlarged and decorated letter, introducing an important section of a text (work, chapter), emphasised by size, colour form, and decoration. Initials can have different levels of significance (primary, secondary, tertiary).</skos:definition>
+      <skos:definition xml:lang="de">Schmückender Buchstabe am Textanfang, hervorgehoben durch Größe, Farbe, Form und Verzierung, leitet einen hervorzuhebenden Abschnitt eines Textes (Werk, Kapitel) ein. Initialen haben verschiedene hierarchische Bedeutungsebenen (primär, sekundär, tertiär).</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/511.01"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0006">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Marginalia</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Marginalie, Randnotiz</skos:prefLabel>
+    <skos:notation>0006</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Refers to writing or decoration in the margins of a manuscript, including glosses, reference signs, annotations, and diagrams.</skos:definition>
+      <skos:definition xml:lang="de">Beschriftung oder Dekor an den Seitenrändern der Handschrift, beinhaltet Glossen, Verweiszeichen, Anmerkungen und graphische Darstellungen.</skos:definition>
+    </skos:note>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0117"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0118"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0119"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0120"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0121"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0122"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0123"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0124"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0125"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0126"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0127"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0128"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0129"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0130"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0131"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0008">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Script / Lettering</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Schrift, Schriftart</skos:prefLabel>
+    <skos:notation>0008</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">The handwriting used in Medieval manuscripts which was subject to more rigid rules and hierarchies than modern personal handwriting (less features of an individual handwriting).</skos:definition>
+      <skos:definition xml:lang="de">Handschrift eines Schreibers in mittelalterlichen Handschriften, deren Ausführung strikteren Regeln und Hierarchien unterlag als moderne Handschriften (besitzt weniger Merkmale einer individuellen Handschrift).</skos:definition>
+    </skos:note>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0146"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0147"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0148"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0149"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0150"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0007">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Initial</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Initiale</skos:prefLabel>
+    <skos:notation>0007</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Enlarged and decorated letter, introducing an important section of a text (work, chapter), emphasised by size, colour form, and decoration. Initials can have different levels of significance (primary, secondary, tertiary).</skos:definition>
+      <skos:definition xml:lang="de">Schmückender Buchstabe am Textanfang, hervorgehoben durch Größe, Farbe, Form und Verzierung, leitet einen hervorzuhebenden Abschnitt eines Textes (Werk, Kapitel) ein. Initialen haben verschiedene hierarchische Bedeutungsebenen (primär, sekundär, tertiär).</skos:definition>
+    </skos:note>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0132"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0133"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0134"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0135"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0136"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0137"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0138"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0139"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0140"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0141"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0142"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0143"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0144"/>
+    <skos:narrower rdf:resource="http://www.ecodicology.org/0145"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0010">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Codex</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Kodex</skos:prefLabel>
+    <skos:notation>0010</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">A book composed of folded sheets sewn along one edge. Includes everything within the binding/cover.</skos:definition>
+      <skos:definition xml:lang="de">Ein Buch, das aus gefalteten Bögen besteht, die in der Mitte zusammengenäht sind. Beinhaltet ist alles innerhalb der Bindung.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0001"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0011">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Collected manuscript, composite manuscript</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Sammelhandschrift</skos:prefLabel>
+    <skos:notation>0011</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Codex with more than one text, e.g. different authors or genres. May be conceptional but mostly random for aims of conservation.</skos:definition>
+      <skos:definition xml:lang="de">Heterogene Handschriften, in denen Texte unterschiedlicher Autoren oder Textsorten zu einem Kodex zusammengeführt sind. Sowohl konzeptionell als Sammlung oder wahllos aus Konservierungszwecken.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0001"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0012">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Volume</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Band</skos:prefLabel>
+    <skos:notation>0012</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Unit, consisting of a set of sheets bound together; part of a homogeneous text.</skos:definition>
+      <skos:definition xml:lang="de">Einheit, aus einer Reihe von zusammengebundenen Bögen bestehend; Teil eines homogenen Textes.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0001"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0013">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Book block</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Buchblock</skos:prefLabel>
+    <skos:notation>0013</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Bound folios without cover, assembled in sequence (part between the boards), consists of several quires.</skos:definition>
+      <skos:definition xml:lang="de">Alle Blätter eines Buches mit Ausnahme des Einbandes (Teil zwischen den Buchdeckeln); besteht aus mehreren Lagen.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0001"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0014">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Sheet</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Bogen</skos:prefLabel>
+    <skos:notation>0014</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Whole piece of parchment or paper, not folded.</skos:definition>
+      <skos:definition xml:lang="de">Ein ganzes ungefaltetes Stück Pergament oder Papier.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0001"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0015">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Quire / Gathering</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Lage</skos:prefLabel>
+    <skos:notation>0015</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">A number of bifolia folded together; a set of bifolia nested one on top of the other. Quires are the 'gatherings' or 'booklets' of which a book is formed.</skos:definition>
+      <skos:definition xml:lang="de">Besteht aus mehreren ineinandergelegten Doppelblättern. Hieraus ergeben sich Einzelheftchen, aus denen sich ein Buch zusammensetzt.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0001"/>
+    <skos:related rdf:resource="http://www.ecodicology.org/0016"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0016">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Bifolium</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Bifolium, Doppelblatt</skos:prefLabel>
+    <skos:notation>0016</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Rectangular piece of parchment folded in the middle/in half to produce two leaves (i.e., four pages). A number of bifolia folded together form a quire.</skos:definition>
+      <skos:definition xml:lang="de">Rechteckiges Stück Pergament, in der Mitte zur Hälfte gefaltet, um zwei Blätter (i.e. 4 Seiten) zu erhalten. Eine Gruppe gefalteter Bifolia ergibt eine Lage.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0001"/>
+    <skos:related rdf:resource="http://www.ecodicology.org/0015"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0017">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Endpaper / Front end paper (FEP)</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Vorsatzpapierbogen</skos:prefLabel>
+    <skos:notation>0017</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Leaves of paper inserted before the title page and after the text. Doublepage consisting of Pastedown and Flyleaf.</skos:definition>
+      <skos:definition xml:lang="de">Zwei oder mehr Blätter, die am Anfang oder Ende des Buches eingefügt sind und Buchblock und Einband verbinden.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0001"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0018">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Front (Head)</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Titelei</skos:prefLabel>
+    <skos:notation>0018</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">The top of a book / codex / manuscript, may include the first pages found at the start before the main body of the text, including front end papers.</skos:definition>
+      <skos:definition xml:lang="de">Umfasst alle Seiten des Buchblocks / der Handschrift vom Vorsatzpapier bis zum eigentlichen Beginn des Haupttextes.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0001"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0019">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Back (Tail)</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Hinterer Teil, (Anhang)</skos:prefLabel>
+    <skos:notation>0019</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Last pages of a manuscript / volume / codex. Contained are any appendixes following the main part of the text, including end papers.</skos:definition>
+      <skos:definition xml:lang="de">Das hindere Ende / die letzten Seiten einer Handschrift / eines Bandes, anschließend an den Haupttext auch: Anhang.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0001"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0020">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Insertion</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Einfügung</skos:prefLabel>
+    <skos:notation>0020</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Additional element added to a quire.</skos:definition>
+      <skos:definition xml:lang="de">Zusätzliches Element, Zusatz zur Lage.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0001"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0021">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Fragment / Detached piece, Cut-out leaf</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Fragment, Blattverlust</skos:prefLabel>
+    <skos:notation>0021</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Leafs / pieces of parchment remaining of a text which has been cut out, which is intentionally separated from the codex or accidentially lost.</skos:definition>
+      <skos:definition xml:lang="de">Pergamentteile oder -blätter als Überreste eines verlorenen Textes, die absichtlich oder unabsichtlich aus dem Kodex herausgetrennt wurden.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0001"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0022">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Leaf / Folio</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Blatt</skos:prefLabel>
+    <skos:notation>0022</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">One leaf, half / quarter / eigth of a sheet; one half of a bifolium. The front and back of a folio are referred to as the recto and verso.</skos:definition>
+      <skos:definition xml:lang="de">Eine Hälfte / ein Viertel / ein Achtel eines Bogens bzw. ein halbes Bifolium. Die Vorder- und Rückseite eines Blattes werden mit recto und verso bezeichnet.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0001"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0023">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Opening</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Doppelseite, Doppelseitenansicht</skos:prefLabel>
+    <skos:notation>0023</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Ensemble / together of two facing pages when the codex is opened.</skos:definition>
+      <skos:definition xml:lang="de">Ansicht zweier gegenüberliegender Seiten beim Öffnen des Buches.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0001"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0024">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Flyleaf</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Leerblatt, Vorsatzblatt bzw. Nachstoßblatt</skos:prefLabel>
+    <skos:notation>0024</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Protective leaf inserted between pastedown and first page, at the beginning or end of the book.</skos:definition>
+      <skos:definition xml:lang="de">Schutzblatt, das zwischen Einbandspiegel und erster bzw. letzter Buchseite eingefügt wurde.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0001"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0025">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Thrown-out leaf / Fold</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Faltblatt</skos:prefLabel>
+    <skos:notation>0025</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Leaf with larger dimensions that has been folded lengthwise and crosswise to fit in the codex.</skos:definition>
+      <skos:definition xml:lang="de">Blatt größerer Höhe und Breite, das an der Längs- und Breitseite gefaltet wurde, um in den Kodex zu passen (dépliant).</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0001"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0026">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Guard-leaf / Protective leaf</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Vorblatt</skos:prefLabel>
+    <skos:notation>0026</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Leaf / leaves before title page.</skos:definition>
+      <skos:definition xml:lang="de">Ein der Titelseite vorgeschaltetes Blatt bzw. der Titelseite vorgeschaltete Blätter.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0001"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0028">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Recto</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">recto, Vorderseite (Blatt)</skos:prefLabel>
+    <skos:notation>0028</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">The front side of the leaf; one that appears first in the sense of reading the text.</skos:definition>
+      <skos:definition xml:lang="de">Vordere Fläche bzw. Vorderseite eines Blattes, die sich beim aufgeschlagenen Buch auf der rechten Seite befindet.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0001"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0029">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Verso</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">verso, Rückseite (Blatt)</skos:prefLabel>
+    <skos:notation>0029</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">The back side of the leaf.</skos:definition>
+      <skos:definition xml:lang="de">Hintere Fläche bzw. Rückseite eines Blattes, die sich im aufgeschlagenen Buch auf der linken Seite befindet.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0001"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0030">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Facing page</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Gegenüberliegende Seite</skos:prefLabel>
+    <skos:notation>0030</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">A page which forms a double page with a given page; one half of a double page ( > opposite page).</skos:definition>
+      <skos:definition xml:lang="de">Seite, die mit der jeweils gegenüberliegenden Seite eine Doppelseite bildet.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0001"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0031">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Singleton, Half sheet</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Einzelblatt</skos:prefLabel>
+    <skos:notation>0031</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">A single folio that has lost its facing mate (the other half of the bifolium) or that originally was designed to be sewn into a book as a single page.</skos:definition>
+      <skos:definition xml:lang="de">Seite ohne gegenüberliegende Seite. Hälfte eines Bifoliums, eventuell nachträglich eingefügt.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0001"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0032">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Pastedown</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Einbandspiegel</skos:prefLabel>
+    <skos:notation>0032</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">A leaf pasted onto the inside of a board, that means the inner surface of the book cover.</skos:definition>
+      <skos:definition xml:lang="de">Ein Blatt, das auf der Innenseite des Buchdeckels festgeklebt wurde.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0001"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0033">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Book mark</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Blattweiser</skos:prefLabel>
+    <skos:notation>0033</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Strip of parchment or thin object, attached to the fore edge of the book at appropriate points in order to mark key openings.</skos:definition>
+      <skos:definition xml:lang="de">Pergament- oder Papierstreifen, am Oberschnitt festgemacht; ermöglicht einen Schnellzugriff auf bestimmte Seiten.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0001"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0034">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Seal</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Siegel</skos:prefLabel>
+    <skos:notation>0034</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Small mass of wax or metal which has been printed on a document to signify authentication or consent.</skos:definition>
+      <skos:definition xml:lang="de">Kleine Wachs- oder Metallmenge, in flüssigem Zustand auf Papier gedruckt, kennzeichnet dessen Beglaubigung oder Bewilligung.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0001"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0035">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Stamping / Impression</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Stempel</skos:prefLabel>
+    <skos:notation>0035</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Inscription or symbol to be inked and placed on volumes to mark their affiliation.</skos:definition>
+      <skos:definition xml:lang="de">Inschrift oder Symbol, mit Tinte oder Farbe auf das Papier gedruckt (Abdruck), kennzeichnet die Zugehörigkeit.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0001"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0036">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Watermark</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Wasserzeichen</skos:prefLabel>
+    <skos:notation>0036</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Distinguishing mark or design on paper, visible only when held up to the light; drawing whose footprint is left in the paper sheet by a wire forming a figure.</skos:definition>
+      <skos:definition xml:lang="de">Charakteristisches Zeichen bzw. Symbol auf dem Papier, nur sichtbar, wenn gegen das Licht gehalten; mit einem gebogenen Draht aufgebracht.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0001"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0037">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Reinforcing strip</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Bindungsverstärkung</skos:prefLabel>
+    <skos:notation>0037</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Strip of parchment folded in half along its length and placed on the fold, on the outside or the center of the book.</skos:definition>
+      <skos:definition xml:lang="de">Pergamentstreifen, zur Hälfte längs gefaltet, am Falz, an der Außenseite oder innerhalb des Buches befestigt. Oft ein Fragment.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0001"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0038">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Foliation</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Blattzählung</skos:prefLabel>
+    <skos:notation>0038</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Numbering of folios.</skos:definition>
+      <skos:definition xml:lang="de">Nummerierung der Blätter.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0001"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0039">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Pagination</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Seitenzählung, Paginierung</skos:prefLabel>
+    <skos:notation>0039</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Numbering of pages.</skos:definition>
+      <skos:definition xml:lang="de">Nummerierung der Seiten.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0001"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0040">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Spine</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Buchrücken</skos:prefLabel>
+    <skos:notation>0040</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">The edge at which a book is sewn together; length of the volume saddle, corresponding to the cover of the book.</skos:definition>
+      <skos:definition xml:lang="de">Die Seite, an der das Buch gebunden wurde; Länge des Buchrückens, gemessen am Bucheinband.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0001"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0041">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Fore edge</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Buchschnitt, Vorderschnitt</skos:prefLabel>
+    <skos:notation>0041</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">The edge of a book opposite the spine, sometimes decorated.</skos:definition>
+      <skos:definition xml:lang="de">Vorderkante des Buches, liegt dem Buchrücken gegenüber; z. T. dekoriert.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0001"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0042">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Folding / Format</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Faltung</skos:prefLabel>
+    <skos:notation>0042</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Indication of size by number of times the sheet has been folded (2, 4, 8 times).</skos:definition>
+      <skos:definition xml:lang="de">Größenangabe, definiert anhand der Anzahl der Bogenfaltungen (2-, 4-, 8fach).</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0001"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0043">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Format</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Buchformat</skos:prefLabel>
+    <skos:notation>0043</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Book size in width and height, usually given in millimetres.</skos:definition>
+      <skos:definition xml:lang="de">Größenangabe für ein Buch in Breite und Höhe, gewöhnlich in Millimetern angegeben.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0002"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0044">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Folio-sized</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Folioformat</skos:prefLabel>
+    <skos:notation>0044</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Term designating a folding method for the leaves.</skos:definition>
+      <skos:definition xml:lang="de">Angabe der Faltungsmethode für die Blätter.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0002"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0045">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Oblong</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Querformat</skos:prefLabel>
+    <skos:notation>0045</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Format more width than height.</skos:definition>
+      <skos:definition xml:lang="de">Format, bei dem die Breite größer als die Höhe ist.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0002"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0046">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Height / Width of page</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Seitengröße</skos:prefLabel>
+    <skos:notation>0046</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Vertical / Horizontal dimension of the whole codex page.</skos:definition>
+      <skos:definition xml:lang="de">Vertikale / Horizontale Außmaße der Kodexseite.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0002"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0047">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Height / Width of Justification</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Schriftraumgröße</skos:prefLabel>
+    <skos:notation>0047</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">The surface dimensions of the written area.</skos:definition>
+      <skos:definition xml:lang="de">Maße des beschrifteten Raumes.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0002"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0048">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Height / Width of pictoral space</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Bildraumgröße</skos:prefLabel>
+    <skos:notation>0048</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">The surface dimensions of the illustrated area.</skos:definition>
+      <skos:definition xml:lang="de">Maße des bebilderten Raumes.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0002"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0049">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Interlinear space</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Zeilenabstand</skos:prefLabel>
+    <skos:notation>0049</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Space between written lines.</skos:definition>
+      <skos:definition xml:lang="de">Raum zwischen den Zeilen.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0002"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0050">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Intercolumn</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Spaltenabstand</skos:prefLabel>
+    <skos:notation>0050</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Space between two adjacent columns.</skos:definition>
+      <skos:definition xml:lang="de">Raum zwischen zwei angrenzenden Spalten.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0002"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0051">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Prick, Prick hole</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Einstich</skos:prefLabel>
+    <skos:notation>0051</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Little insertion into the leaf for the alignment of the ruling frame.</skos:definition>
+      <skos:definition xml:lang="de">Kleiner Einstich in das Blatt für die Ausrichtung des Linierungsnetzes.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0003"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0052">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Ruling prick</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Einstich für Linierung</skos:prefLabel>
+    <skos:notation>0052</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Single prick on the far right of the page which determines the distances of the later writing lines.</skos:definition>
+      <skos:definition xml:lang="de">Einstichlich an der rechten Seite des Blattes als Markierung für die Ausrichtung der späteren Schreiblinien.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0003"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0053">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Set of pricks</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Einstichreihe</skos:prefLabel>
+    <skos:notation>0053</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Pricks / holes with the same alignment.</skos:definition>
+      <skos:definition xml:lang="de">Gruppe von Einstichen mit der selben Funktion.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0003"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0054">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Ruling pattern (see also “Ruling system”)</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Zeilengerüst, Linierungsraster/-muster</skos:prefLabel>
+    <skos:notation>0054</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Certain symmetrical pattern formed by the lines that make up for ruling (on only one page or across all pages/a several pages of a book).</skos:definition>
+      <skos:definition xml:lang="de">Bestimmtes symmetrisches Muster der Linierungslinien (auf einer Seite, mehreren Seiten/über alle Seiten hinweg) = Resultat der Linierung.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0004"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0055">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Limit lines, Justification</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Schriftspiegel</skos:prefLabel>
+    <skos:notation>0055</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Circumscription with limiting lines to delimit the text block.</skos:definition>
+      <skos:definition xml:lang="de">Zur Beschriftung vorgesehene Fläche(n) einer Seite, inklusive ‘lebender Kolumnentitel’.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0004"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0056">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Writing frame</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Beschriftungsrahmen</skos:prefLabel>
+    <skos:notation>0056</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Four lines limiting the justification on every page; can be divided into columns.</skos:definition>
+      <skos:definition xml:lang="de">Vier Linien, die den Schriftspiegel begrenzen (ausgenommen Kolumnentitel); kann in Spalten aufgeteilt sein.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0004"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0057">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Frame line</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Rahmenlinie</skos:prefLabel>
+    <skos:notation>0057</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Term for single lines of the writing frame: top line – bottom line – margin rule.</skos:definition>
+      <skos:definition xml:lang="de">Bezeichnung für die einzelne Linie der Umrahmung: obere Begrenzungslinie, untere Begrenzungslinie, seitliche Begrenzungslinie.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0004"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0058">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Framing</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Gitternetz</skos:prefLabel>
+    <skos:notation>0058</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Ensemble of frame lines, surrounding the justification on three or four sides.</skos:definition>
+      <skos:definition xml:lang="de">Gesamtheit der Rahmenlinien, die die Beschriftungsfläche an drei oder vier Seiten begrenzen.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0004"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0059">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Intercolumn</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Begrenzung des Spaltenabstands</skos:prefLabel>
+    <skos:notation>0059</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Two or more vertical lines to define the space which separates two columns.</skos:definition>
+      <skos:definition xml:lang="de">Zwei oder mehr vertikale Linien, die den freien Raum zwischen zwei Spalten definieren.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0004"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0060">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Decentralized intercolumn</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Ungleichmäßige Spaltenbreite</skos:prefLabel>
+    <skos:notation>0060</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">The distance between the columns is defined irregularly with respect to the central axis of the justification. The width of the text columns varies in consequence of the fitting to the predefined writing space.</skos:definition>
+      <skos:definition xml:lang="de">Der Spaltenzwischen- raum ist asymmetrisch zur vertikalen Mittel- achse des Schriftraums angelegt. Die Breite der Textspalten variiert aufgrund der Anpassung in den vorgegebenen Schriftraum.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0004"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0061">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Varying intercolumn</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Variabler Spaltenabstand</skos:prefLabel>
+    <skos:notation>0061</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Varying distance of intercolumnial lines on every page; the width of intercolumnial space varies from page to page.</skos:definition>
+      <skos:definition xml:lang="de">Die Breite des Spaltenzwischenraumes variiert von Seite zu Seite, definiert durch die unregelmäßigen Abstand der Begrenzungslinien zueinander.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0004"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0062">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Occasional intercolumn</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Unvollständige Spaltenzwischenraum- linierung</skos:prefLabel>
+    <skos:notation>0062</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Intercolumnial lines do not occupy the whole page height.</skos:definition>
+      <skos:definition xml:lang="de">Die Trennlinien zwischen den Spalten, die den Zwischenraum definieren, nehmen nicht die gesamte Höhe der Textspalte ein.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0004"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0063">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Double / Triple ruling</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Doppellinierung, Dreifachlinierung</skos:prefLabel>
+    <skos:notation>0063</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Two or more parallel lines separated to a minor distance of each other with the same function.</skos:definition>
+      <skos:definition xml:lang="de">Zwei oder mehr parallele, eng zusammenliegende Linien mit gleicher Funktion.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0004"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0064">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Line ruling</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Zeilenlinierung</skos:prefLabel>
+    <skos:notation>0064</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Horizontal aid lines within the writing space.</skos:definition>
+      <skos:definition xml:lang="de">Linierung mit horizontalen Schreiblinien innerhalb des beschrifteten Raumes.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0004"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0065">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Frame ruling</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Rahmenlinierung</skos:prefLabel>
+    <skos:notation>0065</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Ruling that provides a frame to contain the text block/ justification.</skos:definition>
+      <skos:definition xml:lang="de">Linierung, die einen Rahmen definiert, der den Textraum umreißt.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0004"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0066">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Writing base-line</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Grundlinie</skos:prefLabel>
+    <skos:notation>0066</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Imaginary line joining the bottom of the letters in one line.</skos:definition>
+      <skos:definition xml:lang="de">Gedachte Linie, auf der die Buchstaben einer Zeile sitzen.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0004"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0067">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Line for writing / Writing line</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Schreiblinie / Hilfslinie</skos:prefLabel>
+    <skos:notation>0067</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Guide line for instance for handwriting / each of the horizontal lines that use to guide the writing process.</skos:definition>
+      <skos:definition xml:lang="de">Gerade Linie, z.B. für die Schriftführung beim Schreiben / jede einzelne Schreiblinie, die den Schreibprozess unterstützt.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0004"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0068">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Through line</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Verlängerte Schreiblinie</skos:prefLabel>
+    <skos:notation>0068</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Prolonged line for writing; in most cases on top and bottom of the text block, sometimes in the middle.</skos:definition>
+      <skos:definition xml:lang="de">Schreiblinie, die bis zum Rand oder Einstich verlängert wurde. Meist oben und unten, manchmal auch in der Mitte des Schriftblocks.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0004"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0069">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Unit of ruling / Module</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Linierungsabstand</skos:prefLabel>
+    <skos:notation>0069</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Space between two lines for writing.</skos:definition>
+      <skos:definition xml:lang="de">Abstand zwischen zwei Schreiblinien.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0004"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0070">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Partial line-ruling</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Partielle Zeilenlinierung</skos:prefLabel>
+    <skos:notation>0070</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Only one writing line is placed for several written lines.</skos:definition>
+      <skos:definition xml:lang="de">Nicht jede Reihe Schrift ist mit einer Hilfslinie versehen.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0004"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0071">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Independant ruling</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Marginallinierung</skos:prefLabel>
+    <skos:notation>0071</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Lineation drawn in the margin for a gloss. Its spacing is unrelated to the lineation of the body of the page.</skos:definition>
+      <skos:definition xml:lang="de">Liniensystem am Rand der Kodexseite für Marginalglossen, ohne Bezug zur Linierung des Hauptteils der Seite.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0004"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0072">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Justification</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Seitenspiegel</skos:prefLabel>
+    <skos:notation>0072</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">1. length of the writing lines on a page or in a column; 2. Height and width of written space; 3. virtual or actual rectangular “grid”, defining the writing surface.</skos:definition>
+      <skos:definition xml:lang="de">1. Länge der Schreiblinien; 2. Höhe und Breite des Schreibraumes; 3. gedachtes oder tatsächliches Netz oder Raster, das die Schreibfläche definiert.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0073">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Full page</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Ganze Seite, ganzseitig</skos:prefLabel>
+    <skos:notation>0073</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Image (or text) occupying the entire surface of the page or justification.</skos:definition>
+      <skos:definition xml:lang="de">Bebilderung (oder Text) nehmen die gesamte Seitenfläche/den gesamten Schriftraum ein.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0074">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Half occupied</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Halbe Seite, halbseitig</skos:prefLabel>
+    <skos:notation>0074</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Image or text occupying only half the page or justification.</skos:definition>
+      <skos:definition xml:lang="de">Der Seitenraum wird nur zur Hälfte für Bebilderung und Beschriftung genutzt.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0077">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Outer margin</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Außensteg</skos:prefLabel>
+    <skos:notation>0077</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">External marginal area of the page.</skos:definition>
+      <skos:definition xml:lang="de">Äußere Blattkante.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0078">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Top margin / Upper margin</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Kopfsteg</skos:prefLabel>
+    <skos:notation>0078</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Marginal area at the head of the page.</skos:definition>
+      <skos:definition xml:lang="de">Oberer Seitenrand.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0079">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Bottom margin / Lower margin</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Fußsteg, Schwanzsteg</skos:prefLabel>
+    <skos:notation>0079</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Lower marginal area at the foot of the page.</skos:definition>
+      <skos:definition xml:lang="de">Unterer Seitenrand.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0080">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Body of page / Text block / Writing area</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Schriftraum, Textblock</skos:prefLabel>
+    <skos:notation>0080</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Everything within the writing space; has to be distinguished from marginal elements.</skos:definition>
+      <skos:definition xml:lang="de">Gesamte Fläche innerhalb des Beschriftungsraumes; muss von Randelementen unterschieden werden.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0081">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Column</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Kolumne, Schriftspalte</skos:prefLabel>
+    <skos:notation>0081</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">One, two or more vertical text blocks positioned within the justification, separated by the intercolumn lines.</skos:definition>
+      <skos:definition xml:lang="de">Ein, zwei oder mehr vertikale Textblöcke innerhalb des Beschriftungsraumes, gekennzeichnet durch Spaltentrennlinien.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0082">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Long line</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Verlängerte Schreib-/Hilfslinie</skos:prefLabel>
+    <skos:notation>0082</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Writing line extending from one margin to the other side.</skos:definition>
+      <skos:definition xml:lang="de">Durchgehende Schreiblinie von einem Rand zum anderen (über den Textblock hinaus).</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0083">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Interlinear space</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Zeilenabstand</skos:prefLabel>
+    <skos:notation>0083</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Space between written lines.</skos:definition>
+      <skos:definition xml:lang="de">Raum zwischen den Schriftzeilen</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0084">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Intercolumn</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Interkolumnium, Spaltenabstand</skos:prefLabel>
+    <skos:notation>0084</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Space between two adjacent columns.</skos:definition>
+      <skos:definition xml:lang="de">Abstand zwischen den Textspalten.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0085">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Paragraph</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Absatz</skos:prefLabel>
+    <skos:notation>0085</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Passage of text between two “breaks”, or between two signs or indications marking a subdivision of the text.</skos:definition>
+      <skos:definition xml:lang="de">Textpassage zwischen zwei Umbrüchen oder zwischen Zeichen, die eine Unterteilung des Textes markieren.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0086">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Projecting return</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Vorspringende  Zeile</skos:prefLabel>
+    <skos:notation>0086</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Rebound of line starting outside the justification.</skos:definition>
+      <skos:definition xml:lang="de">Zeilenbeginn im Bundsteg außerhalb des eigentlichen Textblocks.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0087">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Indented return (see also “Indentation” = series of intended returns)</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Eingerückte Zeile</skos:prefLabel>
+    <skos:notation>0087</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">New line begins with an indentation.</skos:definition>
+      <skos:definition xml:lang="de">Zeilenbeginn innerhalb des eigentlichen Textblocks.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0088">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Line return, Line filler</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Leeres Zeilenende, Zeilenfüllung</skos:prefLabel>
+    <skos:notation>0088</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Line return: rest of the writing line is left blank. 
+Line filler: Often this free space is decorated with ornaments or figures to keep the justification.</skos:definition>
+      <skos:definition xml:lang="de">Leeres Zeilenende: die Schriftzeile hört vor dem Ende der Zeilenraumes auf. 
+Zeilenfüllung: Ornamentale oder figürliche Ausfüllung leerer Zeilen oder Zeilenenden, um den Blocksatz zu wahren.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0089">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Unjustified</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Offener Zeilenfall</skos:prefLabel>
+    <skos:notation>0089</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Series of writing lines which are left-adjusted but with irregular ends.</skos:definition>
+      <skos:definition xml:lang="de">“Flattersatz”, ungleichmäßige Länge der Zeilen.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0090">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Set out</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Ausgerücktes Element</skos:prefLabel>
+    <skos:notation>0090</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Small initials, signs or words set outside the justification of the text block.</skos:definition>
+      <skos:definition xml:lang="de">Kleine Initialen, Symbole oder Wörter außerhalb des Schriftspiegels.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0091">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Over-run</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Überlappung, Überlauf</skos:prefLabel>
+    <skos:notation>0091</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Word or part of word which does not fit into the ruling pattern.</skos:definition>
+      <skos:definition xml:lang="de">“Schwänzchen” einer vorhergehenden Zeile, das außerhalb des Liniennetzmusters hinzugefügt wird. Oft farbig abgesetzt.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0092">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Per cola et commata</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Per cola et commata</skos:prefLabel>
+    <skos:notation>0092</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">The practice of dividing text lines by clause and phrase units.</skos:definition>
+      <skos:definition xml:lang="de">Die einzelnen Textzeilen werden nach Teilsatz- und Satzeinheiten getrennt.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0093">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Stichometry</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Kolometrie, Stichometrie</skos:prefLabel>
+    <skos:notation>0093</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Positioning of writing lines to highlight the metric structure of a text in verse, for example to indicate the beginning of a stanza.</skos:definition>
+      <skos:definition xml:lang="de">Einrückungsmethode bei lyrischen Texten, wobei die metrische Struktur des Textes hervorgehoben wird.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0094">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Wavy / wobbly</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Unregelmäßige Schreiblinien</skos:prefLabel>
+    <skos:notation>0094</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Non-regular writing lines, not rectangular or not parallel.</skos:definition>
+      <skos:definition xml:lang="de">Unregelmäßig (wellig, wackelig) ausgeführte Schreiblinien.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0095">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Rubric</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Rubrizierung</skos:prefLabel>
+    <skos:notation>0095</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">All red-coloured titles, chapter headings, paragraph signs and passages, as well as strokes, underlinings and dots of capitals which help to identify the text components.</skos:definition>
+      <skos:definition xml:lang="de">Alle Überschriften, Initialen, Paragraphenzeichen und Absätze sowie Strichelungen, Unterstreichungen und Punkte von Großbuchstaben in roter Farbe; dienen der Textgliederung.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0096">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Final rubric</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Finale Rubrizierung</skos:prefLabel>
+    <skos:notation>0096</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Adding of additional text in red ink in a separate working step.</skos:definition>
+      <skos:definition xml:lang="de">Ausführung von Partien mit roter Tinte in einem separaten Arbeitsgang.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0097">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">(Page) heading / Caption</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">(Seiten-)überschrift, Kopf / Kopfzeile</skos:prefLabel>
+    <skos:notation>0097</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Highlighted title or head of a text (by colour, by writing style) on the page.</skos:definition>
+      <skos:definition xml:lang="de">Durch Farbe und Schriftart hervorgehobener Titel oder Kopfzeile auf der Seite.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0098">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Column heading</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Kolumnenüberschrift</skos:prefLabel>
+    <skos:notation>0098</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Heading or title within a text column.</skos:definition>
+      <skos:definition xml:lang="de">Überschrift oder Titel innerhalb einer Textspalte.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0099">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Headpiece</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">“Kopfleiste”</skos:prefLabel>
+    <skos:notation>0099</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">A panel of ornament, sometimes incorporating a rubric or heading, that stands at the top of a page.
+</skos:definition>
+      <skos:definition xml:lang="de">Dekoratives Element (z.T. mit Rubrizierung oder Titel), im oberen Bereich der Seite positioniert.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0101">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Secondary initial / Subsidiary initial / Minor initial</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">sekundäre Initiale, hervorgehobener Anfangsbuchstabe, Halbinitiale</skos:prefLabel>
+    <skos:notation>0101</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Paragraph initial: initial at the beginning of a phrase or line, often indented and coloured in red or blue.
+Sentence initial: little majuscle at the beginning of a sentence or within the continous text, often stroked.</skos:definition>
+      <skos:definition xml:lang="de">Initialmajuskel: hervorgehobener Anfangsbuchstabe am Zeilen- oder Satzanfang, häufig  eingerückt, vergrößert oder farblich abgesetzt in rot oder blau.
+Satzmajuskel: kleine Majuskel am Satzanfang oder im Fließtext, häufig gestrichelt.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0102">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Versal</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Versal, Versalbuchstabe</skos:prefLabel>
+    <skos:notation>0102</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Coloured initial letter, which is set out of the justification on the left side.</skos:definition>
+      <skos:definition xml:lang="de">Links ausgerückter, meist einzeiliger, farblich abgehobener Anfangsbuchstabe.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0103">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Lombard</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Lombarde</skos:prefLabel>
+    <skos:notation>0103</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Simple bulbous initial type, often monochrome or alternately blue and red, sometimes with dot-shaped bulges at the ends.</skos:definition>
+      <skos:definition xml:lang="de">Einfacher, bauchig gerundeter Initialtyp, zumeist einfarbig oder abwechselnd blau und rot, teilweise Punktverdickung an den Endstellen.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0104">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">(Elaborate) initial page</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Initialzierseite, Initialseite</skos:prefLabel>
+    <skos:notation>0104</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Beginning of a text which is marked by an initial or a ligature of several initials. These can occupy a whole page.</skos:definition>
+      <skos:definition xml:lang="de">Ausgestaltung eines Textanfangs durch eine ganzseitige Initiale oder eine Ligatur aus mehreren Initialen, die eine ganze Seite einnehmen können.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0105">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Reserved space/ Void space</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Leerraum, ausgesparter Raum</skos:prefLabel>
+    <skos:notation>0105</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Reserved space for additions, e.g. illuminations/initials.</skos:definition>
+      <skos:definition xml:lang="de">Freigelassene Stellen innerhalb des Textkörpers für spätere Nachtragungen.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0106">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Field</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Fläche</skos:prefLabel>
+    <skos:notation>0106</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Defined or non-defined / limited or non-limited surface which the artist needs to execute his work.</skos:definition>
+      <skos:definition xml:lang="de">Definierter oder undefinierter Raum auf der Seite für die Ausführung der Beschriftung/Bemalung.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0107">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Frame (see also “Framework”)</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Rahmen, Rahmung</skos:prefLabel>
+    <skos:notation>0107</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Group of frames or nets which limit the scope of a painting.</skos:definition>
+      <skos:definition xml:lang="de">Eine Gruppe von Rahmen um eine Miniatur herum oder Begrenzung der Miniaturen eines Bildzyklus.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0108">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Guide letter</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Platzhalter</skos:prefLabel>
+    <skos:notation>0108</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Small letter as placeholder for initials, written to tell the scribe/illuminator which initial to supply.</skos:definition>
+      <skos:definition xml:lang="de">Kleiner Buchstabe als Platzhalter für eine spätere Initiale.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0109">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Running title / head</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">lebendige Kolumne, Kolumnentitel Kopftitelzeile</skos:prefLabel>
+    <skos:notation>0109</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">A line of text written at the head of each page/folio that identifies the title of a work or one of its subsections.</skos:definition>
+      <skos:definition xml:lang="de">Textzeile am Kopf jeder Seite, die den Titel des Werks oder einzelner Abschnitte enthält. Steht die Seitennummerierung ebenfalls in der Kopfzeile, wird sie zum Kolumnentitel, und damit zum Textblock, gezählt.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0110">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Catchword</skos:prefLabel>
+    <skos:prefLabel xml:lang="de"> Reklamante, Kustos</skos:prefLabel>
+    <skos:notation>0110</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Indication of the first few words of the next page at the bottom of a page.</skos:definition>
+      <skos:definition xml:lang="de">Angabe der Anfangsworte von der nächsten Seite am Seitenende der vorherigen Seite.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0111">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Cul-de-lampe (see also “Calligram”)</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Cul-de-Lampe, figurale Schriftfläche (siehe auch “Textfigur”)</skos:prefLabel>
+    <skos:notation>0111</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Text figure which has the form of a downward pointed triangle. The lines are progressively shortened along a central axis.</skos:definition>
+      <skos:definition xml:lang="de">Textfigur in Trichterform; die Zeilen werden entlang der vertikalen Achse symmetrisch immer weiter verkürzt.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0112">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Letter below letter</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Vertikale Buchstabenfolge</skos:prefLabel>
+    <skos:notation>0112</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">A text of vertically arranged letters, of which every letter has its normal orientation.
+</skos:definition>
+      <skos:definition xml:lang="de">Senkrecht ausgerichtete Buchstabenreihe, jeder Buchstabe mit Normalausrichtung.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0113">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Calligram (see also “Cul-de-lampe”)</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Textfigur, Figurengedicht, Bildgedicht, Umrissgedicht (siehe auch “Cul-de-lampe”)</skos:prefLabel>
+    <skos:notation>0113</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Phrase, or word in which the typeface, calligraphy or handwriting is arranged in a way that it creates a visual image; in Middle Ages content-related to the text.</skos:definition>
+      <skos:definition xml:lang="de">Textfigur mit geometrischem oder figürlichem Aussehen, im Mittelalter mit inhaltlichem Bezug zum Text.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0114">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Incipit</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Incipit</skos:prefLabel>
+    <skos:notation>0114</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">The opening words of a text, often used in place of a title to identify a text. Contains title, author, abstract.</skos:definition>
+      <skos:definition xml:lang="de">Anfangsworte eines Textes, oft anstelle eines Titels verwendet. Enthält Titel, Autor oder Inhaltsangabe.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0115">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Explicit, closing words</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Explicit	</skos:prefLabel>
+    <skos:notation>0115</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">An inscription recording information relating to the circumstances of the production of a manuscript. During antiquity at the end of the manuscript.</skos:definition>
+      <skos:definition xml:lang="de">Titel mit Bezug auf die Umstände der Abfassung, stand in der Antike noch am Ende der Handschrift. Teilweise als kombinier-
+tes Explicit-Incipit auftretend.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0116">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Colophon</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Kolophon	</skos:prefLabel>
+    <skos:notation>0116</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Short note at the end of a manuscript, often with details about time of creation and place of origin or the name of the writer.</skos:definition>
+      <skos:definition xml:lang="de">Schriftlicher Vermerk am Ende eines Manuskripts, häufig mit Angaben über Entstehungszeit und -ort oder dem Namen des Schreibers.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0005"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0117">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Margin rule</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Randlinie	</skos:prefLabel>
+    <skos:notation>0117</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Ruling lines on all four sides of the text block which define the space left blank for marginal notes.</skos:definition>
+      <skos:definition xml:lang="de">Linierung auf allen vier Seiten des Textblocks, Festlegung des freien Raumes für Randanmerkungen.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0006"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0118">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Marginal marking </skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Randmarkierung</skos:prefLabel>
+    <skos:notation>0118</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Small line or wavy line on the margin to draw attention to a certain passage in the text.</skos:definition>
+      <skos:definition xml:lang="de">Schmale oder wellige Linie am Rand, lenkt den Blick auf eine bestimmte Textpassage.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0006"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0119">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Marginal drawing</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Randzeichnung</skos:prefLabel>
+    <skos:notation>0119</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Autonomous drawing on one of the page margins. In general without relation to the text.</skos:definition>
+      <skos:definition xml:lang="de">Autonome Zeichnung, die an einem der Seitenränder angebracht wurde. Allgemein ohne Textbezug.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0006"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0120">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Hand / glove / Pointing hand</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Manicula, Zeigehand</skos:prefLabel>
+    <skos:notation>0120</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Little hand symbol on margins to point out (literally) or draw attention to glosses or key passages in the text.</skos:definition>
+      <skos:definition xml:lang="de">Kleines Markierungssymbol für wichtige Glossen oder Schlüsselpassagen im Text in Form einer Hand/eines Handschuhs.
+</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0006"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0121">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Side note</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Randbemerkung</skos:prefLabel>
+    <skos:notation>0121</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Small annotations on the margins.</skos:definition>
+      <skos:definition xml:lang="de">Kleine Anmerkungen am Rand zur Identifikation eine Textpassage. z.B. durch Untertitel oder Nummerierungen.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0006"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0122">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Gloss</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Glosse</skos:prefLabel>
+    <skos:notation>0122</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">A word or words commenting on, elucidating, or translating those of the main text, often written in the margins or between the lines.</skos:definition>
+      <skos:definition xml:lang="de">Einzelwörter oder Sätze am Seitenrand oder zwischen den Zeilen, verwendet zur Kommentierung, Erläuterung oder Übersetzung des Haupttextes.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0006"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0123">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Interlinear gloss (see also “Verbal  gloss”)</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Interlinearglosse (siehe auch “Wortglosse”)</skos:prefLabel>
+    <skos:notation>0123</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Gloss written between the lines of text. Explanations of single words and passages, inserted into the text.</skos:definition>
+      <skos:definition xml:lang="de">Kurze Glossierung zwischen den Zeilen des Haupttextes. In den Text eingefügte Erklärungen zu Einzelwörtern und Textstellen.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0006"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0124">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Marginal gloss</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Marginalglosse</skos:prefLabel>
+    <skos:notation>0124</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Gloss written on one of the margins.</skos:definition>
+      <skos:definition xml:lang="de">Glossierung an den Seitenrändern.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0006"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0125">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Surrounding gloss</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Katene, Kettenkommentar, Klammerglosse/ umschließende Glosse</skos:prefLabel>
+    <skos:notation>0125</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Gloss written on one, two, three or four sides of the page’s periphery. The text block itself occupies the centre.</skos:definition>
+      <skos:definition xml:lang="de">Glossierung auf einem, zwei, drei oder vier den Text umgebenden Seitenrändern. Der Textblock nimmt dabei die Mitte der Seite ein.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0006"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0126">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Text gloss</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Kontextglosse</skos:prefLabel>
+    <skos:notation>0126</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Longer gloss inserted in the continuous text.</skos:definition>
+      <skos:definition xml:lang="de">Längere, in den fortlaufenden Text eingefügte Glossierung.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0006"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0127">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Nested gloss /  Interleaved gloss</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Schachtelglosse</skos:prefLabel>
+    <skos:notation>0127</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Gloss which condenses the main text to a small text field and encloses it like a box. Closely related to the surrounding gloss.</skos:definition>
+      <skos:definition xml:lang="de">Glossierung zwischen zwei Spalten / Glossierung, die den Haupttext bis auf ein kleines Textfeld zusammendrängt und wie eine Schachtel umschließt. Eng verwandt mit der Klammerglosse.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0006"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0128">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Shaped gloss</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Glosse mit figuraler Schriftfläche</skos:prefLabel>
+    <skos:notation>0128</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">A gloss of which the text has a figural form or is framed by a shaped border.</skos:definition>
+      <skos:definition xml:lang="de">Eine Glosse, deren Text figürliche Form besitzt oder die durch einen geformten Rahmen umschlossen ist.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0006"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0129">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Note / Annotation</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Notiz, Anmerkung</skos:prefLabel>
+    <skos:notation>0129</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Short explicative or critical mention.</skos:definition>
+      <skos:definition xml:lang="de">Kurze erklärende oder kritische Bemerkung.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0006"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0130">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Commentary</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Kurzkommentar</skos:prefLabel>
+    <skos:notation>0130</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Explicative or critical text which is more developed than a note.</skos:definition>
+      <skos:definition xml:lang="de">Erklärender oder kritischer Text, umfangreicher als eine Anmerkung.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0006"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0131">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Invocation</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Invokation/ Nomina sacra</skos:prefLabel>
+    <skos:notation>0131</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Abbreviated sacred name at the beginning of a text as invocation.</skos:definition>
+      <skos:definition xml:lang="de">Anrufung durch Abkürzung heiliger Namen zu Beginn eines Textes, bspw. IHS.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0006"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0132">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Plain initial (see also “Secondary initial”, “Lombard”, “Versal”)</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Lombarde / einfache Initiale / Initialmajuskel (siehe auch “sekundäre Initiale”, “Lomarde”, “Versal”)</skos:prefLabel>
+    <skos:notation>0132</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Initial without frame and decoration, distinction from the rest of the text only via size, form and coloration (especially in red and blue colour).</skos:definition>
+      <skos:definition xml:lang="de">Einfache Initiale, ohne Rahmung und Dekoration, unterscheidet sich nur in Größe, Form und Farbe (charakteristisch ist die einfarbig rote (oder blaue) Ausführung der Buchstaben).</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0007"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0133">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Flourish initial / Pen-flourished initial</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Fleuronné-Initiale</skos:prefLabel>
+    <skos:notation>0133</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Initial with a compact body and a fine linear embellishment, decorated with a fine and dense net of floral motives. Appears also as a mixed form with parti-coloured letters.</skos:definition>
+      <skos:definition xml:lang="de">Initiale mit stilisierten Pflanzenornamenten; Kontrast zwischen dem kompakten Buchstaben und dem feingliedrigem, netzartigem Linienwerk. Öfter als Hybridform mit zweifarbigen Initialen auftretend.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0007"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0134">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Floriate initial  – Foliate initial</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Initiale mit pflanzlichen Motiven, z.B. Rankeninitiale</skos:prefLabel>
+    <skos:notation>0134</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Initial decorated with herbal/floral ornaments: blossoms, flowers, tendrils. Initials, whose tendrils are connected with the borders of the letter are called initials with scroll ornament.</skos:definition>
+      <skos:definition xml:lang="de">Initiale mit Verzierungen aus dem botanischen Bereich: Blüten, Blätter, Ranken. Initialen, deren Ranken mit den Randleisten der Buchstaben verschmelzen, nennt man Rankeninitialen.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0007"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0135">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Spaltleisteninitiale</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Spaltleisteninitiale</skos:prefLabel>
+    <skos:notation>0135</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Close to initials with scroll ornament. The body of the letter consists of a split stroke or “fillet”. Typical are the little clasps, which are laid around the stem and which bind the tendrils with it.</skos:definition>
+      <skos:definition xml:lang="de">Verwandt mit der Rankeninitiale. Der Buchstabenkörper besteht meist aus einer gespaltenen Leiste, typisch sind die Schnallen oder Spangen, die um den Stamm gelegt sind und oft die Ranken mit diesem zusammenhalten.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0007"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0136">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Penwork initial</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Initiale in Federzeichnung</skos:prefLabel>
+    <skos:notation>0136</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">A monochrome ornamental initial produced entirely with a pen,  generally using the same ink as the text, related to the pen-florished initial.</skos:definition>
+      <skos:definition xml:lang="de">Ausführung des Buchstabens mit der Feder in einfarbigen Linien; gewöhnlich in der gleichen Tinte wie der Text, verwandt mit der Fleuronné-Initiale.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0007"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0137">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Decorated initial</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Ornamentinitiale, ornamentale Initiale</skos:prefLabel>
+    <skos:notation>0137</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">An initial composed of non-figural, non-zoomorphic decorative elements.</skos:definition>
+      <skos:definition xml:lang="de">Initiale bestehend aus nicht-figürlichen, nicht-tiergestaltigen dekorativen Elementen.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0007"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0138">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Champ initial</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Feldinitiale</skos:prefLabel>
+    <skos:notation>0138</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Small and compact couloured or golden initial on a monochrome ground/field.</skos:definition>
+      <skos:definition xml:lang="de">Kleine kompakte Initiale (farbig oder aus Gold) hinterlegt mit einem einfarbigen Feld / auf einfarbigem Grund.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0007"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0139">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Silhouette initial</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Silhouetten-Initiale</skos:prefLabel>
+    <skos:notation>0139</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Mostly monochrome initial with curved lines, drop-shaped leaf forms or rolled-up tendrils inside the body of the letter, which are executed in another colour. Most used colours: red, green or blue.</skos:definition>
+      <skos:definition xml:lang="de">Häufig einfarbige Initiale mit gebogten konturbegleitenden Linien oder eingerollten Ranken mit tropfenförmigen Blattformen im Binnenfeld, die in einer anderen Farbe ausgeführt sind. Häufigste Farben: Blau, Grün oder Rot.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0007"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0140">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Inhabited initial</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Bewohnte Initiale, Bildeinschlussinitiale</skos:prefLabel>
+    <skos:notation>0140</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">An initial, which is inhabited by human or animal figures but does not contain an identifiable narrative scene. The figures act in the initial.</skos:definition>
+      <skos:definition xml:lang="de">Initiale, die von menschlichen oder tierhaften Figuren ‘bewohnt’ ist, jedoch keine narrative Szene beinhaltet. Die Figuren agieren in der Initiale.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0007"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0141">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Figured initial</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Figureninitiale, figurierte Initiale</skos:prefLabel>
+    <skos:notation>0141</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">An initial whose body is composed wholly or partly of human figures or animal forms.</skos:definition>
+      <skos:definition xml:lang="de">Initiale, deren Buchstabenkörper gänzlich oder in Teilen aus menschlichen Figuren besteht oder Tiergestalt besitzt.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0007"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0142">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Gymnastic initial</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Gymnastische Initiale</skos:prefLabel>
+    <skos:notation>0142</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">An initial composed of lively, acrobatic human and/or animal figures.</skos:definition>
+      <skos:definition xml:lang="de">Initiale, die sich aus akrobatischen Menschen- oder Tierfiguren zusammensetzt.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0007"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0143">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Historiated initial (see also “Figured initial”)</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Historisierte Initiale</skos:prefLabel>
+    <skos:notation>0143</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">A letter containing an identifiable scene or figures, relating to the content of the text.</skos:definition>
+      <skos:definition xml:lang="de">Initiale, die eine szenenhafte Darstellung beinhaltet, bezogen auf den Inhalt des Textes.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0007"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0144">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Parted letter / Parti-coloured letters</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Initiale mit Schaftaussparung zweifarbige / mehrfarbige Initiale</skos:prefLabel>
+    <skos:notation>0144</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Bicoloured initial (often red an blue) with resemblance to the woodworking technique of intarsias.</skos:definition>
+      <skos:definition xml:lang="de">Initiale in zwei oder mehr Farben (oft rot und blau), die der Intarsientechnik (Einlegetechnik, Dekorationstechnik aus der Holzarbeit) nachempfunden ist.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0007"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0145">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Cadel</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Cadelle</skos:prefLabel>
+    <skos:notation>0145</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Capital letter, written in ink which achenders and descenders are decorated with parallel, crossing or twisted thick ink strokes.</skos:definition>
+      <skos:definition xml:lang="de">In Tinte geschriebener Großbuchstabe, dessen Ober- und Unterlängen mit vielen parallelen, sich durchkreuzenden oder verschlungenen, breiten Federstrichen dekoriert wurden.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0007"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0146">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Hand</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">‘Hand’, Schreiberhand</skos:prefLabel>
+    <skos:notation>0146</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">The appearance of a script was determined by the speed and care with which the letters were formed and the form and number of space-saving devices employed (ductus).</skos:definition>
+      <skos:definition xml:lang="de">Handschrift, teils synonym mit script verwendet, auch: Schreiberhand.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0008"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0147">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Character</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Buchstabe</skos:prefLabel>
+    <skos:notation>0147</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Single letter, written by hand.</skos:definition>
+      <skos:definition xml:lang="de">Einzelner handgeschriebener Buchstabe.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0008"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0148">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Display script</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Auszeichnungsschrift, Textschrift</skos:prefLabel>
+    <skos:notation>0148</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">A script which differs from the rest of the text, emphasizes certain parts of the text. Display script is often used, along with an enlarged initial, to emphasize major textual openings (beginning of the text, headings).</skos:definition>
+      <skos:definition xml:lang="de">Eine in ihrer Form, Farbe und Größe vom übrigen Text abweichende Schrift, hebt bestimmte Textteile besonders hervor. Oftmals in Kombination mit einer Initiale gebraucht, um den Anfang eines Textes zu betonen (Textanfang, Über- schriften).</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0008"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0149">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Highlighted letter/  Colour stroked letter (see also “Rubric")</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Hervorgehobener Buchstabe (siehe auch “Rubrizierung”)</skos:prefLabel>
+    <skos:notation>0149</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Letter whose body or concave parts are filled with colour/highlighted with a vertical red colour stroke.</skos:definition>
+      <skos:definition xml:lang="de">Der Buchstabenkörper ist mit roter Farbe gefüllt oder durch einen senkrechten roten Farbstrich hervorgehoben.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0008"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0150">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Colour-infilled letter</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Buchstabe mit Farbfüllung</skos:prefLabel>
+    <skos:notation>0150</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Letter whose body is highlighted entirely with colour.</skos:definition>
+      <skos:definition xml:lang="de">Buchstabe, dessen Körper mit Farbe hervorgehoben ist.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0008"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0152">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Miniature/ Full-page miniature</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Miniatur/ Bildseite</skos:prefLabel>
+    <skos:notation>0152</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Umbrella term for illustration in manuscripts. Refers to an illustration or painting executed in a manu-
+script, which is independant from borders or initials. The pictorial element may occupy also a whole page.</skos:definition>
+      <skos:definition xml:lang="de">Überbegriff für Bebilderung in Handschriften. Bezeichnet alle selbständigen, von anderen dekorativen Elementen (Randornamente, Initialen) unabhängigen bildlichen Darstellungen. Auch eine ganze Seite kann mit einer Miniatur ausgefüllt sein.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0009"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0153">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Painting</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Farbe</skos:prefLabel>
+    <skos:notation>0153</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Colored preparation to cover a certain area.</skos:definition>
+      <skos:definition xml:lang="de">Farbe zum Auftragen, flüssig oder in Form einer Paste.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0009"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0154">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Ornamentation /  Decoration</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Ornamentik, Dekoration</skos:prefLabel>
+    <skos:notation>0154</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Decoration which does not belong to the illustration itself.</skos:definition>
+      <skos:definition xml:lang="de">Schmuck / Dekoration, der nicht zu einer Illustration an sich zugehörig ist.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0009"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0155">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Decorative repertoire</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Ornamentrepertoire, dekoratives Repertoire</skos:prefLabel>
+    <skos:notation>0155</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">All patterns and decorative processes employed by an artist, a workshop, a school.</skos:definition>
+      <skos:definition xml:lang="de">Umfasst alle Muster und Techniken, die einer Malschule, einem Künstler oder einem Atelier zugeschrieben werden können.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0009"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0156">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Decorative element</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Ausstattungselement</skos:prefLabel>
+    <skos:notation>0156</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Component of the book illumination.</skos:definition>
+      <skos:definition xml:lang="de">Bestandteil der Buchausstattung.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0009"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0157">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Infilled ornament</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Füllmotiv</skos:prefLabel>
+    <skos:notation>0157</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">A decorative element, that has been inserted subsequently.</skos:definition>
+      <skos:definition xml:lang="de">Nachträglich eingefügtes Bildelement.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0009"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0158">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Illustration</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Illustration</skos:prefLabel>
+    <skos:notation>0158</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Pictorial representations of objects, persons and scenes with relation to the content of the text.</skos:definition>
+      <skos:definition xml:lang="de">Bildliche Darstellungen von Objekten, Personen und Szenen mit Bezug zum Textinhalt.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0009"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0159">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Cycle of illustrations (see also “Register”)</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Bildzyklus (siehe auch “Registerbild”)</skos:prefLabel>
+    <skos:notation>0159</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Sequence of representations illustrating the successive phases of a story or the different sections of a text.</skos:definition>
+      <skos:definition xml:lang="de">Serie von bildlichen Darstellungen, die den Inhalt einer Geschichte wiedergeben und den Text illustrieren.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0009"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0160">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Decorated, Illuminated border / Decorated marginalia</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Randillustration, Randminiatur, Kommentarillustration</skos:prefLabel>
+    <skos:notation>0160</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Decorative element with relation to the text content which is situated on the margin of the page ( ≠ marginal drawing).</skos:definition>
+      <skos:definition xml:lang="de">Textbezogene, dekorative Darstellung  auf einem der Seitenränder ( ≠ Randzeichnung).</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0009"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0161">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Panel / Compartment</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Bild, Bildfeld</skos:prefLabel>
+    <skos:notation>0161</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Predefined space which contains figural decoration.</skos:definition>
+      <skos:definition xml:lang="de">Vorgegebener Raum, der mit einer figürlichen Darstellung ausgefüllt ist.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0009"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0162">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Bas-de-page(-scene)</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Bas-de-page (-Szene)</skos:prefLabel>
+    <skos:notation>0162</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Usually an unframed miniature at the bottom of a page that may or may not refer to the text or image above.</skos:definition>
+      <skos:definition xml:lang="de">Bebilderung am Fuß einer Seite, die sich auf den Text oder die Abbildung darüber beziehen kann.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0009"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0163">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Border</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Randornamentik, Bordüre</skos:prefLabel>
+    <skos:notation>0163</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Decorative surrounds. A border surrounds text and/or image and may occupy margins and intercolumnar space.</skos:definition>
+      <skos:definition xml:lang="de">Dekorierte Umgebung; dekorative Ornamentik, die den Text umgibt und dabei Seitenränder und Spaltenzwischenraum einnehmen kann.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0009"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0164">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Fleuronnéstab</skos:prefLabel>
+    <skos:notation>0164</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en"></skos:definition>
+      <skos:definition xml:lang="de">Länglicher Ausläufer, entweder von einem Buchstaben ausgehend oder an ihn angesetzt, in den Randbereich hineinragend (Übergang zu Bordürenformen).</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0009"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0165">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Full border, Framing</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Rahmenbild, Rahmung 	</skos:prefLabel>
+    <skos:notation>0165</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">The border decorations running along all four sides of the text.</skos:definition>
+      <skos:definition xml:lang="de">Verzierung des gesamten marginalen Raumes, dekorative Umrahmung des Schriftraumes.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0009"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0166">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Marginal extension</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Randerweiterung der Ornamente, Randausläufer</skos:prefLabel>
+    <skos:notation>0166</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Element which is detached from the frame of a painting or decorated letter and extends into the margins.</skos:definition>
+      <skos:definition xml:lang="de">Dekoratives Element (aus Bild oder Initiale), das sich auf den Randbereich ausdehnt und den Schriftspiegel einfasst.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0009"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0167">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Figure</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Figur</skos:prefLabel>
+    <skos:notation>0167</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Image or drawing belonging to a demonstration or a description OR conventional representation of a imaginary or real person.</skos:definition>
+      <skos:definition xml:lang="de">Bild oder Zeichnung, zu einer Beschreibung gehörend, ODER konventionelle Darstellung einer imaginären oder realen Person.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0009"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0168">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Column picture</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Kolumnenbild, einspaltiges Bild</skos:prefLabel>
+    <skos:notation>0168</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">A miniature that occupies the width of a column (but not necessarily its height).</skos:definition>
+      <skos:definition xml:lang="de">Miniatur, die in eine Textspalte integriert ist. Nimmt nicht notwendigerweise die gesamte Höhe der Spalte ein.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0009"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0169">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Registered panel</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Registerbild</skos:prefLabel>
+    <skos:notation>0169</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">A full-page miniature page which contains several horizontally subdivided scenes.</skos:definition>
+      <skos:definition xml:lang="de">Eine Bildseite, die sich aus mehreren, deutlich voneinander abgesetzten horizontalen Bildstreifen zusammensetzt.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0009"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0170">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en">Streifenbild</skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Streifenbild</skos:prefLabel>
+    <skos:notation>0170</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Miniature, which occupies the whole width of the justification and maximally half of its height.</skos:definition>
+      <skos:definition xml:lang="de">Bildstreifen, der in den Text integriert ist und die gesamte Breite des Schriftraums, aber nur bis zur Hälfte seine Höhe umfasst.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0009"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.ecodicology.org/0171">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:prefLabel xml:lang="en"></skos:prefLabel>
+    <skos:prefLabel xml:lang="de">Kleinbild	</skos:prefLabel>
+    <skos:notation>0171</skos:notation>
+    <skos:note>
+      <skos:definition xml:lang="en">Miniature, whose width and height occupies only a small part of the writing space.</skos:definition>
+      <skos:definition xml:lang="de">In den Text eingestellte Miniatur, die in Höhe und Breite nur einen Teil des Schriftraums einnimmt.</skos:definition>
+    </skos:note>
+    <skos:broader rdf:resource="http://www.ecodicology.org/0009"/>
+  </rdf:Description>
+>>>>>>> 404c1f1a79ba6f32af958a8b8a23e22678c0bc5d
 </rdf:RDF>

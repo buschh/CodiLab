@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <html lang="en">
+<<<<<<< HEAD
     <head>
         <meta charset="utf-8"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -16,6 +17,25 @@
         <script src="./client/lib/closure-library/closure/goog/base.js"/>
         <script src="./client/deps.js"/>
         <script>
+=======
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CodiAnn | CodiLab</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <link href="./client/res/xrx.css" rel="stylesheet">
+  <script type="text/javascript" src="./client/jssaxparser/SAXException.js"></script>
+  <script type="text/javascript" src="./client/jssaxparser/AttributesImpl.js"></script>
+  <script type="text/javascript" src="./client/jssaxparser/LocatorImpls.js"></script>
+  <script type="text/javascript" src="./client/jssaxparser/NamespaceSupport.js"></script>
+  <script type="text/javascript" src="./client/jssaxparser/sax.js"></script>
+  <script type="text/javascript" src="./client/jssaxparser/DefaultHandlers.js"></script>
+  <!--script src="../../HKIKoeln/SemToNotes/client/lib/closure-library/closure/goog/base.js"></script>
+  <script src="./client/deps.js"></script-->
+  <script type="text/javascript" src="./client/CodiLab.js"></script>
+  <script>
+>>>>>>> 404c1f1a79ba6f32af958a8b8a23e22678c0bc5d
     goog.require('xrx');
   </script>
         <style>
@@ -151,6 +171,7 @@ background-color: #DDDDDD;
   <!--*
    * Shared Canvas model
    *-->
+<<<<<<< HEAD
   <!--div class="xrx-github"            id="isc"
        data-resource="https://api.github.com/repos/JochenGraf/CodiLab/contents/data/T0152/T0152.sc.xml"-->
         <div class="xrx-instance" id="isc" data-resource="./data/T0152/T0152.sc.xml">
@@ -176,6 +197,38 @@ background-color: #DDDDDD;
                 <div class="xrx-classes-add" data-select="#nav" data-classes="alert-danger"/>
             </div>
         </div>
+=======
+  <!--div class="xrx-instance"            id="isc"
+       data-resource="./data/T0152/T0152.sc.xml"-->
+  <div class="xrx-github"            id="isc"
+       data-resource="https://api.github.com/repos/JochenGraf/CodiLab/contents/data/T0152/T0152.sc.xml">
+    <div class="xrx-action" data-event="xrx-event-instance-update">
+      <div class="xrx-classes-add" data-select=".save-message" data-classes="hidden"></div>
+      <div class="xrx-classes-remove" data-select="#save-updated" data-classes="hidden"></div>
+      <div class="xrx-classes-remove" data-select="#nav" data-classes="alert-warning alert-success alert-danger"></div>
+      <div class="xrx-classes-add" data-select="#nav" data-classes="alert-warning"></div>
+    </div>
+  </div>
+
+  <div class="xrx-bind"                id="bsc"
+       data-ref="xrx:instance('isc')"></div>
+
+  <div class="xrx-submission"          id="ssave"
+       data-bind="bsc" data-resource="https://api.github.com/repos/JochenGraf/CodiLab/contents/data/T0152/T0152.sc.xml" data-method="PUT">
+    <div class="xrx-action" data-event="xrx-event-submit-done">
+      <div class="xrx-classes-add" data-select=".save-message" data-classes="hidden"></div>
+      <div class="xrx-classes-remove" data-select="#save-success" data-classes="hidden"></div>
+      <div class="xrx-classes-remove" data-select="#nav" data-classes="alert-warning alert-success alert-danger"></div>
+      <div class="xrx-classes-add" data-select="#nav" data-classes="alert-success"></div>
+    </div>
+    <div class="xrx-action" data-event="xrx-event-submit-error">
+      <div class="xrx-classes-add" data-select=".save-message" data-classes="hidden"></div>
+      <div class="xrx-classes-remove" data-select="#save-error" data-classes="hidden"></div>
+      <div class="xrx-classes-remove" data-select="#nav" data-classes="alert-warning alert-success alert-danger"></div>
+      <div class="xrx-classes-add" data-select="#nav" data-classes="alert-danger"></div>
+    </div>
+  </div>
+>>>>>>> 404c1f1a79ba6f32af958a8b8a23e22678c0bc5d
 
   <!-- aggregations -->
         <div class="xrx-bind" id="bscActualAggregationUri" data-ref="concat('http://www.ecodicology.org/AnnoList/', xrx:bind('bmetsActualImageId'))"/>
